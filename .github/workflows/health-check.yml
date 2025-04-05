@@ -1,5 +1,9 @@
 name: Health Check
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  CI: true
+
 on:
   pull_request:
     branches:
