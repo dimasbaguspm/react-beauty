@@ -56,4 +56,4 @@ jobs:
       - name: Build
         run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} build
       - name: Publish
-        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} npm publish
+        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} npm publish --tag latest
