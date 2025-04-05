@@ -1,7 +1,7 @@
 {
   "name": "@beauty-react-hooks/use-clipboard",
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "use-clipboard",
   "main": "index.ts",
   "publishConfig": {
@@ -15,16 +15,17 @@
     "check": "tsc --noEmit",
     "build": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "beauty-react-hooks",
     "use-clipboard"
   ],
   "license": "MIT",
-  "dependencies": {
-    "react": "18.3.1"
-  },
   "peerDependencies": {
-    "react": "18.3.1"
+    "@types/react": "*",
+    "react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
   },
   "devDependencies": {
     "@beauty-react-hooks/eslint": "workspace:*",

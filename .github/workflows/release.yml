@@ -1,0 +1,59 @@
+name: Release
+
+on:
+  release:
+    types: [released]
+
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  CI: true
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup shell
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Get Tag
+        uses: olegtarasov/get-tag@v2.1
+        id: tagName
+        with:
+          tagRegex: "(?<package>.*)_(?<version>.*)"
+
+      - name: Install dependencies
+        run: |
+          corepack enable
+          yarn
+
+      - name: Typecheck
+        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} check
+
+      - name: Lint
+        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} lint
+      - name: Version
+        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
+      - name: Bump version
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: release bump version to ${{ steps.tagName.outputs.version }}
+          title: ${{ steps.tagName.outputs.package }}@${{ steps.tagName.outputs.version }}
+          branch: bump-version/${{ steps.tagName.outputs.package }}
+          base: main
+
+      - name: Build
+        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} build
+      - name: Publish
+        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} npm publish

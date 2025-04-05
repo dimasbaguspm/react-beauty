@@ -258,10 +258,10 @@ __metadata:
     "@beauty-react-hooks/eslint": "workspace:*"
     "@beauty-react-hooks/tsconfig": "workspace:*"
     eslint: "npm:9.24.0"
-    react: "npm:18.3.1"
     typescript: "npm:5.8.3"
   peerDependencies:
-    react: 18.3.1
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
   languageName: unknown
   linkType: soft
 
