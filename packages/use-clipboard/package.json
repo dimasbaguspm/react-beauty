@@ -1,7 +1,7 @@
 {
   "name": "@beauty-react-hooks/use-clipboard",
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "use-clipboard",
   "main": "index.ts",
   "publishConfig": {
