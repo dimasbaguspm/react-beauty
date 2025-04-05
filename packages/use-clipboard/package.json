@@ -1,0 +1,28 @@
+{
+  "name": "@beauty-react-hooks/use-clipboard",
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
+  "version": "1.0.0",
+  "description": "use-clipboard",
+  "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "beauty-react-hooks",
+    "use-clipboard"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}
