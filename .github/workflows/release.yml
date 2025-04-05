@@ -48,9 +48,11 @@ jobs:
       - name: Bump version
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: release bump version to ${{ steps.tagName.outputs.version }}
-          title: ${{ steps.tagName.outputs.package }}@${{ steps.tagName.outputs.version }}
-          branch: bump-version/${{ steps.tagName.outputs.package }}
+          commit-message: |
+            chore: update package ${{ steps.tagName.outputs.package }} version to ${{ steps.tagName.outputs.version }}
+          title: |
+            chore: update package ${{ steps.tagName.outputs.package }} version to ${{ steps.tagName.outputs.version }}
+          branch: package-version/${{ steps.tagName.outputs.package }}
           base: main
 
       - name: Build
