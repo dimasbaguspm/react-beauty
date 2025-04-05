@@ -1,0 +1,18 @@
+{
+  "extends": "@beauty-react-hooks/tsconfig/react.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "@beauty-react-hooks/*": [
+        "../packages/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

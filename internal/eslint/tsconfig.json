@@ -1,0 +1,13 @@
+{
+  "extends": "@beauty-react-hooks/tsconfig/react.json",
+  "compilerOptions": {
+    "rootDir": "."
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,35 @@
+name: Health Check
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup shell
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Typecheck
+        run: yarn workspaces foreach --since run check
+
+      - name: Lint
+        run: yarn workspaces foreach --since run lint
+
+      - name: Build
+        run: yarn workspaces foreach --since run build

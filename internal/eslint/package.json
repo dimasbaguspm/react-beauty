@@ -1,0 +1,19 @@
+{
+  "name": "@beauty-react-hooks/eslint",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.ts",
+  "devDependencies": {
+    "@beauty-react-hooks/tsconfig": "workspace:*",
+    "@eslint/js": "9.24.0",
+    "eslint": "9.24.0",
+    "jiti": "2.4.2",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.29.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.21"
+  }
+}
