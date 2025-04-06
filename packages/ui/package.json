@@ -10,11 +10,6 @@
     "type": "./dist/index.d.ts"
   },
   "type": "module",
-  "scripts": {
-    "lint": "eslint .",
-    "check": "tsc --noEmit",
-    "build": "tsup"
-  },
   "files": [
     "dist"
   ],

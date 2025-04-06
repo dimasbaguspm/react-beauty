@@ -1,2 +1,3 @@
-import { configs } from "./index";
+import { configs } from "./base";
+
 export default configs;
