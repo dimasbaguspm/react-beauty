@@ -33,7 +33,6 @@
     "@react-beauty/vite": "workspace:*",
     "eslint": "9.24.0",
     "typescript": "5.8.3",
-    "vite": "6.2.0",
-    "vite-plugin-dts": "4.5.3"
+    "vite": "6.2.0"
   }
 }
