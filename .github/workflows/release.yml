@@ -39,12 +39,12 @@ jobs:
           yarn
 
       - name: Typecheck
-        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} check
+        run: yarn workspace @beauty-react/${{ steps.tagName.outputs.package }} check
 
       - name: Lint
-        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} lint
+        run: yarn workspace @beauty-react/${{ steps.tagName.outputs.package }} lint
       - name: Version
-        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
+        run: yarn workspace @beauty-react/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
       - name: Bump version
         uses: peter-evans/create-pull-request@v7
         with:
@@ -56,8 +56,8 @@ jobs:
           base: main
 
       - name: Build
-        run: yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} build
+        run: yarn workspace @beauty-react/${{ steps.tagName.outputs.package }} build
       - name: Publish
         run: |
-          yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
-          yarn workspace @beauty-react-hooks/${{ steps.tagName.outputs.package }} npm publish --tag latest
+          yarn workspace @beauty-react/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
+          yarn workspace @beauty-react/${{ steps.tagName.outputs.package }} npm publish --tag latest
