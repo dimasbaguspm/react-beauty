@@ -212,13 +212,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beauty-react-hooks/demo@workspace:demo":
+"@beauty-react/demo@workspace:demo":
   version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/demo@workspace:demo"
+  resolution: "@beauty-react/demo@workspace:demo"
   dependencies:
-    "@beauty-react-hooks/eslint": "workspace:*"
-    "@beauty-react-hooks/tsconfig": "workspace:*"
-    "@beauty-react-hooks/use-clipboard": "workspace:*"
+    "@beauty-react/eslint": "workspace:*"
+    "@beauty-react/tsconfig": "workspace:*"
+    "@beauty-react/use-clipboard": "workspace:*"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
     "@vitejs/plugin-react": "npm:4.3.4"
@@ -230,11 +230,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beauty-react-hooks/eslint@workspace:*, @beauty-react-hooks/eslint@workspace:internal/eslint":
+"@beauty-react/eslint@workspace:*, @beauty-react/eslint@workspace:internal/eslint":
   version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/eslint@workspace:internal/eslint"
+  resolution: "@beauty-react/eslint@workspace:internal/eslint"
   dependencies:
-    "@beauty-react-hooks/tsconfig": "workspace:*"
+    "@beauty-react/tsconfig": "workspace:*"
     "@eslint/js": "npm:9.24.0"
     eslint: "npm:9.24.0"
     jiti: "npm:2.4.2"
@@ -245,18 +245,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beauty-react-hooks/tsconfig@workspace:*, @beauty-react-hooks/tsconfig@workspace:internal/tsconfig":
+"@beauty-react/tsconfig@workspace:*, @beauty-react/tsconfig@workspace:internal/tsconfig":
   version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/tsconfig@workspace:internal/tsconfig"
+  resolution: "@beauty-react/tsconfig@workspace:internal/tsconfig"
   languageName: unknown
   linkType: soft
 
-"@beauty-react-hooks/use-clipboard@workspace:*, @beauty-react-hooks/use-clipboard@workspace:packages/use-clipboard":
+"@beauty-react/use-clipboard@workspace:*, @beauty-react/use-clipboard@workspace:packages/use-clipboard":
   version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/use-clipboard@workspace:packages/use-clipboard"
+  resolution: "@beauty-react/use-clipboard@workspace:packages/use-clipboard"
   dependencies:
-    "@beauty-react-hooks/eslint": "workspace:*"
-    "@beauty-react-hooks/tsconfig": "workspace:*"
+    "@beauty-react/eslint": "workspace:*"
+    "@beauty-react/tsconfig": "workspace:*"
     eslint: "npm:9.24.0"
     typescript: "npm:5.8.3"
   peerDependencies:

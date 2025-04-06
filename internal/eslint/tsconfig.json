@@ -1,5 +1,5 @@
 {
-  "extends": "@beauty-react-hooks/tsconfig/react.json",
+  "extends": "@beauty-react/tsconfig/react.json",
   "compilerOptions": {
     "rootDir": "."
   },
