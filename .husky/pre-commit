@@ -1,0 +1,3 @@
+yarn workspaces foreach --all --parallel run lint
+yarn workspaces foreach --all --parallel run check
+yarn workspaces foreach --all --parallel run build
