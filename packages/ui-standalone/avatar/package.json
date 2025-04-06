@@ -1,0 +1,40 @@
+{
+  "name": "@react-beauty/ui-avatar",
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
+  "version": "1.0.1",
+  "description": "Collection user interface avatar from @react-beauty",
+  "main": "src/index.ts",
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js",
+    "type": "./dist/index.d.ts"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "check": "tsc --noEmit",
+    "build": "vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-hooks",
+    "react-beauty",
+    "use-clipboard"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
+  },
+  "devDependencies": {
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/tsconfig": "workspace:*",
+    "eslint": "9.24.0",
+    "typescript": "5.8.3",
+    "vite": "6.2.0",
+    "vite-plugin-dts": "4.5.3"
+  }
+}

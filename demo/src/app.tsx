@@ -1,3 +1,4 @@
+import { AvatarImage } from "@react-beauty/ui-avatar";
 import { useClipboard } from "@react-beauty/use-clipboard";
 
 export default function App() {
@@ -6,5 +7,10 @@ export default function App() {
   // NOTE: just as an example, to prove the linking across packages works
   console.log(copy);
   console.log(copied);
-  return <h1>Hello, world!</h1>;
+  return (
+    <>
+      <AvatarImage />
+      <h1>Hello, world!</h1>
+    </>
+  );
 }
