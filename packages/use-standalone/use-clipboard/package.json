@@ -5,6 +5,7 @@
   "description": "use-clipboard",
   "main": "./src/index.ts",
   "publishConfig": {
+    "access": "public",
     "main": "./dist/index.js",
     "type": "./dist/index.d.ts"
   },
