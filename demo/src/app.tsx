@@ -1,4 +1,4 @@
-import { useClipboard } from "@beauty-react-hooks/use-clipboard";
+import { useClipboard } from "@react-beauty/use-clipboard";
 
 export default function App() {
   const { copy, copied } = useClipboard();

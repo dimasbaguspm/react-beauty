@@ -1,15 +1,15 @@
 {
-  "name": "beauty-react-hooks",
+  "name": "react-beauty",
   "description": "Collection from beauty react web hooks",
   "version": "1.0.0",
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
   "keywords": [
     "react",
     "react-hooks",
-    "beauty",
+    "react-beauty",
     "dimasbaguspm"
   ],
-  "homepage": "https://github.com/dimasbaguspm/beauty-react-hooks",
+  "homepage": "https://github.com/dimasbaguspm/react-beauty",
   "license": "MIT",
   "type": "module",
   "workspaces": [

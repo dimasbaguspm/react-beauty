@@ -212,59 +212,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beauty-react-hooks/demo@workspace:demo":
-  version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/demo@workspace:demo"
-  dependencies:
-    "@beauty-react-hooks/eslint": "workspace:*"
-    "@beauty-react-hooks/tsconfig": "workspace:*"
-    "@beauty-react-hooks/use-clipboard": "workspace:*"
-    "@types/react": "npm:^19.0.10"
-    "@types/react-dom": "npm:^19.0.4"
-    "@vitejs/plugin-react": "npm:4.3.4"
-    eslint: "npm:9.24.0"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    typescript: "npm:5.8.3"
-    vite: "npm:6.2.0"
-  languageName: unknown
-  linkType: soft
-
-"@beauty-react-hooks/eslint@workspace:*, @beauty-react-hooks/eslint@workspace:internal/eslint":
-  version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/eslint@workspace:internal/eslint"
-  dependencies:
-    "@beauty-react-hooks/tsconfig": "workspace:*"
-    "@eslint/js": "npm:9.24.0"
-    eslint: "npm:9.24.0"
-    jiti: "npm:2.4.2"
-    typescript: "npm:5.8.3"
-    typescript-eslint: "npm:8.29.0"
-  peerDependencies:
-    eslint: ">=9.21"
-  languageName: unknown
-  linkType: soft
-
-"@beauty-react-hooks/tsconfig@workspace:*, @beauty-react-hooks/tsconfig@workspace:internal/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/tsconfig@workspace:internal/tsconfig"
-  languageName: unknown
-  linkType: soft
-
-"@beauty-react-hooks/use-clipboard@workspace:*, @beauty-react-hooks/use-clipboard@workspace:packages/use-clipboard":
-  version: 0.0.0-use.local
-  resolution: "@beauty-react-hooks/use-clipboard@workspace:packages/use-clipboard"
-  dependencies:
-    "@beauty-react-hooks/eslint": "workspace:*"
-    "@beauty-react-hooks/tsconfig": "workspace:*"
-    eslint: "npm:9.24.0"
-    typescript: "npm:5.8.3"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  languageName: unknown
-  linkType: soft
-
 "@esbuild/aix-ppc64@npm:0.25.2":
   version: 0.25.2
   resolution: "@esbuild/aix-ppc64@npm:0.25.2"
@@ -694,6 +641,59 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-beauty/demo@workspace:demo":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/demo@workspace:demo"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/use-clipboard": "workspace:*"
+    "@types/react": "npm:^19.0.10"
+    "@types/react-dom": "npm:^19.0.4"
+    "@vitejs/plugin-react": "npm:4.3.4"
+    eslint: "npm:9.24.0"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    typescript: "npm:5.8.3"
+    vite: "npm:6.2.0"
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/eslint@workspace:*, @react-beauty/eslint@workspace:internal/eslint":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/eslint@workspace:internal/eslint"
+  dependencies:
+    "@eslint/js": "npm:9.24.0"
+    "@react-beauty/tsconfig": "workspace:*"
+    eslint: "npm:9.24.0"
+    jiti: "npm:2.4.2"
+    typescript: "npm:5.8.3"
+    typescript-eslint: "npm:8.29.0"
+  peerDependencies:
+    eslint: ">=9.21"
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/tsconfig@workspace:*, @react-beauty/tsconfig@workspace:internal/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/tsconfig@workspace:internal/tsconfig"
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/use-clipboard@workspace:*, @react-beauty/use-clipboard@workspace:packages/use-clipboard":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/use-clipboard@workspace:packages/use-clipboard"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsconfig": "workspace:*"
+    eslint: "npm:9.24.0"
+    typescript: "npm:5.8.3"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  languageName: unknown
+  linkType: soft
+
 "@rollup/rollup-android-arm-eabi@npm:4.39.0":
   version: 4.39.0
   resolution: "@rollup/rollup-android-arm-eabi@npm:4.39.0"
@@ -1121,12 +1121,6 @@ __metadata:
   checksum: 10c0/9308baf0a7e4838a82bbfd11e01b1cb0f0cf2893bc1676c27c2a8c0e70cbae1c59120c3268517a8ae7fb6376b4639ef81ca22582611dbee4ed28df945134aaee
   languageName: node
   linkType: hard
-
-"beauty-react-hooks@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "beauty-react-hooks@workspace:."
-  languageName: unknown
-  linkType: soft
 
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
@@ -2394,6 +2388,12 @@ __metadata:
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
   languageName: node
   linkType: hard
+
+"react-beauty@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-beauty@workspace:."
+  languageName: unknown
+  linkType: soft
 
 "react-dom@npm:18.3.1":
   version: 18.3.1

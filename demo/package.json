@@ -1,5 +1,5 @@
 {
-  "name": "@beauty-react-hooks/demo",
+  "name": "@react-beauty/demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,13 +10,13 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@beauty-react-hooks/use-clipboard": "workspace:*",
+    "@react-beauty/use-clipboard": "workspace:*",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@beauty-react-hooks/eslint": "workspace:*",
-    "@beauty-react-hooks/tsconfig": "workspace:*",
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/tsconfig": "workspace:*",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "4.3.4",

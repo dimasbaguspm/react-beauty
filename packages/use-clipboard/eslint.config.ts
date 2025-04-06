@@ -1,2 +1,2 @@
-import { configs } from "@beauty-react-hooks/eslint";
+import { configs } from "@react-beauty/eslint";
 export default configs;

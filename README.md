@@ -1,3 +1,3 @@
-# [WIP] beauty-react-hooks
+# [WIP] react-beauty
 
 A collection of React hooks.
