@@ -1,7 +1,10 @@
 {
   "extends": "@react-beauty/tsconfig/react.json",
+  "compilerOptions": {
+    "module": "ESNext"
+  },
   "include": [
-    "src/**/*"
+    "./src/**/*"
   ],
   "exclude": [
     "node_modules",
