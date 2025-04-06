@@ -43,8 +43,18 @@ jobs:
 
       - name: Lint
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} lint
-      - name: Version
+      - name: Bump Version for Standalone
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
+      - name: Bump Version for UI Module
+        if: ${{ contains(steps.tagName.outputs.package, 'ui-') }}
+        run: |
+          yarn workspace @react-beauty/ui version patch
+
+      - name: Bump Version for Hook Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') }}
+        run: |
+          yarn workspace @react-beauty/use version patch
+
       - name: Bump version
         uses: peter-evans/create-pull-request@v7
         with:
@@ -57,7 +67,19 @@ jobs:
 
       - name: Build
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} build
-      - name: Publish
+      - name: Publish Standalone
         run: |
           yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
           yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} npm publish --tag latest
+
+      - name: Publish UI Module
+        if: ${{ contains(steps.tagName.outputs.package, 'ui-') }}
+        run: |
+          yarn workspace @react-beauty/ui version patch
+          yarn workspace @react-beauty/ui npm publish --tag latest
+
+      - name: Publish Hook Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') }}
+        run: |
+          yarn workspace @react-beauty/use version patch
+          yarn workspace @react-beauty/use npm publish --tag latest
