@@ -1,1 +1,2 @@
-export * from "./base";
+export * from "@testing-library/react";
+export * from "./base.ts";

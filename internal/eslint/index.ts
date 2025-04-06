@@ -1,1 +1,1 @@
-export { configs } from "./base";
+export { configs } from "./base.ts";

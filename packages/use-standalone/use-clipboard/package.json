@@ -12,7 +12,8 @@
   "scripts": {
     "lint": "eslint src",
     "check": "tsc --noEmit",
-    "build": "vite build"
+    "build": "vite build",
+    "test": "vitest run"
   },
   "files": [
     "dist"
@@ -31,8 +32,10 @@
     "@react-beauty/eslint": "workspace:*",
     "@react-beauty/tsconfig": "workspace:*",
     "@react-beauty/vite": "workspace:*",
+    "@react-beauty/vitest": "workspace:*",
     "eslint": "9.24.0",
     "typescript": "5.8.3",
-    "vite": "6.2.0"
+    "vite": "6.2.0",
+    "vitest": "3.1.1"
   }
 }

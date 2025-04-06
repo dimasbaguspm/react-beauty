@@ -1,8 +1,10 @@
-import { ViteUserConfig } from "vitest/config";
-import process from "node:process";
+import type { ViteUserConfig } from "vitest/config";
 
-export const userConfig: ViteUserConfig = {
+export const vitestConfig: ViteUserConfig = {
   test: {
-    setupFiles: [process.cwd() + "./setup-file.ts"],
+    globals: true,
+    environment: "jsdom",
+    include: ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    setupFiles: ["@react-beauty/vitest/src/setup-file.ts"],
   },
 };
