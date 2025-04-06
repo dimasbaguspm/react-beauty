@@ -1,15 +1,10 @@
 {
   "extends": "@react-beauty/tsconfig/react.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "paths": {
-      "@react-react/*": [
-        "../packages/*"
-      ]
-    }
+    "outDir": "dist"
   },
   "include": [
-    "**/*"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",

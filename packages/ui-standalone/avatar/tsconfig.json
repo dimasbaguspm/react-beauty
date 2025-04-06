@@ -1,0 +1,18 @@
+{
+  "extends": "@react-beauty/tsconfig/react.json",
+  "compilerOptions": {
+    "outDir": "dist/types",
+    "allowJs": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": false,
+    "allowArbitraryExtensions": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
