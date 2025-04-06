@@ -1,7 +1,7 @@
 {
   "name": "@react-beauty/use",
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
-  "version": "1.0.1",
+  "version": "1.0.2-0",
   "description": "Collection react hook from @react-beauty",
   "main": "./src/index.ts",
   "publishConfig": {
@@ -38,5 +38,6 @@
     "eslint": "9.24.0",
     "typescript": "5.8.3",
     "vite": "6.2.0"
-  }
+  },
+  "stableVersion": "1.0.1"
 }
