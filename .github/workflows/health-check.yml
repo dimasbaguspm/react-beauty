@@ -32,10 +32,10 @@ jobs:
           yarn
 
       - name: Typecheck
-        run: yarn workspaces foreach --since --parallel run check
+        run: yarn workspaces foreach --all --interlaced --parallel run check
 
       - name: Lint
-        run: yarn workspaces foreach --since --parallel run lint
+        run: yarn workspaces foreach --all --interlaced --parallel run lint
 
       - name: Build
-        run: yarn workspaces foreach --since --parallel run build
+        run: yarn workspaces foreach --all --interlaced --parallel run build
