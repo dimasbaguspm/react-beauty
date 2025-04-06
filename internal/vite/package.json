@@ -1,0 +1,15 @@
+{
+  "name": "@react-beauty/vite",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/tsconfig": "workspace:*",
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "6.2.0",
+    "vite-plugin-dts": "4.5.3"
+  }
+}

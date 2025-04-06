@@ -3,7 +3,7 @@
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
   "version": "1.0.2",
   "description": "Collection user interface avatar from @react-beauty",
-  "main": "src/index.ts",
+  "main": "./src/index.ts",
   "publishConfig": {
     "access": "public",
     "main": "./dist/index.js",
@@ -11,9 +11,10 @@
   },
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint src",
     "check": "tsc --noEmit",
-    "build": "vite build"
+    "build": "vite build",
+    "test": "vitest run"
   },
   "files": [
     "dist"
@@ -32,9 +33,11 @@
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
     "@react-beauty/tsconfig": "workspace:*",
+    "@react-beauty/vite": "workspace:*",
+    "@react-beauty/vitest": "workspace:*",
     "eslint": "9.24.0",
     "typescript": "5.8.3",
     "vite": "6.2.0",
-    "vite-plugin-dts": "4.5.3"
+    "vitest": "3.1.1"
   }
 }

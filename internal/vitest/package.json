@@ -1,0 +1,19 @@
+{
+  "name": "@react-beauty/vitest",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/tsconfig": "workspace:*",
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.3.0",
+    "eslint": "9.24.0",
+    "jsdom": "26.0.0",
+    "typescript": "5.8.3",
+    "vitest": "3.1.1"
+  }
+}

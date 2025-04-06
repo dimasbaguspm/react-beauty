@@ -8,9 +8,6 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    branches:
-      - main
 
 jobs:
   health-check:
@@ -24,7 +21,7 @@ jobs:
       - name: Setup shell
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 23
 
       - name: Install dependencies
         run: |
@@ -32,10 +29,13 @@ jobs:
           yarn
 
       - name: Typecheck
-        run: yarn workspaces foreach --all --interlaced --parallel run check
+        run: yarn workspaces foreach --all --parallel run check
 
       - name: Lint
-        run: yarn workspaces foreach --all --interlaced --parallel run lint
+        run: yarn workspaces foreach --all --parallel run lint
 
       - name: Build
-        run: yarn workspaces foreach --all --interlaced --parallel run build
+        run: yarn workspaces foreach --all --parallel run build
+
+      - name: Test
+        run: yarn workspaces foreach --all --parallel run test

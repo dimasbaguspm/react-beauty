@@ -3,17 +3,17 @@
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
   "version": "1.0.1",
   "description": "use-clipboard",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "publishConfig": {
-    "access": "public",
     "main": "./dist/index.js",
     "type": "./dist/index.d.ts"
   },
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint src",
     "check": "tsc --noEmit",
-    "build": "tsc"
+    "build": "vite build",
+    "test": "vitest run"
   },
   "files": [
     "dist"
@@ -21,8 +21,7 @@
   "keywords": [
     "react",
     "react-hooks",
-    "react-beauty",
-    "use-clipboard"
+    "react-beauty"
   ],
   "license": "MIT",
   "peerDependencies": {
@@ -32,7 +31,11 @@
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
     "@react-beauty/tsconfig": "workspace:*",
+    "@react-beauty/vite": "workspace:*",
+    "@react-beauty/vitest": "workspace:*",
     "eslint": "9.24.0",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vite": "6.2.0",
+    "vitest": "3.1.1"
   }
 }

@@ -9,7 +9,7 @@ export default function App() {
   console.log(copied);
   return (
     <>
-      <AvatarImage />
+      <AvatarImage src="" />
       <h1>Hello, world!</h1>
     </>
   );
