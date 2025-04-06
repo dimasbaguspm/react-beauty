@@ -1,0 +1,22 @@
+{
+  "extends": "@react-beauty/tsconfig/react.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "pretty": false,
+    "sourceMap": false,
+    "declarationMap": false,
+    "paths": {
+      "@beauty-react/*": [
+        "../use-standalone/*"
+      ]
+    }
+  },
+  "files": [
+    "index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
