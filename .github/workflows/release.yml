@@ -43,15 +43,17 @@ jobs:
 
       - name: Lint
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} lint
+
       - name: Bump Version for Standalone
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
+
       - name: Bump Version for UI Module
         if: ${{ contains(steps.tagName.outputs.package, 'ui-') }}
         run: |
           yarn workspace @react-beauty/ui version patch
 
       - name: Bump Version for Hook Module
-        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') }}
+        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
         run: |
           yarn workspace @react-beauty/use version patch
 
@@ -79,7 +81,7 @@ jobs:
           yarn workspace @react-beauty/ui npm publish --tag latest
 
       - name: Publish Hook Module
-        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') }}
+        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
         run: |
           yarn workspace @react-beauty/use version patch
           yarn workspace @react-beauty/use npm publish --tag latest

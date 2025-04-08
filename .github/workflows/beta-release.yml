@@ -52,7 +52,7 @@ jobs:
           yarn workspace @react-beauty/ui version prerelease
 
       - name: Bump Version for Hook Module
-        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') }}
+        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
         run: |
           yarn workspace @react-beauty/use version prerelease
 
@@ -80,7 +80,7 @@ jobs:
           yarn workspace @react-beauty/ui npm publish --tag beta
 
       - name: Publish Hook Module
-        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') }}
+        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
         run: |
           yarn workspace @react-beauty/use version prerelease
           yarn workspace @react-beauty/use npm publish --tag beta
