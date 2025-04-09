@@ -10,6 +10,14 @@
     "type": "./dist/index.d.ts"
   },
   "type": "module",
+  "imports": {
+    "#go/*": {
+      "default": [
+        "./src/lib/*.ts",
+        "./src/lib/*.tsx"
+      ]
+    }
+  },
   "scripts": {
     "lint": "eslint src",
     "check": "tsc --noEmit",
