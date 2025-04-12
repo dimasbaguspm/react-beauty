@@ -1,6 +1,7 @@
-import type { UserConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
+
+import type { UserConfig } from "vite";
 
 const viteConfig = (packageManifest: Record<string, unknown>): UserConfig => ({
   plugins: [
@@ -37,3 +38,4 @@ const viteConfig = (packageManifest: Record<string, unknown>): UserConfig => ({
 });
 
 export { viteConfig };
+export * from "vite";

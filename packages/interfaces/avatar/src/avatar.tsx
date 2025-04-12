@@ -1,4 +1,5 @@
 import { FC, ReactNode } from "react";
+
 import styles from "./avatar.module.css";
 
 export interface AvatarImageProps {

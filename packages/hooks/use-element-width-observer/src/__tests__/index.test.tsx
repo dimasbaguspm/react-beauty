@@ -1,5 +1,5 @@
+import { fireEvent, render } from "@react-beauty/vitest/selector";
 import { act, useRef } from "react";
-import { fireEvent, render } from "@react-beauty/vitest";
 
 import { ElementWidthObserverOptions, useElementWidthObserver } from "..";
 

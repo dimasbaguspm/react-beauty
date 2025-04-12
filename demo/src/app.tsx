@@ -1,3 +1,4 @@
+import { AvatarImage, AvatarInitial } from "@react-beauty/ui-avatar";
 import { useElementWidthObserver } from "@react-beauty/use-element-width-observer";
 import { useRef } from "react";
 
@@ -14,6 +15,11 @@ export default function App() {
 
   return (
     <>
+      <AvatarInitial>
+        <div>Avatar</div>
+      </AvatarInitial>
+      <AvatarImage src="https://cataas.com/cat/says/hello.png" />
+
       <div
         onClick={(e) => {
           e.currentTarget.dispatchEvent(new Event("resize"));

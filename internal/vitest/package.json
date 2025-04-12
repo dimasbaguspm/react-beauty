@@ -8,8 +8,7 @@
   "bin": "../../node_modules/.bin/vitest",
   "exports": {
     ".": "./src/index.ts",
-    "./setting": "./src/base.ts",
-    "./setup-file": "./src/setup-file.ts"
+    "./selector": "./src/selector.ts"
   },
   "scripts": {
     "lint": "eslint --fix",
