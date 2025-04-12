@@ -1,7 +1,6 @@
 {
   "name": "@react-beauty/demo",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -10,19 +9,13 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@react-beauty/react-18": "workspace:*",
     "@react-beauty/ui-avatar": "workspace:*",
-    "@react-beauty/use-clipboard": "workspace:*",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "@react-beauty/use-clipboard": "workspace:*"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
-    "@react-beauty/tsconfig": "workspace:*",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "4.3.4",
-    "eslint": "9.24.0",
-    "typescript": "5.8.3",
-    "vite": "6.2.0"
+    "@react-beauty/tsc": "workspace:*",
+    "@react-beauty/vite": "workspace:*"
   }
 }

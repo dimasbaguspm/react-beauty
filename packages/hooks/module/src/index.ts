@@ -1,3 +1,1 @@
-import { useClipboard } from "@react-beauty/use-clipboard";
-
-export { useClipboard };
+export * from "@react-beauty/use-clipboard";
