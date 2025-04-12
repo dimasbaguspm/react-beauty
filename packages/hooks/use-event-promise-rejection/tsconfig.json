@@ -1,0 +1,11 @@
+{
+  "extends": "@react-beauty/tsc/react.json",
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "__tests__",
+    "dist"
+  ]
+}

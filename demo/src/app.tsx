@@ -1,10 +1,23 @@
 import { AvatarImage, AvatarInitial } from "@react-beauty/ui-avatar";
 import { useElementWidthObserver } from "@react-beauty/use-element-width-observer";
+import { useEventPromiseRejection } from "@react-beauty/use-event-promise-rejection";
 import { useRef } from "react";
 
 export default function App() {
   const divRef = useRef<HTMLDivElement | null>(null);
   const textRef = useRef<HTMLHeadingElement | null>(null);
+
+  /**
+   * Handle unhandled promise rejection
+   */
+  useEventPromiseRejection(window, {
+    onUnhandledRejection: (event) => {
+      console.log("unhandled rejection", event);
+    },
+    onHandledRejection: (event) => {
+      console.log("handled rejection", event);
+    },
+  });
 
   const size = useElementWidthObserver(textRef, {
     parent: divRef,

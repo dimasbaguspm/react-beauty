@@ -779,6 +779,7 @@ __metadata:
     "@react-beauty/ui-avatar": "workspace:*"
     "@react-beauty/use-clipboard": "workspace:*"
     "@react-beauty/use-element-width-observer": "workspace:*"
+    "@react-beauty/use-event-promise-rejection": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   languageName: unknown
   linkType: soft
@@ -875,6 +876,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/use-event-promise-rejection@workspace:*, @react-beauty/use-event-promise-rejection@workspace:packages/hooks/use-event-promise-rejection":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/use-event-promise-rejection@workspace:packages/hooks/use-event-promise-rejection"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/use@workspace:packages/hooks/module":
   version: 0.0.0-use.local
   resolution: "@react-beauty/use@workspace:packages/hooks/module"
@@ -883,6 +898,7 @@ __metadata:
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/use-clipboard": "workspace:*"
     "@react-beauty/use-element-width-observer": "workspace:*"
+    "@react-beauty/use-event-promise-rejection": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
