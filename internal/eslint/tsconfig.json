@@ -1,7 +1,7 @@
 {
   "extends": "@react-beauty/tsc/react.json",
-  "files": [
-    "index.ts"
+  "include": [
+    "./src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
