@@ -1,12 +1,13 @@
 {
-  "name": "@react-beauty/use",
-  "description": "@react-beauty hook collection",
+  "name": "@react-beauty/use-event-promise-rejection",
+  "description": "use-event-promise-rejection",
   "license": "MIT",
   "version": "1.0.0",
   "stableVersion": "1.0.0",
   "keywords": [
     "react",
-    "@react-beauty"
+    "@react-beauty",
+    "use-event-promise-rejection"
   ],
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
   "type": "module",
@@ -14,8 +15,7 @@
     "dist"
   ],
   "exports": {
-    ".": "./src/index.ts",
-    "./*": "./src/*.ts"
+    ".": "./src/index.ts"
   },
   "publishConfig": {
     "access": "public",
@@ -25,16 +25,12 @@
   "scripts": {
     "lint": "eslint src",
     "check": "tsc --noEmit",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "@react-beauty/use-clipboard": "workspace:*",
-    "@react-beauty/use-element-width-observer": "workspace:*",
-    "@react-beauty/use-event-promise-rejection": "workspace:*"
+    "build": "vite build",
+    "test": "vitest run"
   },
   "peerDependencies": {
     "@types/react": "*",
-    "react": "^16.8 || ^17.0 || ^18.0"
+    "react": "^18.0"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",

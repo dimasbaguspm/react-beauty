@@ -12,7 +12,8 @@
     "@react-beauty/react-18": "workspace:*",
     "@react-beauty/ui-avatar": "workspace:*",
     "@react-beauty/use-clipboard": "workspace:*",
-    "@react-beauty/use-element-width-observer": "workspace:*"
+    "@react-beauty/use-element-width-observer": "workspace:*",
+    "@react-beauty/use-event-promise-rejection": "workspace:*"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
