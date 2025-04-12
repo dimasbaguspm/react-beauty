@@ -1,12 +1,13 @@
 {
-  "name": "@react-beauty/use",
-  "description": "@react-beauty hook collection",
+  "name": "@react-beauty/use-element-width-observer",
+  "description": "use-element-width-observer",
   "license": "MIT",
   "version": "1.0.0",
   "stableVersion": "1.0.0",
   "keywords": [
     "react",
-    "@react-beauty"
+    "@react-beauty",
+    "use-element-width-observer"
   ],
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
   "type": "module",
@@ -25,15 +26,12 @@
   "scripts": {
     "lint": "eslint src",
     "check": "tsc --noEmit",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "@react-beauty/use-clipboard": "workspace:*",
-    "@react-beauty/use-element-width-observer": "workspace:*"
+    "build": "vite build",
+    "test": "vitest run"
   },
   "peerDependencies": {
     "@types/react": "*",
-    "react": "^16.8 || ^17.0 || ^18.0"
+    "react": "^18.0"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",

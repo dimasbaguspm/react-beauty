@@ -1,5 +1,5 @@
 import { defineConfig } from "vitest/config";
-import { vitestConfig } from "@react-beauty/vitest";
+import { vitestConfig } from "@react-beauty/vitest/setting";
 import packageManifest from "./package.json";
 
 const { name } = packageManifest ?? {};
