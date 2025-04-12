@@ -1,4 +1,4 @@
-import { render } from "@react-beauty/vitest";
+import { render } from "@react-beauty/vitest/selector";
 import { AvatarInitial } from "../avatar";
 
 describe("Avatar", () => {

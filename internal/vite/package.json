@@ -6,6 +6,9 @@
   "type": "module",
   "main": "./src/index.ts",
   "bin": "../../node_modules/.bin/vite",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "lint": "eslint --fix",
     "check": "tsc --noEmit"

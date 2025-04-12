@@ -15,8 +15,7 @@
     "dist"
   ],
   "exports": {
-    ".": "./src/index.ts",
-    "./*": "./src/*.ts"
+    ".": "./src/index.ts"
   },
   "publishConfig": {
     "access": "public",

@@ -37,3 +37,4 @@ const viteConfig = (packageManifest: Record<string, unknown>): UserConfig => ({
 });
 
 export { viteConfig };
+export * from "vite";
