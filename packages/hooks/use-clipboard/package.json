@@ -1,43 +1,41 @@
 {
   "name": "@react-beauty/use-clipboard",
-  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
-  "version": "1.0.2-0",
   "description": "use-clipboard",
-  "main": "./src/index.ts",
+  "license": "MIT",
+  "version": "1.0.0",
+  "stableVersion": "1.0.0",
+  "keywords": [
+    "react",
+    "@react-beauty"
+  ],
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
   "publishConfig": {
     "access": "public",
     "main": "./dist/index.js",
     "type": "./dist/index.d.ts"
   },
-  "type": "module",
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint --fix",
     "check": "tsc --noEmit",
     "build": "vite build",
     "test": "vitest run"
   },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "react",
-    "react-hooks",
-    "react-beauty"
-  ],
-  "license": "MIT",
   "peerDependencies": {
     "@types/react": "*",
-    "react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
+    "react": "^16.8 || ^17.0 || ^18.0"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
-    "@react-beauty/tsconfig": "workspace:*",
+    "@react-beauty/tsc": "workspace:*",
     "@react-beauty/vite": "workspace:*",
-    "@react-beauty/vitest": "workspace:*",
-    "eslint": "9.24.0",
-    "typescript": "5.8.3",
-    "vite": "6.2.0",
-    "vitest": "3.1.1"
-  },
-  "stableVersion": "1.0.1"
+    "@react-beauty/vitest": "workspace:*"
+  }
 }

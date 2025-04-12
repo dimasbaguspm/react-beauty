@@ -1,5 +1,5 @@
 {
-  "extends": "@react-beauty/tsconfig/react.json",
+  "extends": "@react-beauty/tsc/react.json",
   "include": [
     "./src/**/*"
   ],

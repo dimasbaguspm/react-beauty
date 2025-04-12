@@ -774,17 +774,11 @@ __metadata:
   resolution: "@react-beauty/demo@workspace:demo"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/react-18": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
     "@react-beauty/use-clipboard": "workspace:*"
-    "@types/react": "npm:^19.0.10"
-    "@types/react-dom": "npm:^19.0.4"
-    "@vitejs/plugin-react": "npm:4.3.4"
-    eslint: "npm:9.24.0"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    typescript: "npm:5.8.3"
-    vite: "npm:6.2.0"
+    "@react-beauty/vite": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -793,18 +787,33 @@ __metadata:
   resolution: "@react-beauty/eslint@workspace:internal/eslint"
   dependencies:
     "@eslint/js": "npm:9.24.0"
-    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    eslint: "npm:9.24.0"
     jiti: "npm:2.4.2"
-    typescript: "npm:5.8.3"
     typescript-eslint: "npm:8.29.0"
-  peerDependencies:
-    eslint: ">=9.21"
+  bin:
+    eslint: ../../node_modules/.bin/eslint
   languageName: unknown
   linkType: soft
 
-"@react-beauty/tsconfig@workspace:*, @react-beauty/tsconfig@workspace:internal/tsconfig":
+"@react-beauty/react-18@workspace:*, @react-beauty/react-18@workspace:internal/react-18":
   version: 0.0.0-use.local
-  resolution: "@react-beauty/tsconfig@workspace:internal/tsconfig"
+  resolution: "@react-beauty/react-18@workspace:internal/react-18"
+  dependencies:
+    "@types/react": "npm:18.3.1"
+    "@types/react-dom": "npm:18.3.1"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/tsc@workspace:*, @react-beauty/tsc@workspace:internal/tsc":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/tsc@workspace:internal/tsc"
+  dependencies:
+    typescript: "npm:5.8.2"
+  bin:
+    tsc: ../../node_modules/.bin/tsc
   languageName: unknown
   linkType: soft
 
@@ -813,16 +822,12 @@ __metadata:
   resolution: "@react-beauty/ui-avatar@workspace:packages/interfaces/avatar"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
-    eslint: "npm:9.24.0"
-    typescript: "npm:5.8.3"
-    vite: "npm:6.2.0"
-    vitest: "npm:3.1.1"
   peerDependencies:
     "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
@@ -831,15 +836,12 @@ __metadata:
   resolution: "@react-beauty/ui@workspace:packages/interfaces/module"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
     "@react-beauty/vite": "workspace:*"
-    eslint: "npm:9.24.0"
-    typescript: "npm:5.8.3"
-    vite: "npm:6.2.0"
   peerDependencies:
     "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
@@ -848,16 +850,12 @@ __metadata:
   resolution: "@react-beauty/use-clipboard@workspace:packages/hooks/use-clipboard"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
-    eslint: "npm:9.24.0"
-    typescript: "npm:5.8.3"
-    vite: "npm:6.2.0"
-    vitest: "npm:3.1.1"
   peerDependencies:
     "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
@@ -866,15 +864,12 @@ __metadata:
   resolution: "@react-beauty/use@workspace:packages/hooks/module"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsconfig": "workspace:*"
-    "@react-beauty/use-clipboard": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@react-beauty/vite": "workspace:*"
-    eslint: "npm:9.24.0"
-    typescript: "npm:5.8.3"
-    vite: "npm:6.2.0"
+    "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
@@ -883,10 +878,12 @@ __metadata:
   resolution: "@react-beauty/vite@workspace:internal/vite"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@vitejs/plugin-react": "npm:4.3.4"
     vite: "npm:6.2.0"
     vite-plugin-dts: "npm:4.5.3"
+  bin:
+    vite: ../../node_modules/.bin/vite
   languageName: unknown
   linkType: soft
 
@@ -895,14 +892,14 @@ __metadata:
   resolution: "@react-beauty/vitest@workspace:internal/vitest"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsconfig": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@testing-library/dom": "npm:10.4.0"
     "@testing-library/jest-dom": "npm:6.6.3"
     "@testing-library/react": "npm:16.3.0"
-    eslint: "npm:9.24.0"
     jsdom: "npm:26.0.0"
-    typescript: "npm:5.8.3"
     vitest: "npm:3.1.1"
+  bin:
+    vitest: ../../node_modules/.bin/vitest
   languageName: unknown
   linkType: soft
 
@@ -1240,21 +1237,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.0.4":
-  version: 19.1.1
-  resolution: "@types/react-dom@npm:19.1.1"
-  peerDependencies:
-    "@types/react": ^19.0.0
-  checksum: 10c0/83833af502f501a372b370fdeb7cf933dfc8780903fe0e0d6e6a76b4ea3adbe5316159a62a0388d8afdd409afd76a40959e2ce82fbb788f57d32c786a63601ee
+"@types/prop-types@npm:*":
+  version: 15.7.14
+  resolution: "@types/prop-types@npm:15.7.14"
+  checksum: 10c0/1ec775160bfab90b67a782d735952158c7e702ca4502968aa82565bd8e452c2de8601c8dfe349733073c31179116cf7340710160d3836aa8a1ef76d1532893b1
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.0.10":
-  version: 19.1.0
-  resolution: "@types/react@npm:19.1.0"
+"@types/react-dom@npm:18.3.1":
+  version: 18.3.1
+  resolution: "@types/react-dom@npm:18.3.1"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/8b416551c60bb6bd8ec10e198c957910cfb271bc3922463040b0d57cf4739cdcd24b13224f8d68f10318926e1ec3cd69af0af79f0291b599a992f8c80d47f1eb
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*":
+  version: 19.1.1
+  resolution: "@types/react@npm:19.1.1"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/632fd20ee176e55801a61c5f854141b043571a3e363ef106b047b766a813a12735cbb37abb3d61d126346979f530f2ed269a60c8ef3cdee54e5e9fe4174e5dad
+  checksum: 10c0/d22417857460ade4250806135a3d1e2558737a7ae76f120f88afbc6419ab04312977a5208a70d4f85059b9493c0f1f16c9ba1483aa8ea1dad581da666c95773e
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:18.3.1":
+  version: 18.3.1
+  resolution: "@types/react@npm:18.3.1"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/18d856c12a4ec93f3cda2d58ef3d77a9480818afd3af895f812896fb82cfca1f35a692ab1add4ce826a4eb58a071624c7d1c8c6c4ccfb81c100d2916dc607614
   languageName: node
   linkType: hard
 
@@ -4292,16 +4306,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.8.3":
-  version: 5.8.3
-  resolution: "typescript@npm:5.8.3"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 10c0/5f8bb01196e542e64d44db3d16ee0e4063ce4f3e3966df6005f2588e86d91c03e1fb131c2581baf0fb65ee79669eea6e161cd448178986587e9f6844446dbb48
-  languageName: node
-  linkType: hard
-
 "typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>":
   version: 5.8.2
   resolution: "typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"
@@ -4309,16 +4313,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10c0/5448a08e595cc558ab321e49d4cac64fb43d1fa106584f6ff9a8d8e592111b373a995a1d5c7f3046211c8a37201eb6d0f1566f15cdb7a62a5e3be01d087848e2
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>":
-  version: 5.8.3
-  resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 10c0/39117e346ff8ebd87ae1510b3a77d5d92dae5a89bde588c747d25da5c146603a99c8ee588c7ef80faaf123d89ed46f6dbd918d534d641083177d5fac38b8a1cb
   languageName: node
   linkType: hard
 

@@ -1,23 +1,25 @@
 {
   "name": "react-beauty",
+  "homepage": "https://github.com/dimasbaguspm/react-beauty",
   "description": "Collection from beauty react web hooks",
-  "version": "1.0.0",
-  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com> (https://dimasbaguspm.github.io)",
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
   "keywords": [
     "react",
-    "react-hooks",
-    "react-beauty",
+    "@react-beauty",
     "dimasbaguspm"
   ],
-  "homepage": "https://github.com/dimasbaguspm/react-beauty",
-  "license": "MIT",
-  "type": "module",
+  "packageManager": "yarn@4.8.1",
   "workspaces": [
     "packages/**/*",
     "internal/*",
     "demo"
   ],
-  "packageManager": "yarn@4.8.1",
+  "engines": {
+    "node": "^23.0.0"
+  },
+  "os": [
+    "linux"
+  ],
   "devDependencies": {
     "husky": "9.1.7"
   }
