@@ -778,6 +778,7 @@ __metadata:
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
     "@react-beauty/use-clipboard": "workspace:*"
+    "@react-beauty/use-element-width-observer": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   languageName: unknown
   linkType: soft
@@ -859,12 +860,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/use-element-width-observer@workspace:*, @react-beauty/use-element-width-observer@workspace:packages/hooks/use-element-width-observer":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/use-element-width-observer@workspace:packages/hooks/use-element-width-observer"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/use@workspace:packages/hooks/module":
   version: 0.0.0-use.local
   resolution: "@react-beauty/use@workspace:packages/hooks/module"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/use-clipboard": "workspace:*"
+    "@react-beauty/use-element-width-observer": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
@@ -1234,6 +1251,15 @@ __metadata:
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:22.13.14":
+  version: 22.13.14
+  resolution: "@types/node@npm:22.13.14"
+  dependencies:
+    undici-types: "npm:~6.20.0"
+  checksum: 10c0/fa2ab5b8277bfbcc86c42e46a3ea9871b0d559894cc9d955685d17178c9499f0b1bf03d1d1ea8d92ef2dda818988f4035acb8abf9dc15423a998fa56173ab804
   languageName: node
   linkType: hard
 
@@ -3701,6 +3727,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-beauty@workspace:."
   dependencies:
+    "@types/node": "npm:22.13.14"
     husky: "npm:9.1.7"
   languageName: unknown
   linkType: soft
@@ -4320,6 +4347,13 @@ __metadata:
   version: 1.5.4
   resolution: "ufo@npm:1.5.4"
   checksum: 10c0/b5dc4dc435c49c9ef8890f1b280a19ee4d0954d1d6f9ab66ce62ce64dd04c7be476781531f952a07c678d51638d02ad4b98e16237be29149295b0f7c09cda765
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
   languageName: node
   linkType: hard
 

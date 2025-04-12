@@ -23,7 +23,7 @@
     "type": "./dist/index.d.ts"
   },
   "scripts": {
-    "lint": "eslint --fix",
+    "lint": "eslint src",
     "check": "tsc --noEmit",
     "build": "vite build",
     "test": "vitest run"
