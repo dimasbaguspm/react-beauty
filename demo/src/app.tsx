@@ -1,4 +1,5 @@
 import { AvatarImage, AvatarInitial } from "@react-beauty/ui-avatar";
+import { Icon } from "@react-beauty/ui-icon";
 import { useElementWidthObserver } from "@react-beauty/use-element-width-observer";
 import { useEventPromiseRejection } from "@react-beauty/use-event-promise-rejection";
 import { useRef } from "react";
@@ -32,6 +33,7 @@ export default function App() {
         <div>Avatar</div>
       </AvatarInitial>
       <AvatarImage src="https://cataas.com/cat/says/hello.png" />
+      <Icon name="arrowsChevronDown" />
 
       <div
         onClick={(e) => {

@@ -1,0 +1,45 @@
+{
+  "name": "@react-beauty/ui-icon",
+  "description": "ui-icon",
+  "license": "MIT",
+  "version": "1.0.0",
+  "stableVersion": "1.0.0",
+  "keywords": [
+    "react",
+    "@react-beauty",
+    "ui-icon"
+  ],
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": [
+      "./src/*.ts",
+      "./src/*.tsx"
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js",
+    "type": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "check": "tsc --noEmit",
+    "build": "vite build",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": " ^18.0"
+  },
+  "devDependencies": {
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/tsc": "workspace:*",
+    "@react-beauty/vite": "workspace:*",
+    "@react-beauty/vitest": "workspace:*"
+  }
+}
