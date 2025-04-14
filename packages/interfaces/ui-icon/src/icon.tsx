@@ -1,19 +1,27 @@
-import { FC } from "react";
+import { forwardRef } from "react";
 
 import { iconSets } from "./__assets__";
+import styles from "./icon.module.css";
+
+import type { SVGProps } from "react";
 
 export type IconName = keyof typeof iconSets;
+export type IconSize = "small" | "medium" | "large";
 
-export interface IconProps {
+export interface IconProps extends SVGProps<SVGSVGElement> {
   name: IconName;
+  size?: IconSize;
 }
 
-export const Icon: FC<IconProps> = ({ name }) => {
-  const Src = iconSets[name];
+export const Icon = forwardRef<SVGSVGElement, IconProps>((props, ref) => {
+  const { name, size = "medium", ...rest } = props ?? {};
+  const Component = iconSets[name];
 
-  if (!Src) {
+  if (!Component) {
     throw new Error(`Unknown icon name: ${name}`);
   }
 
-  return <Src />;
-};
+  return (
+    <Component {...rest} ref={ref} data-size={size} className={styles.uiIcon} />
+  );
+});
