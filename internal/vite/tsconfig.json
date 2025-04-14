@@ -1,8 +1,5 @@
 {
   "extends": "@react-beauty/tsc/react.json",
-  "compilerOptions": {
-    "module": "ESNext"
-  },
   "include": [
     "./src/**/*"
   ],
