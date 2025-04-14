@@ -856,6 +856,7 @@ __metadata:
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
+    "@react-beauty/ui-icon": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   peerDependencies:
     "@types/react": "*"
