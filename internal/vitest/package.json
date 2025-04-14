@@ -11,7 +11,7 @@
     "./selector": "./src/selector.ts"
   },
   "scripts": {
-    "lint": "eslint --fix",
+    "lint": "eslint src",
     "check": "tsc --noEmit"
   },
   "devDependencies": {

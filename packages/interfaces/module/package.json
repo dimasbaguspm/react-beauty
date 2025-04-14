@@ -32,7 +32,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@react-beauty/ui-avatar": "workspace:*"
+    "@react-beauty/ui-avatar": "workspace:*",
+    "@react-beauty/ui-icon": "workspace:*"
   },
   "peerDependencies": {
     "@types/react": "*",

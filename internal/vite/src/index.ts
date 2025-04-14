@@ -1,5 +1,6 @@
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
+import svgr from "vite-plugin-svgr";
 
 import type { UserConfig } from "vite";
 
@@ -8,6 +9,7 @@ const viteConfig = (packageManifest: Record<string, unknown>): UserConfig => ({
     react({
       exclude: ["**/*.stories.tsx", "**/*.test.tsx"],
     }),
+    svgr(),
     dts({
       exclude: ["node_modules/**", "dist", "**/__tests__/**"],
     }),
