@@ -1,4 +1,4 @@
-import { RefObject, useCallback, useSyncExternalStore } from "react";
+import { RefObject, useCallback, useMemo, useSyncExternalStore } from "react";
 
 /**
  * the type of the node element width observer in pixels
@@ -80,19 +80,23 @@ export const useElementWidthObserver = (
     [onResize],
   );
 
-  const parentEl = getTriggerParentNode(parent);
+  const parentEl = useMemo(() => getTriggerParentNode(parent), [parent]);
+  const abortController = useMemo(() => new AbortController(), []);
 
   /**
    * subscriber to the resize event
    */
   const subscriber = useCallback(
     (onStoreChange: VoidFunction) => {
-      parentEl?.addEventListener("resize", handleOnResize(onStoreChange));
+      parentEl?.addEventListener("resize", handleOnResize(onStoreChange), {
+        signal: abortController.signal,
+      });
+
       return () => {
-        parentEl?.removeEventListener("resize", handleOnResize(onStoreChange));
+        abortController.abort();
       };
     },
-    [handleOnResize, parentEl],
+    [handleOnResize, parentEl, abortController],
   );
 
   return useSyncExternalStore<ElementWidthObserver>(subscriber, getSnapshot);
