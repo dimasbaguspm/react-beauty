@@ -11,7 +11,7 @@ const configs = tseslint.config(
     plugins: {
       import: importPlugin,
     },
-    ignores: ["eslint.config.mjs"],
+    ignores: ["eslint.config.mjs", "**/__assets__/"],
     rules: {
       "import/no-cycle": "error",
       "import/exports-last": "error",
