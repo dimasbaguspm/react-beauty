@@ -769,19 +769,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-beauty/components@workspace:*, @react-beauty/components@workspace:packages/components/module":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/components@workspace:packages/components/module"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/flex-container": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/demo@workspace:demo":
   version: 0.0.0-use.local
   resolution: "@react-beauty/demo@workspace:demo"
   dependencies:
+    "@react-beauty/components": "workspace:*"
     "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/flex-container": "workspace:*"
+    "@react-beauty/hooks": "workspace:*"
+    "@react-beauty/interfaces": "workspace:*"
     "@react-beauty/react-18": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
-    "@react-beauty/ui-avatar": "workspace:*"
-    "@react-beauty/ui-icon": "workspace:*"
-    "@react-beauty/use-clipboard": "workspace:*"
-    "@react-beauty/use-element-width-observer": "workspace:*"
-    "@react-beauty/use-event-promise-rejection": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   languageName: unknown
   linkType: soft
@@ -809,6 +821,38 @@ __metadata:
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/hooks@workspace:*, @react-beauty/hooks@workspace:packages/hooks/module":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/hooks@workspace:packages/hooks/module"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/use-clipboard": "workspace:*"
+    "@react-beauty/use-element-width-observer": "workspace:*"
+    "@react-beauty/use-event-promise-rejection": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/interfaces@workspace:*, @react-beauty/interfaces@workspace:packages/interfaces/module":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/interfaces@workspace:packages/interfaces/module"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-avatar": "workspace:*"
+    "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
   peerDependencies:
     "@types/react": "*"
     react: ^16.8 || ^17.0 || ^18.0
@@ -864,21 +908,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@react-beauty/ui@workspace:packages/interfaces/module":
-  version: 0.0.0-use.local
-  resolution: "@react-beauty/ui@workspace:packages/interfaces/module"
-  dependencies:
-    "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsc": "workspace:*"
-    "@react-beauty/ui-avatar": "workspace:*"
-    "@react-beauty/ui-icon": "workspace:*"
-    "@react-beauty/vite": "workspace:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0
-  languageName: unknown
-  linkType: soft
-
 "@react-beauty/use-clipboard@workspace:*, @react-beauty/use-clipboard@workspace:packages/hooks/use-clipboard":
   version: 0.0.0-use.local
   resolution: "@react-beauty/use-clipboard@workspace:packages/hooks/use-clipboard"
@@ -918,23 +947,6 @@ __metadata:
   peerDependencies:
     "@types/react": "*"
     react: ^18.0
-  languageName: unknown
-  linkType: soft
-
-"@react-beauty/use@workspace:packages/hooks/module":
-  version: 0.0.0-use.local
-  resolution: "@react-beauty/use@workspace:packages/hooks/module"
-  dependencies:
-    "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsc": "workspace:*"
-    "@react-beauty/use-clipboard": "workspace:*"
-    "@react-beauty/use-element-width-observer": "workspace:*"
-    "@react-beauty/use-event-promise-rejection": "workspace:*"
-    "@react-beauty/vite": "workspace:*"
-    "@react-beauty/vitest": "workspace:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
