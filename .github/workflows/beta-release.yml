@@ -43,18 +43,24 @@ jobs:
 
       - name: Lint
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} lint
+
       - name: Bump Version for Standalone
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version prerelease
 
-      - name: Bump Version for UI Module
-        if: ${{ contains(steps.tagName.outputs.package, 'ui-') }}
+      - name: Bump Version for Interfaces Module
+        if: ${{ contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
         run: |
-          yarn workspace @react-beauty/ui version prerelease
+          yarn workspace @react-beauty/interfaces version prerelease
 
       - name: Bump Version for Hook Module
-        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && contains(steps.tagName.outputs.package, 'use-') }}
         run: |
-          yarn workspace @react-beauty/use version prerelease
+          yarn workspace @react-beauty/hooks version prerelease
+
+      - name: Bump Version for Components Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
+        run: |
+          yarn workspace @react-beauty/components version prerelease
 
       - name: Bump version
         uses: peter-evans/create-pull-request@v7
@@ -66,21 +72,30 @@ jobs:
           branch: package-version-beta/${{ steps.tagName.outputs.package }}
           base: main
 
-      - name: Build
-        run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} build
       - name: Publish Standalone
         run: |
+          yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} build
           yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version prerelease
           yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} npm publish --tag beta
 
-      - name: Publish UI Module
-        if: ${{ contains(steps.tagName.outputs.package, 'ui-') }}
+      - name: Publish Interfaces Module
+        if: ${{ contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
         run: |
-          yarn workspace @react-beauty/ui version prerelease
-          yarn workspace @react-beauty/ui npm publish --tag beta
+          yarn workspace @react-beauty/interfaces build
+          yarn workspace @react-beauty/interfaces version prerelease
+          yarn workspace @react-beauty/interfaces npm publish --tag beta
 
-      - name: Publish Hook Module
-        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
+      - name: Publish Hooks Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && contains(steps.tagName.outputs.package, 'use-') }}
+
         run: |
-          yarn workspace @react-beauty/use version prerelease
-          yarn workspace @react-beauty/use npm publish --tag beta
+          yarn workspace @react-beauty/hooks build
+          yarn workspace @react-beauty/hooks version prerelease
+          yarn workspace @react-beauty/hooks npm publish --tag beta
+
+      - name: Publish Components Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
+        run: |
+          yarn workspace @react-beauty/components build
+          yarn workspace @react-beauty/components version prerelease
+          yarn workspace @react-beauty/components npm publish --tag beta

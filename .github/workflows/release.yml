@@ -1,4 +1,4 @@
-name: Release
+name: Beta Release
 
 on:
   release:
@@ -45,43 +45,57 @@ jobs:
         run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} lint
 
       - name: Bump Version for Standalone
-        run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
+        run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version patch
 
-      - name: Bump Version for UI Module
-        if: ${{ contains(steps.tagName.outputs.package, 'ui-') }}
+      - name: Bump Version for Interfaces Module
+        if: ${{ contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
         run: |
-          yarn workspace @react-beauty/ui version patch
+          yarn workspace @react-beauty/interfaces version patch
 
       - name: Bump Version for Hook Module
-        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && contains(steps.tagName.outputs.package, 'use-') }}
         run: |
-          yarn workspace @react-beauty/use version patch
+          yarn workspace @react-beauty/hooks version patch
+
+      - name: Bump Version for Components Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
+        run: |
+          yarn workspace @react-beauty/components version patch
 
       - name: Bump version
         uses: peter-evans/create-pull-request@v7
         with:
           commit-message: |
-            chore: update package ${{ steps.tagName.outputs.package }} version to ${{ steps.tagName.outputs.version }}
+            chore: update  package ${{ steps.tagName.outputs.package }} version
           title: |
-            chore: update package ${{ steps.tagName.outputs.package }} version to ${{ steps.tagName.outputs.version }}
-          branch: package-version/${{ steps.tagName.outputs.package }}
+            chore: update package ${{ steps.tagName.outputs.package }} version
+          branch: package-version-beta/${{ steps.tagName.outputs.package }}
           base: main
 
-      - name: Build
-        run: yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} build
       - name: Publish Standalone
         run: |
-          yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version ${{ steps.tagName.outputs.version }}
+          yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} build
+          yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} version patch
           yarn workspace @react-beauty/${{ steps.tagName.outputs.package }} npm publish --tag latest
 
-      - name: Publish UI Module
-        if: ${{ contains(steps.tagName.outputs.package, 'ui-') }}
+      - name: Publish Interfaces Module
+        if: ${{ contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
         run: |
-          yarn workspace @react-beauty/ui version patch
-          yarn workspace @react-beauty/ui npm publish --tag latest
+          yarn workspace @react-beauty/interfaces build
+          yarn workspace @react-beauty/interfaces version patch
+          yarn workspace @react-beauty/interfaces npm publish --tag latest
 
-      - name: Publish Hook Module
-        if: ${{ contains(steps.tagName.outputs.package, 'use-') }}
+      - name: Publish Hooks Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && contains(steps.tagName.outputs.package, 'use-') }}
+
         run: |
-          yarn workspace @react-beauty/use version patch
-          yarn workspace @react-beauty/use npm publish --tag latest
+          yarn workspace @react-beauty/hooks build
+          yarn workspace @react-beauty/hooks version patch
+          yarn workspace @react-beauty/hooks npm publish --tag latest
+
+      - name: Publish Components Module
+        if: ${{ !contains(steps.tagName.outputs.package, 'ui-') && !contains(steps.tagName.outputs.package, 'use-') }}
+        run: |
+          yarn workspace @react-beauty/components build
+          yarn workspace @react-beauty/components version patch
+          yarn workspace @react-beauty/components npm publish --tag latest
