@@ -1,12 +1,13 @@
 {
-  "name": "@react-beauty/interfaces",
-  "description": "@react-beauty user interface collection",
+  "name": "@react-beauty/components",
+  "description": "@react-beauty components collection",
   "license": "MIT",
   "version": "1.0.0",
   "stableVersion": "1.0.0",
   "keywords": [
     "react",
-    "@react-beauty"
+    "@react-beauty",
+    "components"
   ],
   "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
   "type": "module",
@@ -15,10 +16,7 @@
   ],
   "exports": {
     ".": "./src/index.ts",
-    "./*": [
-      "./src/*.ts",
-      "./src/*.tsx"
-    ]
+    "./*": "./src/*.ts"
   },
   "publishConfig": {
     "access": "public",
@@ -31,8 +29,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@react-beauty/ui-avatar": "workspace:*",
-    "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/flex-container": "workspace:*"
   },
   "peerDependencies": {
     "@types/react": "*",
@@ -41,6 +38,7 @@
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
     "@react-beauty/tsc": "workspace:*",
-    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vite": "workspace:*",
+    "@react-beauty/vitest": "workspace:*"
   }
 }

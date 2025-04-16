@@ -1,10 +1,10 @@
-/* eslint-disable */
+import { FlexContainer } from "@react-beauty/components";
+import {
+  useElementWidthObserver,
+  useEventPromiseRejection,
+} from "@react-beauty/hooks";
+import { AvatarImage, AvatarInitial, Icon } from "@react-beauty/interfaces";
 import { useRef } from "react";
-import { FlexContainer } from "@react-beauty/flex-container";
-import { AvatarImage, AvatarInitial } from "@react-beauty/ui-avatar";
-import { Icon } from "@react-beauty/ui-icon";
-import { useElementWidthObserver } from "@react-beauty/use-element-width-observer";
-import { useEventPromiseRejection } from "@react-beauty/use-event-promise-rejection";
 
 export default function App() {
   const divRef = useRef<HTMLDivElement | null>(null);

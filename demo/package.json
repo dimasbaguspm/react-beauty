@@ -9,13 +9,10 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@react-beauty/flex-container": "workspace:*",
-    "@react-beauty/react-18": "workspace:*",
-    "@react-beauty/ui-avatar": "workspace:*",
-    "@react-beauty/ui-icon": "workspace:*",
-    "@react-beauty/use-clipboard": "workspace:*",
-    "@react-beauty/use-element-width-observer": "workspace:*",
-    "@react-beauty/use-event-promise-rejection": "workspace:*"
+    "@react-beauty/components": "workspace:*",
+    "@react-beauty/hooks": "workspace:*",
+    "@react-beauty/interfaces": "workspace:*",
+    "@react-beauty/react-18": "workspace:*"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
