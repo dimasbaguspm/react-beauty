@@ -1,8 +1,10 @@
+/* eslint-disable */
+import { useRef } from "react";
+import { FlexContainer } from "@react-beauty/flex-container";
 import { AvatarImage, AvatarInitial } from "@react-beauty/ui-avatar";
 import { Icon } from "@react-beauty/ui-icon";
 import { useElementWidthObserver } from "@react-beauty/use-element-width-observer";
 import { useEventPromiseRejection } from "@react-beauty/use-event-promise-rejection";
-import { useRef } from "react";
 
 export default function App() {
   const divRef = useRef<HTMLDivElement | null>(null);
@@ -28,7 +30,7 @@ export default function App() {
   });
 
   return (
-    <>
+    <FlexContainer as="main" direction="column" gap="2">
       <AvatarInitial>
         <div>Avatar</div>
       </AvatarInitial>
@@ -53,6 +55,6 @@ export default function App() {
       <div>
         <h1 ref={textRef}>Hello, world! - {size}</h1>
       </div>
-    </>
+    </FlexContainer>
   );
 }

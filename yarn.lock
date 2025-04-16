@@ -774,6 +774,7 @@ __metadata:
   resolution: "@react-beauty/demo@workspace:demo"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/flex-container": "workspace:*"
     "@react-beauty/react-18": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
@@ -797,6 +798,20 @@ __metadata:
     typescript-eslint: "npm:8.29.1"
   bin:
     eslint: ../../node_modules/.bin/eslint
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/flex-container@workspace:*, @react-beauty/flex-container@workspace:packages/components/flex-container":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/flex-container@workspace:packages/components/flex-container"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
