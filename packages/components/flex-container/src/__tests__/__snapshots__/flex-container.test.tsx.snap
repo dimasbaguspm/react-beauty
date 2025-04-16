@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FlexContainer > should work as expected 1`] = `
+<DocumentFragment>
+  <main
+    class="_flex_c22e9d "
+    data-align="center"
+    data-direction="row"
+    data-gap="1"
+    data-justify="center"
+  >
+    <div>
+      1
+    </div>
+    <div>
+      2
+    </div>
+    <div>
+      3
+    </div>
+  </main>
+</DocumentFragment>
+`;
