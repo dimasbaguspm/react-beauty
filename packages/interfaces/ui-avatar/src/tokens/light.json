@@ -1,0 +1,26 @@
+{
+  "dimensions": {
+    "$type": "dimension",
+    "10": {
+      "$value": "40px"
+    },
+    "11": {
+      "$value": "44px"
+    },
+    "12": {
+      "$value": "48px"
+    },
+    "13": {
+      "$value": "52px"
+    },
+    "14": {
+      "$value": "56px"
+    },
+    "15": {
+      "$value": "60px"
+    },
+    "max": {
+      "$value": "9999px"
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import type { Preview } from "@storybook/react";
 
+import "@react-beauty/ui-theme-manager/dark.css";
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -12,4 +14,3 @@ const preview: Preview = {
 };
 
 export default preview;
-
