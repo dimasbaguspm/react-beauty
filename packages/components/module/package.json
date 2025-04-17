@@ -26,7 +26,7 @@
   "scripts": {
     "lint": "eslint src",
     "check": "tsc --noEmit",
-    "build": "vite build"
+    "build": "vite build --configLoader runner"
   },
   "dependencies": {
     "@react-beauty/flex-container": "workspace:*"
