@@ -29,13 +29,13 @@ jobs:
           yarn
 
       - name: Typecheck
-        run: yarn workspaces foreach --all --parallel --interlaced run check
+        run: yarn workspaces foreach --since --parallel --interlaced run check
 
       - name: Lint
-        run: yarn workspaces foreach --all --parallel --interlaced run lint
+        run: yarn workspaces foreach --since --parallel --interlaced run lint
 
       - name: Test
-        run: yarn workspaces foreach --all --parallel --interlaced run test
+        run: yarn workspaces foreach --since --parallel --interlaced run test
 
       - name: Build
-        run: yarn workspaces foreach --all --parallel --interlaced run build
+        run: yarn workspaces foreach --since --parallel --interlaced run build
