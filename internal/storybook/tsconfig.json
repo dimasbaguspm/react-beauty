@@ -1,0 +1,10 @@
+{
+  "extends": "@react-beauty/tsc/react",
+  "include": [
+    "./.storybook/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

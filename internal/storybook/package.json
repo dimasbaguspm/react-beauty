@@ -1,0 +1,22 @@
+{
+  "name": "@react-beauty/storybook",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "8.6.12",
+    "@storybook/addon-onboarding": "8.6.12",
+    "@storybook/blocks": "8.6.12",
+    "@storybook/react": "8.6.12",
+    "@storybook/react-vite": "8.6.12",
+    "storybook": "8.6.12"
+  },
+  "scripts": {
+    "start": "storybook dev -p 6006",
+    "build": "storybook build -o dist"
+  }
+}
