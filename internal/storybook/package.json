@@ -8,7 +8,7 @@
     ".": "./src/index.ts"
   },
   "devDependencies": {
-    "@react-beauty/vite": "workspace:*",
+    "@react-beauty/ui-core": "workspace:*",
     "@storybook/addon-essentials": "8.6.12",
     "@storybook/addon-onboarding": "8.6.12",
     "@storybook/blocks": "8.6.12",
@@ -17,7 +17,7 @@
     "storybook": "8.6.12"
   },
   "scripts": {
-    "build:dev:token": "yarn workspace @react-beauty/ui-theme-manager build",
+    "build:dev:token": "yarn workspace @react-beauty/css-token build",
     "start": "yarn build:dev:token && storybook dev -p 6006",
     "build": "yarn build:dev:token && storybook build -o dist"
   }

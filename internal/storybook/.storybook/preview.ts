@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react";
 
-import "@react-beauty/ui-theme-manager/dark.css";
+import "@react-beauty/ui-core/dark.css";
 
 const preview: Preview = {
   parameters: {
