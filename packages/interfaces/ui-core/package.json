@@ -1,0 +1,30 @@
+{
+  "name": "@react-beauty/ui-core",
+  "description": "ui-core",
+  "license": "MIT",
+  "version": "1.0.0",
+  "stableVersion": "1.0.0",
+  "keywords": [
+    "react",
+    "@react-beauty",
+    "ui-core"
+  ],
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./dark.css": {
+      "development": "./src/dark/index.css",
+      "default": "./dist/dark/index.css"
+    },
+    "./light.css": {
+      "development": "./src/light/index.css",
+      "default": "./dist/light/index.css"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

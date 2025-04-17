@@ -1,0 +1,25 @@
+{
+  "name": "@react-beauty/css-token",
+  "description": "css-token generator",
+  "private": true,
+  "version": "1.0.0",
+  "stableVersion": "1.0.0",
+  "keywords": [
+    "react",
+    "@react-beauty"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node src/config.js"
+  },
+  "devDependencies": {
+    "style-dictionary": "4.3.3"
+  }
+}

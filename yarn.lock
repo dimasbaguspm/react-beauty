@@ -885,6 +885,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/css-token@workspace:internal/css-token":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/css-token@workspace:internal/css-token"
+  dependencies:
+    style-dictionary: "npm:4.3.3"
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/demo@workspace:demo":
   version: 0.0.0-use.local
   resolution: "@react-beauty/demo@workspace:demo"
@@ -975,7 +983,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-beauty/storybook@workspace:internal/storybook"
   dependencies:
-    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/ui-core": "workspace:*"
     "@storybook/addon-essentials": "npm:8.6.12"
     "@storybook/addon-onboarding": "npm:8.6.12"
     "@storybook/blocks": "npm:8.6.12"
@@ -1010,6 +1018,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/ui-core@workspace:*, @react-beauty/ui-core@workspace:packages/interfaces/ui-core":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-core@workspace:packages/interfaces/ui-core"
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/ui-icon@workspace:*, @react-beauty/ui-icon@workspace:packages/interfaces/ui-icon":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-icon@workspace:packages/interfaces/ui-icon"
@@ -1018,19 +1032,6 @@ __metadata:
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: " ^18.0"
-  languageName: unknown
-  linkType: soft
-
-"@react-beauty/ui-theme-manager@workspace:packages/interfaces/ui-theme-manager":
-  version: 0.0.0-use.local
-  resolution: "@react-beauty/ui-theme-manager@workspace:packages/interfaces/ui-theme-manager"
-  dependencies:
-    "@react-beauty/eslint": "workspace:*"
-    "@react-beauty/tsc": "workspace:*"
-    style-dictionary: "npm:4.3.3"
   peerDependencies:
     "@types/react": "*"
     react: " ^18.0"
