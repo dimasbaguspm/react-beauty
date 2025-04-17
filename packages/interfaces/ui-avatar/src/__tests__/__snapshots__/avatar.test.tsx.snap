@@ -3,7 +3,7 @@
 exports[`Avatar > should work as expected 1`] = `
 <DocumentFragment>
   <div>
-    Avatar Initial
+    bar
   </div>
 </DocumentFragment>
 `;

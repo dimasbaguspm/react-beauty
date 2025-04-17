@@ -1,0 +1,15 @@
+{
+  "source": ["../**/tokens/light.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "dist/light/",
+      "files": [
+        {
+          "destination": "index.css",
+          "format": "css/variables"
+        }
+      ]
+    }
+  }
+}
