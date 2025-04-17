@@ -5,6 +5,9 @@
   "type": "module",
   "license": "MIT",
   "bin": "../../node_modules/.bin/tsc",
+  "exports": {
+    "./react": "./src/react.json"
+  },
   "devDependencies": {
     "typescript": "5.8.3"
   }
