@@ -3,7 +3,12 @@ import {
   useElementWidthObserver,
   useEventPromiseRejection,
 } from "@react-beauty/hooks";
-import { AvatarImage, AvatarInitial, Icon } from "@react-beauty/interfaces";
+import {
+  AvatarImage,
+  AvatarInitial,
+  Icon,
+  ReactBeautyUIProvider,
+} from "@react-beauty/interfaces";
 import { useRef } from "react";
 
 export default function App() {
@@ -30,31 +35,33 @@ export default function App() {
   });
 
   return (
-    <FlexContainer as="main" direction="column" gap="2">
-      <AvatarInitial>
-        <div>Avatar</div>
-      </AvatarInitial>
-      <AvatarImage src="https://cataas.com/cat/says/hello.png" />
-      <Icon name="arrowsChevronDown" />
+    <ReactBeautyUIProvider defaultTheme="light">
+      <FlexContainer as="main" direction="column" gap="2">
+        <AvatarInitial>
+          <div>Avatar</div>
+        </AvatarInitial>
+        <AvatarImage src="https://cataas.com/cat/says/hello.png" />
+        <Icon name="arrowsChevronDown" />
 
-      <div
-        onClick={(e) => {
-          e.currentTarget.dispatchEvent(new Event("resize"));
-          console.log("clicked");
-        }}
-        ref={divRef}
-        style={{
-          width: "100%",
-          height: "10vh",
-          backgroundColor: "red",
-          overflow: "auto",
-          resize: "both",
-        }}
-      />
+        <div
+          onClick={(e) => {
+            e.currentTarget.dispatchEvent(new Event("resize"));
+            console.log("clicked");
+          }}
+          ref={divRef}
+          style={{
+            width: "100%",
+            height: "10vh",
+            backgroundColor: "red",
+            overflow: "auto",
+            resize: "both",
+          }}
+        />
 
-      <div>
-        <h1 ref={textRef}>Hello, world! - {size}</h1>
-      </div>
-    </FlexContainer>
+        <div>
+          <h1 ref={textRef}>Hello, world! - {size}</h1>
+        </div>
+      </FlexContainer>
+    </ReactBeautyUIProvider>
   );
 }

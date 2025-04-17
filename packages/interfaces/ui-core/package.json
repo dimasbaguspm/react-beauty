@@ -15,16 +15,27 @@
     "dist"
   ],
   "exports": {
-    "./dark.css": {
-      "development": "./src/dark/index.css",
-      "default": "./dist/dark/index.css"
-    },
-    "./light.css": {
-      "development": "./src/light/index.css",
-      "default": "./dist/light/index.css"
-    }
+    ".": "./src/index.ts"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "main": "./dist/index.js",
+    "type": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "check": "tsc --noEmit",
+    "build": "vite build --configLoader runner",
+    "test": "vitest run --configLoader runner"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": "^16.8 || ^17.0 || ^18.0"
+  },
+  "devDependencies": {
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/tsc": "workspace:*",
+    "@react-beauty/vite": "workspace:*",
+    "@react-beauty/vitest": "workspace:*"
   }
 }
