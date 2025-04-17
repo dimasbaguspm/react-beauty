@@ -1,2 +1,2 @@
-yarn workspaces foreach --all --parallel --interlaced run lint
-yarn workspaces foreach --all --parallel --interlaced run check
+yarn workspaces foreach --since --parallel --interlaced run lint
+yarn workspaces foreach --since --parallel --interlaced run check
