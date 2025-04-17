@@ -1,5 +1,5 @@
 {
-  "extends": "@react-beauty/tsc/base.json",
+  "extends": "@react-beauty/tsc/react",
   "compilerOptions": {
     "types": [
       "@testing-library/jest-dom"

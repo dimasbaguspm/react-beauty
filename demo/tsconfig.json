@@ -1,5 +1,5 @@
 {
-  "extends": "@react-beauty/tsc/react.json",
+  "extends": "@react-beauty/tsc/react",
   "include": [
     "src/**/*",
     "vite.config.ts",
