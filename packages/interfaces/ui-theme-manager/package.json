@@ -1,0 +1,40 @@
+{
+  "name": "@react-beauty/ui-theme-manager",
+  "description": "ui-theme-manager",
+  "license": "MIT",
+  "version": "1.0.0",
+  "stableVersion": "1.0.0",
+  "keywords": [
+    "react",
+    "@react-beauty",
+    "ui-theme-manager"
+  ],
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./dark.css": "./dist/dark/index.css",
+    "./light.css": "./dist/light/index.css"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js",
+    "type": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "build:dark": "style-dictionary build --config src/dark.config.json",
+    "build:light": "style-dictionary build --config src/light.config.json",
+    "build": "yarn build:dark && yarn build:light"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": " ^18.0"
+  },
+  "devDependencies": {
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/tsc": "workspace:*",
+    "style-dictionary": "4.3.3"
+  }
+}
