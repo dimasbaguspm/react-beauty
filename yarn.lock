@@ -960,6 +960,7 @@ __metadata:
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
+    "@react-beauty/ui-core": "workspace:*"
     "@react-beauty/ui-icon": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   peerDependencies:
@@ -986,6 +987,7 @@ __metadata:
     "@react-beauty/ui-core": "workspace:*"
     "@storybook/addon-essentials": "npm:8.6.12"
     "@storybook/addon-onboarding": "npm:8.6.12"
+    "@storybook/addon-themes": "npm:8.6.12"
     "@storybook/blocks": "npm:8.6.12"
     "@storybook/react": "npm:8.6.12"
     "@storybook/react-vite": "npm:8.6.12"
@@ -1021,6 +1023,14 @@ __metadata:
 "@react-beauty/ui-core@workspace:*, @react-beauty/ui-core@workspace:packages/interfaces/ui-core":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-core@workspace:packages/interfaces/ui-core"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
@@ -1593,6 +1603,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.6.12
   checksum: 10c0/2e1c448b932dea10d1d13b8375e154d4f8bbd1144d7e4b35a909f773c72dd041995915becfd438c02b6611e57929ee61c4d4b9af59ef6fddb222baa8c9a66e6f
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-themes@npm:8.6.12":
+  version: 8.6.12
+  resolution: "@storybook/addon-themes@npm:8.6.12"
+  dependencies:
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.6.12
+  checksum: 10c0/9cd55c917fb7399bcd641c8ae31a8b403fcff79e0f33ec2ac5aabb5cff70b588eeb05bb8bea1b4a4cc2b970bfe2ce57607583b19f2a969d7b4337b18036cb222
   languageName: node
   linkType: hard
 

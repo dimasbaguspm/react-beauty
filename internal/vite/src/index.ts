@@ -4,14 +4,30 @@ import svgr from "vite-plugin-svgr";
 
 import type { UserConfig } from "vite";
 
-const viteConfig = (packageManifest: Record<string, unknown>): UserConfig => ({
+const viteConfig = (
+  packageManifest: Record<string, unknown>,
+  tsManifest?: Record<string, unknown>,
+): UserConfig => ({
   plugins: [
     react({
       exclude: ["**/*.stories.tsx", "**/*.test.tsx"],
     }),
     svgr(),
     dts({
-      exclude: ["node_modules/**", "dist", "**/__tests__/**"],
+      exclude: (() => {
+        const base = ["node_modules/**", "dist", "**/__tests__/**"];
+
+        if (
+          tsManifest &&
+          typeof tsManifest === "object" &&
+          "exclude" in tsManifest &&
+          Array.isArray(tsManifest.exclude)
+        ) {
+          return base.concat(tsManifest.exclude);
+        }
+
+        return base;
+      })(),
     }),
   ],
   build: {

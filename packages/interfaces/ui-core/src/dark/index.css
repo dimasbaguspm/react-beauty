@@ -1,9 +1,9 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Thu, 17 Apr 2025 12:03:45 GMT
+ * Generated on Thu, 17 Apr 2025 13:35:54 GMT
  */
 
-:root {
+:root[data-theme='dark'] {
   --components-avatar-default-size: big;
   --components-avatar-default-background: #ff0000;
   --components-avatar-hover-size: big;

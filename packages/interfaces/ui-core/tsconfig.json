@@ -1,0 +1,12 @@
+{
+  "extends": "@react-beauty/tsc/react",
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__tests__",
+    "src/use-setup-theme-effect.ts"
+  ]
+}

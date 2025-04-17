@@ -25,6 +25,7 @@ const generator = async (isDev) => {
           formatting: {
             fileHeaderTimestamp: true,
           },
+          selector: ":root[data-theme='light']",
         },
         files: [
           {
@@ -44,6 +45,7 @@ const generator = async (isDev) => {
           formatting: {
             fileHeaderTimestamp: true,
           },
+          selector: ":root[data-theme='dark']",
         },
         files: [
           {
