@@ -29,8 +29,8 @@
   "scripts": {
     "lint": "eslint src",
     "check": "tsc --noEmit",
-    "build": "vite build",
-    "test": "vitest run"
+    "build": "vite build --configLoader runner",
+    "test": "vitest run --configLoader runner"
   },
   "peerDependencies": {
     "@types/react": "*",
