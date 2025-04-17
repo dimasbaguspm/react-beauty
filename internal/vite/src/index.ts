@@ -1,4 +1,5 @@
 import react from "@vitejs/plugin-react";
+import wyw from "@wyw-in-js/vite";
 import dts from "vite-plugin-dts";
 import svgr from "vite-plugin-svgr";
 
@@ -9,6 +10,12 @@ const viteConfig = (
   tsManifest?: Record<string, unknown>,
 ): UserConfig => ({
   plugins: [
+    wyw({
+      include: ["**/*.{ts,tsx}"],
+      babelOptions: {
+        presets: ["@babel/preset-typescript", "@babel/preset-react"],
+      },
+    }),
     react({
       exclude: ["**/*.stories.tsx", "**/*.test.tsx"],
     }),
@@ -17,6 +24,9 @@ const viteConfig = (
       exclude: (() => {
         const base = ["node_modules/**", "dist", "**/__tests__/**"];
 
+        // NOTE:  follow the same behavior as the `exclude` option of the
+        //`vite-plugin-dts` package, we need to merge the `exclude`
+        // option with the `tsManifest.exclude` option.
         if (
           tsManifest &&
           typeof tsManifest === "object" &&

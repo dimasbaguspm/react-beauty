@@ -1,11 +1,16 @@
+import { css } from "@linaria/core";
 import { FC, ReactNode } from "react";
+
+const selected = css`
+  background-color: rgb(150, 175, 150);
+`;
 
 export interface AvatarImageProps {
   src: string;
 }
 
 export const AvatarImage: FC<AvatarImageProps> = () => {
-  return <div>Avatar Image</div>;
+  return <div className={selected}>Avatar Image</div>;
 };
 
 export interface AvatarInitialProps {
@@ -13,5 +18,5 @@ export interface AvatarInitialProps {
 }
 
 export const AvatarInitial: FC<AvatarInitialProps> = () => {
-  return <div>bar</div>;
+  return <div className={selected}>bar</div>;
 };

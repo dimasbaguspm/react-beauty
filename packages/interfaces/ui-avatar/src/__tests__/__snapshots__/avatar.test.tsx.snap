@@ -2,7 +2,9 @@
 
 exports[`Avatar > should work as expected 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="mocked-css-0"
+  >
     bar
   </div>
 </DocumentFragment>
