@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/storybook": "workspace:*",
     "@react-beauty/tsc": "workspace:*",
     "@react-beauty/vite": "workspace:*",
     "@react-beauty/vitest": "workspace:*"

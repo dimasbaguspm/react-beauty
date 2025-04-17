@@ -7,7 +7,7 @@ const configs = tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   {
-    files: ["**/*.{ts,tsx}"],
+    files: ["**/*.{ts,tsx}", "**/*.stories.{ts,tsx}"],
     plugins: {
       import: importPlugin,
     },
