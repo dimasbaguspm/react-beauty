@@ -1197,6 +1197,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-beauty/interfaces@workspace:packages/interfaces/module"
   dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
@@ -1204,6 +1206,8 @@ __metadata:
     "@react-beauty/ui-icon": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   peerDependencies:
+    "@linaria/core": ^6.3.0
+    "@linaria/react": ^6.3.0
     "@types/react": "*"
     react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
@@ -1225,6 +1229,7 @@ __metadata:
   resolution: "@react-beauty/storybook@workspace:internal/storybook"
   dependencies:
     "@react-beauty/ui-core": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
     "@storybook/addon-essentials": "npm:8.6.12"
     "@storybook/addon-onboarding": "npm:8.6.12"
     "@storybook/addon-themes": "npm:8.6.12"
@@ -1249,6 +1254,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-avatar@workspace:packages/interfaces/ui-avatar"
   dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/storybook": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
@@ -1266,11 +1273,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-core@workspace:packages/interfaces/ui-core"
   dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
+    "@linaria/core": ^6.3.0
+    "@linaria/react": ^6.3.0
     "@types/react": "*"
     react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown

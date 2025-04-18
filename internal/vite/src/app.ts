@@ -26,3 +26,6 @@ export const viteConfig = (
 });
 
 export * from "vite";
+export { default as wyw } from "@wyw-in-js/vite";
+export { default as react } from "@vitejs/plugin-react";
+export { default as svgr } from "vite-plugin-svgr";

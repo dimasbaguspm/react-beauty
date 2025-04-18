@@ -1,8 +1,16 @@
+import { css } from "@linaria/core";
 import { FC, ReactNode } from "react";
 
-import "./index.css";
 import { ReactBeautyUITheme } from "./types";
 import { useSetupThemeEffect } from "./use-setup-theme-effect";
+
+export const globals = css`
+  :global() {
+    @import "./base/index.css";
+    @import "./dark/index.css";
+    @import "./light/index.css";
+  }
+`;
 
 export interface ReactBeautyUIProviderProps {
   children: ReactNode;
