@@ -1,4 +1,5 @@
-import { AvatarInitial, AvatarPicture } from "./avatar";
+import { AvatarInitial } from "./atoms/avatar-initial";
+import { AvatarPicture } from "./atoms/avatar-picture";
 
 import type { Meta } from "@react-beauty/storybook";
 

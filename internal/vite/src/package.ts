@@ -22,7 +22,13 @@ export const viteConfig = (
     svgr(),
     dts({
       exclude: (() => {
-        const base = ["node_modules/**", "dist", "**/__tests__/**"];
+        const base = [
+          "node_modules/**",
+          "dist/**",
+          "**/__tests__/**",
+          "**/*.stories.*",
+          "**/style.*",
+        ];
 
         // NOTE:  follow the same behavior as the `exclude` option of the
         //`vite-plugin-dts` package, we need to merge the `exclude`
