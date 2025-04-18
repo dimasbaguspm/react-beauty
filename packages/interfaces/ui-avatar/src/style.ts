@@ -93,6 +93,9 @@ export const ElAvatarInitial = styled.div`
   ${color}
   ${font}
   ${borderRadius}
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 export const ElAvatarPicture = styled.img`
