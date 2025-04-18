@@ -1,0 +1,20 @@
+{
+  "components": {
+    "icon": {
+      "size-placeholder": {
+        "2xs": {
+          "value": "{size.2}"
+        },
+        "xs": {
+          "value": "{size.4}"
+        },
+        "md": {
+          "value": "{size.6}"
+        },
+        "lg": {
+          "value": "{size.8}"
+        }
+      }
+    }
+  }
+}
