@@ -7,7 +7,8 @@
   "main": "./src/index.ts",
   "bin": "../../node_modules/.bin/vite",
   "exports": {
-    ".": "./src/index.ts"
+    "./app": "./src/app.ts",
+    "./package": "./src/package.ts"
   },
   "scripts": {
     "lint": "eslint src",

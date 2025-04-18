@@ -1249,8 +1249,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-avatar@workspace:packages/interfaces/ui-avatar"
   dependencies:
-    "@linaria/core": "npm:6.3.0"
-    "@linaria/react": "npm:6.3.0"
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/storybook": "workspace:*"
     "@react-beauty/tsc": "workspace:*"

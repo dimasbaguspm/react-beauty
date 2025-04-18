@@ -1,7 +1,8 @@
-import { defineConfig, viteConfig } from "@react-beauty/vite";
+import { defineConfig, viteConfig } from "@react-beauty/vite/app";
 
 export default defineConfig({
-  ...viteConfig({}),
+  ...viteConfig({
+    outDir: "dist",
+  }),
   base: "./",
-  build: { outDir: "dist" },
 });

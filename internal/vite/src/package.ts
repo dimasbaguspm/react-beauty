@@ -5,7 +5,7 @@ import svgr from "vite-plugin-svgr";
 
 import type { UserConfig } from "vite";
 
-const viteConfig = (
+export const viteConfig = (
   packageManifest: Record<string, unknown>,
   tsManifest?: Record<string, unknown>,
 ): UserConfig => ({
@@ -65,5 +65,4 @@ const viteConfig = (
   },
 });
 
-export { viteConfig };
 export * from "vite";
