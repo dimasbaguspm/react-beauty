@@ -1,6 +1,6 @@
 import { join, dirname, resolve } from "node:path";
 
-import { wyw } from "@react-beauty/vite/app";
+import { wyw, svgr } from "@react-beauty/vite/app";
 
 import type { StorybookConfig } from "@storybook/react-vite";
 
@@ -37,6 +37,7 @@ const config: StorybookConfig = {
             presets: ["@babel/preset-typescript", "@babel/preset-react"],
           },
         }),
+        svgr({ svgrOptions: { icon: true } }),
       ],
     };
   },

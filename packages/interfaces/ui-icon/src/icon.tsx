@@ -1,12 +1,11 @@
+import { cx } from "@linaria/core";
 import { forwardRef } from "react";
 
-import { iconSets } from "./__assets__";
-import styles from "./icon.module.css";
+import { iconSets } from "./assets";
+import { elIcon } from "./style";
+import { IconName, IconSize } from "./type";
 
 import type { SVGProps } from "react";
-
-export type IconName = keyof typeof iconSets;
-export type IconSize = "small" | "medium" | "large";
 
 export interface IconProps extends SVGProps<SVGSVGElement> {
   name: IconName;
@@ -14,14 +13,20 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
 }
 
 export const Icon = forwardRef<SVGSVGElement, IconProps>((props, ref) => {
-  const { name, size = "medium", ...rest } = props ?? {};
-  const Component = iconSets[name];
+  const { name, size = "md", className, ...rest } = props ?? {};
+
+  const Component = iconSets?.[name];
 
   if (!Component) {
     throw new Error(`Unknown icon name: ${name}`);
   }
 
   return (
-    <Component {...rest} ref={ref} data-size={size} className={styles.uiIcon} />
+    <Component
+      {...rest}
+      ref={ref}
+      data-size={size}
+      className={cx(elIcon, className)}
+    />
   );
 });

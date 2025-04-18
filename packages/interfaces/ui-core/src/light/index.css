@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Fri, 18 Apr 2025 07:19:49 GMT
+ * Generated on Fri, 18 Apr 2025 09:39:55 GMT
  */
 
 :root[data-theme='light'] {
@@ -132,4 +132,8 @@
   --components-avatar-line-height-xs: var(--font-line-height-2xs);
   --components-avatar-color-background-color: var(--colors-main-gohan);
   --components-avatar-color-color: var(--colors-main-bulma);
+  --components-icon-size-placeholder-2xs: var(--size-2);
+  --components-icon-size-placeholder-xs: var(--size-4);
+  --components-icon-size-placeholder-md: var(--size-6);
+  --components-icon-size-placeholder-lg: var(--size-8);
 }
