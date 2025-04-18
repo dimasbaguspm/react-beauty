@@ -10,7 +10,7 @@ function getAbsolutePath(value: string): string {
 
 function getStoriesPath(path: string) {
   const packagePath = resolve(join("../../packages", path, "src"));
-  return [packagePath + "/**/*.stories.tsx", packagePath + "/**/*.mdx"];
+  return [packagePath + "/**/stories.tsx", packagePath + "/**/stories.mdx"];
 }
 
 const config: StorybookConfig = {
