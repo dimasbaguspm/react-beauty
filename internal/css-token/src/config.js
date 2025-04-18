@@ -8,44 +8,47 @@ const getBuildpath = (platform, isDev) => {
   return `../../packages/interfaces/ui-core/dist/${platform}/`;
 };
 
-const themes = ["light", "dark"];
-
-const generator = async (isDev) => {
+const sdBaseGen = async (isDev) => {
+  const themeName = "base " + `${isDev ? "dev" : "prod"}`;
   const sd = new StyleDictionary({
-    log: {
-      verbosity: "silent",
-      warnings: "warn",
-    },
-    source: themes.map((theme) => `../../packages/**/tokens/${theme}.json`),
+    source: ["src/tokens/*.json"],
     platforms: {
-      light: {
+      [themeName]: {
         transformGroup: transformGroups.css,
-        buildPath: getBuildpath("light", isDev),
+        buildPath: getBuildpath("base", isDev),
         options: {
           formatting: {
             fileHeaderTimestamp: true,
           },
-          selector: ":root[data-theme='light']",
+          selector: ":root",
         },
         files: [
           {
             destination: "index.css",
             format: formats.cssVariables,
           },
-          {
-            destination: "font.css",
-            format: formats.cssFonts,
-          },
+          { destination: "font.css", format: formats.cssFonts },
         ],
       },
-      dark: {
+    },
+  });
+
+  await sd.buildAllPlatforms();
+};
+
+const sdThemeGen = async (theme, isDev) => {
+  const themeName = theme + " " + `${isDev ? "dev" : "prod"}`;
+  const sd = new StyleDictionary({
+    source: [`../../packages/**/tokens/${theme}.json`],
+    platforms: {
+      [themeName]: {
         transformGroup: transformGroups.css,
-        buildPath: getBuildpath("dark", isDev),
+        buildPath: getBuildpath(theme, isDev),
         options: {
           formatting: {
             fileHeaderTimestamp: true,
           },
-          selector: ":root[data-theme='dark']",
+          selector: `:root[data-theme='${theme}']`,
         },
         files: [
           {
@@ -64,5 +67,13 @@ const generator = async (isDev) => {
   await sd.buildAllPlatforms();
 };
 
-await Promise.all([generator(1), generator(0)]);
+const themes = ["light", "dark"];
+
+await Promise.all([
+  sdBaseGen(0),
+  sdBaseGen(1),
+  ...themes.map((theme) => sdThemeGen(theme, 0)),
+  ...themes.map((theme) => sdThemeGen(theme, 1)),
+]);
+
 console.log("done");

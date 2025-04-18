@@ -32,6 +32,10 @@
     "build": "vite build --configLoader runner",
     "test": "vitest run --configLoader runner"
   },
+  "dependencies": {
+    "@linaria/core": "6.3.0",
+    "@linaria/react": "6.3.0"
+  },
   "peerDependencies": {
     "@linaria/core": "^6.3.0",
     "@linaria/react": "^6.3.0",

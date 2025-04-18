@@ -1,13 +1,17 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Thu, 17 Apr 2025 13:35:54 GMT
+ * Generated on Fri, 18 Apr 2025 02:28:05 GMT
  */
 
 :root[data-theme='dark'] {
-  --components-avatar-default-size: big;
-  --components-avatar-default-background: #ff0000;
-  --components-avatar-hover-size: big;
-  --components-avatar-hover-background: #008000;
-  --components-avatar-focus-size: big;
-  --components-avatar-focus-background: #0000ff;
+  --dimensions-0: 0px;
+  --dimensions-1: 4px;
+  --dimensions-2: 8px;
+  --dimensions-3: 12px;
+  --dimensions-4: 16px;
+  --dimensions-5: 20px;
+  --dimensions-6: 24px;
+  --dimensions-7: 28px;
+  --dimensions-8: 32px;
+  --dimensions-9: 36px;
 }

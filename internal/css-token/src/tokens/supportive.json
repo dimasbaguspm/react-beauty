@@ -1,0 +1,114 @@
+{
+  "colors": {
+    "supportive": {
+      "krilin": {
+        "value": "#ffb319",
+        "type": "color"
+      },
+      "krilin-60": {
+        "value": "#ffb31960",
+        "type": "color"
+      },
+      "krilin-10": {
+        "value": "#ffb31910",
+        "type": "color"
+      },
+      "chichi": {
+        "value": "#FF4E64",
+        "type": "color"
+      },
+      "chichi-60": {
+        "value": "#FF4E6460",
+        "type": "color"
+      },
+      "chichi-10": {
+        "value": "#FF4E6410",
+        "type": "color"
+      },
+      "roshi": {
+        "value": "#2E7D32",
+        "type": "color"
+      },
+      "roshi-60": {
+        "value": "#2E7D3260",
+        "type": "color"
+      },
+      "roshi-10": {
+        "value": "#2E7D3210",
+        "type": "color"
+      },
+      "dodoria": {
+        "value": "#D33030",
+        "type": "color"
+      },
+      "dodoria-60": {
+        "value": "#D3303060",
+        "type": "color"
+      },
+      "dodoria-10": {
+        "value": "#D3303010",
+        "type": "color"
+      },
+      "cell": {
+        "value": "#95F1D5",
+        "type": "color"
+      },
+      "cell-60": {
+        "value": "#95F1D560",
+        "type": "color"
+      },
+      "cell-10": {
+        "value": "#95F1D510",
+        "type": "color"
+      },
+      "raditz": {
+        "value": "#B3804A",
+        "type": "color"
+      },
+      "raditz-60": {
+        "value": "#B3804A60",
+        "type": "color"
+      },
+      "raditz-10": {
+        "value": "#B3804A10",
+        "type": "color"
+      },
+      "whis": {
+        "value": "#3448F0",
+        "type": "color"
+      },
+      "whis-60": {
+        "value": "#3448F060",
+        "type": "color"
+      },
+      "whis-10": {
+        "value": "#3448F010",
+        "type": "color"
+      },
+      "frieza": {
+        "value": "#F0F0F0",
+        "type": "color"
+      },
+      "frieza-60": {
+        "value": "#F0F0F060",
+        "type": "color"
+      },
+      "frieza-10": {
+        "value": "#F0F0F010",
+        "type": "color"
+      },
+      "nappa": {
+        "value": "#725550",
+        "type": "color"
+      },
+      "nappa-60": {
+        "value": "#72555060",
+        "type": "color"
+      },
+      "nappa-10": {
+        "value": "#72555010",
+        "type": "color"
+      }
+    }
+  }
+}

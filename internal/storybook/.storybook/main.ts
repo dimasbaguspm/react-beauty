@@ -1,5 +1,7 @@
 import { join, dirname, resolve } from "node:path";
 
+import { wyw } from "@react-beauty/vite/app";
+
 import type { StorybookConfig } from "@storybook/react-vite";
 
 function getAbsolutePath(value: string): string {
@@ -24,6 +26,19 @@ const config: StorybookConfig = {
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
+  },
+  viteFinal: async (config) => {
+    return {
+      ...config,
+      plugins: [
+        ...(config?.plugins ?? []),
+        wyw({
+          babelOptions: {
+            presets: ["@babel/preset-typescript", "@babel/preset-react"],
+          },
+        }),
+      ],
+    };
   },
 };
 export default config;

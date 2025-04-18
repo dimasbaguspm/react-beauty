@@ -23,7 +23,7 @@ const preview: Preview = {
       },
     }),
     (Story) => (
-      <ReactBeautyUIProvider theme="dark">
+      <ReactBeautyUIProvider defaultTheme="light">
         <Story />
       </ReactBeautyUIProvider>
     ),

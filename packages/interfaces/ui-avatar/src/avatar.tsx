@@ -2,7 +2,7 @@ import { css } from "@linaria/core";
 import { FC, ReactNode } from "react";
 
 const selected = css`
-  background-color: rgb(150, 175, 150);
+  background-color: green;
 `;
 
 export interface AvatarImageProps {
