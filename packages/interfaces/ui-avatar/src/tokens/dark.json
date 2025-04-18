@@ -1,35 +1,74 @@
 {
-  "dimensions": {
-    "$type": "dimension",
-    "0": {
-      "$value": "0px"
-    },
-    "1": {
-      "$value": "4px"
-    },
-    "2": {
-      "$value": "8px"
-    },
-    "3": {
-      "$value": "12px"
-    },
-    "4": {
-      "$value": "16px"
-    },
-    "5": {
-      "$value": "20px"
-    },
-    "6": {
-      "$value": "24px"
-    },
-    "7": {
-      "$value": "28px"
-    },
-    "8": {
-      "$value": "32px"
-    },
-    "9": {
-      "$value": "36px"
+  "components": {
+    "avatar": {
+      "size": {
+        "2xl": {
+          "value": "{size.16}"
+        },
+        "xl": {
+          "value": "{size.14}"
+        },
+        "lg": {
+          "value": "{size.12}"
+        },
+        "md": {
+          "value": "{size.10}"
+        },
+        "sm": {
+          "value": "{size.8}"
+        },
+        "xs": {
+          "value": "{size.6}"
+        }
+      },
+      "font": {
+        "2xl": {
+          "value": "{font-size.xl}"
+        },
+        "xl": {
+          "value": "{font-size.md}"
+        },
+        "lg": {
+          "value": "{font-size.md}"
+        },
+        "md": {
+          "value": "{font-size.sm}"
+        },
+        "sm": {
+          "value": "{font-size.xs}"
+        },
+        "xs": {
+          "value": "{font-size.2xs}"
+        }
+      },
+      "line-height": {
+        "2xl": {
+          "value": "{font-line-height.xl}"
+        },
+        "xl": {
+          "value": "{font-line-height.md}"
+        },
+        "lg": {
+          "value": "{font-line-height.md}"
+        },
+        "md": {
+          "value": "{font-line-height.sm}"
+        },
+        "sm": {
+          "value": "{font-line-height.xs}"
+        },
+        "xs": {
+          "value": "{font-line-height.2xs}"
+        }
+      },
+      "color": {
+        "background-color": {
+          "value": "{colors.main.gohan}"
+        },
+        "color": {
+          "value": "{colors.main.bulma}"
+        }
+      }
     }
   }
 }

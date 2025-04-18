@@ -33,8 +33,6 @@
     "@linaria/react": "6.3.0"
   },
   "peerDependencies": {
-    "@linaria/core": "^6.3.0",
-    "@linaria/react": "^6.3.0",
     "@types/react": "*",
     "react": "^16.8 || ^17.0 || ^18.0"
   },
