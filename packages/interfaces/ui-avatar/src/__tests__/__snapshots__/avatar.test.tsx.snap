@@ -3,9 +3,22 @@
 exports[`Avatar > should work as expected 1`] = `
 <DocumentFragment>
   <div
-    class="mocked-css-0"
+    class="mocked-styled-0"
+    data-size="md"
+    data-testid="avatar-initial"
   >
     bar
   </div>
+</DocumentFragment>
+`;
+
+exports[`Avatar > should work as expected 2`] = `
+<DocumentFragment>
+  <img
+    class="mocked-styled-1"
+    data-size="2xl"
+    data-testid="avatar-picture"
+    src="foo"
+  />
 </DocumentFragment>
 `;

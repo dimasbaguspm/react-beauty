@@ -4,8 +4,8 @@ import {
   useEventPromiseRejection,
 } from "@react-beauty/hooks";
 import {
-  AvatarImage,
   AvatarInitial,
+  AvatarPicture,
   Icon,
   ReactBeautyUIProvider,
 } from "@react-beauty/interfaces";
@@ -40,7 +40,7 @@ export default function App() {
         <AvatarInitial>
           <div>Avatar</div>
         </AvatarInitial>
-        <AvatarImage src="https://cataas.com/cat/says/hello.png" />
+        <AvatarPicture src="https://placecats.com/millie/300/150" />
         <Icon name="arrowsChevronDown" />
 
         <div

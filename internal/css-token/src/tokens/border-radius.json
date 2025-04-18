@@ -1,0 +1,25 @@
+{
+  "border-radius": {
+    "xs": {
+      "value": "4px",
+      "type": "dimension"
+    },
+    "sm": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "md": {
+      "value": "12px",
+      "type": "dimension",
+      "unit": "px"
+    },
+    "lg": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "rounded": {
+      "value": "9999px",
+      "type": "dimension"
+    }
+  }
+}

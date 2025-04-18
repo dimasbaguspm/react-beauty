@@ -1,0 +1,54 @@
+{
+  "colors": {
+    "main": {
+      "picollo": {
+        "value": "#4E46B4",
+        "type": "color"
+      },
+      "hit": {
+        "value": "#40A69F",
+        "type": "color"
+      },
+      "beerus": {
+        "value": "#444444",
+        "type": "color"
+      },
+      "goku": {
+        "value": "#0B0B0B",
+        "type": "color"
+      },
+      "gohan": {
+        "value": "#1F1F1F",
+        "type": "color"
+      },
+      "bulma": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "trunks": {
+        "value": "#595D62",
+        "type": "color"
+      },
+      "goten": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "popo": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "jiren": {
+        "value": "#4E46B432",
+        "type": "color"
+      },
+      "hales": {
+        "value": "#FFFFFF08",
+        "type": "color"
+      },
+      "zeno": {
+        "value": "#00000056",
+        "type": "color"
+      }
+    }
+  }
+}

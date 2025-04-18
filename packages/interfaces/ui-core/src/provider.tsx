@@ -6,9 +6,21 @@ import { useSetupThemeEffect } from "./use-setup-theme-effect";
 
 export const globals = css`
   :global() {
-    @import "./base/index.css";
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish&display=swap");
+
     @import "./dark/index.css";
     @import "./light/index.css";
+
+    :root {
+      box-sizing: border-box;
+      font-family: var(--font-primary);
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
   }
 `;
 

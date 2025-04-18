@@ -1206,8 +1206,6 @@ __metadata:
     "@react-beauty/ui-icon": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   peerDependencies:
-    "@linaria/core": ^6.3.0
-    "@linaria/react": ^6.3.0
     "@types/react": "*"
     react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
@@ -1262,8 +1260,6 @@ __metadata:
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
-    "@linaria/core": ^6.3.0
-    "@linaria/react": ^6.3.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1280,8 +1276,6 @@ __metadata:
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
-    "@linaria/core": ^6.3.0
-    "@linaria/react": ^6.3.0
     "@types/react": "*"
     react: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
@@ -1298,8 +1292,6 @@ __metadata:
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
-    "@linaria/core": ^6.3.0
-    "@linaria/react": ^6.3.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
