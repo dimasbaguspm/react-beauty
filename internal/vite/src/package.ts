@@ -27,6 +27,7 @@ export const viteConfig = (
           "dist/**",
           "**/__tests__/**",
           "**/stories.*",
+          "**/story.*",
           "**/style.*",
         ];
 

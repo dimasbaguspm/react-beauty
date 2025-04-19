@@ -1,0 +1,126 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Alert > should able to render multi line 1`] = `
+<DocumentFragment>
+  <div
+    class="mocked-styled-4"
+    role="alert"
+  >
+    <div
+      class="mocked-styled-0"
+      data-testid="alert-icon"
+    >
+      <svg
+        class="mocked-css-0"
+        data-size="md"
+        fill="none"
+        height="32"
+        viewBox="0 0 32 32"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 21.2778V14.9444M16 12.3056V10.7222M25.5 16C25.5 21.2467 21.2467 25.5 16 25.5C10.7533 25.5 6.5 21.2467 6.5 16C6.5 10.7533 10.7533 6.5 16 6.5C21.2467 6.5 25.5 10.7533 25.5 16Z"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <h3
+      class="mocked-styled-1"
+      data-testid="alert-title"
+    >
+      Alert Title
+    </h3>
+    <p
+      class="mocked-styled-2"
+      data-testid="alert-description"
+    >
+      Pull request #999 merged successfully. Ready for review View the pull request on GitHub View the pull request on GitHub
+    </p>
+    <div
+      class="mocked-styled-3"
+    >
+      <button
+        aria-label="Dismiss alert"
+        type="button"
+      >
+        <svg
+          class="mocked-css-0"
+          data-size="md"
+          fill="none"
+          height="32"
+          viewBox="0 0 32 32"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 10L16 16M16 16L10 22M16 16L22 22M16 16L22 10"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > should able to render single line 1`] = `
+<DocumentFragment>
+  <div
+    class="mocked-styled-4"
+    role="alert"
+  >
+    <div
+      class="mocked-styled-0"
+      data-testid="alert-icon"
+    >
+      <svg
+        class="mocked-css-0"
+        data-size="md"
+        fill="none"
+        height="32"
+        viewBox="0 0 32 32"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 21.2778V14.9444M16 12.3056V10.7222M25.5 16C25.5 21.2467 21.2467 25.5 16 25.5C10.7533 25.5 6.5 21.2467 6.5 16C6.5 10.7533 10.7533 6.5 16 6.5C21.2467 6.5 25.5 10.7533 25.5 16Z"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    Data uploaded to the server. Fire on!
+    <div
+      class="mocked-styled-3"
+    >
+      <button
+        aria-label="Dismiss alert"
+        type="button"
+      >
+        <svg
+          class="mocked-css-0"
+          data-size="md"
+          fill="none"
+          height="32"
+          viewBox="0 0 32 32"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 10L16 16M16 16L10 22M16 16L22 22M16 16L22 10"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

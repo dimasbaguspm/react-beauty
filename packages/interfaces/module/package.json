@@ -33,6 +33,7 @@
   "dependencies": {
     "@linaria/core": "6.3.0",
     "@linaria/react": "6.3.0",
+    "@react-beauty/ui-alert": "workspace:*",
     "@react-beauty/ui-avatar": "workspace:*",
     "@react-beauty/ui-core": "workspace:*",
     "@react-beauty/ui-icon": "workspace:*"

@@ -4,6 +4,7 @@ import {
   useEventPromiseRejection,
 } from "@react-beauty/hooks";
 import {
+  Alert,
   AvatarInitial,
   AvatarPicture,
   Icon,
@@ -42,6 +43,17 @@ export default function App() {
         </AvatarInitial>
         <AvatarPicture src="https://placecats.com/millie/300/150" />
         <Icon name="arrowsChevronDown" />
+        <Alert intent="success" type="colourful">
+          <Alert.Icon>
+            <Icon name="genericInfo" />
+          </Alert.Icon>
+          <Alert.Title>Alert Title</Alert.Title>
+          <Alert.DismissButton onClick={() => window.alert("dismiss")} />
+          <Alert.Description>
+            Pull request #999 merged successfully. Ready for review View the
+            pull request on GitHub View the pull request on GitHub
+          </Alert.Description>
+        </Alert>
 
         <div
           onClick={(e) => {
