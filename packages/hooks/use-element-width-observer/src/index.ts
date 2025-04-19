@@ -81,13 +81,13 @@ export const useElementWidthObserver = (
   );
 
   const parentEl = useMemo(() => getTriggerParentNode(parent), [parent]);
-  const abortController = useMemo(() => new AbortController(), []);
 
   /**
    * subscriber to the resize event
    */
   const subscriber = useCallback(
     (onStoreChange: VoidFunction) => {
+      const abortController = new AbortController();
       parentEl?.addEventListener("resize", handleOnResize(onStoreChange), {
         signal: abortController.signal,
       });
@@ -96,7 +96,7 @@ export const useElementWidthObserver = (
         abortController.abort();
       };
     },
-    [handleOnResize, parentEl, abortController],
+    [handleOnResize, parentEl],
   );
 
   return useSyncExternalStore<ElementWidthObserver>(subscriber, getSnapshot);
