@@ -7,6 +7,7 @@ import {
   Alert,
   AvatarInitial,
   AvatarPicture,
+  Button,
   Icon,
   ReactBeautyUIProvider,
 } from "@react-beauty/interfaces";
@@ -37,6 +38,9 @@ export default function App() {
 
   return (
     <ReactBeautyUIProvider defaultTheme="light">
+      <Button onClick={() => window.alert("clicked")} variant="fill">
+        Button Text
+      </Button>
       <FlexContainer as="main" direction="column" gap="2">
         <AvatarInitial>
           <div>Avatar</div>
