@@ -1,9 +1,10 @@
 import { cx } from "@linaria/core";
 import { forwardRef } from "react";
 
-import { iconSets } from "./assets";
+import { iconSets } from "../assets";
+import { IconName, IconSize } from "../type";
+
 import { elIcon } from "./style";
-import { IconName, IconSize } from "./type";
 
 import type { SVGProps } from "react";
 

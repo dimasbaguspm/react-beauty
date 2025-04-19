@@ -1,4 +1,4 @@
-import { Icon } from "./icon";
+import { Icon } from "./atoms";
 
 import type { Meta, StoryObj } from "@react-beauty/storybook";
 

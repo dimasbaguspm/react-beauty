@@ -1,3 +1,2 @@
-export * from "./atoms/avatar-initial";
-export * from "./atoms/avatar-picture";
+export * from "./atoms";
 export type * from "./type";

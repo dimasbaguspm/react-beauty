@@ -1,7 +1,8 @@
 import { forwardRef, ImgHTMLAttributes } from "react";
 
-import { ElAvatarPicture } from "../style";
 import { AvatarSize } from "../type";
+
+import { ElAvatarPicture } from "./style";
 
 export interface AvatarPictureProps
   extends ImgHTMLAttributes<HTMLImageElement> {
