@@ -19,6 +19,6 @@
     "noEmit": true,
     "useUnknownInCatchVariables": true,
     "allowArbitraryExtensions": true,
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   }
 }

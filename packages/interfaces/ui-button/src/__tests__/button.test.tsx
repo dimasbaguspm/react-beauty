@@ -18,6 +18,7 @@ describe("Button", () => {
       fireEvent.click(screen.getByRole("button"));
     });
 
-    expect(mockClickFn).toHaveBeenCalled();
+    expect(screen.getByRole("button")).toBeInTheDocument();
+    expect(mockClickFn).toHaveBeenCalledTimes(1);
   });
 });
