@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sat, 19 Apr 2025 09:19:54 GMT
+ * Generated on Sat, 19 Apr 2025 15:27:52 GMT
  */
 
 :root[data-theme='light'] {
@@ -149,6 +149,42 @@
   --components-avatar-line-height-xs: var(--font-line-height-2xs);
   --components-avatar-color-background-color: var(--colors-main-gohan);
   --components-avatar-color-color: var(--colors-main-bulma);
+  --components-button-border-radius-xs: var(--border-radius-xs);
+  --components-button-border-radius-sm: var(--border-radius-sm);
+  --components-button-border-radius-md: var(--border-radius-sm);
+  --components-button-border-radius-lg: var(--border-radius-sm);
+  --components-button-border-radius-xl: var(--border-radius-sm);
+  --components-button-padding-xs-y: var(--space-1);
+  --components-button-padding-xs-x: var(--space-2);
+  --components-button-padding-xs-icon: var(--space-1);
+  --components-button-padding-sm-y: var(--space-1);
+  --components-button-padding-sm-x: var(--space-3);
+  --components-button-padding-sm-icon: var(--space-1);
+  --components-button-padding-md-y: var(--space-2);
+  --components-button-padding-md-x: var(--space-4);
+  --components-button-padding-md-icon: var(--space-2);
+  --components-button-padding-lg-y: var(--space-3);
+  --components-button-padding-lg-x: var(--space-4);
+  --components-button-padding-lg-icon: var(--space-3);
+  --components-button-padding-xl-y: var(--space-4);
+  --components-button-padding-xl-x: var(--space-6);
+  --components-button-padding-xl-icon: var(--space-4);
+  --components-button-font-size-xs: var(--font-size-xs);
+  --components-button-font-size-sm: var(--font-size-sm);
+  --components-button-font-size-md: var(--font-size-sm);
+  --components-button-font-size-lg: var(--font-size-md);
+  --components-button-font-size-xl: var(--font-size-md);
+  --components-button-font-weight: var(--font-weight-bold);
+  --components-button-colors-fill-default-bg: var(--colors-main-picollo);
+  --components-button-colors-fill-default-color: var(--colors-main-goten);
+  --components-button-colors-fill-focus-bs: var(--colors-supportive-whis-60);
+  --components-button-colors-outline-default-outline: var(--colors-main-trunks);
+  --components-button-colors-outline-default-color: var(--colors-main-bulma);
+  --components-button-colors-outline-hover-bg: var(--colors-main-hales);
+  --components-button-colors-outline-focus-bs: var(--colors-main-zeno);
+  --components-button-colors-ghost-default-color: var(--colors-main-trunks);
+  --components-button-colors-ghost-hover-color: var(--colors-main-bulma);
+  --components-button-colors-ghost-hover-bg: var(--colors-main-jiren);
   --components-icon-size-placeholder-2xs: var(--size-2);
   --components-icon-size-placeholder-xs: var(--size-4);
   --components-icon-size-placeholder-md: var(--size-6);

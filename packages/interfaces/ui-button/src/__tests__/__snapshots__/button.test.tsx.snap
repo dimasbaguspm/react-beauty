@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > should render correctly 1`] = `
+<DocumentFragment>
+  <button
+    class="mocked-styled-0"
+    data-is-only-icon="false"
+    data-size="md"
+    data-variant="fill"
+  >
+    Button
+  </button>
+</DocumentFragment>
+`;
