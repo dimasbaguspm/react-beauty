@@ -1,0 +1,61 @@
+{
+  "components": {
+    "alert": {
+      "border-radius": {
+        "value": "{border-radius.sm}"
+      },
+      "padding": {
+        "value": "{space.4}"
+      },
+      "gap": {
+        "value": "{space.2}"
+      },
+      "colors": {
+        "default": {
+          "value": "{colors.main.gohan}"
+        },
+        "info": {
+          "value": "{colors.supportive.whis}"
+        },
+        "info-bg": {
+          "value": "{colors.supportive.whis-10}"
+        },
+        "success": {
+          "value": "{colors.supportive.roshi}"
+        },
+        "success-bg": {
+          "value": "{colors.supportive.roshi-10}"
+        },
+        "warning": {
+          "value": "{colors.supportive.krilin}"
+        },
+        "warning-bg": {
+          "value": "{colors.supportive.krilin-10}"
+        },
+        "danger": {
+          "value": "{colors.supportive.chichi}"
+        },
+        "danger-bg": {
+          "value": "{colors.supportive.chichi-10}"
+        },
+        "dismiss-hover": {
+          "value": "{colors.main.jiren}"
+        }
+      },
+      "font-weight": {
+        "description": {
+          "value": "{font-weight.regular}"
+        },
+        "title": {
+          "value": "{font-weight.bold}"
+        }
+      },
+      "font-size": {
+        "value": "{font-size.sm}"
+      },
+      "line-height": {
+        "value": "{font-line-height.sm}"
+      }
+    }
+  }
+}

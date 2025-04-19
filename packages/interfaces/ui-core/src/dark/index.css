@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Fri, 18 Apr 2025 09:39:55 GMT
+ * Generated on Sat, 19 Apr 2025 09:19:54 GMT
  */
 
 :root[data-theme='dark'] {
@@ -112,6 +112,23 @@
   --space-11: 44px;
   --space-12: 48px;
   --space-none: 0px;
+  --components-alert-border-radius: var(--border-radius-sm);
+  --components-alert-padding: var(--space-4);
+  --components-alert-gap: var(--space-2);
+  --components-alert-colors-default: var(--colors-main-gohan);
+  --components-alert-colors-info: var(--colors-supportive-whis);
+  --components-alert-colors-info-bg: var(--colors-supportive-whis-10);
+  --components-alert-colors-success: var(--colors-supportive-roshi);
+  --components-alert-colors-success-bg: var(--colors-supportive-roshi-10);
+  --components-alert-colors-warning: var(--colors-supportive-krilin);
+  --components-alert-colors-warning-bg: var(--colors-supportive-krilin-10);
+  --components-alert-colors-danger: var(--colors-supportive-chichi);
+  --components-alert-colors-danger-bg: var(--colors-supportive-chichi-10);
+  --components-alert-colors-dismiss-hover: var(--colors-main-jiren);
+  --components-alert-font-weight-description: var(--font-weight-regular);
+  --components-alert-font-weight-title: var(--font-weight-bold);
+  --components-alert-font-size: var(--font-size-sm);
+  --components-alert-line-height: var(--font-line-height-sm);
   --components-avatar-size-2xl: var(--size-16);
   --components-avatar-size-xl: var(--size-14);
   --components-avatar-size-lg: var(--size-12);

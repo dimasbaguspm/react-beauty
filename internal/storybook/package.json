@@ -10,6 +10,7 @@
   "devDependencies": {
     "@react-beauty/ui-core": "workspace:*",
     "@react-beauty/vite": "workspace:*",
+    "@storybook/addon-actions": "8.6.12",
     "@storybook/addon-essentials": "8.6.12",
     "@storybook/addon-onboarding": "8.6.12",
     "@storybook/addon-themes": "8.6.12",

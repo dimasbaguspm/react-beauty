@@ -8,19 +8,21 @@ function getAbsolutePath(value: string): string {
   return dirname(require.resolve(join(value, "package.json")));
 }
 
-function getStoriesPath(path: string) {
+function getStoriesPath(path: string): string {
   const packagePath = resolve(join("../../packages", path, "src"));
-  return [packagePath + "/**/stories.tsx", packagePath + "/**/stories.mdx"];
+  return packagePath + "/**/{stories,story}.{tsx,mdx}";
 }
 
 const config: StorybookConfig = {
   stories: [
-    ...getStoriesPath("interfaces/ui-icon"),
-    ...getStoriesPath("interfaces/ui-avatar"),
+    getStoriesPath("interfaces/ui-icon"),
+    getStoriesPath("interfaces/ui-avatar"),
+    getStoriesPath("interfaces/ui-alert"),
   ],
   addons: [
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-onboarding"),
+    getAbsolutePath("@storybook/addon-actions"),
     getAbsolutePath("@storybook/addon-themes"),
   ],
   framework: {

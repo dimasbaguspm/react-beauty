@@ -1201,6 +1201,7 @@ __metadata:
     "@linaria/react": "npm:6.3.0"
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-alert": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
     "@react-beauty/ui-core": "workspace:*"
     "@react-beauty/ui-icon": "workspace:*"
@@ -1228,6 +1229,7 @@ __metadata:
   dependencies:
     "@react-beauty/ui-core": "workspace:*"
     "@react-beauty/vite": "workspace:*"
+    "@storybook/addon-actions": "npm:8.6.12"
     "@storybook/addon-essentials": "npm:8.6.12"
     "@storybook/addon-onboarding": "npm:8.6.12"
     "@storybook/addon-themes": "npm:8.6.12"
@@ -1245,6 +1247,24 @@ __metadata:
     typescript: "npm:5.8.3"
   bin:
     tsc: ../../node_modules/.bin/tsc
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-alert@workspace:*, @react-beauty/ui-alert@workspace:packages/interfaces/ui-alert":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-alert@workspace:packages/interfaces/ui-alert"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
   languageName: unknown
   linkType: soft
 
