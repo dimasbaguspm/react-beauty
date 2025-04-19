@@ -1,6 +1,6 @@
 import { render } from "@react-beauty/vitest/selector";
 
-import { Icon } from "../icon";
+import { Icon } from "../atoms";
 
 describe("Icon", () => {
   it('should able to render "arrowsRightCurved" icon', () => {

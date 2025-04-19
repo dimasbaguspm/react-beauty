@@ -21,5 +21,4 @@ const CompoundAlert = {
 } satisfies CompoundAlertProps;
 
 export const Alert = Object.assign(AlertContainer, CompoundAlert);
-export * from "./atoms";
 export type * from "./type";

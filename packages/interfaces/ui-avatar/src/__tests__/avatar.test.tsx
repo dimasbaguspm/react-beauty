@@ -1,7 +1,6 @@
 import { render } from "@react-beauty/vitest/selector";
 
-import { AvatarInitial } from "../atoms/avatar-initial";
-import { AvatarPicture } from "../atoms/avatar-picture";
+import { AvatarInitial, AvatarPicture } from "../atoms";
 
 describe("Avatar", () => {
   it("should work as expected", () => {
