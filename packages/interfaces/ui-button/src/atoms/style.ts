@@ -8,7 +8,7 @@ const fill = `
     background-color: color-mix(in srgb, var(--colors-main-picollo), var(--colors-main-bulma) 10%);
   }
 
-  &:focus-within {
+  &:focus-visible {
     box-shadow: 0 0 0 4px var(--components-button-colors-fill-focus-bs);
   }
  `;
@@ -24,7 +24,7 @@ const outline = `
     background-color: var(--components-button-colors-outline-hover-bg);
   }
 
-  &:focus-within {
+  &:focus-visible {
     box-shadow: 0 0 0 4px var(--components-button-colors-outline-focus-bs);
   }
 `;
@@ -38,7 +38,7 @@ const ghost = `
     background-color: var(--components-button-colors-ghost-hover-bg);
   }
 
-  &:focus-within {
+  &:focus-visible {
     box-shadow: 0 0 0 4px color-mix(in srgb, var(--colors-main-picollo) 20%, transparent);
   }
 `;

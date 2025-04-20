@@ -7,3 +7,4 @@ export * from "@react-beauty/ui-alert";
 export * from "@react-beauty/ui-button";
 export * from "@react-beauty/ui-tag";
 export * from "@react-beauty/ui-empty-state";
+export * from "@react-beauty/ui-menu-item";

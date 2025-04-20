@@ -1,0 +1,63 @@
+{
+  "components": {
+    "menu-item": {
+      "max-width": {
+        "value": "240px",
+        "type": "dimension"
+      },
+      "border-radius": {
+        "value": "{border-radius.sm}"
+      },
+      "gap": {
+        "value": "{space.2}"
+      },
+      "padding": {
+        "l": {
+          "value": "{space.3}"
+        },
+        "r": {
+          "value": "{space.2}"
+        },
+        "t": {
+          "value": "{space.2}"
+        },
+        "b": {
+          "value": "{space.2}"
+        }
+      },
+      "font-size": {
+        "label": {
+          "value": "{font-size.sm}"
+        },
+        "description": {
+          "value": "{font-size.xs}"
+        }
+      },
+      "line-height": {
+        "label": {
+          "value": "{font-line-height.sm}"
+        },
+        "description": {
+          "value": "{font-line-height.xs}"
+        }
+      },
+      "font-weight": {
+        "value": "{font-weight.medium}"
+      },
+      "colors": {
+        "default-bg": {
+          "value": "{colors.main.gohan}"
+        },
+        "default-color": {
+          "value": "{colors.main.bulma}"
+        },
+        "focus-outline": {
+          "value": "{colors.supportive.whis-60}"
+        },
+        "description-color": {
+          "value": "{colors.main.trunks}"
+        }
+      }
+    }
+  }
+}

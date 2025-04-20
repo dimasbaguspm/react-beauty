@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sun, 20 Apr 2025 02:48:35 GMT
+ * Generated on Sun, 20 Apr 2025 07:13:32 GMT
  */
 
 :root[data-theme='dark'] {
@@ -114,6 +114,7 @@
   --space-12: 48px;
   --space-none: 0px;
   --space-half: 2px;
+  --components-menu-item-max-width: 240px;
   --components-alert-border-radius: var(--border-radius-sm);
   --components-alert-padding: var(--space-4);
   --components-alert-gap: var(--space-2);
@@ -210,6 +211,21 @@
   --components-icon-size-placeholder-xs: var(--size-4);
   --components-icon-size-placeholder-md: var(--size-6);
   --components-icon-size-placeholder-lg: var(--size-8);
+  --components-menu-item-border-radius: var(--border-radius-sm);
+  --components-menu-item-gap: var(--space-2);
+  --components-menu-item-padding-l: var(--space-3);
+  --components-menu-item-padding-r: var(--space-2);
+  --components-menu-item-padding-t: var(--space-2);
+  --components-menu-item-padding-b: var(--space-2);
+  --components-menu-item-font-size-label: var(--font-size-sm);
+  --components-menu-item-font-size-description: var(--font-size-xs);
+  --components-menu-item-line-height-label: var(--font-line-height-sm);
+  --components-menu-item-line-height-description: var(--font-line-height-xs);
+  --components-menu-item-font-weight: var(--font-weight-medium);
+  --components-menu-item-colors-default-bg: var(--colors-main-gohan);
+  --components-menu-item-colors-default-color: var(--colors-main-bulma);
+  --components-menu-item-colors-focus-outline: var(--colors-supportive-whis-60);
+  --components-menu-item-colors-description-color: var(--colors-main-trunks);
   --components-tag-border-radius: var(--border-radius-xs);
   --components-tag-gap: var(--space-1);
   --components-tag-padding-sm-y: var(--space-none);
