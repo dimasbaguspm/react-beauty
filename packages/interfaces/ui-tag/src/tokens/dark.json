@@ -1,0 +1,60 @@
+{
+  "components": {
+    "tag": {
+      "border-radius": {
+        "value": "{border-radius.xs}"
+      },
+      "gap": {
+        "value": "{space.1}"
+      },
+      "padding": {
+        "sm-y": {
+          "value": "{space.none}"
+        },
+        "sm-x": {
+          "value": "{space.2}"
+        },
+        "sm-r-icon": {
+          "value": "{space.half}"
+        },
+        "sm-l-icon": {
+          "value": "{space.half}"
+        },
+        "md-y": {
+          "value": "{space.1}"
+        },
+        "md-x": {
+          "value": "{space.2}"
+        },
+        "md-r-icon": {
+          "value": "{space.1}"
+        },
+        "md-l-icon": {
+          "value": "{space.1}"
+        }
+      },
+      "font-size": {
+        "value": "{font-size.xs}"
+      },
+      "line-height": {
+        "value": "{font-line-height.xs}"
+      },
+      "font-weight": {
+        "bold": {
+          "value": "{font-weight.bold}"
+        },
+        "medium": {
+          "value": "{font-weight.medium}"
+        }
+      },
+      "colors": {
+        "bg": {
+          "value": "{colors.main.goku}"
+        },
+        "color": {
+          "value": "{colors.main.bulma}"
+        }
+      }
+    }
+  }
+}

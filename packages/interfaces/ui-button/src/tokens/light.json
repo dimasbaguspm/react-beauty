@@ -82,6 +82,23 @@
           "value": "{font-size.md}"
         }
       },
+      "line-height": {
+        "xs": {
+          "value": "{font-line-height.xs}"
+        },
+        "sm": {
+          "value": "{font-line-height.sm}"
+        },
+        "md": {
+          "value": "{font-line-height.sm}"
+        },
+        "lg": {
+          "value": "{font-line-height.md}"
+        },
+        "xl": {
+          "value": "{font-line-height.md}"
+        }
+      },
       "font-weight": {
         "value": "{font-weight.bold}"
       },

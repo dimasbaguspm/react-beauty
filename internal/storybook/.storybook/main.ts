@@ -19,6 +19,7 @@ const config: StorybookConfig = {
     getStoriesPath("interfaces/ui-avatar"),
     getStoriesPath("interfaces/ui-alert"),
     getStoriesPath("interfaces/ui-button"),
+    getStoriesPath("interfaces/ui-tag"),
   ],
   addons: [
     getAbsolutePath("@storybook/addon-essentials"),

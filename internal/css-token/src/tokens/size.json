@@ -1,5 +1,9 @@
 {
   "size": {
+    "half": {
+      "value": "2px",
+      "type": "dimension"
+    },
     "1": {
       "value": "4px",
       "type": "dimension"

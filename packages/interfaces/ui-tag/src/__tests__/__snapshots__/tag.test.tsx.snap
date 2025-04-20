@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tag > should allow user to pass prefix and suffix icon 1`] = `
+<DocumentFragment>
+  <div
+    class="mocked-styled-0"
+    data-has-prefix-icon="true"
+    data-has-suffix-icon="true"
+    data-size="md"
+  >
+    <span>
+      Prefix
+    </span>
+    Tag
+    <span>
+      Suffix
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag > should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="mocked-styled-0"
+    data-has-prefix-icon="false"
+    data-has-suffix-icon="false"
+    data-size="md"
+  >
+    Tag
+  </div>
+</DocumentFragment>
+`;
