@@ -10,6 +10,7 @@ import {
   Button,
   Icon,
   ReactBeautyUIProvider,
+  Tag,
 } from "@react-beauty/interfaces";
 import { useRef } from "react";
 
@@ -41,6 +42,7 @@ export default function App() {
       <Button onClick={() => window.alert("clicked")} variant="fill">
         Button Text
       </Button>
+      <Tag>Tag</Tag>
       <FlexContainer as="main" direction="column" gap="2">
         <AvatarInitial>
           <div>Avatar</div>

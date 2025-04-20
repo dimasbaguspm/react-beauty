@@ -10,7 +10,7 @@ const preview: Preview = {
       values: [
         {
           name: "light",
-          value: "var(--colors-main-goku)",
+          value: "var(--colors-main-gohan)",
         },
       ],
     },
