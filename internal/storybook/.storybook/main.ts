@@ -21,6 +21,7 @@ const config: StorybookConfig = {
     getStoriesPath("interfaces/ui-button"),
     getStoriesPath("interfaces/ui-tag"),
     getStoriesPath("interfaces/ui-empty-state"),
+    getStoriesPath("interfaces/ui-menu-item"),
   ],
   addons: [
     getAbsolutePath("@storybook/addon-essentials"),

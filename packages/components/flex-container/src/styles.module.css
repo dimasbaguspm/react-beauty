@@ -2,31 +2,31 @@
   display: flex;
 
   &[data-gap="none"] {
-    gap: 0;
+    gap: 0px;
   }
 
   &[data-gap="1"] {
-    gap: 1;
+    gap: 1px;
   }
 
   &[data-gap="2"] {
-    gap: 2;
+    gap: 2px;
   }
 
   &[data-gap="3"] {
-    gap: 3;
+    gap: 3px;
   }
 
   &[data-gap="4"] {
-    gap: 4;
+    gap: 4px;
   }
 
   &[data-gap="5"] {
-    gap: 5;
+    gap: 5px;
   }
 
   &[data-gap="6"] {
-    gap: 6;
+    gap: 6px;
   }
 
   &[data-direction="row"] {
