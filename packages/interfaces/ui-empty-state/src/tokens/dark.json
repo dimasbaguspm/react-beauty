@@ -1,0 +1,60 @@
+{
+  "components": {
+    "empty-state": {
+      "border-radius": {
+        "value": "{border-radius.xs}"
+      },
+      "gap": {
+        "value": "{space.2}"
+      },
+      "padding": {
+        "y": {
+          "value": "{space.none}"
+        },
+        "x": {
+          "value": "{space.4}"
+        }
+      },
+      "font-size": {
+        "title": {
+          "value": "{font-size.2xl}"
+        },
+        "description": {
+          "value": "{font-size.md}"
+        }
+      },
+      "line-height": {
+        "title": {
+          "value": "{font-line-height.2xl}"
+        },
+        "description": {
+          "value": "{font-line-height.md}"
+        }
+      },
+      "font-weight": {
+        "title": {
+          "value": "{font-weight.bold}"
+        },
+        "description": {
+          "value": "{font-weight.regular}"
+        }
+      },
+      "colors": {
+        "default": {
+          "value": "{colors.main.bulma}"
+        },
+        "icon-secondary-color": {
+          "value": "{colors.supportive.chichi}"
+        },
+        "icon-secondary-bg": {
+          "value": "{colors.supportive.chichi-60}"
+        }
+      },
+      "size": {
+        "icon-primary": {
+          "value": "{size.16}"
+        }
+      }
+    }
+  }
+}

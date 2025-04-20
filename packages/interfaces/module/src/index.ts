@@ -6,3 +6,4 @@ export * from "@react-beauty/ui-core";
 export * from "@react-beauty/ui-alert";
 export * from "@react-beauty/ui-button";
 export * from "@react-beauty/ui-tag";
+export * from "@react-beauty/ui-empty-state";

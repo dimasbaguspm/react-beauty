@@ -8,6 +8,7 @@ import {
   AvatarInitial,
   AvatarPicture,
   Button,
+  EmptyState,
   Icon,
   ReactBeautyUIProvider,
   Tag,
@@ -43,6 +44,14 @@ export default function App() {
         Button Text
       </Button>
       <Tag>Tag</Tag>
+      <EmptyState>
+        <EmptyState.Icon />
+        <EmptyState.Title>Main title</EmptyState.Title>
+        <EmptyState.Description>
+          The body copy explains the empty state. The icon relates to the
+          situation
+        </EmptyState.Description>
+      </EmptyState>
       <FlexContainer as="main" direction="column" gap="2">
         <AvatarInitial>
           <div>Avatar</div>
