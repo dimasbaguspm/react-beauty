@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sun, 20 Apr 2025 01:13:38 GMT
+ * Generated on Sun, 20 Apr 2025 02:48:35 GMT
  */
 
 :root[data-theme='light'] {
@@ -60,8 +60,8 @@
   --colors-supportive-krilin-60: rgba(255, 179, 25, 0.38);
   --colors-supportive-krilin-10: rgba(255, 179, 25, 0.06);
   --colors-supportive-chichi: #ff4e64;
-  --colors-supportive-chichi-60: rgba(255, 78, 100, 0.38);
-  --colors-supportive-chichi-10: rgba(255, 78, 100, 0.06);
+  --colors-supportive-chichi-60: #ffacb6;
+  --colors-supportive-chichi-10: #ffd5da;
   --colors-supportive-roshi: #2e7d32;
   --colors-supportive-roshi-60: rgba(46, 125, 50, 0.38);
   --colors-supportive-roshi-10: rgba(46, 125, 50, 0.06);
@@ -192,6 +192,20 @@
   --components-button-colors-ghost-default-color: var(--colors-main-trunks);
   --components-button-colors-ghost-hover-color: var(--colors-main-bulma);
   --components-button-colors-ghost-hover-bg: var(--colors-main-jiren);
+  --components-empty-state-border-radius: var(--border-radius-xs);
+  --components-empty-state-gap: var(--space-2);
+  --components-empty-state-padding-y: var(--space-none);
+  --components-empty-state-padding-x: var(--space-4);
+  --components-empty-state-font-size-title: var(--font-size-2xl);
+  --components-empty-state-font-size-description: var(--font-size-md);
+  --components-empty-state-line-height-title: var(--font-line-height-2xl);
+  --components-empty-state-line-height-description: var(--font-line-height-md);
+  --components-empty-state-font-weight-title: var(--font-weight-bold);
+  --components-empty-state-font-weight-description: var(--font-weight-regular);
+  --components-empty-state-colors-default: var(--colors-main-bulma);
+  --components-empty-state-colors-icon-secondary-color: var(--colors-supportive-chichi);
+  --components-empty-state-colors-icon-secondary-bg: var(--colors-supportive-chichi-60);
+  --components-empty-state-size-icon-primary: var(--size-16);
   --components-icon-size-placeholder-2xs: var(--size-2);
   --components-icon-size-placeholder-xs: var(--size-4);
   --components-icon-size-placeholder-md: var(--size-6);

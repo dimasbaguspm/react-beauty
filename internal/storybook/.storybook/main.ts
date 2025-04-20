@@ -20,6 +20,7 @@ const config: StorybookConfig = {
     getStoriesPath("interfaces/ui-alert"),
     getStoriesPath("interfaces/ui-button"),
     getStoriesPath("interfaces/ui-tag"),
+    getStoriesPath("interfaces/ui-empty-state"),
   ],
   addons: [
     getAbsolutePath("@storybook/addon-essentials"),
