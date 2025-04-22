@@ -10,6 +10,7 @@ const base = `
   gap: var(--components-menu-item-gap);
   flex-direction: row;
   justify-content: start;
+  min-height: 44px;
   width: 100%;
 
   background-color: var(--components-menu-item-colors-default-bg);
@@ -19,6 +20,7 @@ const base = `
   padding-bottom: var(--components-menu-item-padding-b);
   border-radius: var(--components-menu-item-border-radius);
   color: var(--components-menu-item-colors-default-color);
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
     cursor: pointer;
@@ -33,6 +35,10 @@ const base = `
     outline: solid;
     outline-width: 4px;
     outline-color: var(--components-menu-item-colors-focus-outline);
+  }
+
+  &:active {
+    transform: scale(0.975);
   }
 
   &[data-disabled="true"] {

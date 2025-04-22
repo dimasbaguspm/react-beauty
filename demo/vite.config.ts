@@ -4,5 +4,4 @@ export default defineConfig({
   ...viteConfig({
     outDir: "dist",
   }),
-  base: "./",
 });
