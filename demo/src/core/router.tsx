@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Route, Router, Switch } from "wouter";
-import { useBrowserLocation } from "wouter/use-browser-location";
+import { useHashLocation } from "wouter/use-hash-location";
 
 export interface AppRouterProps {
   children: ReactNode;
@@ -8,7 +8,7 @@ export interface AppRouterProps {
 
 export const AppRouter = () => {
   return (
-    <Router hook={useBrowserLocation} base="/react-beauty">
+    <Router hook={useHashLocation}>
       <Switch>
         <Route path="/">home</Route>
         <Route path="/about">about</Route>
