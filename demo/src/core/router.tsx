@@ -8,7 +8,7 @@ export interface AppRouterProps {
 
 export const AppRouter = () => {
   return (
-    <Router hook={useBrowserLocation}>
+    <Router hook={useBrowserLocation} base="/react-beauty">
       <Switch>
         <Route path="/">home</Route>
         <Route path="/about">about</Route>
