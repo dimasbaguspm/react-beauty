@@ -4,5 +4,5 @@ export default defineConfig({
   ...viteConfig({
     outDir: "dist",
   }),
-  base: "./",
+  base: "/react-beauty/",
 });
