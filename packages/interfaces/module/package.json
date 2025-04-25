@@ -36,6 +36,7 @@
     "@react-beauty/ui-empty-state": "workspace:*",
     "@react-beauty/ui-icon": "workspace:*",
     "@react-beauty/ui-menu-item": "workspace:*",
+    "@react-beauty/ui-pagination": "workspace:*",
     "@react-beauty/ui-tag": "workspace:*"
   },
   "peerDependencies": {

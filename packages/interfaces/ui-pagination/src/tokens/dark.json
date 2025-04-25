@@ -1,0 +1,57 @@
+{
+  "components": {
+    "pagination": {
+      "item-size-sm": {
+        "value": "calc({size.7} - {space.half})"
+      },
+      "item-size-md": {
+        "value": "{size.8}"
+      },
+      "font-size-sm": {
+        "value": "{font-size.xs}"
+      },
+      "font-size-md": {
+        "value": "{font-size.sm}"
+      },
+      "font-line-height-sm": {
+        "value": "{font-line-height.xs}"
+      },
+      "font-line-height-md": {
+        "value": "{font-line-height.sm}"
+      },
+      "font-weight": {
+        "value": "{font-weight.medium}"
+      },
+      "border-radius": {
+        "value": "{border-radius.sm}"
+      },
+      "gap": {
+        "value": "{space.1}"
+      },
+      "colors-text": {
+        "value": "{colors.main.bulma}"
+      },
+      "colors-hover": {
+        "value": "{colors.main.jiren}"
+      },
+      "colors-active-background": {
+        "value": "{colors.main.picollo}"
+      },
+      "colors-active-text": {
+        "value": "{colors.main.goten}"
+      },
+      "colors-focus-outline": {
+        "value": "{colors.supportive.whis-60}"
+      },
+      "disabled-opacity-container": {
+        "value": "0.5"
+      },
+      "disabled-opacity-item": {
+        "value": "0.5"
+      },
+      "disabled-opacity-nav-item": {
+        "value": "0.3"
+      }
+    }
+  }
+}
