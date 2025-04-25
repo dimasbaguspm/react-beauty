@@ -12,7 +12,8 @@
     "@react-beauty/components": "workspace:*",
     "@react-beauty/hooks": "workspace:*",
     "@react-beauty/interfaces": "workspace:*",
-    "@react-beauty/react-18": "workspace:*"
+    "@react-beauty/react-18": "workspace:*",
+    "wouter": "3.7.0"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
