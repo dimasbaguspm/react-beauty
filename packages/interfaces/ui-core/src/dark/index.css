@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sun, 20 Apr 2025 07:13:32 GMT
+ * Generated on Fri, 25 Apr 2025 15:59:09 GMT
  */
 
 :root[data-theme='dark'] {
@@ -115,6 +115,9 @@
   --space-none: 0px;
   --space-half: 2px;
   --components-menu-item-max-width: 240px;
+  --components-pagination-disabled-opacity-container: 0.5;
+  --components-pagination-disabled-opacity-item: 0.5;
+  --components-pagination-disabled-opacity-nav-item: 0.3;
   --components-alert-border-radius: var(--border-radius-sm);
   --components-alert-padding: var(--space-4);
   --components-alert-gap: var(--space-2);
@@ -226,6 +229,20 @@
   --components-menu-item-colors-default-color: var(--colors-main-bulma);
   --components-menu-item-colors-focus-outline: var(--colors-supportive-whis-60);
   --components-menu-item-colors-description-color: var(--colors-main-trunks);
+  --components-pagination-item-size-sm: calc(var(--size-7) - var(--space-half));
+  --components-pagination-item-size-md: var(--size-8);
+  --components-pagination-font-size-sm: var(--font-size-xs);
+  --components-pagination-font-size-md: var(--font-size-sm);
+  --components-pagination-font-line-height-sm: var(--font-line-height-xs);
+  --components-pagination-font-line-height-md: var(--font-line-height-sm);
+  --components-pagination-font-weight: var(--font-weight-medium);
+  --components-pagination-border-radius: var(--border-radius-sm);
+  --components-pagination-gap: var(--space-1);
+  --components-pagination-colors-text: var(--colors-main-bulma);
+  --components-pagination-colors-hover: var(--colors-main-jiren);
+  --components-pagination-colors-active-background: var(--colors-main-picollo);
+  --components-pagination-colors-active-text: var(--colors-main-goten);
+  --components-pagination-colors-focus-outline: var(--colors-supportive-whis-60);
   --components-tag-border-radius: var(--border-radius-xs);
   --components-tag-gap: var(--space-1);
   --components-tag-padding-sm-y: var(--space-none);

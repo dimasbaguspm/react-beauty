@@ -1374,6 +1374,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/ui-pagination@workspace:packages/interfaces/ui-pagination":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-pagination@workspace:packages/interfaces/ui-pagination"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/ui-tag@workspace:*, @react-beauty/ui-tag@workspace:packages/interfaces/ui-tag":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-tag@workspace:packages/interfaces/ui-tag"
