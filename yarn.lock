@@ -1151,7 +1151,6 @@ __metadata:
   resolution: "@react-beauty/eslint@workspace:internal/eslint"
   dependencies:
     "@eslint/js": "npm:9.24.0"
-    "@react-beauty/tsc": "workspace:*"
     eslint: "npm:9.25.1"
     eslint-plugin-import: "npm:2.31.0"
     jiti: "npm:2.4.2"
