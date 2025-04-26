@@ -1,8 +1,8 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { TagSize } from "../type";
+import { TagSize } from '../type';
 
-import { ElTag } from "./style";
+import { ElTag } from './style';
 
 export interface TagProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -16,7 +16,7 @@ export interface TagProps extends HTMLAttributes<HTMLDivElement> {
 export const Tag = forwardRef<HTMLDivElement, TagProps>(
   (
     {
-      size = "md",
+      size = 'md',
       isUppercase,
       children,
       prefixIcon,

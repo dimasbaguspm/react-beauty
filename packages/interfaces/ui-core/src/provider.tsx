@@ -1,15 +1,15 @@
-import { css } from "@linaria/core";
-import { FC, ReactNode } from "react";
+import { css } from '@linaria/core';
+import { FC, ReactNode } from 'react';
 
-import { ReactBeautyUITheme } from "./types";
-import { useSetupThemeEffect } from "./use-setup-theme-effect";
+import { ReactBeautyUITheme } from './types';
+import { useSetupThemeEffect } from './use-setup-theme-effect';
 
 export const globals = css`
   :global() {
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish&display=swap');
 
-    @import "./dark/index.css";
-    @import "./light/index.css";
+    @import './dark/index.css';
+    @import './light/index.css';
 
     :root {
       box-sizing: border-box;

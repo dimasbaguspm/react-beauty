@@ -1,11 +1,11 @@
-import { Icon } from "@react-beauty/ui-icon";
-import { fireEvent, render } from "@react-beauty/vitest/selector";
-import { act } from "react";
+import { Icon } from '@react-beauty/ui-icon';
+import { fireEvent, render } from '@react-beauty/vitest/selector';
+import { act } from 'react';
 
-import { Alert } from "..";
+import { Alert } from '..';
 
-describe("Alert", () => {
-  it("should able to render single line", () => {
+describe('Alert', () => {
+  it('should able to render single line', () => {
     expect(
       render(
         <Alert>
@@ -19,7 +19,7 @@ describe("Alert", () => {
     ).toMatchSnapshot();
   });
 
-  it("should able to render multi line", () => {
+  it('should able to render multi line', () => {
     expect(
       render(
         <Alert>
@@ -37,7 +37,7 @@ describe("Alert", () => {
     ).toMatchSnapshot();
   });
 
-  it("should able to click DismissButton", () => {
+  it('should able to click DismissButton', () => {
     const onClick = vi.fn();
     const { getByRole } = render(
       <Alert>
@@ -55,8 +55,8 @@ describe("Alert", () => {
 
     act(() => {
       fireEvent.click(
-        getByRole("button", {
-          name: "Dismiss alert",
+        getByRole('button', {
+          name: 'Dismiss alert',
         }),
       );
     });

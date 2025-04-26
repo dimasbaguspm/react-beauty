@@ -1,28 +1,28 @@
-import React, { ReactNode, forwardRef, HTMLAttributes } from "react";
+import React, { ReactNode, forwardRef, HTMLAttributes } from 'react';
 
-import { ElAccordionContainer } from "./style";
-import { AccordionProvider, useAccordion } from "./use-accordion";
+import { ElAccordionContainer } from './style';
+import { AccordionProvider, useAccordion } from './use-accordion';
 
+const AccordionContainerInner = forwardRef<
+  HTMLDivElement,
+  HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const { expanded } = useAccordion();
+  return (
+    <ElAccordionContainer
+      ref={ref}
+      {...props}
+      role="region"
+      data-expanded={expanded.toString()}
+    />
+  );
+});
 
-const AccordionContainerInner = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
-  (props, ref) => {
-    const { expanded } = useAccordion();
-    return (
-      <ElAccordionContainer 
-        ref={ref} 
-        {...props}
-        role="region"
-        data-expanded={expanded.toString()}
-      />
-    );
-  }
-);
-
-export interface AccordionContainerProps extends HTMLAttributes<HTMLDivElement> {
+export interface AccordionContainerProps
+  extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   defaultExpanded?: boolean;
 }
-
 
 export const AccordionContainer = forwardRef<
   HTMLDivElement,

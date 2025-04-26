@@ -4,7 +4,7 @@ import {
   AlertDismissButton,
   AlertIcon,
   AlertTitle,
-} from "./atoms";
+} from './atoms';
 
 type CompoundAlertProps = {
   Icon: typeof AlertIcon;
@@ -21,4 +21,4 @@ const CompoundAlert = {
 } satisfies CompoundAlertProps;
 
 export const Alert = Object.assign(AlertContainer, CompoundAlert);
-export type * from "./type";
+export type * from './type';

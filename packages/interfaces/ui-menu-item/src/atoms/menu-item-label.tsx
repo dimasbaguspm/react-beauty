@@ -1,14 +1,14 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { ElMenuItemLabel, ElMenuItemDescription } from "./style";
+import { ElMenuItemLabel, ElMenuItemDescription } from './style';
 
 export interface MenuItemLabelProps extends HTMLAttributes<HTMLHeadingElement> {
-  "data-description"?: string;
+  'data-description'?: string;
   children: ReactNode;
 }
 
 export const MenuItemLabel = forwardRef<HTMLHeadingElement, MenuItemLabelProps>(
-  ({ "data-description": description, ...props }, ref) => (
+  ({ 'data-description': description, ...props }, ref) => (
     <div>
       <ElMenuItemLabel
         {...props}

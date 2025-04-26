@@ -1,6 +1,6 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { ElAlertIcon } from "./style";
+import { ElAlertIcon } from './style';
 
 export interface AlertIconProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;

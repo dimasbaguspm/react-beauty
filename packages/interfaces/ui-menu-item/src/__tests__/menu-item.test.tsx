@@ -1,29 +1,29 @@
-import { render, screen } from "@react-beauty/vitest/selector";
+import { render, screen } from '@react-beauty/vitest/selector';
 
-import { MenuItem } from "..";
+import { MenuItem } from '..';
 
-describe("MenuItem", () => {
-  it("should able to render a Button", () => {
+describe('MenuItem', () => {
+  it('should able to render a Button', () => {
     render(
       <MenuItem onClick={vi.fn()}>
         <MenuItem.Label>MenuItem</MenuItem.Label>
       </MenuItem>,
     );
 
-    expect(screen.getByRole("button")).toBeInTheDocument();
+    expect(screen.getByRole('button')).toBeInTheDocument();
   });
 
-  it("should able to render a Anchor", () => {
+  it('should able to render a Anchor', () => {
     render(
       <MenuItem href="https://www.react-beauty.com">
         <MenuItem.Label>MenuItem</MenuItem.Label>
       </MenuItem>,
     );
 
-    expect(screen.getByRole("link")).toBeInTheDocument();
+    expect(screen.getByRole('link')).toBeInTheDocument();
   });
 
-  it("should able to render with complete form", () => {
+  it('should able to render with complete form', () => {
     render(
       <MenuItem href="https://www.react-beauty.com">
         <MenuItem.LeadElement>
@@ -36,9 +36,9 @@ describe("MenuItem", () => {
       </MenuItem>,
     );
 
-    expect(screen.getByRole("link")).toBeInTheDocument();
-    expect(screen.getByText("Lead")).toBeInTheDocument();
-    expect(screen.getByText("MenuItem")).toBeInTheDocument();
-    expect(screen.getByText("Trail")).toBeInTheDocument();
+    expect(screen.getByRole('link')).toBeInTheDocument();
+    expect(screen.getByText('Lead')).toBeInTheDocument();
+    expect(screen.getByText('MenuItem')).toBeInTheDocument();
+    expect(screen.getByText('Trail')).toBeInTheDocument();
   });
 });

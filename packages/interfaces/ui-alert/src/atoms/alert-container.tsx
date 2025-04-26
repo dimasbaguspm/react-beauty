@@ -1,8 +1,8 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { AlertIntent, AlertType } from "../type";
+import { AlertIntent, AlertType } from '../type';
 
-import { ElAlertContainer } from "./style";
+import { ElAlertContainer } from './style';
 
 export interface AlertContainerProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;

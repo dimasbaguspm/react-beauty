@@ -1,28 +1,28 @@
-import { forwardRef, LiHTMLAttributes } from "react";
+import { forwardRef, LiHTMLAttributes } from 'react';
 
-import { MenuItemLinkAnchor } from "./menu-item-link-anchor";
-import { MenuItemLinkButton } from "./menu-item-link-button";
-import { ElMenuItemContainer } from "./style";
+import { MenuItemLinkAnchor } from './menu-item-link-anchor';
+import { MenuItemLinkButton } from './menu-item-link-button';
+import { ElMenuItemContainer } from './style';
 
-import type { MenuItemLinkAnchorProps } from "./menu-item-link-anchor";
-import type { MenuItemLinkButtonProps } from "./menu-item-link-button";
+import type { MenuItemLinkAnchorProps } from './menu-item-link-anchor';
+import type { MenuItemLinkButtonProps } from './menu-item-link-button';
 
 const isButton = (
-  props: Pick<MenuItemContainerProps, "onClick" | "href">,
+  props: Pick<MenuItemContainerProps, 'onClick' | 'href'>,
 ): props is MenuItemLinkButtonProps => {
-  return "onClick" in props;
+  return 'onClick' in props;
 };
 
 const isAnchor = (
-  props: Pick<MenuItemContainerProps, "onClick" | "href">,
+  props: Pick<MenuItemContainerProps, 'onClick' | 'href'>,
 ): props is MenuItemLinkAnchorProps => {
-  return "href" in props;
+  return 'href' in props;
 };
 
 export interface MenuItemContainerProps
   extends LiHTMLAttributes<HTMLLIElement> {
-  href?: MenuItemLinkAnchorProps["href"];
-  onClick?: MenuItemLinkButtonProps["onClick"];
+  href?: MenuItemLinkAnchorProps['href'];
+  onClick?: MenuItemLinkButtonProps['onClick'];
 }
 
 export const MenuItemContainer = forwardRef<

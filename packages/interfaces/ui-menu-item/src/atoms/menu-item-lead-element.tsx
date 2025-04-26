@@ -1,6 +1,6 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { ElMenuItemLeadElement } from "./style";
+import { ElMenuItemLeadElement } from './style';
 
 export interface MenuItemLeadElementProps
   extends HTMLAttributes<HTMLDivElement> {

@@ -1,8 +1,8 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { AvatarSize } from "../type";
+import { AvatarSize } from '../type';
 
-import { ElAvatarInitial } from "./style";
+import { ElAvatarInitial } from './style';
 
 export interface AvatarInitialProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -10,7 +10,7 @@ export interface AvatarInitialProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const AvatarInitial = forwardRef<HTMLDivElement, AvatarInitialProps>(
-  ({ size = "md", ...props }, ref) => {
+  ({ size = 'md', ...props }, ref) => {
     return (
       <ElAvatarInitial
         data-testid="avatar-initial"

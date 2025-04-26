@@ -1,15 +1,15 @@
-import { act, renderHook } from "@react-beauty/vitest/selector";
+import { act, renderHook } from '@react-beauty/vitest/selector';
 
-import { useEventPromiseRejection } from "..";
+import { useEventPromiseRejection } from '..';
 
-describe("useEventPromiseRejection", () => {
-  const spiedConsoleWarn = vi.spyOn(console, "warn");
+describe('useEventPromiseRejection', () => {
+  const spiedConsoleWarn = vi.spyOn(console, 'warn');
 
   afterEach(() => {
     spiedConsoleWarn.mockReset();
   });
 
-  it("should handle on unhandled promise rejection", () => {
+  it('should handle on unhandled promise rejection', () => {
     const mockOnUnhandledRejection = vi.fn();
 
     renderHook(() =>
@@ -22,19 +22,19 @@ describe("useEventPromiseRejection", () => {
 
     act(() => {
       window.dispatchEvent(
-        new CustomEvent("unhandledrejection", {
+        new CustomEvent('unhandledrejection', {
           detail: {
-            reason: "reason",
+            reason: 'reason',
           },
         }),
       );
     });
 
     expect(mockOnUnhandledRejection).toHaveBeenCalledTimes(1);
-    expect(spiedConsoleWarn).toHaveBeenCalledWith("Unhandled Promise Rejected");
+    expect(spiedConsoleWarn).toHaveBeenCalledWith('Unhandled Promise Rejected');
   });
 
-  it("should handle on handled promise rejection", () => {
+  it('should handle on handled promise rejection', () => {
     const mockOnHandledRejection = vi.fn();
 
     renderHook(() =>
@@ -47,15 +47,15 @@ describe("useEventPromiseRejection", () => {
 
     act(() => {
       window.dispatchEvent(
-        new CustomEvent("rejectionhandled", {
+        new CustomEvent('rejectionhandled', {
           detail: {
-            reason: "reason",
+            reason: 'reason',
           },
         }),
       );
     });
 
     expect(mockOnHandledRejection).toHaveBeenCalledTimes(1);
-    expect(spiedConsoleWarn).toHaveBeenCalledWith("Handled Promise Rejected");
+    expect(spiedConsoleWarn).toHaveBeenCalledWith('Handled Promise Rejected');
   });
 });

@@ -1,6 +1,6 @@
-import { forwardRef, HTMLAttributes } from "react";
+import { forwardRef, HTMLAttributes } from 'react';
 
-import { ElEmptyStateTitle } from "./style";
+import { ElEmptyStateTitle } from './style';
 
 export interface EmptyStateTitleProps
   extends HTMLAttributes<HTMLHeadingElement> {

@@ -1,27 +1,27 @@
-import { action } from "@react-beauty/storybook";
-import { Icon } from "@react-beauty/ui-icon";
-import { Tag } from "@react-beauty/ui-tag";
+import { action } from '@react-beauty/storybook';
+import { Icon } from '@react-beauty/ui-icon';
+import { Tag } from '@react-beauty/ui-tag';
 
-import { MenuItem } from ".";
+import { MenuItem } from '.';
 
-import type { Meta, StoryObj } from "@react-beauty/storybook";
+import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta = {
-  title: "Menu Item",
+  title: 'Menu Item',
   parameters: {
     backgrounds: {
-      default: "light",
+      default: 'light',
       values: [
         {
-          name: "light",
-          value: "var(--colors-main-goku)",
+          name: 'light',
+          value: 'var(--colors-main-goku)',
         },
       ],
     },
   },
   args: {
-    children: "Your Value",
-    onClick: action("clicked"),
+    children: 'Your Value',
+    onClick: action('clicked'),
   },
   argTypes: {
     children: {
@@ -35,13 +35,13 @@ const meta = {
 
 export const Anchor = {
   args: {
-    href: "https://www.google.com",
+    href: 'https://www.google.com',
   },
 };
 
 export const Button = {
   args: {
-    onClick: action("clicked"),
+    onClick: action('clicked'),
   },
 };
 

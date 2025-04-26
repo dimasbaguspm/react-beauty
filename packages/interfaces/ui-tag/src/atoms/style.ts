@@ -1,4 +1,4 @@
-import { styled } from "@linaria/react";
+import { styled } from '@linaria/react';
 
 const sizeSm = `
   padding-top: var(--components-tag-padding-sm-y);
@@ -42,18 +42,18 @@ export const ElTag = styled.div`
   line-height: var(--components-tag-line-height);
   border-radius: var(--components-tag-border-radius);
 
-  &[data-is-uppercase="true"] {
+  &[data-is-uppercase='true'] {
     text-transform: uppercase;
   }
 
-  &[data-has-bold-text="true"] {
+  &[data-has-bold-text='true'] {
     font-weight: var(--components-tag-font-weight-bold);
   }
 
-  &[data-size="sm"] {
+  &[data-size='sm'] {
     ${sizeSm}
   }
-  &[data-size="md"] {
+  &[data-size='md'] {
     ${sizeMd}
   }
 `;

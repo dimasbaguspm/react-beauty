@@ -1,4 +1,4 @@
-import { css } from "@linaria/core";
+import { css } from '@linaria/core';
 
 const size = `
   &[data-size="2xs"] {

@@ -1,9 +1,9 @@
-import { Icon } from "./atoms";
+import { Icon } from './atoms';
 
-import type { Meta, StoryObj } from "@react-beauty/storybook";
+import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta = {
-  title: "Icon",
+  title: 'Icon',
   component: Icon,
 } satisfies Meta<typeof Icon>;
 
@@ -11,8 +11,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default = {
   args: {
-    name: "arrowsRightCurved",
-    size: "md",
+    name: 'arrowsRightCurved',
+    size: 'md',
   },
 } satisfies Story;
 export default meta;

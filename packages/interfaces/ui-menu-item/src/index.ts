@@ -3,7 +3,7 @@ import {
   MenuItemLabel,
   MenuItemLeadElement,
   MenuItemTrailElement,
-} from "./atoms";
+} from './atoms';
 
 type CompoundMenuItemProps = {
   Label: typeof MenuItemLabel;

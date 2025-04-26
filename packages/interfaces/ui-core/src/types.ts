@@ -1,1 +1,1 @@
-export type ReactBeautyUITheme = "dark" | "light";
+export type ReactBeautyUITheme = 'dark' | 'light';

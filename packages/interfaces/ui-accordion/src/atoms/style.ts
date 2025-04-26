@@ -1,4 +1,4 @@
-import { styled } from "@linaria/react";
+import { styled } from '@linaria/react';
 
 const layout = `
   display: flex;
@@ -17,9 +17,10 @@ export const ElAccordionContainer = styled.div`
   border-radius: var(--components-accordion-border-radius);
   width: 100%;
   box-shadow: var(--components-accordion-shadow-default);
-  transition: box-shadow var(--components-accordion-transition-duration) var(--components-accordion-transition-timing);
+  transition: box-shadow var(--components-accordion-transition-duration)
+    var(--components-accordion-transition-timing);
 
-  &[data-expanded="true"] {
+  &[data-expanded='true'] {
     box-shadow: var(--components-accordion-shadow-expanded);
   }
 `;
@@ -27,11 +28,14 @@ export const ElAccordionContainer = styled.div`
 export const ElAccordionHeader = styled.div`
   ${base}
   gap: var(--components-accordion-header-gap);
-  padding: var(--components-accordion-padding-t) var(--components-accordion-padding-r) var(--components-accordion-padding-b) var(--components-accordion-padding-l);
+  padding: var(--components-accordion-padding-t)
+    var(--components-accordion-padding-r) var(--components-accordion-padding-b)
+    var(--components-accordion-padding-l);
   justify-content: space-between;
   border-radius: var(--components-accordion-border-radius);
   cursor: pointer;
-  transition: background-color var(--components-accordion-transition-duration) var(--components-accordion-transition-timing);
+  transition: background-color var(--components-accordion-transition-duration)
+    var(--components-accordion-transition-timing);
 
   &:hover {
     background-color: color-mix(
@@ -41,7 +45,7 @@ export const ElAccordionHeader = styled.div`
     );
   }
 
- &:focus-visible {
+  &:focus-visible {
     outline: solid;
     outline-width: 4px;
     outline-color: var(--components-accordion-colors-focus-outline);
@@ -57,7 +61,7 @@ export const ElAccordionTitle = styled.h3`
 export const ElAccordionContent = styled.div`
   overflow: hidden;
   height: auto;
-  transition: 
+  transition:
     max-height var(--components-accordion-transition-content),
     opacity var(--components-accordion-transition-content),
     padding var(--components-accordion-transition-content);
@@ -66,21 +70,21 @@ export const ElAccordionContent = styled.div`
   border-bottom-right-radius: var(--components-accordion-border-radius);
   max-height: 0;
   color: var(--components-accordion-colors-default-color);
-  
-  &[data-expanded="true"] {
+
+  &[data-expanded='true'] {
     visibility: visible;
     opacity: 1;
     max-height: 1000px; /* Arbitrary large value that content won't exceed */
     padding: var(--components-accordion-content-padding);
   }
-  
-  &[data-expanded="false"] {
+
+  &[data-expanded='false'] {
     opacity: 0;
     max-height: 0;
     padding: 0 var(--components-accordion-padding-l);
     visibility: hidden;
   }
-  
+
   transform-origin: top;
 `;
 
@@ -93,7 +97,7 @@ export const ElAccordionTrailElement = styled.div`
   margin-left: auto;
   transition: transform var(--components-accordion-transition-duration) ease;
 
-  &[data-expanded="true"] {
+  &[data-expanded='true'] {
     transform: rotate(180deg);
   }
 `;

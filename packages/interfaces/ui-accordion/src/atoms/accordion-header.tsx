@@ -1,14 +1,13 @@
-import React, { HTMLAttributes, forwardRef, KeyboardEvent } from "react";
+import React, { HTMLAttributes, forwardRef, KeyboardEvent } from 'react';
 
-import { ElAccordionHeader } from "./style";
-import { useAccordion } from "./use-accordion";
+import { ElAccordionHeader } from './style';
+import { useAccordion } from './use-accordion';
 
-export type AccordionHeaderProps = HTMLAttributes<HTMLDivElement> 
+export type AccordionHeaderProps = HTMLAttributes<HTMLDivElement>;
 
 export const AccordionHeader = forwardRef<HTMLDivElement, AccordionHeaderProps>(
   ({ children, ...props }, ref) => {
     const { expanded, setExpanded, contentId } = useAccordion();
-
 
     const handleClick = () => {
       setExpanded(!expanded);
@@ -35,5 +34,5 @@ export const AccordionHeader = forwardRef<HTMLDivElement, AccordionHeaderProps>(
         {children}
       </ElAccordionHeader>
     );
-  }
+  },
 );

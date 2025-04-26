@@ -1,12 +1,12 @@
-import { styled } from "@linaria/react";
+import { styled } from '@linaria/react';
 
 export const PaginationContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--components-pagination-gap);
-  
-  &[data-disabled="true"] {
+
+  &[data-disabled='true'] {
     opacity: var(--components-pagination-disabled-opacity-container);
     pointer-events: none;
   }
@@ -28,14 +28,14 @@ export const PaginationItem = styled.button`
   cursor: pointer;
   transition: background-color 0.2s ease;
 
-  &[data-size="sm"] {
+  &[data-size='sm'] {
     width: var(--components-pagination-item-size-sm);
     height: var(--components-pagination-item-size-sm);
     font-size: var(--components-pagination-font-size-sm);
     line-height: var(--components-pagination-font-line-height-sm);
   }
 
-  &:hover:not([data-active="true"]) {
+  &:hover:not([data-active='true']) {
     background-color: var(--components-pagination-colors-hover);
   }
 
@@ -44,7 +44,7 @@ export const PaginationItem = styled.button`
     outline-offset: 1px;
   }
 
-  &[data-active="true"] {
+  &[data-active='true'] {
     background-color: var(--components-pagination-colors-active-background);
     color: var(--components-pagination-colors-active-text);
   }

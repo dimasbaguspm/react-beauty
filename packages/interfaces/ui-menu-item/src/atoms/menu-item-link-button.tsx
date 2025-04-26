@@ -1,6 +1,6 @@
-import { ButtonHTMLAttributes, forwardRef, ReactNode } from "react";
+import { ButtonHTMLAttributes, forwardRef, ReactNode } from 'react';
 
-import { ElMenuItemLinkButton } from "./style";
+import { ElMenuItemLinkButton } from './style';
 
 export interface MenuItemLinkButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {

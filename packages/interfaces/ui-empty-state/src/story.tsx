@@ -1,9 +1,9 @@
-import { EmptyState } from ".";
+import { EmptyState } from '.';
 
-import type { Meta } from "@react-beauty/storybook";
+import type { Meta } from '@react-beauty/storybook';
 
 const meta = {
-  title: "Empty State",
+  title: 'Empty State',
   render: (args) => (
     <EmptyState {...args}>
       <EmptyState.Title>Main title</EmptyState.Title>

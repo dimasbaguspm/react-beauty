@@ -1,9 +1,9 @@
-import { render } from "@react-beauty/vitest/selector";
+import { render } from '@react-beauty/vitest/selector';
 
-import { EmptyState } from "..";
+import { EmptyState } from '..';
 
-describe("EmptyState", () => {
-  it("should render correctly", () => {
+describe('EmptyState', () => {
+  it('should render correctly', () => {
     expect(
       render(
         <EmptyState>

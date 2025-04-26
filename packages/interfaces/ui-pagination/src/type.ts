@@ -1,4 +1,4 @@
-export type PaginationSize = "sm" | "md";
+export type PaginationSize = 'sm' | 'md';
 
 export interface PaginationProps {
   /**

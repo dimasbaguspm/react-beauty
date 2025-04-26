@@ -1,6 +1,6 @@
-import { AnchorHTMLAttributes, forwardRef, ReactNode } from "react";
+import { AnchorHTMLAttributes, forwardRef, ReactNode } from 'react';
 
-import { ElMenuItemLinkAnchor } from "./style";
+import { ElMenuItemLinkAnchor } from './style';
 
 export interface MenuItemLinkAnchorProps
   extends AnchorHTMLAttributes<HTMLAnchorElement> {

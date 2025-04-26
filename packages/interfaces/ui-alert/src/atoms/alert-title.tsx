@@ -1,6 +1,6 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { ElAlertTitle } from "./style";
+import { ElAlertTitle } from './style';
 
 export interface AlertTitleProps extends HTMLAttributes<HTMLHeadingElement> {
   children: ReactNode;

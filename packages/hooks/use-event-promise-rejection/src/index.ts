@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useMemo } from "react";
+import { useCallback, useEffect, useMemo } from 'react';
 
-import type { RefObject } from "react";
+import type { RefObject } from 'react';
 
 /**
  * The options for useEventPromiseRejection hook
@@ -62,7 +62,7 @@ export const useEventPromiseRejection = (
         return node;
       }
 
-      if (node && "current" in node && node.current) {
+      if (node && 'current' in node && node.current) {
         return node.current;
       }
 
@@ -80,8 +80,8 @@ export const useEventPromiseRejection = (
 
       if (!hideUnhandledLog) {
         console.warn(
-          "Unhandled Promise Rejected" +
-            (event?.reason ? ", reason: " + event.reason : ""),
+          'Unhandled Promise Rejected' +
+            (event?.reason ? ', reason: ' + event.reason : ''),
         );
       }
 
@@ -99,8 +99,8 @@ export const useEventPromiseRejection = (
 
       if (!hideHandledLog) {
         console.warn(
-          "Handled Promise Rejected" +
-            (event?.reason ? ", reason: " + event.reason : ""),
+          'Handled Promise Rejected' +
+            (event?.reason ? ', reason: ' + event.reason : ''),
         );
       }
 
@@ -123,7 +123,7 @@ export const useEventPromiseRejection = (
    */
   useEffect(() => {
     parentNode?.addEventListener(
-      "unhandledrejection",
+      'unhandledrejection',
       // @ts-expect-error - deliberately
       handleOnUnhandledRejection,
       {
@@ -131,7 +131,7 @@ export const useEventPromiseRejection = (
       },
     );
     parentNode.addEventListener(
-      "rejectionhandled",
+      'rejectionhandled',
       // @ts-expect-error - deliberately
       handleOnHandledRejection,
       {
