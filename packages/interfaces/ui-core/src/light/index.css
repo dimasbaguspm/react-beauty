@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sat, 26 Apr 2025 13:57:19 GMT
+ * Generated on Sat, 26 Apr 2025 16:14:20 GMT
  */
 
 :root[data-theme='light'] {
@@ -123,6 +123,10 @@
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
   --components-pagination-disabled-opacity-nav-item: 0.3;
+  --components-tooltip-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  --components-tooltip-pointer-size: 6px;
+  --components-tooltip-max-width: 280px;
+  --components-tooltip-z-index: 1000;
   --components-accordion-border-radius: var(--border-radius-sm);
   --components-accordion-header-gap: var(--space-2);
   --components-accordion-padding-l: var(--space-4);
@@ -281,4 +285,12 @@
   --components-tag-font-weight-medium: var(--font-weight-medium);
   --components-tag-colors-bg: var(--colors-main-goku);
   --components-tag-colors-color: var(--colors-main-bulma);
+  --components-tooltip-background-color: var(--colors-main-bulma);
+  --components-tooltip-text-color: var(--colors-main-gohan);
+  --components-tooltip-border-radius: var(--border-radius-sm);
+  --components-tooltip-padding-x: var(--space-2);
+  --components-tooltip-padding-y: var(--space-1);
+  --components-tooltip-font-size: var(--font-size-xs);
+  --components-tooltip-font-weight: var(--font-weight-medium);
+  --components-tooltip-line-height: var(--font-line-height-xs);
 }
