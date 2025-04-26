@@ -1,10 +1,10 @@
-import { fireEvent, render } from "@react-beauty/vitest/selector";
-import { act, useRef } from "react";
+import { fireEvent, render } from '@react-beauty/vitest/selector';
+import { act, useRef } from 'react';
 
-import { ElementWidthObserverOptions, useElementWidthObserver } from "..";
+import { ElementWidthObserverOptions, useElementWidthObserver } from '..';
 
-describe("useElementWidthObserver", () => {
-  it("should return the width of the node element in pixels", () => {
+describe('useElementWidthObserver', () => {
+  it('should return the width of the node element in pixels', () => {
     const mockOnResize = vi.fn();
 
     render(<Component onResize={mockOnResize} />);

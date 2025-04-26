@@ -1,9 +1,9 @@
-import { render } from "@react-beauty/vitest/selector";
+import { render } from '@react-beauty/vitest/selector';
 
-import { FlexContainer } from "../flex-container";
+import { FlexContainer } from '../flex-container';
 
-describe("FlexContainer", () => {
-  it("should work as expected", () => {
+describe('FlexContainer', () => {
+  it('should work as expected', () => {
     expect(
       render(
         <FlexContainer

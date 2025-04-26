@@ -1,8 +1,8 @@
-import { forwardRef, ImgHTMLAttributes } from "react";
+import { forwardRef, ImgHTMLAttributes } from 'react';
 
-import { AvatarSize } from "../type";
+import { AvatarSize } from '../type';
 
-import { ElAvatarPicture } from "./style";
+import { ElAvatarPicture } from './style';
 
 export interface AvatarPictureProps
   extends ImgHTMLAttributes<HTMLImageElement> {
@@ -12,7 +12,7 @@ export interface AvatarPictureProps
 }
 
 export const AvatarPicture = forwardRef<HTMLImageElement, AvatarPictureProps>(
-  ({ size = "md", ...props }, ref) => {
+  ({ size = 'md', ...props }, ref) => {
     return (
       <ElAvatarPicture
         data-testid="avatar-picture"

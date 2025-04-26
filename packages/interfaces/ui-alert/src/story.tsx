@@ -1,16 +1,16 @@
-import { action } from "@react-beauty/storybook";
-import { Icon } from "@react-beauty/ui-icon";
+import { action } from '@react-beauty/storybook';
+import { Icon } from '@react-beauty/ui-icon';
 
-import { Alert } from ".";
+import { Alert } from '.';
 
-import type { Meta, StoryObj } from "@react-beauty/storybook";
+import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta = {
-  title: "Alert",
+  title: 'Alert',
   args: {
-    children: "Data uploaded to the server. Fire on!",
-    intent: "info",
-    type: "generic",
+    children: 'Data uploaded to the server. Fire on!',
+    intent: 'info',
+    type: 'generic',
   },
   argTypes: {
     children: {
@@ -19,17 +19,17 @@ const meta = {
       },
     },
     intent: {
-      description: "The intent of the alert",
-      options: ["none", "info", "success", "warning", "danger"],
+      description: 'The intent of the alert',
+      options: ['none', 'info', 'success', 'warning', 'danger'],
       control: {
-        type: "select",
+        type: 'select',
       },
     },
     type: {
-      description: "The type of the alert",
-      options: ["none", "generic", "colourful", "outline"],
+      description: 'The type of the alert',
+      options: ['none', 'generic', 'colourful', 'outline'],
       control: {
-        type: "select",
+        type: 'select',
       },
     },
   },
@@ -38,7 +38,7 @@ const meta = {
 
 export const SingleLine: StoryObj<typeof meta> = {
   args: {
-    children: "Data uploaded to the server. Fire on!",
+    children: 'Data uploaded to the server. Fire on!',
   },
 };
 
@@ -57,7 +57,7 @@ export const SingleLineWithDismiss: StoryObj<typeof meta> = {
   render: (args) => (
     <Alert {...args}>
       Data uploaded to the server. Fire on!
-      <Alert.DismissButton onClick={action("dismiss")} />
+      <Alert.DismissButton onClick={action('dismiss')} />
     </Alert>
   ),
 };
@@ -69,7 +69,7 @@ export const SingleLineComplete: StoryObj<typeof meta> = {
         <Icon name="genericInfo" />
       </Alert.Icon>
       Data uploaded to the server. Fire on!
-      <Alert.DismissButton onClick={action("dismiss")} />
+      <Alert.DismissButton onClick={action('dismiss')} />
     </Alert>
   ),
 };
@@ -105,7 +105,7 @@ export const MultiLineWithDismiss: StoryObj<typeof meta> = {
   render: (args) => (
     <Alert {...args}>
       <Alert.Title>Alert Title</Alert.Title>
-      <Alert.DismissButton onClick={action("dismiss")} />
+      <Alert.DismissButton onClick={action('dismiss')} />
       <Alert.Description>
         Pull request #999 merged successfully. Ready for review View the pull
         request on GitHub View the pull request on GitHub
@@ -121,7 +121,7 @@ export const MultiLineComplete: StoryObj<typeof meta> = {
         <Icon name="genericInfo" />
       </Alert.Icon>
       <Alert.Title>Alert Title</Alert.Title>
-      <Alert.DismissButton onClick={action("dismiss")} />
+      <Alert.DismissButton onClick={action('dismiss')} />
       <Alert.Description>
         Pull request #999 merged successfully. Ready for review View the pull
         request on GitHub View the pull request on GitHub

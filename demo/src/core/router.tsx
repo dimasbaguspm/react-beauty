@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import { Route, Router, Switch } from "wouter";
-import { useHashLocation } from "wouter/use-hash-location";
+import { ReactNode } from 'react';
+import { Route, Router, Switch } from 'wouter';
+import { useHashLocation } from 'wouter/use-hash-location';
 
 export interface AppRouterProps {
   children: ReactNode;

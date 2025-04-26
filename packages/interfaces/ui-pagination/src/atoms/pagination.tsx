@@ -1,13 +1,13 @@
-import { Icon } from "@react-beauty/ui-icon";
-import { forwardRef, useMemo } from "react";
+import { Icon } from '@react-beauty/ui-icon';
+import { forwardRef, useMemo } from 'react';
 
-import { PaginationProps } from "../type";
+import { PaginationProps } from '../type';
 
 import {
   PaginationContainer,
   PaginationItem,
   PaginationNavItem,
-} from "./style";
+} from './style';
 
 export const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
   (
@@ -15,7 +15,7 @@ export const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
       currentPage,
       totalPages,
       onPageChange,
-      size = "md",
+      size = 'md',
       disabled = false,
       ...props
     },
@@ -92,7 +92,7 @@ export const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
                 ? `Page ${pageNumber}, current page`
                 : `Go to page ${pageNumber}`
             }
-            aria-current={pageNumber === currentPage ? "page" : undefined}
+            aria-current={pageNumber === currentPage ? 'page' : undefined}
           >
             {pageNumber}
           </PaginationItem>

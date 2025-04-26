@@ -3,7 +3,7 @@ import {
   EmptyStateDescription,
   EmptyStateIcon,
   EmptyStateTitle,
-} from "./atoms";
+} from './atoms';
 
 type CompoundEmptyStateProps = {
   Icon: typeof EmptyStateIcon;
@@ -22,4 +22,4 @@ export const EmptyState = Object.assign(
   CompooundEmptyState,
 );
 
-export type * from "./atoms";
+export type * from './atoms';

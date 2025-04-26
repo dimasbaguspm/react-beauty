@@ -1,7 +1,7 @@
-import { Icon } from "@react-beauty/ui-icon";
-import { forwardRef, HTMLAttributes } from "react";
+import { Icon } from '@react-beauty/ui-icon';
+import { forwardRef, HTMLAttributes } from 'react';
 
-import { ElEmptyStateIcon } from "./style";
+import { ElEmptyStateIcon } from './style';
 
 export interface EmptyStateIconProps extends HTMLAttributes<HTMLDivElement> {
   children?: never;

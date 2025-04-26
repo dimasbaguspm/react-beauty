@@ -1,4 +1,4 @@
-import { styled } from "@linaria/react";
+import { styled } from '@linaria/react';
 
 const fill = `
   background-color: var(--components-button-colors-fill-default-bg);
@@ -133,35 +133,35 @@ export const ElButton = styled.button`
     width: 100%;
   }
 
-  &[data-size="xs"] {
+  &[data-size='xs'] {
     ${sizeXs}
   }
 
-  &[data-size="sm"] {
+  &[data-size='sm'] {
     ${sizeSm}
   }
 
-  &[data-size="md"] {
+  &[data-size='md'] {
     ${sizeMd}
   }
 
-  &[data-size="lg"] {
+  &[data-size='lg'] {
     ${sizeLg}
   }
 
-  &[data-size="xl"] {
+  &[data-size='xl'] {
     ${sizeXl}
   }
 
-  &[data-variant="fill"] {
+  &[data-variant='fill'] {
     ${fill}
   }
 
-  &[data-variant="outline"] {
+  &[data-variant='outline'] {
     ${outline}
   }
 
-  &[data-variant="ghost"] {
+  &[data-variant='ghost'] {
     ${ghost}
   }
 `;

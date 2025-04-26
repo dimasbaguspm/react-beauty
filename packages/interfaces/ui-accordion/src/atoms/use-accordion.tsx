@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useId } from "react";
+import React, { createContext, useContext, useState, useId } from 'react';
 
 interface AccordionContextType {
   expanded: boolean;
@@ -6,7 +6,9 @@ interface AccordionContextType {
   contentId: string;
 }
 
-const AccordionContext = createContext<AccordionContextType | undefined>(undefined);
+const AccordionContext = createContext<AccordionContextType | undefined>(
+  undefined,
+);
 
 export const AccordionProvider: React.FC<{
   children: React.ReactNode;
@@ -14,7 +16,7 @@ export const AccordionProvider: React.FC<{
 }> = ({ children, defaultExpanded = false }) => {
   const [expanded, setExpanded] = useState(defaultExpanded);
   const contentId = useId();
-  
+
   return (
     <AccordionContext.Provider value={{ expanded, setExpanded, contentId }}>
       {children}
@@ -25,7 +27,7 @@ export const AccordionProvider: React.FC<{
 export const useAccordion = (): AccordionContextType => {
   const context = useContext(AccordionContext);
   if (!context) {
-    throw new Error("useAccordion must be used within an AccordionProvider");
+    throw new Error('useAccordion must be used within an AccordionProvider');
   }
   return context;
 };

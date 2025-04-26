@@ -1,20 +1,32 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
+import prettierlint from 'eslint-plugin-prettier/recommended'
 // @ts-expect-error
 import importPlugin from "eslint-plugin-import";
 
 const configs = tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
+  prettierlint,
   {
-    files: ["**/*.{ts,tsx}", "**/*.stories.{ts,tsx}"],
+    files: ["**/*.{js,jsx,ts,tsx}", "**/*.{story,test}.{js,jsx,ts,tsx}"],
     plugins: {
       import: importPlugin,
     },
-    ignores: ["eslint.config.mjs", "**/__assets__/"],
+    ignores: ["eslint.config.js", "**/__assets__/"],
     rules: {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "all",
+          "semi": true,
+          "tabWidth": 2,
+          "useTabs": false,
+          "printWidth": 80,
+        }
+      ],
       "import/no-cycle": "error",
-      "import/exports-last": "error",
       "import/newline-after-import": "error",
       "import/max-dependencies": ["error", { max: 5 }],
       "import/consistent-type-specifier-style": ["error", "prefer-top-level"],

@@ -1,24 +1,24 @@
-import { Icon } from "@react-beauty/ui-icon";
+import { Icon } from '@react-beauty/ui-icon';
 
-import { Accordion } from ".";
+import { Accordion } from '.';
 
-import type { Meta, StoryObj } from "@react-beauty/storybook";
+import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta = {
-  title: "Accordion",
+  title: 'Accordion',
   parameters: {
     backgrounds: {
-      default: "light",
+      default: 'light',
       values: [
         {
-          name: "light",
-          value: "var(--colors-main-goku)",
+          name: 'light',
+          value: 'var(--colors-main-goku)',
         },
       ],
     },
   },
   args: {
-    children: "Accordion Content",
+    children: 'Accordion Content',
     defaultExpanded: false,
   },
   argTypes: {
@@ -28,15 +28,17 @@ const meta = {
       },
     },
   },
-  render: (args) => <Accordion {...args}>
-        <Accordion.Header>
-            <Accordion.Title>Accordion Title</Accordion.Title>
-            <Accordion.Close />
-        </Accordion.Header>
-        <Accordion.Content>
-            <p>This is the accordion content area.</p>
-        </Accordion.Content>
-  </Accordion>
+  render: (args) => (
+    <Accordion {...args}>
+      <Accordion.Header>
+        <Accordion.Title>Accordion Title</Accordion.Title>
+        <Accordion.Close />
+      </Accordion.Header>
+      <Accordion.Content>
+        <p>This is the accordion content area.</p>
+      </Accordion.Content>
+    </Accordion>
+  ),
 } satisfies Meta<typeof Accordion>;
 
 export const Default = {
@@ -51,7 +53,7 @@ export const DefaultExpanded = {
 
 export const WithTitle = {
   render: (args) => (
-    <Accordion {...args} >
+    <Accordion {...args}>
       <Accordion.Header>
         <Accordion.Title>Accordion Title</Accordion.Title>
         <Accordion.Close />
@@ -65,10 +67,10 @@ export const WithTitle = {
 
 export const WithLeadElement = {
   render: (args) => (
-    <Accordion {...args} >
+    <Accordion {...args}>
       <Accordion.Header>
         <Accordion.LeadElement>
-         <Icon name="otherFrame" size="md" />
+          <Icon name="otherFrame" size="md" />
         </Accordion.LeadElement>
         <Accordion.Title>With Lead Element</Accordion.Title>
         <Accordion.Close />
@@ -82,8 +84,8 @@ export const WithLeadElement = {
 
 export const Multiple = {
   render: () => (
-    <div >
-      <Accordion style={{ marginBottom: "8px" }}>
+    <div>
+      <Accordion style={{ marginBottom: '8px' }}>
         <Accordion.Header>
           <Accordion.Title>First Accordion</Accordion.Title>
           <Accordion.Close />
@@ -92,8 +94,8 @@ export const Multiple = {
           <p>Content of the first accordion</p>
         </Accordion.Content>
       </Accordion>
-      
-      <Accordion style={{ marginBottom: "8px" }}>
+
+      <Accordion style={{ marginBottom: '8px' }}>
         <Accordion.Header>
           <Accordion.Title>Second Accordion</Accordion.Title>
           <Accordion.Close />

@@ -1,7 +1,7 @@
-import { Icon } from "@react-beauty/ui-icon";
-import { forwardRef } from "react";
+import { Icon } from '@react-beauty/ui-icon';
+import { forwardRef } from 'react';
 
-import { ElAlertButton } from "./style";
+import { ElAlertButton } from './style';
 
 export interface AlertDismissButtonProps {
   onClick: VoidFunction;

@@ -1,6 +1,6 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { ElEmptyStateContainer } from "./style";
+import { ElEmptyStateContainer } from './style';
 
 export interface EmptyStateContainerProps
   extends HTMLAttributes<HTMLDivElement> {

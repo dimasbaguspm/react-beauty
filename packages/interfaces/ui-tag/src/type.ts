@@ -1,1 +1,1 @@
-export type TagSize = "sm" | "md";
+export type TagSize = 'sm' | 'md';

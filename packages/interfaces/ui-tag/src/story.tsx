@@ -1,16 +1,16 @@
-import { Icon } from "@react-beauty/ui-icon";
+import { Icon } from '@react-beauty/ui-icon';
 
-import { Tag } from "./atoms";
+import { Tag } from './atoms';
 
-import type { Meta, StoryObj } from "@react-beauty/storybook";
+import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta = {
-  title: "Tag",
+  title: 'Tag',
   args: {
-    children: "Button text",
+    children: 'Button text',
     isUppercase: false,
     hasBoldText: false,
-    size: "sm",
+    size: 'sm',
   },
   argTypes: {
     children: {
@@ -19,8 +19,8 @@ const meta = {
       },
     },
     size: {
-      options: ["sm", "md"],
-      control: { type: "select" },
+      options: ['sm', 'md'],
+      control: { type: 'select' },
     },
   },
   render: (args) => <Tag {...args} />,

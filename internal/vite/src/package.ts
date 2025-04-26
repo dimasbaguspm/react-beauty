@@ -1,9 +1,9 @@
-import react from "@vitejs/plugin-react";
-import wyw from "@wyw-in-js/vite";
-import dts from "vite-plugin-dts";
-import svgr from "vite-plugin-svgr";
+import react from '@vitejs/plugin-react';
+import wyw from '@wyw-in-js/vite';
+import dts from 'vite-plugin-dts';
+import svgr from 'vite-plugin-svgr';
 
-import type { UserConfig } from "vite";
+import type { UserConfig } from 'vite';
 
 export const viteConfig = (
   packageManifest: Record<string, unknown>,
@@ -11,24 +11,24 @@ export const viteConfig = (
 ): UserConfig => ({
   plugins: [
     wyw({
-      include: ["**/*.{ts,tsx}"],
+      include: ['**/*.{ts,tsx}'],
       babelOptions: {
-        presets: ["@babel/preset-typescript", "@babel/preset-react"],
+        presets: ['@babel/preset-typescript', '@babel/preset-react'],
       },
     }),
     react({
-      exclude: ["**/*.stories.tsx", "**/*.test.tsx"],
+      exclude: ['**/*.stories.tsx', '**/*.test.tsx'],
     }),
     svgr(),
     dts({
       exclude: (() => {
         const base = [
-          "node_modules/**",
-          "dist/**",
-          "**/__tests__/**",
-          "**/stories.*",
-          "**/story.*",
-          "**/style.*",
+          'node_modules/**',
+          'dist/**',
+          '**/__tests__/**',
+          '**/stories.*',
+          '**/story.*',
+          '**/style.*',
         ];
 
         // NOTE:  follow the same behavior as the `exclude` option of the
@@ -36,8 +36,8 @@ export const viteConfig = (
         // option with the `tsManifest.exclude` option.
         if (
           tsManifest &&
-          typeof tsManifest === "object" &&
-          "exclude" in tsManifest &&
+          typeof tsManifest === 'object' &&
+          'exclude' in tsManifest &&
           Array.isArray(tsManifest.exclude)
         ) {
           return base.concat(tsManifest.exclude);
@@ -48,12 +48,12 @@ export const viteConfig = (
     }),
   ],
   build: {
-    outDir: "dist",
+    outDir: 'dist',
     lib: {
-      entry: "./src/index.ts",
-      name: "index",
-      formats: ["es"],
-      fileName: "index",
+      entry: './src/index.ts',
+      name: 'index',
+      formats: ['es'],
+      fileName: 'index',
     },
     rollupOptions: {
       external(id, _, isResolved) {
@@ -72,8 +72,8 @@ export const viteConfig = (
   },
 });
 
-export * from "vite";
-export { default as wyw } from "@wyw-in-js/vite";
-export { default as react } from "@vitejs/plugin-react";
-export { default as svgr } from "vite-plugin-svgr";
-export { default as dts } from "vite-plugin-dts";
+export * from 'vite';
+export { default as wyw } from '@wyw-in-js/vite';
+export { default as react } from '@vitejs/plugin-react';
+export { default as svgr } from 'vite-plugin-svgr';
+export { default as dts } from 'vite-plugin-dts';

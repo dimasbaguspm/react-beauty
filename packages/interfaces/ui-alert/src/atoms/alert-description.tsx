@@ -1,6 +1,6 @@
-import { forwardRef, HTMLAttributes, ReactNode } from "react";
+import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { ElAlertDescription } from "./style";
+import { ElAlertDescription } from './style';
 
 export interface AlertDescriptionProps
   extends HTMLAttributes<HTMLParagraphElement> {

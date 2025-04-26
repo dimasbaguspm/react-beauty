@@ -1,4 +1,4 @@
-import { RefObject, useCallback, useMemo, useSyncExternalStore } from "react";
+import { RefObject, useCallback, useMemo, useSyncExternalStore } from 'react';
 
 /**
  * the type of the node element width observer in pixels
@@ -50,8 +50,8 @@ export const useElementWidthObserver = (
       }
 
       if (
-        typeof instance === "object" &&
-        "current" in instance &&
+        typeof instance === 'object' &&
+        'current' in instance &&
         instance.current instanceof HTMLElement
       ) {
         return instance.current;
@@ -88,7 +88,7 @@ export const useElementWidthObserver = (
   const subscriber = useCallback(
     (onStoreChange: VoidFunction) => {
       const abortController = new AbortController();
-      parentEl?.addEventListener("resize", handleOnResize(onStoreChange), {
+      parentEl?.addEventListener('resize', handleOnResize(onStoreChange), {
         signal: abortController.signal,
       });
 

@@ -1,17 +1,17 @@
-import { Icon } from "@react-beauty/ui-icon";
+import { Icon } from '@react-beauty/ui-icon';
 
-import { Button } from "./atoms";
+import { Button } from './atoms';
 
-import type { Meta, StoryObj } from "@react-beauty/storybook";
+import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta = {
-  title: "Button",
+  title: 'Button',
   args: {
-    children: "Button text",
-    variant: "fill",
-    size: "sm",
+    children: 'Button text',
+    variant: 'fill',
+    size: 'sm',
     disabled: false,
-    onClick: () => console.log("clicked"),
+    onClick: () => console.log('clicked'),
   },
   argTypes: {
     children: {
@@ -20,18 +20,18 @@ const meta = {
       },
     },
     size: {
-      options: ["xs", "sm", "md", "lg", "xl"],
-      control: { type: "select" },
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
+      control: { type: 'select' },
     },
     variant: {
-      options: ["fill", "outline", "ghost"],
-      control: { type: "select" },
+      options: ['fill', 'outline', 'ghost'],
+      control: { type: 'select' },
     },
     disabled: {
-      control: { type: "boolean" },
+      control: { type: 'boolean' },
     },
     isFullWidth: {
-      control: { type: "boolean" },
+      control: { type: 'boolean' },
     },
   },
   render: (args) => <Button {...args} />,
