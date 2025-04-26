@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Fri, 25 Apr 2025 15:59:09 GMT
+ * Generated on Sat, 26 Apr 2025 13:57:19 GMT
  */
 
 :root[data-theme='light'] {
@@ -114,10 +114,32 @@
   --space-12: 48px;
   --space-none: 0px;
   --space-half: 2px;
+  --components-accordion-shadow-default: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --components-accordion-shadow-expanded: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --components-accordion-transition-duration: 0.2s;
+  --components-accordion-transition-timing: ease-in-out;
+  --components-accordion-transition-content: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --components-menu-item-max-width: 240px;
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
   --components-pagination-disabled-opacity-nav-item: 0.3;
+  --components-accordion-border-radius: var(--border-radius-sm);
+  --components-accordion-header-gap: var(--space-2);
+  --components-accordion-padding-l: var(--space-4);
+  --components-accordion-padding-r: var(--space-4);
+  --components-accordion-padding-t: var(--space-3);
+  --components-accordion-padding-b: var(--space-3);
+  --components-accordion-content-padding: var(--space-4);
+  --components-accordion-font-size-title: var(--font-size-lg);
+  --components-accordion-font-size-content: var(--font-size-sm);
+  --components-accordion-line-height-text: var(--font-line-height-lg);
+  --components-accordion-line-height-content: var(--font-line-height-sm);
+  --components-accordion-font-weight-text: var(--font-weight-bold);
+  --components-accordion-font-weight-content: var(--font-weight-medium);
+  --components-accordion-colors-default-bg: var(--colors-main-gohan);
+  --components-accordion-colors-default-color: var(--colors-main-bulma);
+  --components-accordion-colors-content-bg: var(--colors-main-gohan);
+  --components-accordion-colors-focus-outline: var(--colors-supportive-whis-60);
   --components-alert-border-radius: var(--border-radius-sm);
   --components-alert-padding: var(--space-4);
   --components-alert-gap: var(--space-2);

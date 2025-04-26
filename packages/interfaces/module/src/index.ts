@@ -9,3 +9,4 @@ export * from "@react-beauty/ui-tag";
 export * from "@react-beauty/ui-empty-state";
 export * from "@react-beauty/ui-menu-item";
 export * from "@react-beauty/ui-pagination";
+export * from "@react-beauty/ui-accordion";

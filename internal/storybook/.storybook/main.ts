@@ -23,6 +23,7 @@ const config: StorybookConfig = {
     getStoriesPath("interfaces/ui-empty-state"),
     getStoriesPath("interfaces/ui-menu-item"),
     getStoriesPath("interfaces/ui-pagination"),
+    getStoriesPath("interfaces/ui-accordion"),
   ],
   addons: [
     getAbsolutePath("@storybook/addon-essentials"),

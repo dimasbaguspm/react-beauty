@@ -1199,6 +1199,7 @@ __metadata:
     "@linaria/react": "npm:6.3.0"
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-accordion": "workspace:*"
     "@react-beauty/ui-alert": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
     "@react-beauty/ui-button": "workspace:*"
@@ -1250,6 +1251,23 @@ __metadata:
     typescript: "npm:5.8.3"
   bin:
     tsc: ../../node_modules/.bin/tsc
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-accordion@workspace:*, @react-beauty/ui-accordion@workspace:packages/interfaces/ui-accordion":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-accordion@workspace:packages/interfaces/ui-accordion"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
   languageName: unknown
   linkType: soft
 
