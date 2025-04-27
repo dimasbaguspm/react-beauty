@@ -1,19 +1,26 @@
 {
   "name": "@react-beauty/ui-breadcrumb",
-  "version": "0.0.1",
+  "description": "ui-breadcrumb",
+  "license": "MIT",
+  "version": "1.0.0",
+  "stableVersion": "1.0.0",
+  "keywords": [
+    "react",
+    "@react-beauty",
+    "breadcrumb"
+  ],
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
   "type": "module",
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ],
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
+    ".": "./src/index.ts"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js",
+    "type": "./dist/index.d.ts"
   },
   "scripts": {
     "lint": "eslint src",
