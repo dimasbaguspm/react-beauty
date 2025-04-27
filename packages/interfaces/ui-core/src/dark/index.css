@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sat, 26 Apr 2025 16:14:20 GMT
+ * Generated on Sun, 27 Apr 2025 12:29:56 GMT
  */
 
 :root[data-theme='dark'] {
@@ -119,10 +119,12 @@
   --components-accordion-transition-duration: 0.2s;
   --components-accordion-transition-timing: ease-in-out;
   --components-accordion-transition-content: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --components-breadcrumb-max-width: 100%;
   --components-menu-item-max-width: 240px;
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
   --components-pagination-disabled-opacity-nav-item: 0.3;
+  --components-text-input-border-width: 1px;
   --components-tooltip-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --components-tooltip-pointer-size: 6px;
   --components-tooltip-max-width: 280px;
@@ -181,6 +183,19 @@
   --components-avatar-line-height-xs: var(--font-line-height-2xs);
   --components-avatar-color-background-color: var(--colors-main-goku);
   --components-avatar-color-color: var(--colors-main-bulma);
+  --components-breadcrumb-border-radius: var(--border-radius-sm);
+  --components-breadcrumb-gap: var(--space-1);
+  --components-breadcrumb-padding-y: var(--space-1);
+  --components-breadcrumb-padding-x: var(--space-2);
+  --components-breadcrumb-font-size: var(--font-size-sm);
+  --components-breadcrumb-line-height: var(--font-line-height-sm);
+  --components-breadcrumb-font-weight-default: var(--font-weight-medium);
+  --components-breadcrumb-font-weight-active: var(--font-weight-bold);
+  --components-breadcrumb-colors-default: var(--colors-main-trunks);
+  --components-breadcrumb-colors-active: var(--colors-main-bulma);
+  --components-breadcrumb-colors-hover: var(--colors-main-picollo);
+  --components-breadcrumb-colors-divider: var(--colors-main-trunks);
+  --components-breadcrumb-colors-focus-outline: var(--colors-supportive-whis-60);
   --components-button-border-radius-xs: var(--border-radius-xs);
   --components-button-border-radius-sm: var(--border-radius-sm);
   --components-button-border-radius-md: var(--border-radius-sm);
@@ -285,6 +300,30 @@
   --components-tag-font-weight-medium: var(--font-weight-medium);
   --components-tag-colors-bg: var(--colors-main-goku);
   --components-tag-colors-color: var(--colors-main-bulma);
+  --components-text-input-border-radius: var(--border-radius-xs);
+  --components-text-input-font-size-label: var(--font-size-sm);
+  --components-text-input-font-size-input: var(--font-size-xs);
+  --components-text-input-font-size-helper: var(--font-size-xs);
+  --components-text-input-line-height-label: var(--font-line-height-sm);
+  --components-text-input-line-height-input: var(--font-line-height-xs);
+  --components-text-input-line-height-helper: var(--font-line-height-xs);
+  --components-text-input-font-weight-label: var(--font-weight-medium);
+  --components-text-input-font-weight-input: var(--font-weight-regular);
+  --components-text-input-padding-input-horizontal: var(--space-3);
+  --components-text-input-padding-input-vertical: var(--space-2);
+  --components-text-input-gap: var(--space-1);
+  --components-text-input-colors-label: var(--colors-main-bulma);
+  --components-text-input-colors-input-text: var(--colors-main-bulma);
+  --components-text-input-colors-placeholder: var(--colors-main-trunks);
+  --components-text-input-colors-border-rest: var(--colors-main-trunks);
+  --components-text-input-colors-border-hover: var(--colors-main-picollo);
+  --components-text-input-colors-border-focus: var(--colors-main-picollo);
+  --components-text-input-colors-border-error: var(--colors-supportive-chichi);
+  --components-text-input-colors-background-rest: var(--colors-main-gohan);
+  --components-text-input-colors-background-outline: var(--colors-main-beerus);
+  --components-text-input-colors-background-disabled: var(--colors-supportive-krilin);
+  --components-text-input-colors-helper-text-normal: var(--colors-main-trunks);
+  --components-text-input-colors-helper-text-error: var(--colors-supportive-chichi);
   --components-tooltip-background-color: var(--colors-main-bulma);
   --components-tooltip-text-color: var(--colors-main-gohan);
   --components-tooltip-border-radius: var(--border-radius-sm);

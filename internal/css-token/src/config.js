@@ -11,6 +11,9 @@ const getBuildpath = (platform, isDev) => {
 const sdThemeGen = async (theme, isDev) => {
   const themeName = theme + " " + `${isDev ? "dev" : "prod"}`;
   const sd = new StyleDictionary({
+    log: {
+      'verbosity': 'verbose'
+    },
     source: [`../../packages/**/tokens/${theme}.json`],
     include: [
       // NOTE: all tokens that intended to be used globally
