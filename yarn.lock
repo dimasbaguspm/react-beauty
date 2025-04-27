@@ -1213,6 +1213,7 @@ __metadata:
     "@react-beauty/ui-menu-item": "workspace:*"
     "@react-beauty/ui-pagination": "workspace:*"
     "@react-beauty/ui-tag": "workspace:*"
+    "@react-beauty/ui-text-input": "workspace:*"
     "@react-beauty/ui-tooltip": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   peerDependencies:
@@ -1441,6 +1442,23 @@ __metadata:
     "@react-beauty/storybook": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
     "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-text-input@workspace:*, @react-beauty/ui-text-input@workspace:packages/interfaces/ui-text-input":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-text-input@workspace:packages/interfaces/ui-text-input"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:

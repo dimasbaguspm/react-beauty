@@ -12,3 +12,4 @@ export * from '@react-beauty/ui-pagination';
 export * from '@react-beauty/ui-accordion';
 export * from '@react-beauty/ui-breadcrumb';
 export * from '@react-beauty/ui-tooltip';
+export * from '@react-beauty/ui-text-input';
