@@ -1205,6 +1205,7 @@ __metadata:
     "@react-beauty/ui-accordion": "workspace:*"
     "@react-beauty/ui-alert": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
+    "@react-beauty/ui-breadcrumb": "workspace:*"
     "@react-beauty/ui-button": "workspace:*"
     "@react-beauty/ui-core": "workspace:*"
     "@react-beauty/ui-empty-state": "workspace:*"
@@ -1212,6 +1213,7 @@ __metadata:
     "@react-beauty/ui-menu-item": "workspace:*"
     "@react-beauty/ui-pagination": "workspace:*"
     "@react-beauty/ui-tag": "workspace:*"
+    "@react-beauty/ui-tooltip": "workspace:*"
     "@react-beauty/vite": "workspace:*"
   peerDependencies:
     "@types/react": "*"
@@ -1295,6 +1297,23 @@ __metadata:
 "@react-beauty/ui-avatar@workspace:*, @react-beauty/ui-avatar@workspace:packages/interfaces/ui-avatar":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-avatar@workspace:packages/interfaces/ui-avatar"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-breadcrumb@workspace:*, @react-beauty/ui-breadcrumb@workspace:packages/interfaces/ui-breadcrumb":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-breadcrumb@workspace:packages/interfaces/ui-breadcrumb"
   dependencies:
     "@linaria/core": "npm:6.3.0"
     "@linaria/react": "npm:6.3.0"
@@ -1430,7 +1449,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@react-beauty/ui-tooltip@workspace:packages/interfaces/ui-tooltip":
+"@react-beauty/ui-tooltip@workspace:*, @react-beauty/ui-tooltip@workspace:packages/interfaces/ui-tooltip":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-tooltip@workspace:packages/interfaces/ui-tooltip"
   dependencies:
