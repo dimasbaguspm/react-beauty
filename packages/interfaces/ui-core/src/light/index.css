@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sun, 27 Apr 2025 12:29:56 GMT
+ * Generated on Wed, 30 Apr 2025 14:18:10 GMT
  */
 
 :root[data-theme='light'] {
@@ -300,6 +300,30 @@
   --components-tag-font-weight-medium: var(--font-weight-medium);
   --components-tag-colors-bg: var(--colors-main-goku);
   --components-tag-colors-color: var(--colors-main-bulma);
+  --components-text-area-border-radius: var(--border-radius-xs);
+  --components-text-area-font-size-label: var(--font-size-sm);
+  --components-text-area-font-size-input: var(--font-size-xs);
+  --components-text-area-font-size-helper: var(--font-size-xs);
+  --components-text-area-line-height-label: var(--font-line-height-sm);
+  --components-text-area-line-height-input: var(--font-line-height-xs);
+  --components-text-area-line-height-helper: var(--font-line-height-xs);
+  --components-text-area-font-weight-label: var(--font-weight-medium);
+  --components-text-area-font-weight-input: var(--font-weight-regular);
+  --components-text-area-padding-input-horizontal: var(--space-3);
+  --components-text-area-padding-input-vertical: var(--space-2);
+  --components-text-area-gap: var(--space-1);
+  --components-text-area-colors-label: var(--colors-main-bulma);
+  --components-text-area-colors-input-text: var(--colors-main-trunks);
+  --components-text-area-colors-placeholder: var(--colors-main-trunks);
+  --components-text-area-colors-border-rest: var(--colors-main-trunks);
+  --components-text-area-colors-border-hover: var(--colors-main-picollo);
+  --components-text-area-colors-border-focus: var(--colors-main-picollo);
+  --components-text-area-colors-border-error: var(--colors-supportive-chichi);
+  --components-text-area-colors-background-rest: var(--colors-main-gohan);
+  --components-text-area-colors-background-outline: var(--colors-main-beerus);
+  --components-text-area-colors-background-disabled: var(--colors-supportive-krilin);
+  --components-text-area-colors-helper-text-normal: var(--colors-main-trunks);
+  --components-text-area-colors-helper-text-error: var(--colors-supportive-chichi);
   --components-text-input-border-radius: var(--border-radius-xs);
   --components-text-input-font-size-label: var(--font-size-sm);
   --components-text-input-font-size-input: var(--font-size-xs);
