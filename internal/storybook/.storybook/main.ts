@@ -26,6 +26,7 @@ const config: StorybookConfig = {
     getStoriesPath('interfaces/ui-accordion'),
     getStoriesPath('interfaces/ui-tooltip'),
     getStoriesPath('interfaces/ui-text-input'),
+    getStoriesPath('interfaces/ui-text-area'),
   ],
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),

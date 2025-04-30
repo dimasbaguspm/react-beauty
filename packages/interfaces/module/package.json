@@ -40,6 +40,7 @@
     "@react-beauty/ui-menu-item": "workspace:*",
     "@react-beauty/ui-pagination": "workspace:*",
     "@react-beauty/ui-tag": "workspace:*",
+    "@react-beauty/ui-text-area": "workspace:*",
     "@react-beauty/ui-text-input": "workspace:*",
     "@react-beauty/ui-tooltip": "workspace:*"
   },

@@ -1,0 +1,46 @@
+{
+  "components": {
+    "text-area": {
+      "border-radius": { "value": "{border-radius.xs}" },
+      "font-size": {
+        "label": { "value": "{font-size.sm}" },
+        "input": { "value": "{font-size.xs}" },
+        "helper": { "value": "{font-size.xs}" }
+      },
+      "line-height": {
+        "label": { "value": "{font-line-height.sm}" },
+        "input": { "value": "{font-line-height.xs}" },
+        "helper": { "value": "{font-line-height.xs}" }
+      },
+      "font-weight": {
+        "label": { "value": "{font-weight.medium}" },
+        "input": { "value": "{font-weight.regular}" }
+      },
+      "padding": {
+        "input-horizontal": { "value": "{space.3}" },
+        "input-vertical": { "value": "{space.2}" }
+      },
+      "gap": { "value": "{space.1}" },
+      "colors": {
+        "label": { "value": "{colors.main.bulma}" },
+        "input-text": { "value": "{colors.main.bulma}" },
+        "placeholder": { "value": "{colors.main.trunks}" },
+        "border": {
+          "rest": { "value": "{colors.main.trunks}" },
+          "hover": { "value": "{colors.main.picollo}" },
+          "focus": { "value": "{colors.main.picollo}" },
+          "error": { "value": "{colors.supportive.chichi}" }
+        },
+        "background": {
+          "rest": { "value": "{colors.main.gohan}" },
+          "outline": { "value": "{colors.main.beerus}" },
+          "disabled": { "value": "{colors.supportive.krilin}" }
+        },
+        "helper-text": {
+          "normal": { "value": "{colors.main.trunks}" },
+          "error": { "value": "{colors.supportive.chichi}" }
+        }
+      }
+    }
+  }
+}
