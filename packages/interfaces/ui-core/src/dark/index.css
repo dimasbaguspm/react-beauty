@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Wed, 30 Apr 2025 14:18:10 GMT
+ * Generated on Wed, 30 Apr 2025 14:50:36 GMT
  */
 
 :root[data-theme='dark'] {
@@ -124,6 +124,12 @@
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
   --components-pagination-disabled-opacity-nav-item: 0.3;
+  --components-switch-width: 40px;
+  --components-switch-height: 24px;
+  --components-switch-thumb-size: 18px;
+  --components-switch-thumb-margin: 3px;
+  --components-switch-transition-duration: 0.2s;
+  --components-switch-transition-timing: ease-in-out;
   --components-text-input-border-width: 1px;
   --components-tooltip-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --components-tooltip-pointer-size: 6px;
@@ -284,6 +290,23 @@
   --components-pagination-colors-active-background: var(--colors-main-picollo);
   --components-pagination-colors-active-text: var(--colors-main-goten);
   --components-pagination-colors-focus-outline: var(--colors-supportive-whis-60);
+  --components-switch-border-radius: var(--border-radius-rounded);
+  --components-switch-font-size-label: var(--font-size-sm);
+  --components-switch-font-size-helper: var(--font-size-xs);
+  --components-switch-line-height-label: var(--font-line-height-sm);
+  --components-switch-line-height-helper: var(--font-line-height-xs);
+  --components-switch-font-weight-label: var(--font-weight-medium);
+  --components-switch-gap: var(--space-1);
+  --components-switch-colors-label: var(--colors-main-bulma);
+  --components-switch-colors-track-unchecked: var(--colors-main-beerus);
+  --components-switch-colors-track-checked: var(--colors-main-picollo);
+  --components-switch-colors-track-disabled: var(--colors-main-beerus);
+  --components-switch-colors-thumb-unchecked: var(--colors-main-gohan);
+  --components-switch-colors-thumb-checked: var(--colors-main-gohan);
+  --components-switch-colors-thumb-disabled: var(--colors-main-trunks);
+  --components-switch-colors-focus-ring: var(--colors-supportive-whis-60);
+  --components-switch-colors-helper-text-normal: var(--colors-main-trunks);
+  --components-switch-colors-helper-text-error: var(--colors-supportive-chichi);
   --components-tag-border-radius: var(--border-radius-xs);
   --components-tag-gap: var(--space-1);
   --components-tag-padding-sm-y: var(--space-none);
