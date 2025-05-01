@@ -16,3 +16,4 @@ export * from '@react-beauty/ui-text-input';
 export * from '@react-beauty/ui-text-area';
 export * from '@react-beauty/ui-switch';
 export * from '@react-beauty/ui-radio';
+export * from '@react-beauty/ui-checkbox';

@@ -1207,6 +1207,7 @@ __metadata:
     "@react-beauty/ui-avatar": "workspace:*"
     "@react-beauty/ui-breadcrumb": "workspace:*"
     "@react-beauty/ui-button": "workspace:*"
+    "@react-beauty/ui-checkbox": "workspace:*"
     "@react-beauty/ui-core": "workspace:*"
     "@react-beauty/ui-empty-state": "workspace:*"
     "@react-beauty/ui-icon": "workspace:*"
@@ -1335,6 +1336,23 @@ __metadata:
 "@react-beauty/ui-button@workspace:*, @react-beauty/ui-button@workspace:packages/interfaces/ui-button":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-button@workspace:packages/interfaces/ui-button"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-checkbox@workspace:*, @react-beauty/ui-checkbox@workspace:packages/interfaces/ui-checkbox":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-checkbox@workspace:packages/interfaces/ui-checkbox"
   dependencies:
     "@linaria/core": "npm:6.3.0"
     "@linaria/react": "npm:6.3.0"
