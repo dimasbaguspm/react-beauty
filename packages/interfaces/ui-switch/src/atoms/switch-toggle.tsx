@@ -25,9 +25,10 @@ export const SwitchToggle = forwardRef<HTMLInputElement, SwitchToggleProps>(
     const attributes = getAttributes();
 
     return (
-      <ElSwitchWrapper id={inputWrapperId}>
+      <ElSwitchWrapper>
         <ElSwitchInput
           ref={ref}
+          id={inputWrapperId}
           type="checkbox"
           checked={isChecked}
           disabled={isDisabled}

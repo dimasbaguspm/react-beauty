@@ -13,10 +13,15 @@ export interface SwitchLabelProps
 
 export const SwitchLabel = forwardRef<HTMLLabelElement, SwitchLabelProps>(
   ({ children, ...rest }, ref) => {
-    const { getAttributes } = useSwitch();
+    const { getAttributes, inputWrapperId } = useSwitch();
 
     return (
-      <ElSwitchLabel ref={ref} {...rest} {...getAttributes()}>
+      <ElSwitchLabel
+        ref={ref}
+        htmlFor={inputWrapperId}
+        {...rest}
+        {...getAttributes()}
+      >
         {children}
       </ElSwitchLabel>
     );

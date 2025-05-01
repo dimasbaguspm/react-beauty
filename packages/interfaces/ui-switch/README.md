@@ -16,10 +16,8 @@ import { Switch } from '@react-beauty/ui-switch';
 export const MyComponent = () => {
   return (
     <Switch>
-      <Switch.Label>
-        <Switch.Toggle />
-        Toggle Label
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Toggle Label</Switch.Label>
     </Switch>
   );
 };
@@ -28,6 +26,7 @@ export const MyComponent = () => {
 ## Features
 
 - Compound component pattern for flexible composition
+- Completely flexible component arrangement
 - Accessibility-focused design
 - Support for error states, disabled states, and helper text
 - Customizable with design tokens
@@ -45,19 +44,19 @@ Props:
 - `isDisabled`: boolean - Whether the switch is disabled
 - `onChange`: (checked: boolean) => void - Callback when the switch state changes
 
-### Switch.Label
-
-The label component for the switch.
-
-Props:
-- `children`: ReactNode - Content of the label (can include the Switch.Toggle)
-
 ### Switch.Toggle
 
 The actual toggle component that shows the switch control.
 
 Props:
 - Standard HTML input props (excluding 'type', 'checked', and 'disabled')
+
+### Switch.Label
+
+The label component for the switch.
+
+Props:
+- `children`: ReactNode - Content of the label
 
 ### Switch.HelperText
 
@@ -72,10 +71,8 @@ Props:
 
 ```jsx
 <Switch>
-  <Switch.Label>
-    <Switch.Toggle />
-    Default Switch
-  </Switch.Label>
+  <Switch.Toggle />
+  <Switch.Label>Default Switch</Switch.Label>
 </Switch>
 ```
 
@@ -83,10 +80,8 @@ Props:
 
 ```jsx
 <Switch isChecked>
-  <Switch.Label>
-    <Switch.Toggle />
-    Checked Switch
-  </Switch.Label>
+  <Switch.Toggle />
+  <Switch.Label>Checked Switch</Switch.Label>
 </Switch>
 ```
 
@@ -94,34 +89,36 @@ Props:
 
 ```jsx
 <Switch>
-  <Switch.Label>
-    <Switch.Toggle />
-    Switch with helper text
-  </Switch.Label>
+  <Switch.Toggle />
+  <Switch.Label>Switch with helper text</Switch.Label>
   <Switch.HelperText>Additional information about the switch</Switch.HelperText>
 </Switch>
 ```
 
-### Switch with Error
+### Label Before Toggle
 
 ```jsx
-<Switch hasError>
-  <Switch.Label>
-    <Switch.Toggle />
-    Switch with error
-  </Switch.Label>
-  <Switch.HelperText>This field is required</Switch.HelperText>
+<Switch>
+  <Switch.Label>Label before toggle</Switch.Label>
+  <Switch.Toggle />
 </Switch>
 ```
 
-### Disabled Switch
+### Flexible Layout
+
+The component supports any arrangement of its parts:
 
 ```jsx
-<Switch isDisabled>
-  <Switch.Label>
+<Switch>
+  {/* Custom layout with extra elements */}
+  <div style={{ display: 'flex', alignItems: 'center' }}>
     <Switch.Toggle />
-    Disabled Switch
-  </Switch.Label>
+    <div>
+      <Switch.Label>Custom Layout</Switch.Label>
+      <div style={{ fontSize: '12px', color: 'gray' }}>Additional context</div>
+    </div>
+  </div>
+  <Switch.HelperText>Helper appears below everything</Switch.HelperText>
 </Switch>
 ```
 
@@ -131,10 +128,8 @@ Props:
 const [isChecked, setIsChecked] = useState(false);
 
 <Switch isChecked={isChecked} onChange={setIsChecked}>
-  <Switch.Label>
-    <Switch.Toggle />
-    Interactive Switch: {isChecked ? 'ON' : 'OFF'}
-  </Switch.Label>
+  <Switch.Toggle />
+  <Switch.Label>Interactive Switch: {isChecked ? 'ON' : 'OFF'}</Switch.Label>
 </Switch>
 ```
 

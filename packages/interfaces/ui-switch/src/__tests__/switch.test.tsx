@@ -6,10 +6,8 @@ describe('Switch component', () => {
   it('renders correctly with default props', () => {
     render(
       <Switch>
-        <Switch.Label>
-          <Switch.Toggle data-testid="switch-toggle" />
-          Test Switch
-        </Switch.Label>
+        <Switch.Toggle data-testid="switch-toggle" />
+        <Switch.Label>Test Switch</Switch.Label>
       </Switch>,
     );
 
@@ -24,10 +22,8 @@ describe('Switch component', () => {
   it('renders correctly when checked', () => {
     render(
       <Switch isChecked>
-        <Switch.Label>
-          <Switch.Toggle data-testid="switch-toggle" />
-          Test Switch
-        </Switch.Label>
+        <Switch.Toggle data-testid="switch-toggle" />
+        <Switch.Label>Test Switch</Switch.Label>
       </Switch>,
     );
 
@@ -38,10 +34,8 @@ describe('Switch component', () => {
   it('renders correctly when disabled', () => {
     render(
       <Switch isDisabled>
-        <Switch.Label>
-          <Switch.Toggle data-testid="switch-toggle" />
-          Test Switch
-        </Switch.Label>
+        <Switch.Toggle data-testid="switch-toggle" />
+        <Switch.Label>Test Switch</Switch.Label>
       </Switch>,
     );
 
@@ -52,10 +46,8 @@ describe('Switch component', () => {
   it('renders helper text correctly', () => {
     render(
       <Switch>
-        <Switch.Label>
-          <Switch.Toggle />
-          Test Switch
-        </Switch.Label>
+        <Switch.Toggle />
+        <Switch.Label>Test Switch</Switch.Label>
         <Switch.HelperText>Helper text</Switch.HelperText>
       </Switch>,
     );
@@ -67,10 +59,8 @@ describe('Switch component', () => {
   it('renders error state correctly', () => {
     render(
       <Switch hasError>
-        <Switch.Label>
-          <Switch.Toggle />
-          Test Switch
-        </Switch.Label>
+        <Switch.Toggle />
+        <Switch.Label>Test Switch</Switch.Label>
         <Switch.HelperText data-testid="helper-text">
           Error message
         </Switch.HelperText>
@@ -85,10 +75,8 @@ describe('Switch component', () => {
     const handleChange = vi.fn();
     render(
       <Switch onChange={handleChange}>
-        <Switch.Label>
-          <Switch.Toggle data-testid="switch-toggle" />
-          Test Switch
-        </Switch.Label>
+        <Switch.Toggle data-testid="switch-toggle" />
+        <Switch.Label>Test Switch</Switch.Label>
       </Switch>,
     );
 
@@ -103,10 +91,8 @@ describe('Switch component', () => {
     const handleChange = vi.fn();
     render(
       <Switch isDisabled onChange={handleChange}>
-        <Switch.Label>
-          <Switch.Toggle data-testid="switch-toggle" />
-          Test Switch
-        </Switch.Label>
+        <Switch.Toggle data-testid="switch-toggle" />
+        <Switch.Label>Test Switch</Switch.Label>
       </Switch>,
     );
 
@@ -114,5 +100,20 @@ describe('Switch component', () => {
     fireEvent.click(toggle);
 
     expect(handleChange).not.toHaveBeenCalled();
+  });
+
+  it('can have label before toggle', () => {
+    render(
+      <Switch>
+        <Switch.Label>Test Label First</Switch.Label>
+        <Switch.Toggle data-testid="switch-toggle" />
+      </Switch>,
+    );
+
+    const toggle = screen.getByTestId('switch-toggle');
+    const label = screen.getByText('Test Label First');
+
+    expect(toggle).toBeInTheDocument();
+    expect(label).toBeInTheDocument();
   });
 });

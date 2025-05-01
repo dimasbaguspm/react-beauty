@@ -1,14 +1,11 @@
 import { styled } from '@linaria/react';
 
-const layout = `
-  display: flex;
-  flex-direction: column;
-`;
-
 export const ElSwitchContainer = styled.div`
-  ${layout}
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: var(--components-switch-gap);
+  position: relative;
   width: 100%;
 `;
 
@@ -17,13 +14,10 @@ export const ElSwitchLabel = styled.label`
   line-height: var(--components-switch-line-height-label);
   font-weight: var(--components-switch-font-weight-label);
   color: var(--components-switch-colors-label);
-  display: flex;
-  align-items: center;
-  gap: var(--components-switch-gap);
   cursor: pointer;
 
   &[data-disabled='true'] {
-    opacity: 0.5;
+    opacity: 0.32;
     cursor: not-allowed;
   }
 `;
@@ -42,8 +36,12 @@ export const ElSwitchTrack = styled.div`
   }
 
   &[data-disabled='true'] {
-    background-color: var(--components-switch-colors-track-disabled);
+    opacity: 0.32;
     cursor: not-allowed;
+  }
+
+  &[data-checked='false'][data-disabled='true'] {
+    background-color: var(--components-switch-colors-track-disabled);
   }
 `;
 
@@ -66,10 +64,6 @@ export const ElSwitchThumb = styled.div`
       )
     );
     background-color: var(--components-switch-colors-thumb-checked);
-  }
-
-  [data-disabled='true'] & {
-    background-color: var(--components-switch-colors-thumb-disabled);
   }
 `;
 
@@ -99,13 +93,23 @@ export const ElSwitchHelperText = styled.span`
   line-height: var(--components-switch-line-height-helper);
   color: var(--components-switch-colors-helper-text-normal);
   padding: var(--space-none) var(--space-3);
+  flex-basis: 100%;
+  margin-top: calc(var(--components-switch-gap) / 2);
 
   &[data-error='true'] {
     color: var(--components-switch-colors-helper-text-error);
+  }
+
+  &[data-disabled='true'] {
+    opacity: 0.32;
   }
 `;
 
 export const ElSwitchWrapper = styled.div`
   position: relative;
   display: inline-block;
+
+  &[data-disabled='true'] {
+    cursor: not-allowed;
+  }
 `;
