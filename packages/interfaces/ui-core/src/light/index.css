@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Thu, 01 May 2025 03:40:11 GMT
+ * Generated on Thu, 01 May 2025 06:23:07 GMT
  */
 
 :root[data-theme='light'] {
@@ -124,6 +124,9 @@
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
   --components-pagination-disabled-opacity-nav-item: 0.3;
+  --components-radio-size: 20px;
+  --components-radio-transition-duration: 0.2s;
+  --components-radio-transition-timing: ease-in-out;
   --components-switch-width: 40px;
   --components-switch-height: 24px;
   --components-switch-thumb-size: 18px;
@@ -290,6 +293,25 @@
   --components-pagination-colors-active-background: var(--colors-main-picollo);
   --components-pagination-colors-active-text: var(--colors-main-goten);
   --components-pagination-colors-focus-outline: var(--colors-supportive-whis-60);
+  --components-radio-border-radius: var(--border-radius-rounded);
+  --components-radio-font-size-label: var(--font-size-sm);
+  --components-radio-font-size-helper: var(--font-size-xs);
+  --components-radio-line-height-label: var(--font-line-height-sm);
+  --components-radio-line-height-helper: var(--font-line-height-xs);
+  --components-radio-font-weight-label: var(--font-weight-medium);
+  --components-radio-gap: var(--space-1);
+  --components-radio-group-gap: var(--space-2);
+  --components-radio-colors-label: var(--colors-main-bulma);
+  --components-radio-colors-border-unchecked: var(--colors-main-trunks);
+  --components-radio-colors-border-checked: var(--colors-main-picollo);
+  --components-radio-colors-border-disabled: var(--colors-main-beerus);
+  --components-radio-colors-background-unchecked: var(--colors-main-gohan);
+  --components-radio-colors-background-checked: var(--colors-main-gohan);
+  --components-radio-colors-background-disabled: var(--colors-main-gohan);
+  --components-radio-colors-dot: var(--colors-main-picollo);
+  --components-radio-colors-focus-ring: var(--colors-supportive-whis-60);
+  --components-radio-colors-helper-text-normal: var(--colors-main-trunks);
+  --components-radio-colors-helper-text-error: var(--colors-supportive-chichi);
   --components-switch-border-radius: var(--border-radius-rounded);
   --components-switch-font-size-label: var(--font-size-sm);
   --components-switch-font-size-helper: var(--font-size-xs);
