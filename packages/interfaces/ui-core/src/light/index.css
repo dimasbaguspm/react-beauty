@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Thu, 01 May 2025 06:23:07 GMT
+ * Generated on Thu, 01 May 2025 08:27:24 GMT
  */
 
 :root[data-theme='light'] {
@@ -120,6 +120,9 @@
   --components-accordion-transition-timing: ease-in-out;
   --components-accordion-transition-content: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --components-breadcrumb-max-width: 100%;
+  --components-checkbox-size: 20px;
+  --components-checkbox-transition-duration: 0.2s;
+  --components-checkbox-transition-timing: ease-in-out;
   --components-menu-item-max-width: 240px;
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
@@ -246,6 +249,25 @@
   --components-button-colors-ghost-default-color: var(--colors-main-trunks);
   --components-button-colors-ghost-hover-color: var(--colors-main-bulma);
   --components-button-colors-ghost-hover-bg: var(--colors-main-jiren);
+  --components-checkbox-border-radius: var(--border-radius-xs);
+  --components-checkbox-font-size-label: var(--font-size-sm);
+  --components-checkbox-font-size-helper: var(--font-size-xs);
+  --components-checkbox-line-height-label: var(--font-line-height-sm);
+  --components-checkbox-line-height-helper: var(--font-line-height-xs);
+  --components-checkbox-font-weight-label: var(--font-weight-medium);
+  --components-checkbox-gap: var(--space-1);
+  --components-checkbox-group-gap: var(--space-2);
+  --components-checkbox-colors-label: var(--colors-main-bulma);
+  --components-checkbox-colors-border-unchecked: var(--colors-main-trunks);
+  --components-checkbox-colors-border-checked: var(--colors-main-picollo);
+  --components-checkbox-colors-border-disabled: var(--colors-main-beerus);
+  --components-checkbox-colors-background-unchecked: var(--colors-main-gohan);
+  --components-checkbox-colors-background-checked: var(--colors-main-picollo);
+  --components-checkbox-colors-background-disabled: var(--colors-main-gohan);
+  --components-checkbox-colors-checkmark: var(--colors-main-gohan);
+  --components-checkbox-colors-focus-ring: var(--colors-supportive-whis-60);
+  --components-checkbox-colors-helper-text-normal: var(--colors-main-trunks);
+  --components-checkbox-colors-helper-text-error: var(--colors-supportive-chichi);
   --components-empty-state-border-radius: var(--border-radius-xs);
   --components-empty-state-gap: var(--space-2);
   --components-empty-state-padding-y: var(--space-none);
