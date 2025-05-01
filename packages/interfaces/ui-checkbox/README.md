@@ -19,7 +19,7 @@ import { CheckboxInput } from '@react-beauty/ui-checkbox';
 
 function MyComponent() {
   return (
-    <CheckboxInput value="checkbox-1" onValueChange={(checked) => console.log(checked)}>
+    <CheckboxInput value="basic-checkbox" onValueChange={(checked) => console.log(checked)}>
       <CheckboxInput.Field />
       <CheckboxInput.Label>Basic Checkbox</CheckboxInput.Label>
     </CheckboxInput>
@@ -30,15 +30,17 @@ function MyComponent() {
 ### Checkbox with Helper Text
 
 ```jsx
-import { CheckboxInput } from '@react-beauty/ui-checkbox';
+import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
 
 function MyComponent() {
   return (
-    <CheckboxInput value="checkbox-with-helper">
-      <CheckboxInput.Field />
-      <CheckboxInput.Label>Checkbox with helper text</CheckboxInput.Label>
-      <CheckboxInput.HelperText>This is a helper text</CheckboxInput.HelperText>
-    </CheckboxInput>
+    <CheckboxGroup name="standalone-checkbox">
+      <CheckboxInput value="helper-checkbox">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Checkbox with helper text</CheckboxInput.Label>
+      </CheckboxInput>
+      <CheckboxGroup.HelperText>This is a helper text</CheckboxGroup.HelperText>
+    </CheckboxGroup>
   );
 }
 ```
@@ -46,15 +48,17 @@ function MyComponent() {
 ### Error State
 
 ```jsx
-import { CheckboxInput } from '@react-beauty/ui-checkbox';
+import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
 
 function MyComponent() {
   return (
-    <CheckboxInput value="error-checkbox" hasError={true}>
-      <CheckboxInput.Field />
-      <CheckboxInput.Label>Error state checkbox</CheckboxInput.Label>
-      <CheckboxInput.HelperText>This field is required</CheckboxInput.HelperText>
-    </CheckboxInput>
+    <CheckboxGroup name="error-checkbox" hasError>
+      <CheckboxInput value="error-checkbox">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Error state checkbox</CheckboxInput.Label>
+      </CheckboxInput>
+      <CheckboxGroup.HelperText>This field is required</CheckboxGroup.HelperText>
+    </CheckboxGroup>
   );
 }
 ```
@@ -62,14 +66,17 @@ function MyComponent() {
 ### Disabled Checkbox
 
 ```jsx
-import { CheckboxInput } from '@react-beauty/ui-checkbox';
+import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
 
 function MyComponent() {
   return (
-    <CheckboxInput value="disabled-checkbox" isDisabled={true}>
-      <CheckboxInput.Field />
-      <CheckboxInput.Label>Disabled checkbox</CheckboxInput.Label>
-    </CheckboxInput>
+    <CheckboxGroup name="disabled-checkbox" isDisabled>
+      <CheckboxInput value="disabled-checkbox" isDisabled>
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Disabled checkbox</CheckboxInput.Label>
+      </CheckboxInput>
+      <CheckboxGroup.HelperText>This option is disabled</CheckboxGroup.HelperText>
+    </CheckboxGroup>
   );
 }
 ```
@@ -103,6 +110,87 @@ function MyComponent() {
         <CheckboxInput.Field />
         <CheckboxInput.Label>Option 3</CheckboxInput.Label>
       </CheckboxInput>
+      <CheckboxGroup.HelperText>Select one or more options</CheckboxGroup.HelperText>
+    </CheckboxGroup>
+  );
+}
+```
+
+### Checkbox Group with Error
+
+```jsx
+import { useState } from 'react';
+import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
+
+function MyComponent() {
+  const [selectedValues, setSelectedValues] = useState([]);
+
+  return (
+    <CheckboxGroup
+      name="error-checkbox-group"
+      values={selectedValues}
+      onValueChange={setSelectedValues}
+      hasError
+    >
+      <CheckboxInput value="option-1">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Option 1</CheckboxInput.Label>
+      </CheckboxInput>
+      
+      <CheckboxInput value="option-2">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Option 2</CheckboxInput.Label>
+      </CheckboxInput>
+      
+      <CheckboxInput value="option-3">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Option 3</CheckboxInput.Label>
+      </CheckboxInput>
+      <CheckboxGroup.HelperText>Please select at least one option</CheckboxGroup.HelperText>
+    </CheckboxGroup>
+  );
+}
+```
+
+### Interactive Checkbox Group
+
+```jsx
+import { useState } from 'react';
+import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
+
+function MyComponent() {
+  const [selectedValues, setSelectedValues] = useState([]);
+  const [error, setError] = useState(true);
+
+  const handleChange = (values) => {
+    setSelectedValues(values);
+    setError(values.length === 0);
+  };
+
+  return (
+    <CheckboxGroup
+      name="interactive-checkbox-group"
+      values={selectedValues}
+      onValueChange={handleChange}
+      hasError={error}
+    >
+      <CheckboxInput value="small">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Small</CheckboxInput.Label>
+      </CheckboxInput>
+      
+      <CheckboxInput value="medium">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Medium</CheckboxInput.Label>
+      </CheckboxInput>
+      
+      <CheckboxInput value="large">
+        <CheckboxInput.Field />
+        <CheckboxInput.Label>Large</CheckboxInput.Label>
+      </CheckboxInput>
+      <CheckboxGroup.HelperText>
+        {error ? 'Please select at least one option' : 'Thank you for your selection'}
+      </CheckboxGroup.HelperText>
     </CheckboxGroup>
   );
 }
