@@ -1,0 +1,42 @@
+{
+  "components": {
+    "radio": {
+      "border-radius": { "value": "{border-radius.rounded}" },
+      "size": { "value": "20px" },
+      "transition-duration": { "value": "0.2s" },
+      "transition-timing": { "value": "ease-in-out" },
+      "font-size": {
+        "label": { "value": "{font-size.sm}" },
+        "helper": { "value": "{font-size.xs}" }
+      },
+      "line-height": {
+        "label": { "value": "{font-line-height.sm}" },
+        "helper": { "value": "{font-line-height.xs}" }
+      },
+      "font-weight": {
+        "label": { "value": "{font-weight.medium}" }
+      },
+      "gap": { "value": "{space.1}" },
+      "group-gap": { "value": "{space.2}" },
+      "colors": {
+        "label": { "value": "{colors.main.bulma}" },
+        "border": {
+          "unchecked": { "value": "{colors.main.trunks}" },
+          "checked": { "value": "{colors.main.picollo}" },
+          "disabled": { "value": "{colors.main.beerus}" }
+        },
+        "background": {
+          "unchecked": { "value": "{colors.main.gohan}" },
+          "checked": { "value": "{colors.main.gohan}" },
+          "disabled": { "value": "{colors.main.gohan}" }
+        },
+        "dot": { "value": "{colors.main.picollo}" },
+        "focus-ring": { "value": "{colors.supportive.whis-60}" },
+        "helper-text": {
+          "normal": { "value": "{colors.main.trunks}" },
+          "error": { "value": "{colors.supportive.chichi}" }
+        }
+      }
+    }
+  }
+}
