@@ -31,10 +31,8 @@ type Story = StoryObj<typeof meta>;
 export const Basic: Story = {
   render: () => (
     <Switch>
-      <Switch.Label>
-        <Switch.Toggle />
-        Default Switch
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Default Switch</Switch.Label>
     </Switch>
   ),
 };
@@ -42,10 +40,8 @@ export const Basic: Story = {
 export const Checked: Story = {
   render: () => (
     <Switch isChecked>
-      <Switch.Label>
-        <Switch.Toggle />
-        Checked Switch
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Checked Switch</Switch.Label>
     </Switch>
   ),
 };
@@ -53,10 +49,8 @@ export const Checked: Story = {
 export const WithHelperText: Story = {
   render: () => (
     <Switch>
-      <Switch.Label>
-        <Switch.Toggle />
-        Switch with helper text
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Switch with helper text</Switch.Label>
       <Switch.HelperText>
         Additional information about the switch
       </Switch.HelperText>
@@ -67,10 +61,8 @@ export const WithHelperText: Story = {
 export const WithError: Story = {
   render: () => (
     <Switch hasError>
-      <Switch.Label>
-        <Switch.Toggle />
-        Switch with error
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Switch with error</Switch.Label>
       <Switch.HelperText>This field is required</Switch.HelperText>
     </Switch>
   ),
@@ -79,10 +71,8 @@ export const WithError: Story = {
 export const Disabled: Story = {
   render: () => (
     <Switch isDisabled>
-      <Switch.Label>
-        <Switch.Toggle />
-        Disabled Switch
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Disabled Switch</Switch.Label>
     </Switch>
   ),
 };
@@ -90,10 +80,8 @@ export const Disabled: Story = {
 export const DisabledChecked: Story = {
   render: () => (
     <Switch isDisabled isChecked>
-      <Switch.Label>
-        <Switch.Toggle />
-        Disabled Checked Switch
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Disabled Checked Switch</Switch.Label>
     </Switch>
   ),
 };
@@ -101,10 +89,8 @@ export const DisabledChecked: Story = {
 export const WithOnChange: Story = {
   render: () => (
     <Switch onChange={(checked) => console.log('Switch toggled:', checked)}>
-      <Switch.Label>
-        <Switch.Toggle />
-        Interactive Switch (check console)
-      </Switch.Label>
+      <Switch.Toggle />
+      <Switch.Label>Interactive Switch (check console)</Switch.Label>
     </Switch>
   ),
 };
@@ -112,10 +98,8 @@ export const WithOnChange: Story = {
 export const LabelAfterToggle: Story = {
   render: () => (
     <Switch>
-      <Switch.Label>
-        Label after toggle
-        <Switch.Toggle />
-      </Switch.Label>
+      <Switch.Label>Label after toggle</Switch.Label>
+      <Switch.Toggle />
     </Switch>
   ),
 };
@@ -127,8 +111,8 @@ export const Interactive: Story = {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
         <Switch isChecked={isChecked} onChange={setIsChecked}>
+          <Switch.Toggle />
           <Switch.Label>
-            <Switch.Toggle />
             Interactive State: {isChecked ? 'ON' : 'OFF'}
           </Switch.Label>
         </Switch>
@@ -148,6 +132,42 @@ export const Interactive: Story = {
           </button>
         </div>
       </div>
+    );
+  },
+};
+
+export const FlexibleLayout: Story = {
+  render: () => (
+    <Switch>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <Switch.Toggle />
+        <div>
+          <Switch.Label style={{ display: 'block', marginBottom: '4px' }}>
+            Compound Part Structure
+          </Switch.Label>
+          <div style={{ fontSize: '12px', color: 'gray' }}>
+            Toggle is a sibling of Label, not nested inside it
+          </div>
+        </div>
+      </div>
+      <Switch.HelperText>
+        This demonstrates the flexible component structure
+      </Switch.HelperText>
+    </Switch>
+  ),
+};
+
+export const SiblingComponents: Story = {
+  render: () => {
+    const [isChecked, setIsChecked] = useState(false);
+
+    return (
+      <Switch isChecked={isChecked} onChange={setIsChecked}>
+        <Switch.Toggle />
+        <Switch.Label>
+          Interactive State: {isChecked ? 'ON' : 'OFF'}
+        </Switch.Label>
+      </Switch>
     );
   },
 };
