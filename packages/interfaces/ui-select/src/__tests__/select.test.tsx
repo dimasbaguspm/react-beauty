@@ -54,7 +54,7 @@ describe('Select', () => {
     const handleChange = vi.fn();
 
     render(
-      <Select onChange={handleChange}>
+      <Select onValueChange={handleChange}>
         <Select.Field data-testid="select-field">
           <Select.Option value="option1">Option 1</Select.Option>
           <Select.Option value="option2">Option 2</Select.Option>
