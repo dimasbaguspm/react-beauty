@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Thu, 01 May 2025 08:27:24 GMT
+ * Generated on Fri, 02 May 2025 13:37:25 GMT
  */
 
 :root[data-theme='dark'] {
@@ -130,6 +130,7 @@
   --components-radio-size: 20px;
   --components-radio-transition-duration: 0.2s;
   --components-radio-transition-timing: ease-in-out;
+  --components-select-border-width: 1px;
   --components-switch-width: 40px;
   --components-switch-height: 24px;
   --components-switch-thumb-size: 18px;
@@ -334,6 +335,35 @@
   --components-radio-colors-focus-ring: var(--colors-supportive-whis-60);
   --components-radio-colors-helper-text-normal: var(--colors-main-trunks);
   --components-radio-colors-helper-text-error: var(--colors-supportive-chichi);
+  --components-select-border-radius: var(--border-radius-xs);
+  --components-select-font-size-label: var(--font-size-sm);
+  --components-select-font-size-input: var(--font-size-xs);
+  --components-select-font-size-helper: var(--font-size-xs);
+  --components-select-font-size-option: var(--font-size-xs);
+  --components-select-line-height-label: var(--font-line-height-sm);
+  --components-select-line-height-input: var(--font-line-height-xs);
+  --components-select-line-height-helper: var(--font-line-height-xs);
+  --components-select-line-height-option: var(--font-line-height-xs);
+  --components-select-font-weight-label: var(--font-weight-medium);
+  --components-select-font-weight-input: var(--font-weight-regular);
+  --components-select-font-weight-option: var(--font-weight-regular);
+  --components-select-padding-input-horizontal: var(--space-3);
+  --components-select-padding-input-vertical: var(--space-2);
+  --components-select-gap: var(--space-1);
+  --components-select-colors-label: var(--colors-main-bulma);
+  --components-select-colors-input-text: var(--colors-main-bulma);
+  --components-select-colors-placeholder: var(--colors-main-trunks);
+  --components-select-colors-border-rest: var(--colors-main-trunks);
+  --components-select-colors-border-hover: var(--colors-main-picollo);
+  --components-select-colors-border-focus: var(--colors-main-picollo);
+  --components-select-colors-border-error: var(--colors-supportive-chichi);
+  --components-select-colors-background-rest: var(--colors-main-gohan);
+  --components-select-colors-background-outline: var(--colors-main-trunks);
+  --components-select-colors-background-disabled: var(--colors-supportive-krilin);
+  --components-select-colors-background-option-hover: var(--colors-main-picollo);
+  --components-select-colors-background-option-selected: var(--colors-main-picollo);
+  --components-select-colors-helper-text-normal: var(--colors-main-trunks);
+  --components-select-colors-helper-text-error: var(--colors-supportive-chichi);
   --components-switch-border-radius: var(--border-radius-rounded);
   --components-switch-font-size-label: var(--font-size-sm);
   --components-switch-font-size-helper: var(--font-size-xs);
