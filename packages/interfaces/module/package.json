@@ -41,6 +41,7 @@
     "@react-beauty/ui-menu-item": "workspace:*",
     "@react-beauty/ui-pagination": "workspace:*",
     "@react-beauty/ui-radio": "workspace:*",
+    "@react-beauty/ui-select": "workspace:*",
     "@react-beauty/ui-switch": "workspace:*",
     "@react-beauty/ui-tag": "workspace:*",
     "@react-beauty/ui-text-area": "workspace:*",
