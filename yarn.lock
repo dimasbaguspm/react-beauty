@@ -1205,6 +1205,7 @@ __metadata:
     "@react-beauty/ui-accordion": "workspace:*"
     "@react-beauty/ui-alert": "workspace:*"
     "@react-beauty/ui-avatar": "workspace:*"
+    "@react-beauty/ui-bottom-sheet": "workspace:*"
     "@react-beauty/ui-breadcrumb": "workspace:*"
     "@react-beauty/ui-button": "workspace:*"
     "@react-beauty/ui-checkbox": "workspace:*"
@@ -1311,6 +1312,24 @@ __metadata:
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/storybook": "workspace:*"
     "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-bottom-sheet@workspace:*, @react-beauty/ui-bottom-sheet@workspace:packages/interfaces/ui-bottom-sheet":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-bottom-sheet@workspace:packages/interfaces/ui-bottom-sheet"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-icon": "workspace:*"
     "@react-beauty/vite": "workspace:*"
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
