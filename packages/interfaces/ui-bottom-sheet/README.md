@@ -102,7 +102,7 @@ A bottom sheet containing a form:
 <BottomSheet isOpen={isOpen} onClose={() => setIsOpen(false)}>
   <BottomSheet.Header>
     <div className="sheet-title">Form Example</div>
-    <button className="close-button" onClick={()={setIsOpen(false)}>✕</button>
+    <button className="close-button" onClick={() => setIsOpen(false)}>✕</button>
   </BottomSheet.Header>
   <BottomSheet.Body>
     <div>
