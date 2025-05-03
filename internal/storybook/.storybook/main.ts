@@ -32,6 +32,7 @@ const config: StorybookConfig = {
     getStoriesPath('interfaces/ui-radio'),
     getStoriesPath('interfaces/ui-checkbox'),
     getStoriesPath('interfaces/ui-select'),
+    getStoriesPath('interfaces/ui-drawer'),
   ],
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
