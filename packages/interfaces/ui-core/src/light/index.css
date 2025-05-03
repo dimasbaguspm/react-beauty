@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sat, 03 May 2025 05:50:41 GMT
+ * Generated on Sat, 03 May 2025 09:28:36 GMT
  */
 
 :root[data-theme='light'] {
@@ -132,6 +132,15 @@
   --components-drawer-size-md: 400px;
   --components-drawer-size-lg: 600px;
   --components-menu-item-max-width: 240px;
+  --components-modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --components-modal-z-index: 1000;
+  --components-modal-overlay-bg: rgba(0, 0, 0, 0.5);
+  --components-modal-transition-duration: 0.2s;
+  --components-modal-transition-timing: ease-out;
+  --components-modal-size-sm: 400px;
+  --components-modal-size-md: 560px;
+  --components-modal-size-lg: 760px;
+  --components-modal-size-xl: 920px;
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
   --components-pagination-disabled-opacity-nav-item: 0.3;
@@ -324,6 +333,17 @@
   --components-menu-item-colors-default-color: var(--colors-main-bulma);
   --components-menu-item-colors-focus-outline: var(--colors-supportive-whis-60);
   --components-menu-item-colors-description-color: var(--colors-main-trunks);
+  --components-modal-background: var(--colors-main-gohan);
+  --components-modal-border-color: var(--colors-main-beerus);
+  --components-modal-border-radius: var(--border-radius-sm);
+  --components-modal-padding: var(--space-4);
+  --components-modal-title-font-size: var(--font-size-lg);
+  --components-modal-title-line-height: var(--font-line-height-lg);
+  --components-modal-title-font-weight: var(--font-weight-bold);
+  --components-modal-title-color: var(--colors-main-bulma);
+  --components-modal-close-button-color: var(--colors-main-trunks);
+  --components-modal-close-button-color-hover: var(--colors-main-picollo);
+  --components-modal-focus-ring: var(--colors-supportive-whis-60);
   --components-pagination-item-size-sm: calc(var(--size-7) - var(--space-half));
   --components-pagination-item-size-md: var(--size-8);
   --components-pagination-font-size-sm: var(--font-size-xs);

@@ -1,0 +1,66 @@
+{
+  "components": {
+    "modal": {
+      "background": {
+        "value": "{colors.main.gohan}"
+      },
+      "border-color": {
+        "value": "{colors.main.beerus}"
+      },
+      "border-radius": {
+        "value": "{border-radius.sm}"
+      },
+      "padding": {
+        "value": "{space.4}"
+      },
+      "shadow": {
+        "value": "0 4px 8px rgba(0, 0, 0, 0.1)"
+      },
+      "z-index": {
+        "value": "1000"
+      },
+      "overlay-bg": {
+        "value": "rgba(0, 0, 0, 0.5)"
+      },
+      "title-font-size": {
+        "value": "{font-size.lg}"
+      },
+      "title-line-height": {
+        "value": "{font-line-height.lg}"
+      },
+      "title-font-weight": {
+        "value": "{font-weight.bold}"
+      },
+      "title-color": {
+        "value": "{colors.main.bulma}"
+      },
+      "close-button-color": {
+        "value": "{colors.main.trunks}"
+      },
+      "close-button-color-hover": {
+        "value": "{colors.main.picollo}"
+      },
+      "focus-ring": {
+        "value": "{colors.supportive.whis-60}"
+      },
+      "transition-duration": {
+        "value": "0.2s"
+      },
+      "transition-timing": {
+        "value": "ease-out"
+      },
+      "size-sm": {
+        "value": "400px"
+      },
+      "size-md": {
+        "value": "560px"
+      },
+      "size-lg": {
+        "value": "760px"
+      },
+      "size-xl": {
+        "value": "920px"
+      }
+    }
+  }
+}
