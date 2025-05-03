@@ -11,7 +11,6 @@ npm install @react-beauty/ui-bottom-sheet
 ## Features
 
 - Mobile-friendly interface that slides up from the bottom of the screen
-- Draggable for dismissal with natural gesture
 - Follows compound component pattern for easy composition
 - Multiple height options: small, medium, large
 - Customizable header, body, and footer sections
@@ -40,8 +39,8 @@ function MyComponent() {
         height="md"
       >
         <BottomSheet.Header>
-          <div className="sheet-title">My Bottom Sheet</div>
-          <button className="close-button" onClick={() => setIsOpen(false)}>✕</button>
+          <BottomSheet.Title>My Bottom Sheet</BottomSheet.Title>
+          <BottomSheet.CloseButton />
         </BottomSheet.Header>
         <BottomSheet.Body>
           <p>This is the content of the bottom sheet.</p>
@@ -65,11 +64,16 @@ A simple bottom sheet with just a header and body content:
 ```jsx
 <BottomSheet isOpen={isOpen} onClose={() => setIsOpen(false)}>
   <BottomSheet.Header>
-    <div className="sheet-title">Basic Bottom Sheet</div>
-    <button className="close-button" onClick={() => setIsOpen(false)}>✕</button>
+    <BottomSheet.Title>Basic Bottom Sheet</BottomSheet.Title>
+    <BottomSheet.CloseButton />
   </BottomSheet.Header>
   <BottomSheet.Body>
     <p>This is a basic bottom sheet with just content.</p>
+    <p>
+      Bottom sheets are commonly used in mobile interfaces to present
+      additional information or actions without navigating away from the
+      current screen.
+    </p>
   </BottomSheet.Body>
 </BottomSheet>
 ```
@@ -81,16 +85,66 @@ Include a footer with action buttons:
 ```jsx
 <BottomSheet isOpen={isOpen} onClose={() => setIsOpen(false)}>
   <BottomSheet.Header>
-    <div className="sheet-title">Bottom Sheet with Footer</div>
-    <button className="close-button" onClick={() => setIsOpen(false)}>✕</button>
+    <BottomSheet.Title>Bottom Sheet with Footer</BottomSheet.Title>
+    <BottomSheet.CloseButton />
   </BottomSheet.Header>
   <BottomSheet.Body>
     <p>This bottom sheet includes a footer with action buttons.</p>
+    <p>Footers are ideal for primary and secondary actions.</p>
   </BottomSheet.Body>
   <BottomSheet.Footer>
-    <button>Cancel</button>
-    <button>Confirm</button>
+    <Button size="sm" variant="fill" onClick={() => {}}>
+      Okay
+    </Button>
   </BottomSheet.Footer>
+</BottomSheet>
+```
+
+### Different Heights
+
+```jsx
+<Button 
+  onClick={() => {
+    setHeight('sm');
+    setIsOpen(true);
+  }}
+>
+  Small
+</Button>
+<Button 
+  onClick={() => {
+    setHeight('md');
+    setIsOpen(true);
+  }}
+>
+  Medium
+</Button>
+<Button 
+  onClick={() => {
+    setHeight('lg');
+    setIsOpen(true);
+  }}
+>
+  Large
+</Button>
+
+<BottomSheet
+  isOpen={isOpen}
+  onClose={() => setIsOpen(false)}
+  height={height}
+>
+  <BottomSheet.Header>
+    <BottomSheet.Title>
+      {height.toUpperCase()} Bottom Sheet
+    </BottomSheet.Title>
+    <BottomSheet.CloseButton />
+  </BottomSheet.Header>
+  <BottomSheet.Body>
+    <p>This example demonstrates different height options.</p>
+    <p>
+      Current height: <strong>{height}</strong>
+    </p>
+  </BottomSheet.Body>
 </BottomSheet>
 ```
 
@@ -101,21 +155,37 @@ A bottom sheet containing a form:
 ```jsx
 <BottomSheet isOpen={isOpen} onClose={() => setIsOpen(false)}>
   <BottomSheet.Header>
-    <div className="sheet-title">Form Example</div>
-    <button className="close-button" onClick={() => setIsOpen(false)}>✕</button>
+    <BottomSheet.Title>Contact Form</BottomSheet.Title>
+    <BottomSheet.CloseButton />
   </BottomSheet.Header>
   <BottomSheet.Body>
-    <div>
-      <label>Name</label>
-      <input type="text" />
-      
-      <label>Email</label>
-      <input type="email" />
-    </div>
+    <TextInput>
+      <TextInput.Label htmlFor="name-input">Name</TextInput.Label>
+      <TextInput.Field id="name-input" placeholder="Your name" />
+    </TextInput>
+
+    <TextInput>
+      <TextInput.Label htmlFor="email-input">Email</TextInput.Label>
+      <TextInput.Field
+        id="email-input"
+        type="email"
+        placeholder="you@example.com"
+      />
+    </TextInput>
+
+    <TextArea>
+      <TextArea.Label htmlFor="message-textarea">Message</TextArea.Label>
+      <TextArea.Field
+        id="message-textarea"
+        placeholder="Your message here..."
+        rows={3}
+      />
+    </TextArea>
   </BottomSheet.Body>
   <BottomSheet.Footer>
-    <button>Cancel</button>
-    <button>Submit</button>
+    <Button size="sm" variant="fill" onClick={() => {}}>
+      Submit
+    </Button>
   </BottomSheet.Footer>
 </BottomSheet>
 ```
@@ -131,15 +201,14 @@ A bottom sheet containing a form:
 | `height` | 'sm' \| 'md' \| 'lg' | 'md' | Controls the height of the bottom sheet |
 | `hasOverlay` | boolean | true | Controls whether the bottom sheet has an overlay background |
 | `hasShadow` | boolean | true | Controls whether the bottom sheet has a shadow |
-| `isDraggable` | boolean | true | Controls whether the bottom sheet can be dismissed by dragging |
 
-### BottomSheet.Header Component
+### BottomSheet Subcomponents
 
-The `BottomSheet.Header` component accepts children and standard HTML attributes that can be passed to a div element. This gives you full control over the content that is rendered in the header.
-
-### BottomSheet.Body and BottomSheet.Footer Components
-
-These components accept standard HTML attributes that can be passed to a div element.
+- **BottomSheet.Header**: Container for the header content
+- **BottomSheet.Body**: Container for the main content
+- **BottomSheet.Footer**: Container for footer actions
+- **BottomSheet.Title**: Component for the sheet title
+- **BottomSheet.CloseButton**: Pre-styled close button that triggers onClose
 
 ## Accessibility
 
@@ -147,4 +216,4 @@ These components accept standard HTML attributes that can be passed to a div ele
 - Properly handles focus management
 - Includes ARIA attributes
 - Supports keyboard navigation and dismissal
-- Draggable interface includes appropriate ARIA labels
+- ESC key automatically closes the sheet
