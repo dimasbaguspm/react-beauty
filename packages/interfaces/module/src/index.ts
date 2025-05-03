@@ -19,3 +19,4 @@ export * from '@react-beauty/ui-radio';
 export * from '@react-beauty/ui-checkbox';
 export * from '@react-beauty/ui-select';
 export * from '@react-beauty/ui-drawer';
+export * from '@react-beauty/ui-modal';
