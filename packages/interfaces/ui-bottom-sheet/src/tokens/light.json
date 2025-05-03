@@ -1,0 +1,31 @@
+{
+  "components": {
+    "bottom-sheet": {
+      "z-index": { "value": "1000" },
+      "overlay-bg": { "value": "rgba(0, 0, 0, 0.5)" },
+      "shadow": { "value": "0 8px 16px rgba(0, 0, 0, 0.15)" },
+      "transition-duration": { "value": "0.3s" },
+      "transition-timing": { "value": "ease-in-out" },
+      "transition-content": { "value": "0.25s cubic-bezier(0.4, 0, 0.2, 1)" },
+      "background": { "value": "{colors.main.goku}" },
+      "border-color": { "value": "{colors.main.beerus}" },
+      "border-radius-top": { "value": "{border-radius.sm}" },
+      "padding": { "value": "{space.4}" },
+      "close-button-color": { "value": "{colors.main.trunks}" },
+      "close-button-color-hover": { "value": "{colors.main.picollo}" },
+      "focus-ring": { "value": "{colors.main.picollo}" },
+      "title-font-size": { "value": "{font-size.md}" },
+      "title-line-height": { "value": "{font-line-height.md}" },
+      "title-font-weight": { "value": "{font-weight.bold}" },
+      "title-color": { "value": "{colors.main.bulma}" },
+      "size-sm": { "value": "300px" },
+      "size-md": { "value": "500px" },
+      "size-lg": { "value": "800px" },
+      "drag-handle-color": { "value": "{colors.main.trunks}" },
+      "drag-handle-color-hover": { "value": "{colors.main.picollo}" },
+      "drag-handle-width": { "value": "48px" },
+      "drag-handle-height": { "value": "6px" },
+      "drag-handle-border-radius": { "value": "{border-radius.xs}" }
+    }
+  }
+}

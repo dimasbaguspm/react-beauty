@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sat, 03 May 2025 09:28:36 GMT
+ * Generated on Sat, 03 May 2025 14:07:32 GMT
  */
 
 :root[data-theme='light'] {
@@ -119,6 +119,17 @@
   --components-accordion-transition-duration: 0.2s;
   --components-accordion-transition-timing: ease-in-out;
   --components-accordion-transition-content: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --components-bottom-sheet-z-index: 1000;
+  --components-bottom-sheet-overlay-bg: rgba(0, 0, 0, 0.5);
+  --components-bottom-sheet-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --components-bottom-sheet-transition-duration: 0.3s;
+  --components-bottom-sheet-transition-timing: ease-in-out;
+  --components-bottom-sheet-transition-content: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --components-bottom-sheet-size-sm: 300px;
+  --components-bottom-sheet-size-md: 500px;
+  --components-bottom-sheet-size-lg: 800px;
+  --components-bottom-sheet-drag-handle-width: 48px;
+  --components-bottom-sheet-drag-handle-height: 6px;
   --components-breadcrumb-max-width: 100%;
   --components-checkbox-size: 20px;
   --components-checkbox-transition-duration: 0.2s;
@@ -213,6 +224,20 @@
   --components-avatar-line-height-xs: var(--font-line-height-2xs);
   --components-avatar-color-background-color: var(--colors-main-goku);
   --components-avatar-color-color: var(--colors-main-bulma);
+  --components-bottom-sheet-background: var(--colors-main-goku);
+  --components-bottom-sheet-border-color: var(--colors-main-beerus);
+  --components-bottom-sheet-border-radius-top: var(--border-radius-sm);
+  --components-bottom-sheet-padding: var(--space-4);
+  --components-bottom-sheet-close-button-color: var(--colors-main-trunks);
+  --components-bottom-sheet-close-button-color-hover: var(--colors-main-picollo);
+  --components-bottom-sheet-focus-ring: var(--colors-main-picollo);
+  --components-bottom-sheet-title-font-size: var(--font-size-md);
+  --components-bottom-sheet-title-line-height: var(--font-line-height-md);
+  --components-bottom-sheet-title-font-weight: var(--font-weight-bold);
+  --components-bottom-sheet-title-color: var(--colors-main-bulma);
+  --components-bottom-sheet-drag-handle-color: var(--colors-main-trunks);
+  --components-bottom-sheet-drag-handle-color-hover: var(--colors-main-picollo);
+  --components-bottom-sheet-drag-handle-border-radius: var(--border-radius-xs);
   --components-breadcrumb-border-radius: var(--border-radius-sm);
   --components-breadcrumb-gap: var(--space-1);
   --components-breadcrumb-padding-y: var(--space-1);
