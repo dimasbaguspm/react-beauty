@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Fri, 02 May 2025 13:37:25 GMT
+ * Generated on Sat, 03 May 2025 05:50:41 GMT
  */
 
 :root[data-theme='dark'] {
@@ -123,6 +123,14 @@
   --components-checkbox-size: 20px;
   --components-checkbox-transition-duration: 0.2s;
   --components-checkbox-transition-timing: ease-in-out;
+  --components-drawer-z-index: 1000;
+  --components-drawer-overlay-bg: rgba(0, 0, 0, 0.5);
+  --components-drawer-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --components-drawer-transition-duration: 300ms;
+  --components-drawer-transition-timing: ease-in-out;
+  --components-drawer-size-sm: 300px;
+  --components-drawer-size-md: 400px;
+  --components-drawer-size-lg: 600px;
   --components-menu-item-max-width: 240px;
   --components-pagination-disabled-opacity-container: 0.5;
   --components-pagination-disabled-opacity-item: 0.5;
@@ -269,6 +277,20 @@
   --components-checkbox-colors-focus-ring: var(--colors-supportive-whis-60);
   --components-checkbox-colors-helper-text-normal: var(--colors-main-trunks);
   --components-checkbox-colors-helper-text-error: var(--colors-supportive-chichi);
+  --components-drawer-background: var(--colors-main-gohan);
+  --components-drawer-border-color: var(--colors-main-beerus);
+  --components-drawer-border-radius-left: var(--border-radius-sm);
+  --components-drawer-border-radius-right: var(--border-radius-sm);
+  --components-drawer-border-radius-top: var(--border-radius-sm);
+  --components-drawer-border-radius-bottom: var(--border-radius-sm);
+  --components-drawer-padding: var(--space-4);
+  --components-drawer-close-button-color: var(--colors-main-trunks);
+  --components-drawer-close-button-color-hover: var(--colors-main-picollo);
+  --components-drawer-focus-ring: var(--colors-main-picollo);
+  --components-drawer-title-font-size: var(--font-size-md);
+  --components-drawer-title-line-height: var(--font-line-height-md);
+  --components-drawer-title-font-weight: var(--font-weight-bold);
+  --components-drawer-title-color: var(--colors-main-bulma);
   --components-empty-state-border-radius: var(--border-radius-xs);
   --components-empty-state-gap: var(--space-2);
   --components-empty-state-padding-y: var(--space-none);
@@ -359,7 +381,6 @@
   --components-select-colors-border-error: var(--colors-supportive-chichi);
   --components-select-colors-background-rest: var(--colors-main-gohan);
   --components-select-colors-background-outline: var(--colors-main-trunks);
-  --components-select-colors-background-disabled: var(--colors-supportive-krilin);
   --components-select-colors-background-option-hover: var(--colors-main-picollo);
   --components-select-colors-background-option-selected: var(--colors-main-picollo);
   --components-select-colors-helper-text-normal: var(--colors-main-trunks);

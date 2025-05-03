@@ -36,6 +36,7 @@
     "@react-beauty/ui-button": "workspace:*",
     "@react-beauty/ui-checkbox": "workspace:*",
     "@react-beauty/ui-core": "workspace:*",
+    "@react-beauty/ui-drawer": "workspace:*",
     "@react-beauty/ui-empty-state": "workspace:*",
     "@react-beauty/ui-icon": "workspace:*",
     "@react-beauty/ui-menu-item": "workspace:*",
