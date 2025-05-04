@@ -93,7 +93,6 @@ The main container component that controls the loading state.
 
 **Props:**
 - `isLoading` (boolean): Whether the loader is active. Defaults to `true`.
-- `size` (string): The size of the loader. Can be 'sm', 'md', or 'lg'. Defaults to 'md'.
 - `type` (string): The type of loader animation. Can be 'circular' or 'linear'. Defaults to 'circular'.
 - `children` (ReactNode): Child components, typically `Loader.Spinner` and optionally `Loader.Text`.
 
