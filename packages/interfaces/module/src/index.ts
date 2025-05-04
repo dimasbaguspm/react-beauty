@@ -21,3 +21,5 @@ export * from '@react-beauty/ui-select';
 export * from '@react-beauty/ui-drawer';
 export * from '@react-beauty/ui-modal';
 export * from '@react-beauty/ui-bottom-sheet';
+export * from '@react-beauty/ui-loader';
+export * from '@react-beauty/ui-sidebar';
