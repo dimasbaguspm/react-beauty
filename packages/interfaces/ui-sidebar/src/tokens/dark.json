@@ -1,0 +1,153 @@
+{
+  "components": {
+    "sidebar": {
+      "z-index": {
+        "value": "1000"
+      },
+      "background": {
+        "value": "{colors.main.gohan}"
+      },
+      "border-color": {
+        "value": "{colors.main.beerus}"
+      },
+      "border-radius": {
+        "value": "{border-radius.sm}"
+      },
+      "shadow": {
+        "value": "0 4px 8px rgba(0, 0, 0, 0.1)"
+      },
+      "padding": {
+        "value": "{space.4}"
+      },
+      "transition": {
+        "duration": {
+          "value": "300ms"
+        },
+        "timing": {
+          "value": "ease-in-out"
+        }
+      },
+      "width": {
+        "expanded": {
+          "value": "240px"
+        },
+        "collapsed": {
+          "value": "64px"
+        }
+      },
+      "icon": {
+        "color": {
+          "value": "{colors.main.trunks}"
+        },
+        "color-hover": {
+          "value": "{colors.main.picollo}"
+        },
+        "color-active": {
+          "value": "{colors.main.picollo}"
+        }
+      },
+      "item": {
+        "background": {
+          "value": "transparent"
+        },
+        "background-hover": {
+          "value": "{colors.supportive.krilin}"
+        },
+        "background-active": {
+          "value": "{colors.supportive.krilin}"
+        },
+        "color": {
+          "value": "{colors.main.bulma}"
+        },
+        "color-hover": {
+          "value": "{colors.main.picollo}"
+        },
+        "color-active": {
+          "value": "{colors.main.picollo}"
+        },
+        "padding": {
+          "value": "{space.3}"
+        },
+        "border-radius": {
+          "value": "{border-radius.sm}"
+        }
+      },
+      "focus-ring": {
+        "value": "{colors.main.picollo}"
+      },
+      "header": {
+        "height": {
+          "value": "64px"
+        },
+        "padding": {
+          "value": "{space.3}"
+        }
+      },
+      "footer": {
+        "padding": {
+          "value": "{space.3}"
+        }
+      },
+      "divider": {
+        "color": {
+          "value": "{colors.main.beerus}"
+        }
+      },
+      "toggle-button": {
+        "background": {
+          "value": "{colors.main.gohan}"
+        },
+        "outline-color": {
+          "value": "{colors.main.beerus}"
+        },
+        "color": {
+          "value": "{colors.main.bulma}"
+        },
+        "background-hover": {
+          "value": "{colors.main.jiren}"
+        },
+        "color-hover": {
+          "value": "{colors.main.picollo}"
+        },
+        "focus-ring": {
+          "value": "{colors.supportive.whis-60}"
+        }
+      },
+      "section-title": {
+        "font-size": {
+          "value": "{font-size.sm}"
+        },
+        "line-height": {
+          "value": "{font-line-height.sm}"
+        },
+        "font-weight": {
+          "value": "{font-weight.regular}"
+        },
+        "color": {
+          "value": "{colors.main.trunks}"
+        }
+      },
+      "body": {
+        "padding": {
+          "value": "{space.3}"
+        },
+        "gap": {
+          "value": "{space.2}"
+        }
+      },
+      "section": {
+        "gap": {
+          "value": "{space.1}"
+        },
+        "margin-bottom": {
+          "value": "{space.4}"
+        }
+      },
+      "item-list": {
+        "gap": {
+          "value": "{space.2}"
+        }
+      }
+    }
+  }
+}

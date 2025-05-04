@@ -35,6 +35,7 @@ const config: StorybookConfig = {
     getStoriesPath('interfaces/ui-drawer'),
     getStoriesPath('interfaces/ui-modal'),
     getStoriesPath('interfaces/ui-bottom-sheet'),
+    getStoriesPath('interfaces/ui-sidebar'),
   ],
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
