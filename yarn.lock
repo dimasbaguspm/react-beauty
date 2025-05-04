@@ -1213,11 +1213,13 @@ __metadata:
     "@react-beauty/ui-drawer": "workspace:*"
     "@react-beauty/ui-empty-state": "workspace:*"
     "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/ui-loader": "workspace:*"
     "@react-beauty/ui-menu-item": "workspace:*"
     "@react-beauty/ui-modal": "workspace:*"
     "@react-beauty/ui-pagination": "workspace:*"
     "@react-beauty/ui-radio": "workspace:*"
     "@react-beauty/ui-select": "workspace:*"
+    "@react-beauty/ui-sidebar": "workspace:*"
     "@react-beauty/ui-switch": "workspace:*"
     "@react-beauty/ui-tag": "workspace:*"
     "@react-beauty/ui-text-area": "workspace:*"
@@ -1457,6 +1459,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/ui-loader@workspace:*, @react-beauty/ui-loader@workspace:packages/interfaces/ui-loader":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-loader@workspace:packages/interfaces/ui-loader"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/ui-menu-item@workspace:*, @react-beauty/ui-menu-item@workspace:packages/interfaces/ui-menu-item":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-menu-item@workspace:packages/interfaces/ui-menu-item"
@@ -1545,7 +1565,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@react-beauty/ui-sidebar@workspace:packages/interfaces/ui-sidebar":
+"@react-beauty/ui-sidebar@workspace:*, @react-beauty/ui-sidebar@workspace:packages/interfaces/ui-sidebar":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-sidebar@workspace:packages/interfaces/ui-sidebar"
   dependencies:

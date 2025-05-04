@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sun, 04 May 2025 03:53:38 GMT
+ * Generated on Sun, 04 May 2025 05:31:59 GMT
  */
 
 :root[data-theme='dark'] {
@@ -142,6 +142,13 @@
   --components-drawer-size-sm: 300px;
   --components-drawer-size-md: 400px;
   --components-drawer-size-lg: 600px;
+  --components-loader-z-index: 1000;
+  --components-loader-size-sm: 24px;
+  --components-loader-size-md: 40px;
+  --components-loader-size-lg: 64px;
+  --components-loader-border-width: 3px;
+  --components-loader-animation-duration: 0.8s;
+  --components-loader-animation-timing: linear;
   --components-menu-item-max-width: 240px;
   --components-modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --components-modal-z-index: 1000;
@@ -351,6 +358,13 @@
   --components-icon-size-placeholder-xs: var(--size-4);
   --components-icon-size-placeholder-md: var(--size-6);
   --components-icon-size-placeholder-lg: var(--size-8);
+  --components-loader-color-spinner: var(--colors-main-picollo);
+  --components-loader-color-track: var(--colors-main-beerus);
+  --components-loader-color-text: var(--colors-main-bulma);
+  --components-loader-font-size: var(--font-size-sm);
+  --components-loader-font-weight: var(--font-weight-medium);
+  --components-loader-line-height: var(--font-line-height-sm);
+  --components-loader-text-margin: var(--space-2);
   --components-menu-item-border-radius: var(--border-radius-sm);
   --components-menu-item-gap: var(--space-2);
   --components-menu-item-padding-l: var(--space-3);

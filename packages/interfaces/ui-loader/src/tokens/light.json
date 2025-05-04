@@ -1,0 +1,67 @@
+{
+  "components": {
+    "loader": {
+      "z-index": {
+        "value": "1000",
+        "type": "number"
+      },
+      "size-sm": {
+        "value": "24px",
+        "type": "sizing"
+      },
+      "size-md": {
+        "value": "40px",
+        "type": "sizing"
+      },
+      "size-lg": {
+        "value": "64px",
+        "type": "sizing"
+      },
+      "border-width": {
+        "value": "3px",
+        "type": "sizing"
+      },
+      "color-spinner": {
+        "value": "{colors.main.picollo}",
+        "type": "color"
+      },
+      "color-track": {
+        "value": "{colors.main.beerus}",
+        "type": "color"
+      },
+      "color-text": {
+        "value": "{colors.main.bulma}",
+        "type": "color"
+      },
+      "font-size": {
+        "value": "{font-size.sm}",
+        "type": "fontSizes"
+      },
+      "font-weight": {
+        "value": "{font-weight.medium}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{font-line-height.sm}",
+        "type": "lineHeights"
+      },
+      "text-margin": {
+        "value": "{space.2}",
+        "type": "spacing"
+      },
+      "animation-duration": {
+        "value": "0.8s",
+        "type": "other"
+      },
+      "animation-timing": {
+        "value": "linear",
+        "type": "other"
+      },
+      "type": {
+        "value": "circular",
+        "type": "string",
+        "description": "Type of loader animation: 'circular' or 'linear'"
+      }
+    }
+  }
+}
