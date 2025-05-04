@@ -9,7 +9,6 @@ import {
 export type LoaderType = 'circular' | 'linear';
 
 interface LoaderContextType {
-  isLoading: boolean;
   type: LoaderType;
   loaderId: string;
   getAttributes: () => Record<string, string>;
@@ -27,13 +26,12 @@ export const useLoader = () => {
 
 interface LoaderProviderProps {
   children: ReactNode;
-  isLoading?: boolean;
   type?: LoaderType;
 }
 
 export const LoaderProvider = ({
   children,
-  isLoading = true,
+
   type = 'circular',
 }: LoaderProviderProps) => {
   const loaderId = useId();
@@ -49,7 +47,6 @@ export const LoaderProvider = ({
   return (
     <LoaderContext.Provider
       value={{
-        isLoading,
         type,
         loaderId,
         getAttributes,

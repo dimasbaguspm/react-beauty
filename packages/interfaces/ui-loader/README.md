@@ -10,8 +10,7 @@ npm install @react-beauty/ui-loader
 
 ## Features
 
-- Multiple loader types: border spinner and dots animation
-- Three size options: small, medium, and large
+- Multiple loader types: circular and linear animations
 - Customizable text content
 - Fully accessible
 - Theme token support
@@ -25,7 +24,7 @@ import { Loader } from '@react-beauty/ui-loader';
 // Basic Usage
 function BasicLoader() {
   return (
-    <Loader isLoading>
+    <Loader >
       <Loader.Spinner />
     </Loader>
   );
@@ -34,55 +33,23 @@ function BasicLoader() {
 // Loader with Text
 function LoaderWithText() {
   return (
-    <Loader isLoading>
+    <Loader>
+      <Loader.Spinner />
+      <Loader.Text>Loading...</Loader.Text>
+    </Loader>
+  );
+}
+
+// Linear Type Loader
+function LinearLoader() {
+  return (
+    <Loader type="linear">
       <Loader.Spinner />
       <Loader.Text>Loading content...</Loader.Text>
     </Loader>
   );
 }
 
-// Dots Type Loader
-function DotsLoader() {
-  return (
-    <Loader isLoading type="dots">
-      <Loader.Spinner />
-      <Loader.Text>Please wait...</Loader.Text>
-    </Loader>
-  );
-}
-
-// Size Variations
-function SizeVariations() {
-  return (
-    <div>
-      <Loader isLoading size="sm">
-        <Loader.Spinner />
-      </Loader>
-      
-      <Loader isLoading size="md">
-        <Loader.Spinner />
-      </Loader>
-      
-      <Loader isLoading size="lg">
-        <Loader.Spinner />
-      </Loader>
-    </div>
-  );
-}
-
-// Conditionally Showing a Loader
-function ConditionalLoader({ isDataLoading }) {
-  return (
-    <div>
-      <Loader isLoading={isDataLoading}>
-        <Loader.Spinner />
-        <Loader.Text>Loading data...</Loader.Text>
-      </Loader>
-      
-      {!isDataLoading && <div>Your content here</div>}
-    </div>
-  );
-}
 ```
 
 ## Components
@@ -92,7 +59,6 @@ function ConditionalLoader({ isDataLoading }) {
 The main container component that controls the loading state.
 
 **Props:**
-- `isLoading` (boolean): Whether the loader is active. Defaults to `true`.
 - `type` (string): The type of loader animation. Can be 'circular' or 'linear'. Defaults to 'circular'.
 - `children` (ReactNode): Child components, typically `Loader.Spinner` and optionally `Loader.Text`.
 
@@ -105,7 +71,7 @@ The actual spinner/animation component.
 
 ### Loader.Text
 
-Text component to display below the spinner.
+Text component to display with the spinner.
 
 **Props:**
 - `children` (ReactNode): The text content to display

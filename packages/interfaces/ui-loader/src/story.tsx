@@ -6,7 +6,6 @@ const meta = {
   title: 'Loader',
   component: Loader,
   argTypes: {
-    isLoading: { control: 'boolean' },
     type: {
       control: 'select',
       options: ['circular', 'linear'],
@@ -18,7 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic = {
   args: {
-    isLoading: true,
     type: 'circular',
   },
   render: (args) => (
@@ -32,7 +30,6 @@ export const Basic = {
 
 export const WithText = {
   args: {
-    isLoading: true,
     type: 'circular',
   },
   render: (args) => (
@@ -47,7 +44,6 @@ export const WithText = {
 
 export const LinearType = {
   args: {
-    isLoading: true,
     type: 'linear',
   },
   render: (args) => (

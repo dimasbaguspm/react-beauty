@@ -5,7 +5,7 @@ import { Loader } from '../index';
 describe('Loader', () => {
   it('renders without crashing', () => {
     const { getByRole } = render(
-      <Loader isLoading>
+      <Loader>
         <Loader.Spinner />
       </Loader>,
     );
@@ -15,7 +15,7 @@ describe('Loader', () => {
 
   it('renders with text', () => {
     const { getByText } = render(
-      <Loader isLoading>
+      <Loader>
         <Loader.Spinner />
         <Loader.Text>Loading...</Loader.Text>
       </Loader>,
@@ -26,7 +26,7 @@ describe('Loader', () => {
 
   it('renders with linear type', () => {
     const { container } = render(
-      <Loader isLoading type="linear">
+      <Loader type="linear">
         <Loader.Spinner />
       </Loader>,
     );
