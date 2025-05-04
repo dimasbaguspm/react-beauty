@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sat, 03 May 2025 14:07:32 GMT
+ * Generated on Sun, 04 May 2025 03:53:38 GMT
  */
 
 :root[data-theme='light'] {
@@ -53,7 +53,7 @@
   --colors-main-trunks: #595d62;
   --colors-main-goten: #ffffff;
   --colors-main-popo: #000000;
-  --colors-main-jiren: rgba(78, 70, 180, 0.07);
+  --colors-main-jiren: #f2f2fa;
   --colors-main-hales: rgba(0, 0, 0, 0.02);
   --colors-main-zeno: rgba(0, 0, 0, 0.34);
   --colors-supportive-krilin: #ffb319;
@@ -159,6 +159,14 @@
   --components-radio-transition-duration: 0.2s;
   --components-radio-transition-timing: ease-in-out;
   --components-select-border-width: 1px;
+  --components-sidebar-z-index: 1000;
+  --components-sidebar-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --components-sidebar-transition-duration: 300ms;
+  --components-sidebar-transition-timing: ease-in-out;
+  --components-sidebar-width-expanded: 240px;
+  --components-sidebar-width-collapsed: 64px;
+  --components-sidebar-item-background: transparent;
+  --components-sidebar-header-height: 64px;
   --components-switch-width: 40px;
   --components-switch-height: 24px;
   --components-switch-thumb-size: 18px;
@@ -430,6 +438,39 @@
   --components-select-colors-background-option-selected: var(--colors-main-picollo);
   --components-select-colors-helper-text-normal: var(--colors-main-trunks);
   --components-select-colors-helper-text-error: var(--colors-supportive-chichi);
+  --components-sidebar-background: var(--colors-main-gohan);
+  --components-sidebar-border-color: var(--colors-main-beerus);
+  --components-sidebar-border-radius: var(--border-radius-sm);
+  --components-sidebar-padding: var(--space-4);
+  --components-sidebar-icon-color: var(--colors-main-trunks);
+  --components-sidebar-icon-color-hover: var(--colors-main-picollo);
+  --components-sidebar-icon-color-active: var(--colors-main-picollo);
+  --components-sidebar-item-background-hover: var(--colors-supportive-krilin);
+  --components-sidebar-item-background-active: var(--colors-supportive-krilin);
+  --components-sidebar-item-color: var(--colors-main-bulma);
+  --components-sidebar-item-color-hover: var(--colors-main-picollo);
+  --components-sidebar-item-color-active: var(--colors-main-picollo);
+  --components-sidebar-item-padding: var(--space-3);
+  --components-sidebar-item-border-radius: var(--border-radius-sm);
+  --components-sidebar-focus-ring: var(--colors-main-picollo);
+  --components-sidebar-header-padding: var(--space-3);
+  --components-sidebar-footer-padding: var(--space-3);
+  --components-sidebar-divider-color: var(--colors-main-beerus);
+  --components-sidebar-toggle-button-background: var(--colors-main-gohan);
+  --components-sidebar-toggle-button-outline-color: var(--colors-main-beerus);
+  --components-sidebar-toggle-button-color: var(--colors-main-bulma);
+  --components-sidebar-toggle-button-background-hover: var(--colors-main-jiren);
+  --components-sidebar-toggle-button-color-hover: var(--colors-main-picollo);
+  --components-sidebar-toggle-button-focus-ring: var(--colors-supportive-whis-60);
+  --components-sidebar-section-title-font-size: var(--font-size-sm);
+  --components-sidebar-section-title-line-height: var(--font-line-height-sm);
+  --components-sidebar-section-title-font-weight: var(--font-weight-regular);
+  --components-sidebar-section-title-color: var(--colors-main-trunks);
+  --components-sidebar-body-padding: var(--space-3);
+  --components-sidebar-body-gap: var(--space-2);
+  --components-sidebar-section-gap: var(--space-1);
+  --components-sidebar-section-margin-bottom: var(--space-4);
+  --components-sidebar-item-list-gap: var(--space-2);
   --components-switch-border-radius: var(--border-radius-rounded);
   --components-switch-font-size-label: var(--font-size-sm);
   --components-switch-font-size-helper: var(--font-size-xs);

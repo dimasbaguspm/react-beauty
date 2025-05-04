@@ -18,3 +18,4 @@ const CompoundMenuItem = {
 } satisfies CompoundMenuItemProps;
 
 export const MenuItem = Object.assign(MenuItemContainer, CompoundMenuItem);
+export * from './atoms';

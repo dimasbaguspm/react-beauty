@@ -10,7 +10,6 @@ const base = `
   gap: var(--components-menu-item-gap);
   flex-direction: row;
   justify-content: start;
-  min-height: 44px;
   width: 100%;
 
   background-color: var(--components-menu-item-colors-default-bg);

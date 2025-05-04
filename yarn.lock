@@ -1545,6 +1545,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/ui-sidebar@workspace:packages/interfaces/ui-sidebar":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-sidebar@workspace:packages/interfaces/ui-sidebar"
+  dependencies:
+    "@linaria/core": "npm:6.3.0"
+    "@linaria/react": "npm:6.3.0"
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-icon": "workspace:*"
+    "@react-beauty/ui-menu-item": "workspace:*"
+    "@react-beauty/ui-tooltip": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/ui-switch@workspace:*, @react-beauty/ui-switch@workspace:packages/interfaces/ui-switch":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-switch@workspace:packages/interfaces/ui-switch"
