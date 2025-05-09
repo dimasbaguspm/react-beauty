@@ -14,12 +14,20 @@
     "dist"
   ],
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
   },
   "publishConfig": {
     "access": "public",
-    "main": "./dist/index.js",
-    "type": "./dist/index.d.ts"
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./style": "./dist/index.css"
+    }
   },
   "scripts": {
     "lint": "eslint src",
@@ -27,8 +35,6 @@
     "build": "vite build --configLoader runner"
   },
   "dependencies": {
-    "@linaria/core": "6.3.0",
-    "@linaria/react": "6.3.0",
     "@react-beauty/ui-accordion": "workspace:*",
     "@react-beauty/ui-alert": "workspace:*",
     "@react-beauty/ui-avatar": "workspace:*",
