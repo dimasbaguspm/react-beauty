@@ -34,7 +34,7 @@ describe('Select', () => {
     const selectField = screen.getByTestId('select-field');
     const helperText = screen.getByTestId('helper-text');
 
-    expect(selectField).toHaveAttribute('data-error', 'true');
+    expect(selectField.parentNode).toHaveAttribute('data-error', 'true');
     expect(helperText).toHaveAttribute('data-error', 'true');
   });
 

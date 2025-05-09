@@ -10,7 +10,7 @@ const StoryLayout = ({ children }: { children: React.ReactNode }) => (
 );
 
 const meta: Meta<typeof Select> = {
-  title: 'Interfaces/Select',
+  title: 'Select',
   component: Select,
   parameters: {
     layout: 'centered',

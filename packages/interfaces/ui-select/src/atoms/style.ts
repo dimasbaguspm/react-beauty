@@ -22,6 +22,37 @@ export const ElSelectLabel = styled.label`
 export const ElSelectWrapper = styled.div`
   position: relative;
   width: 100%;
+  background-color: var(--components-select-colors-background-rest);
+  padding: var(--space-1) var(--space-2);
+  outline: solid;
+  outline-width: 1px;
+  outline-color: var(--components-select-colors-background-outline);
+  border-radius: var(--components-select-border-radius);
+
+  &[data-error='true'] {
+    outline-color: var(--components-select-colors-border-error);
+  }
+
+  &[data-is-focused='true'] {
+    outline-color: var(--components-select-colors-border-focus);
+    box-shadow: 0 0 0 4px
+      color-mix(
+        in srgb,
+        var(--components-select-colors-border-focus),
+        transparent
+      );
+  }
+
+  &:hover:not([data-disabled='true']) {
+    outline-color: var(
+      --components-select-colors-border-hover,
+      var(--components-select-colors-border-focus)
+    );
+  }
+
+  &[data-disabled='true'] {
+    opacity: 0.32;
+  }
 `;
 
 export const ElSelect = styled.select`
@@ -30,35 +61,25 @@ export const ElSelect = styled.select`
   line-height: var(--components-select-line-height-input);
   font-weight: var(--components-select-font-weight-input);
   color: var(--components-select-colors-input-text);
-  background-color: var(--components-select-colors-background-rest);
-  border-radius: var(--components-select-border-radius);
-  padding: var(--space-2) var(--space-3);
-  border: 1px solid var(--components-select-colors-background-outline);
+  border: none;
+  background: none;
   appearance: none;
   cursor: pointer;
 
-  &:focus-visible {
-    outline: none;
-    border-color: var(--components-select-colors-border-focus);
-    box-shadow: 0 0 0 4px
-      color-mix(
-        in srgb,
-        var(--components-select-colors-border-focus),
-        transparent 70%
-      );
+  &::placeholder {
+    color: var(--components-select-colors-placeholder);
   }
 
-  &[data-error='true'] {
-    border-color: var(--components-select-colors-border-error);
+  &:focus-within {
+    outline: none;
   }
 
   &:disabled {
-    opacity: 0.32;
     cursor: not-allowed;
   }
 
   &[data-has-lead-element='true'] {
-    padding-left: 32px;
+    padding-left: 25px;
   }
 `;
 

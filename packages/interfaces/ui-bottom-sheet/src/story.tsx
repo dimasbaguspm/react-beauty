@@ -10,7 +10,7 @@ import { BottomSheetHeight } from './atoms/bottom-sheet-container';
 import { BottomSheet } from '.';
 
 const meta: Meta<typeof BottomSheet> = {
-  title: 'Interfaces/BottomSheet',
+  title: 'BottomSheet',
   component: BottomSheet,
   tags: ['autodocs'],
   parameters: {

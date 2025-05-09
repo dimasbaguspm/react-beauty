@@ -31,7 +31,7 @@ export const ElRadioCircle = styled.div`
   width: var(--components-radio-size);
   height: var(--components-radio-size);
   border-radius: 50%;
-  border: 2px solid var(--components-radio-colors-border-unchecked);
+  border: 1px solid var(--colors-main-beerus);
   transition: border-color var(--components-radio-transition-duration)
     var(--components-radio-transition-timing);
   background-color: var(--components-radio-colors-background-unchecked);

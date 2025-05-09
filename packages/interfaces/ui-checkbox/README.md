@@ -16,10 +16,13 @@ The checkbox component follows a compound component pattern, allowing for flexib
 
 ```jsx
 import { CheckboxInput } from '@react-beauty/ui-checkbox';
+import { useState } from 'react';
 
 function MyComponent() {
+  const [checked, setChecked] = useState(false);
+  
   return (
-    <CheckboxInput value="basic-checkbox" onValueChange={(checked) => console.log(checked)}>
+    <CheckboxInput value="basic-checkbox" checked={checked} onValueChange={setChecked}>
       <CheckboxInput.Field />
       <CheckboxInput.Label>Basic Checkbox</CheckboxInput.Label>
     </CheckboxInput>
@@ -31,11 +34,14 @@ function MyComponent() {
 
 ```jsx
 import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
+import { useState } from 'react';
 
 function MyComponent() {
+  const [checked, setChecked] = useState(false);
+  
   return (
     <CheckboxGroup name="standalone-checkbox">
-      <CheckboxInput value="helper-checkbox">
+      <CheckboxInput value="helper-checkbox" checked={checked} onValueChange={setChecked}>
         <CheckboxInput.Field />
         <CheckboxInput.Label>Checkbox with helper text</CheckboxInput.Label>
       </CheckboxInput>
@@ -49,11 +55,14 @@ function MyComponent() {
 
 ```jsx
 import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
+import { useState } from 'react';
 
 function MyComponent() {
+  const [checked, setChecked] = useState(false);
+  
   return (
     <CheckboxGroup name="error-checkbox" hasError>
-      <CheckboxInput value="error-checkbox">
+      <CheckboxInput value="error-checkbox" checked={checked} onValueChange={setChecked}>
         <CheckboxInput.Field />
         <CheckboxInput.Label>Error state checkbox</CheckboxInput.Label>
       </CheckboxInput>
@@ -71,7 +80,7 @@ import { CheckboxGroup, CheckboxInput } from '@react-beauty/ui-checkbox';
 function MyComponent() {
   return (
     <CheckboxGroup name="disabled-checkbox" isDisabled>
-      <CheckboxInput value="disabled-checkbox" isDisabled>
+      <CheckboxInput value="disabled-checkbox">
         <CheckboxInput.Field />
         <CheckboxInput.Label>Disabled checkbox</CheckboxInput.Label>
       </CheckboxInput>
@@ -208,7 +217,7 @@ function MyComponent() {
 | onValueChange | (checked: boolean) => void | undefined | Callback function when the checkbox state changes |
 | hasError | boolean | false | Whether the checkbox has an error state |
 | isDisabled | boolean | false | Whether the checkbox is disabled |
-| children | ReactNode | required | The content of the checkbox (Field, Label, HelperText) |
+| children | ReactNode | required | The content of the checkbox (Field, Label) |
 
 ### CheckboxGroup Props
 
@@ -230,6 +239,14 @@ The checkbox component is built with accessibility in mind:
 - ARIA attributes for screen readers
 - Focus management for keyboard users
 - High contrast visual indicators
+
+## Styling
+
+The checkbox component has been updated with refined styling:
+
+- Uses a 1px border with `var(--colors-main-beerus)` color for better integration with the design system
+- Improved checkmark positioning with precise transform translations for better alignment
+- Consistent styling across different states (unchecked, checked, disabled, focused)
 
 ## License
 
