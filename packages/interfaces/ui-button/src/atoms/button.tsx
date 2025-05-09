@@ -17,7 +17,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       variant = 'fill',
-      size = 'md',
+      size = 'sm',
       isFullWidth,
       children,
       prefixIcon,
