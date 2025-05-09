@@ -3,22 +3,32 @@
 exports[`Avatar > should work as expected 1`] = `
 <DocumentFragment>
   <div
-    class="mocked-styled-0"
-    data-size="md"
-    data-testid="avatar-initial"
+    data-testid="avatar-container"
+    style="display: inline-block;"
   >
-    bar
+    <div
+      class="mocked-styled-0"
+      data-size="2xl"
+      data-testid="avatar-initial"
+    >
+      dm
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Avatar > should work as expected 2`] = `
 <DocumentFragment>
-  <img
-    class="mocked-styled-1"
-    data-size="2xl"
-    data-testid="avatar-picture"
-    src="foo"
-  />
+  <div
+    data-testid="avatar-container"
+    style="display: inline-block;"
+  >
+    <img
+      class="mocked-styled-1"
+      data-size="2xl"
+      data-testid="avatar-picture"
+      src="https://placecats.com/neo_2/300/200"
+    />
+  </div>
 </DocumentFragment>
 `;
