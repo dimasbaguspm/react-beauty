@@ -5,7 +5,7 @@ exports[`Button > should render correctly 1`] = `
   <button
     class="mocked-styled-0"
     data-is-only-icon="false"
-    data-size="md"
+    data-size="sm"
     data-variant="fill"
   >
     Button
