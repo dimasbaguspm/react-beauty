@@ -59,8 +59,10 @@ export const WithHelperText: Story = {
       <RadioInput value="option1">
         <RadioInput.Field />
         <RadioInput.Label>Option 1</RadioInput.Label>
-        <RadioInput.HelperText>This is a helper text</RadioInput.HelperText>
       </RadioInput>
+      <RadioGroup.HelperText>
+        This is a group-level helper text
+      </RadioGroup.HelperText>
     </RadioGroup>
   ),
 };
@@ -77,8 +79,8 @@ export const WithError: Story = {
       <RadioInput value="option1">
         <RadioInput.Field />
         <RadioInput.Label>Option 1</RadioInput.Label>
-        <RadioInput.HelperText>This option has an error</RadioInput.HelperText>
       </RadioInput>
+      <RadioGroup.HelperText>This is an error message</RadioGroup.HelperText>
     </RadioGroup>
   ),
 };
@@ -95,8 +97,8 @@ export const Disabled: Story = {
       <RadioInput value="option1">
         <RadioInput.Field />
         <RadioInput.Label>Option 1</RadioInput.Label>
-        <RadioInput.HelperText>This option is disabled</RadioInput.HelperText>
       </RadioInput>
+      <RadioGroup.HelperText>This radio is disabled</RadioGroup.HelperText>
     </RadioGroup>
   ),
 };

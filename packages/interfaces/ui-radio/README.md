@@ -37,8 +37,8 @@ function RadioWithHelper() {
       <RadioInput value="option1">
         <RadioInput.Field />
         <RadioInput.Label>Option 1</RadioInput.Label>
-        <RadioInput.HelperText>This is a helper text</RadioInput.HelperText>
       </RadioInput>
+      <RadioGroup.HelperText>This is a group-level helper text</RadioGroup.HelperText>
     </RadioGroup>
   );
 }
@@ -52,8 +52,8 @@ function RadioWithError() {
       <RadioInput value="option1">
         <RadioInput.Field />
         <RadioInput.Label>Option 1</RadioInput.Label>
-        <RadioInput.HelperText>This option has an error</RadioInput.HelperText>
       </RadioInput>
+      <RadioGroup.HelperText>This is an error message</RadioGroup.HelperText>
     </RadioGroup>
   );
 }
@@ -67,8 +67,8 @@ function DisabledRadio() {
       <RadioInput value="option1">
         <RadioInput.Field />
         <RadioInput.Label>Option 1</RadioInput.Label>
-        <RadioInput.HelperText>This option is disabled</RadioInput.HelperText>
       </RadioInput>
+      <RadioGroup.HelperText>This radio is disabled</RadioGroup.HelperText>
     </RadioGroup>
   );
 }
@@ -95,6 +95,7 @@ function RadioGroupExample() {
         <RadioInput.Field />
         <RadioInput.Label>Option 3</RadioInput.Label>
       </RadioInput>
+      <RadioGroup.HelperText>Select one option from the list</RadioGroup.HelperText>
     </RadioGroup>
   );
 }
@@ -110,32 +111,28 @@ function InteractiveRadioGroup() {
   };
 
   return (
-    <>
-      <RadioGroup 
-        name="interactive-radio-group" 
-        selectedValue={selectedValue} 
-        onValueChange={handleChange}
-        hasError={error}
-      >
-        <RadioInput value="option1">
-          <RadioInput.Field />
-          <RadioInput.Label>Small</RadioInput.Label>
-        </RadioInput>
-        <RadioInput value="option2">
-          <RadioInput.Field />
-          <RadioInput.Label>Medium</RadioInput.Label>
-        </RadioInput>
-        <RadioInput value="option3">
-          <RadioInput.Field />
-          <RadioInput.Label>Large</RadioInput.Label>
-        </RadioInput>
-      </RadioGroup>
+    <RadioGroup 
+      name="interactive-radio-group" 
+      selectedValue={selectedValue} 
+      onValueChange={handleChange}
+      hasError={error}
+    >
+      <RadioInput value="option1">
+        <RadioInput.Field />
+        <RadioInput.Label>Small</RadioInput.Label>
+      </RadioInput>
+      <RadioInput value="option2">
+        <RadioInput.Field />
+        <RadioInput.Label>Medium</RadioInput.Label>
+      </RadioInput>
+      <RadioInput value="option3">
+        <RadioInput.Field />
+        <RadioInput.Label>Large</RadioInput.Label>
+      </RadioInput>
       {error && (
-        <div style={{ color: 'red', marginTop: '8px' }}>
-          Please select a size
-        </div>
+        <RadioGroup.HelperText>Please select a size</RadioGroup.HelperText>
       )}
-    </>
+    </RadioGroup>
   );
 }
 ```
@@ -151,12 +148,14 @@ The container component for a group of radio inputs. Props include:
 - `isDisabled`: boolean - Disables all radio buttons in the group
 - `hasError`: boolean - Indicates if the radio group has an error
 
+### RadioGroup.HelperText
+
+Text displayed below the radio group to provide additional context or error messages.
+
 ### RadioInput
 
 Container for an individual radio input. Props include:
 - `value`: string - The value of the radio input (required)
-- `hasError`: boolean - Indicates if the radio has an error
-- `isDisabled`: boolean - Disables this specific radio input
 
 ### RadioInput.Field
 
@@ -165,10 +164,6 @@ The actual radio input element.
 ### RadioInput.Label
 
 The label component for the radio input.
-
-### RadioInput.HelperText
-
-Text displayed below the radio to provide additional context or error messages.
 
 ## Accessibility
 
@@ -181,4 +176,4 @@ The radio component is built with accessibility in mind:
 
 ## Customization
 
-Styling is handled through CSS variables, allowing for easy customization through the design token system.
+Styling is handled through CSS variables, allowing for easy customization through the design token system. The Radio component now features a refined 1px border styling using the `var(--colors-main-beerus)` color variable for improved visual design.

@@ -5,10 +5,12 @@ interface SelectContextType {
   hasTrailElement: boolean;
   hasError: boolean;
   isDisabled: boolean;
+  isFocused: boolean;
   selectId: string;
   selectWrapperId: string;
   registerLeadElement: () => void;
   registerTrailElement: () => void;
+  setIsFocused: (focused: boolean) => void;
   value?: string;
   onValueChange?: (value: string) => void;
 }
@@ -40,6 +42,7 @@ export const SelectProvider = ({
 }: SelectProviderProps) => {
   const [hasLeadElement, setHasLeadElement] = useState(false);
   const [hasTrailElement, setHasTrailElement] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
   const selectId = useId();
   const selectWrapperId = useId();
 
@@ -60,6 +63,8 @@ export const SelectProvider = ({
         registerTrailElement,
         hasError,
         isDisabled,
+        isFocused,
+        setIsFocused,
         selectId,
         selectWrapperId,
         value,

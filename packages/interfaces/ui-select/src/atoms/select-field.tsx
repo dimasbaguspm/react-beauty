@@ -1,4 +1,10 @@
-import { forwardRef, SelectHTMLAttributes, ChangeEvent, useRef } from 'react';
+import {
+  forwardRef,
+  SelectHTMLAttributes,
+  ChangeEvent,
+  useRef,
+  FocusEventHandler,
+} from 'react';
 
 import { ElSelectWrapper, ElSelect } from './style';
 import { useSelect } from './use-select';
@@ -9,15 +15,17 @@ export interface SelectFieldProps
 }
 
 export const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
-  ({ placeholder, children, ...rest }, ref) => {
+  ({ placeholder, children, onFocus, onBlur, ...rest }, ref) => {
     const {
       hasError,
       isDisabled,
       hasLeadElement,
+      isFocused,
       value,
       selectId,
       selectWrapperId,
       onValueChange: contextOnChange,
+      setIsFocused,
     } = useSelect();
 
     const selectRef = useRef<HTMLSelectElement>(null);
@@ -27,14 +35,31 @@ export const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
       contextOnChange?.(newValue);
     };
 
+    const handleFocus: FocusEventHandler<HTMLSelectElement> = (e) => {
+      setIsFocused(true);
+      onFocus?.(e);
+    };
+
+    const handleBlur: FocusEventHandler<HTMLSelectElement> = (e) => {
+      setIsFocused(false);
+      onBlur?.(e);
+    };
+
     return (
-      <ElSelectWrapper id={selectWrapperId}>
+      <ElSelectWrapper
+        id={selectWrapperId}
+        data-error={hasError}
+        data-disabled={isDisabled}
+        data-is-focused={isFocused}
+        data-is-blurred={!isFocused}
+      >
         <ElSelect
           ref={ref || selectRef}
           id={selectId}
           onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
           disabled={isDisabled}
-          data-error={hasError}
           data-has-lead-element={hasLeadElement}
           value={value || undefined}
           {...rest}

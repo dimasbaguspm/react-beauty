@@ -14,12 +14,16 @@ describe('Radio', () => {
         <RadioInput value="test-value">
           <RadioInput.Field />
           <RadioInput.Label>Test Label</RadioInput.Label>
-          <RadioInput.HelperText>Helper text</RadioInput.HelperText>
         </RadioInput>
+        <RadioGroup.HelperText>
+          This is a group-level helper text
+        </RadioGroup.HelperText>
       </RadioGroup>,
     );
     expect(screen.getByText('Test Label')).toBeInTheDocument();
-    expect(screen.getByText('Helper text')).toBeInTheDocument();
+    expect(
+      screen.getByText('This is a group-level helper text'),
+    ).toBeInTheDocument();
     expect(screen.getByRole('radio')).toBeInTheDocument();
   });
 
@@ -34,10 +38,10 @@ describe('Radio', () => {
         <RadioInput value="test-value">
           <RadioInput.Field data-testid="radio-input" />
           <RadioInput.Label>Error Label</RadioInput.Label>
-          <RadioInput.HelperText data-testid="helper-text">
-            Error message
-          </RadioInput.HelperText>
         </RadioInput>
+        <RadioGroup.HelperText data-testid="helper-text">
+          Error message
+        </RadioGroup.HelperText>
       </RadioGroup>,
     );
 

@@ -31,7 +31,7 @@ export const ElCheckboxBox = styled.div`
   width: var(--components-checkbox-size);
   height: var(--components-checkbox-size);
   border-radius: var(--components-checkbox-border-radius);
-  border: 2px solid var(--components-checkbox-colors-border-unchecked);
+  border: 1px solid var(--colors-main-beerus);
   background-color: var(--components-checkbox-colors-background-unchecked);
   transition:
     border-color var(--components-checkbox-transition-duration)
@@ -43,11 +43,11 @@ export const ElCheckboxBox = styled.div`
   &::after {
     content: '';
     position: absolute;
-    width: 40%;
+    width: 30%;
     height: 60%;
     border: solid var(--components-checkbox-colors-checkmark);
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0) translateY(-15%) translateX(-10%);
     opacity: 0;
     transition:
       transform var(--components-checkbox-transition-duration)
@@ -61,7 +61,7 @@ export const ElCheckboxBox = styled.div`
     background-color: var(--components-checkbox-colors-background-checked);
 
     &::after {
-      transform: rotate(45deg) scale(1);
+      transform: rotate(45deg) scale(1) translateY(-15%) translateX(-10%);
       opacity: 1;
     }
   }

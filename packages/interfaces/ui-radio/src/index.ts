@@ -3,20 +3,17 @@ import {
   RadioInput as RadioInputComponent,
   RadioInputField,
   RadioInputLabel,
-  RadioHelperText,
 } from './atoms';
 
 // RadioInput compound component
 type CompoundRadioInputProps = {
   Field: typeof RadioInputField;
   Label: typeof RadioInputLabel;
-  HelperText: typeof RadioHelperText;
 };
 
 const CompoundRadioInput = {
   Field: RadioInputField,
   Label: RadioInputLabel,
-  HelperText: RadioHelperText,
 } satisfies CompoundRadioInputProps;
 
 export const RadioInput = Object.assign(
@@ -24,5 +21,5 @@ export const RadioInput = Object.assign(
   CompoundRadioInput,
 );
 
-// Export RadioGroup directly
+// Export RadioGroup directly - RadioGroup is already a compound component with HelperText from the implementation
 export const RadioGroup = RadioGroupComponent;

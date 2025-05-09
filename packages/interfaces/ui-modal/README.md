@@ -15,6 +15,7 @@ The Modal component follows a compound component pattern for flexibility:
 ```jsx
 import { Modal } from '@react-beauty/ui-modal';
 import { Button } from '@react-beauty/ui-button';
+import { useState } from 'react';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -216,6 +217,15 @@ Modals are perfect for forms:
         {emailValid && (
           <TextInput.TrailElement>
             <Icon name="genericCheckRounded" size="md" />
+          </TextInput.TrailElement>
+        )}
+        {emailError && (
+          <TextInput.TrailElement>
+            <Icon
+              name="controlsCloseSmall"
+              size="md"
+              style={{ color: 'red' }}
+            />
           </TextInput.TrailElement>
         )}
         {emailError && (

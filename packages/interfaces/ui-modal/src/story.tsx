@@ -13,7 +13,7 @@ import { Modal } from './index';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'Components/Modal',
+  title: 'Modal',
   component: Modal,
   parameters: {
     layout: 'padded',

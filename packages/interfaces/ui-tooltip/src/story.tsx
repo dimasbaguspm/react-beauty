@@ -7,7 +7,7 @@ import type { TooltipTriggerType } from './atoms/tooltip-context';
 import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta: Meta<typeof Tooltip> = {
-  title: 'Components/Tooltip',
+  title: 'Tooltip',
   component: Tooltip,
   parameters: {
     layout: 'centered',
