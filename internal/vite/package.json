@@ -17,6 +17,8 @@
   "devDependencies": {
     "@babel/preset-react": "7.26.3",
     "@babel/preset-typescript": "7.27.0",
+    "@linaria/core": "6.3.0",
+    "@linaria/react": "6.3.0",
     "@react-beauty/eslint": "workspace:*",
     "@react-beauty/tsc": "workspace:*",
     "@svgr/plugin-jsx": "8.1.0",
