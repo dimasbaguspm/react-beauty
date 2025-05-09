@@ -11,19 +11,23 @@ npm install @react-beauty/ui-avatar
 ## Usage
 
 ```jsx
-import { AvatarInitial, AvatarPicture } from '@react-beauty/ui-avatar';
+import { Avatar } from '@react-beauty/ui-avatar';
 
 // Avatar with Initials
 function InitialsAvatar() {
   return (
-    <AvatarInitial size="md">dm</AvatarInitial>
+    <Avatar size="md">
+      <Avatar.Initial>dm</Avatar.Initial>
+    </Avatar>
   );
 }
 
 // Avatar with Image
 function PictureAvatar() {
   return (
-    <AvatarPicture src="https://placecats.com/neo_2/300/200" />
+    <Avatar>
+      <Avatar.Picture src="https://placecats.com/neo_2/300/200" />
+    </Avatar>
   );
 }
 
@@ -31,12 +35,24 @@ function PictureAvatar() {
 function AvatarSizes() {
   return (
     <>
-      <AvatarInitial size="xs">XS</AvatarInitial>
-      <AvatarInitial size="sm">SM</AvatarInitial>
-      <AvatarInitial size="md">MD</AvatarInitial>
-      <AvatarInitial size="lg">LG</AvatarInitial>
-      <AvatarInitial size="xl">XL</AvatarInitial>
-      <AvatarInitial size="2xl">2XL</AvatarInitial>
+      <Avatar size="xs">
+        <Avatar.Initial>XS</Avatar.Initial>
+      </Avatar>
+      <Avatar size="sm">
+        <Avatar.Initial>SM</Avatar.Initial>
+      </Avatar>
+      <Avatar size="md">
+        <Avatar.Initial>MD</Avatar.Initial>
+      </Avatar>
+      <Avatar size="lg">
+        <Avatar.Initial>LG</Avatar.Initial>
+      </Avatar>
+      <Avatar size="xl">
+        <Avatar.Initial>XL</Avatar.Initial>
+      </Avatar>
+      <Avatar size="2xl">
+        <Avatar.Initial>2XL</Avatar.Initial>
+      </Avatar>
     </>
   );
 }
@@ -44,16 +60,28 @@ function AvatarSizes() {
 
 ## Components
 
-### AvatarInitial
+### Avatar
 
-Component for displaying a user's initials within an avatar. Props include:
+The main container component that provides context to its children.
+
+Props include:
 - `size`: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'
+- `children`: Avatar.Initial or Avatar.Picture components
+
+### Avatar.Initial
+
+Component for displaying a user's initials within an avatar.
+
+Props include:
+- `size`: (optional) Overrides the parent Avatar's size
 - `children`: Text content (typically initials)
 
-### AvatarPicture
+### Avatar.Picture
 
-Component for displaying an image as an avatar. Props include:
-- `size`: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'
+Component for displaying an image as an avatar.
+
+Props include:
+- `size`: (optional) Overrides the parent Avatar's size
 - `src`: URL to the image
 
 ## Accessibility

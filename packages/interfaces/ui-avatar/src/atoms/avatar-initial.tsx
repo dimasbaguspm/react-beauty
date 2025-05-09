@@ -2,6 +2,7 @@ import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 
 import { AvatarSize } from '../type';
 
+import { useAvatarContext } from './avatar-context';
 import { ElAvatarInitial } from './style';
 
 export interface AvatarInitialProps extends HTMLAttributes<HTMLDivElement> {
@@ -10,7 +11,11 @@ export interface AvatarInitialProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const AvatarInitial = forwardRef<HTMLDivElement, AvatarInitialProps>(
-  ({ size = 'md', ...props }, ref) => {
+  ({ size: propSize, ...props }, ref) => {
+    const { size: contextSize } = useAvatarContext();
+
+    const size = propSize || contextSize;
+
     return (
       <ElAvatarInitial
         data-testid="avatar-initial"

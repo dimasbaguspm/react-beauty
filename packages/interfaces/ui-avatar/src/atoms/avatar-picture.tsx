@@ -2,6 +2,7 @@ import { forwardRef, ImgHTMLAttributes } from 'react';
 
 import { AvatarSize } from '../type';
 
+import { useAvatarContext } from './avatar-context';
 import { ElAvatarPicture } from './style';
 
 export interface AvatarPictureProps
@@ -12,7 +13,10 @@ export interface AvatarPictureProps
 }
 
 export const AvatarPicture = forwardRef<HTMLImageElement, AvatarPictureProps>(
-  ({ size = 'md', ...props }, ref) => {
+  ({ size: propSize, ...props }, ref) => {
+    const { size: contextSize } = useAvatarContext();
+    const size = propSize || contextSize;
+
     return (
       <ElAvatarPicture
         data-testid="avatar-picture"

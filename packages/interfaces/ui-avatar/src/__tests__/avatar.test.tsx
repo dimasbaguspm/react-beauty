@@ -1,17 +1,25 @@
 import { render } from '@react-beauty/vitest/selector';
 
-import { AvatarInitial, AvatarPicture } from '../atoms';
+import { Avatar } from '..';
 
 describe('Avatar', () => {
   it('should work as expected', () => {
     expect(
-      render(<AvatarInitial>bar</AvatarInitial>).asFragment(),
+      render(
+        <Avatar size="2xl">
+          <Avatar.Initial>dm</Avatar.Initial>
+        </Avatar>,
+      ).asFragment(),
     ).toMatchSnapshot();
   });
 
   it('should work as expected', () => {
     expect(
-      render(<AvatarPicture size="2xl" src="foo" />).asFragment(),
+      render(
+        <Avatar size="2xl">
+          <Avatar.Picture src="https://placecats.com/neo_2/300/200" />
+        </Avatar>,
+      ).asFragment(),
     ).toMatchSnapshot();
   });
 });
