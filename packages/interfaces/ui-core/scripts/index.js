@@ -15,7 +15,8 @@ const packages = fs.readdirSync(interfacesDir).filter((pkg) => {
   const pkgJsonPath = path.join(interfacesDir, pkg, 'package.json');
   return (
     fs.existsSync(pkgJsonPath) &&
-    fs.statSync(path.join(interfacesDir, pkg)).isDirectory()
+    fs.statSync(path.join(interfacesDir, pkg)).isDirectory() &&
+    pkg.startsWith('ui-')
   );
 });
 
