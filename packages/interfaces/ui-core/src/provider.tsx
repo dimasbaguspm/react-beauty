@@ -1,6 +1,7 @@
 import { css } from '@linaria/core';
 import { FC, ReactNode } from 'react';
 
+import { ThemeContext } from './context';
 import { ReactBeautyUITheme } from './types';
 import { useSetupThemeEffect } from './use-setup-theme-effect';
 
@@ -64,7 +65,16 @@ export const ReactBeautyUIProvider: FC<ReactBeautyUIProviderProps> = ({
   defaultTheme = 'light',
   children,
 }) => {
-  useSetupThemeEffect(defaultTheme);
+  const { theme, changeTheme } = useSetupThemeEffect(defaultTheme);
 
-  return children;
+  return (
+    <ThemeContext.Provider
+      value={{
+        changeTheme,
+        theme,
+      }}
+    >
+      {children}
+    </ThemeContext.Provider>
+  );
 };

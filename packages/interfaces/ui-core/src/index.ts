@@ -1,3 +1,3 @@
 export * from './provider';
 export * from './types';
-export * from './use-setup-theme-effect';
+export { useThemeContext } from './context';

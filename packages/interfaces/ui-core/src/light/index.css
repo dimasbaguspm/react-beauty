@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Sat, 10 May 2025 14:02:57 GMT
+ * Generated on Sat, 10 May 2025 18:41:27 GMT
  */
 
 :root[data-theme='light'] {
@@ -54,7 +54,7 @@
   --colors-main-goten: #ffffff;
   --colors-main-popo: #000000;
   --colors-main-jiren: #f2f2fa;
-  --colors-main-hales: rgba(0, 0, 0, 0.02);
+  --colors-main-hales: rgba(0, 0, 0, 0.06);
   --colors-main-zeno: rgba(0, 0, 0, 0.34);
   --colors-supportive-krilin: #ffb319;
   --colors-supportive-krilin-60: rgba(255, 179, 25, 0.38);
@@ -376,7 +376,7 @@
   --components-menu-item-font-size-description: var(--font-size-xs);
   --components-menu-item-line-height-label: var(--font-line-height-sm);
   --components-menu-item-line-height-description: var(--font-line-height-xs);
-  --components-menu-item-font-weight: var(--font-weight-medium);
+  --components-menu-item-font-weight: var(--font-weight-regular);
   --components-menu-item-colors-default-bg: var(--colors-main-gohan);
   --components-menu-item-colors-default-color: var(--colors-main-bulma);
   --components-menu-item-colors-focus-outline: var(--colors-supportive-whis-60);
@@ -461,7 +461,7 @@
   --components-sidebar-icon-color-hover: var(--colors-main-picollo);
   --components-sidebar-icon-color-active: var(--colors-main-picollo);
   --components-sidebar-item-background-hover: var(--colors-supportive-whis-10);
-  --components-sidebar-item-background-active: var(--colors-supportive-whis-10);
+  --components-sidebar-item-background-active: var(--colors-main-beerus);
   --components-sidebar-item-color: var(--colors-main-bulma);
   --components-sidebar-item-color-hover: var(--colors-main-picollo);
   --components-sidebar-item-color-active: var(--colors-main-picollo);

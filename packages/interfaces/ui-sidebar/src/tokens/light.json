@@ -54,7 +54,7 @@
           "value": "{colors.supportive.whis-10}"
         },
         "background-active": {
-          "value": "{colors.supportive.whis-10}"
+          "value": "{colors.main.beerus}"
         },
         "color": {
           "value": "{colors.main.bulma}"

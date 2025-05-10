@@ -42,7 +42,7 @@
         }
       },
       "font-weight": {
-        "value": "{font-weight.medium}"
+        "value": "{font-weight.regular}"
       },
       "colors": {
         "default-bg": {

@@ -1,4 +1,10 @@
-import { forwardRef, LiHTMLAttributes } from 'react';
+import {
+  forwardRef,
+  LiHTMLAttributes,
+  Children,
+  isValidElement,
+  cloneElement,
+} from 'react';
 
 import { MenuItemLinkAnchor } from './menu-item-link-anchor';
 import { MenuItemLinkButton } from './menu-item-link-button';
@@ -32,6 +38,10 @@ export const MenuItemContainer = forwardRef<
   <ElMenuItemContainer ref={ref}>
     {isButton(props) && <MenuItemLinkButton {...props} />}
     {isAnchor(props) && <MenuItemLinkAnchor {...props} />}
-    {!isButton(props) && !isAnchor(props) && props.children}
+    {!isButton(props) &&
+      !isAnchor(props) &&
+      Children.map(props.children, (child) =>
+        isValidElement(child) ? cloneElement(child, { ...props }) : child,
+      )}
   </ElMenuItemContainer>
 ));

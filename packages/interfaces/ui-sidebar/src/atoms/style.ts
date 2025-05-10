@@ -9,8 +9,6 @@ export const ElSidebarContainer = styled.div`
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--components-sidebar-border-color);
-  border-radius: 0 var(--components-sidebar-border-radius)
-    var(--components-sidebar-border-radius) 0;
   box-shadow: var(--components-sidebar-shadow);
   transition: width var(--components-sidebar-transition-duration) 10ms;
   width: var(--components-sidebar-width-collapsed);
