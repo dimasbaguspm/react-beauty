@@ -82,7 +82,18 @@ export const ElMenuItemLinkButton = styled.button`
 export const ElMenuItemLinkAnchor = styled.a`
   ${base}
 `;
+
 export const ElMenuItemContainer = styled.li`
   max-width: var(--components-menu-item-max-width);
   list-style: none;
+`;
+export const ElMenuLabelContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  // make sure the label and description are 100% width
+  > a {
+    ${base}
+  }
 `;

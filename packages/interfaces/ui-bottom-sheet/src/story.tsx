@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 import { Button } from '@react-beauty/ui-button';
 import { TextArea } from '@react-beauty/ui-text-area';
 import { TextInput } from '@react-beauty/ui-text-input';

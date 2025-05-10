@@ -28,7 +28,7 @@ const configs = tseslint.config(
       ],
       "import/no-cycle": "error",
       "import/newline-after-import": "error",
-      "import/max-dependencies": ["error", { max: 5 }],
+      "import/max-dependencies": ["error", { max: 10 }],
       "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
       "import/order": [
         "error",

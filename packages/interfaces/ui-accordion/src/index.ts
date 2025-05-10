@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 import { AccordionClose } from './atoms/accordion-close';
 import { AccordionContainer } from './atoms/accordion-container';
 import { AccordionContent } from './atoms/accordion-content';

@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './radio-input';
 export * from './radio-input-field';
 export * from './radio-input-label';

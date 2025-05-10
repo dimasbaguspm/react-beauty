@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './checkbox-container';
 export * from './checkbox-input';
 export * from './checkbox-input-label';

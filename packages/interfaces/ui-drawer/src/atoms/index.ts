@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './drawer-body';
 export * from './drawer-container';
 export * from './drawer-dismiss-button';

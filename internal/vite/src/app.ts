@@ -1,5 +1,7 @@
 import react from '@vitejs/plugin-react';
 import wyw from '@wyw-in-js/vite';
+// @ts-expect-error -- no types
+import dashify from 'dashify';
 import svgr from 'vite-plugin-svgr';
 
 import type { BuildEnvironmentOptions, UserConfig } from 'vite';
@@ -10,6 +12,8 @@ export const viteConfig = (
   plugins: [
     wyw({
       include: ['**/*.{ts,tsx}'],
+      evaluate: true,
+      classNameSlug: (_hash, title) => 'react-beauty-' + dashify(title),
       babelOptions: {
         presets: ['@babel/preset-typescript', '@babel/preset-react'],
       },
