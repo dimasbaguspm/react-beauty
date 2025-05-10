@@ -2,8 +2,7 @@
   "name": "@react-beauty/ui-menu-item",
   "description": "ui-menu-item",
   "license": "MIT",
-  "version": "1.0.0",
-  "stableVersion": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "react",
     "@react-beauty",
