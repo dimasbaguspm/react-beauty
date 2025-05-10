@@ -40,9 +40,9 @@ export const Basic: Story = {
     return (
       <div
         style={{
-          height: '500px',
-          position: 'relative',
+          display: 'flex',
           overflow: 'hidden',
+          position: 'relative',
           color: 'var(--colors-main-bulma)',
         }}
       >
@@ -115,9 +115,7 @@ export const Basic: Story = {
         </Sidebar>
         <div
           style={{
-            marginLeft: isExpanded ? '240px' : '64px',
             padding: '24px',
-            transition: 'margin-left 300ms ease-in-out',
           }}
         >
           <h1>Main Content Area</h1>
@@ -137,9 +135,9 @@ export const WithSections: Story = {
     return (
       <div
         style={{
-          height: '500px',
-          position: 'relative',
+          display: 'flex',
           overflow: 'hidden',
+          position: 'relative',
           color: 'var(--colors-main-bulma)',
         }}
       >
@@ -231,9 +229,7 @@ export const WithSections: Story = {
         </Sidebar>
         <div
           style={{
-            marginLeft: isExpanded ? '240px' : '64px',
             padding: '24px',
-            transition: 'margin-left 300ms ease-in-out',
           }}
         >
           <h1>Main Content Area</h1>
@@ -253,9 +249,9 @@ export const WithCustomToggle: Story = {
     return (
       <div
         style={{
-          height: '500px',
-          position: 'relative',
+          display: 'flex',
           overflow: 'hidden',
+          position: 'relative',
           color: 'var(--colors-main-bulma)',
         }}
       >
@@ -322,9 +318,7 @@ export const WithCustomToggle: Story = {
         </Sidebar>
         <div
           style={{
-            marginLeft: isExpanded ? '240px' : '64px',
             padding: '24px',
-            transition: 'margin-left 300ms ease-in-out',
           }}
         >
           <h1>Main Content Area</h1>
@@ -344,9 +338,9 @@ export const InitiallyCollapsed: Story = {
     return (
       <div
         style={{
-          height: '500px',
-          position: 'relative',
+          display: 'flex',
           overflow: 'hidden',
+          position: 'relative',
           color: 'var(--colors-main-bulma)',
         }}
       >
@@ -424,9 +418,7 @@ export const InitiallyCollapsed: Story = {
         </Sidebar>
         <div
           style={{
-            marginLeft: isExpanded ? '240px' : '64px',
             padding: '24px',
-            transition: 'margin-left 300ms ease-in-out',
           }}
         >
           <h1>Main Content Area</h1>

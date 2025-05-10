@@ -10,13 +10,13 @@ import type { MenuItemLinkButtonProps } from './menu-item-link-button';
 const isButton = (
   props: Pick<MenuItemContainerProps, 'onClick' | 'href'>,
 ): props is MenuItemLinkButtonProps => {
-  return 'onClick' in props;
+  return 'onClick' in props && props?.onClick !== undefined;
 };
 
 const isAnchor = (
   props: Pick<MenuItemContainerProps, 'onClick' | 'href'>,
 ): props is MenuItemLinkAnchorProps => {
-  return 'href' in props;
+  return 'href' in props && props?.href !== undefined;
 };
 
 export interface MenuItemContainerProps
@@ -30,10 +30,8 @@ export const MenuItemContainer = forwardRef<
   MenuItemContainerProps
 >((props, ref) => (
   <ElMenuItemContainer ref={ref}>
-    {isButton(props) ? (
-      <MenuItemLinkButton {...props} />
-    ) : (
-      isAnchor(props) && <MenuItemLinkAnchor {...props} />
-    )}
+    {isButton(props) && <MenuItemLinkButton {...props} />}
+    {isAnchor(props) && <MenuItemLinkAnchor {...props} />}
+    {!isButton(props) && !isAnchor(props) && props.children}
   </ElMenuItemContainer>
 ));

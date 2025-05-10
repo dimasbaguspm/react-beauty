@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 import { Button } from '@react-beauty/ui-button';
 import { Icon } from '@react-beauty/ui-icon';
 import { RadioGroup, RadioInput } from '@react-beauty/ui-radio';

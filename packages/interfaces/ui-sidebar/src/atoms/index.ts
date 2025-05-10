@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './sidebar-body';
 export * from './sidebar-container';
 export * from './sidebar-divider';

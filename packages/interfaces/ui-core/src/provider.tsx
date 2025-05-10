@@ -36,6 +36,8 @@ export const globals = css`
     :root {
       box-sizing: border-box;
       font-family: var(--font-primary);
+      color: var(--colors-main-bulma);
+      background-color: var(--colors-main-goku);
     }
 
     *,
@@ -44,6 +46,8 @@ export const globals = css`
       margin: 0;
       padding: 0;
       box-sizing: inherit;
+      text-decoration: none;
+      list-style: none;
     }
   }
 `;

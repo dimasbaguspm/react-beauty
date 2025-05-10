@@ -153,7 +153,11 @@ describe('Sidebar', () => {
           Header
         </Sidebar.Header>
         <Sidebar.Body data-testid="sidebar-body" className="custom-body">
-          <Sidebar.Item data-testid="sidebar-item" className="custom-item">
+          <Sidebar.Item
+            data-testid="sidebar-item"
+            className="custom-item"
+            onClick={() => {}}
+          >
             Item
           </Sidebar.Item>
         </Sidebar.Body>

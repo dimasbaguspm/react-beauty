@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './bottom-sheet-body';
 export * from './bottom-sheet-container';
 export * from './bottom-sheet-footer';

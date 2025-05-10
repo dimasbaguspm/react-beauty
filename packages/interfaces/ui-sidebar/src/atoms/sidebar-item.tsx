@@ -39,13 +39,14 @@ export const SidebarItem = forwardRef<HTMLLIElement, SidebarItemProps>(
     const menuItemProps = {
       ref,
       href: isAnchor ? rest.href : undefined,
+      // @ts-expect-error -- already checked if isButton or isAnchor
+      onClick: isButton ? () => rest?.onClick?.() : undefined,
       'aria-current': active
         ? isAnchor
           ? ('page' as const)
           : ('true' as const)
         : undefined,
-      // @ts-expect-error -- already checked if isButton or isAnchor
-      onClick: isButton ? () => rest?.onClick?.() : undefined,
+
       role: 'listitem', // Explicitly set role for accessibility
       'data-active': active,
       'data-expanded': isExpanded,

@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 import react from '@vitejs/plugin-react';
 import wyw from '@wyw-in-js/vite';
 // @ts-expect-error -- there's no types for this package

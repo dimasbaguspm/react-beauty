@@ -2,13 +2,12 @@ import { styled } from '@linaria/react';
 import { MenuItemContainer } from '@react-beauty/ui-menu-item';
 
 export const ElSidebarContainer = styled.div`
-  position: fixed;
   z-index: var(--components-sidebar-z-index);
+  position: relative;
   height: 100vh;
   background-color: var(--components-sidebar-background);
   display: flex;
   flex-direction: column;
-  left: 0;
   border-right: 1px solid var(--components-sidebar-border-color);
   border-radius: 0 var(--components-sidebar-border-radius)
     var(--components-sidebar-border-radius) 0;
@@ -83,22 +82,9 @@ export const ElSidebarToggleButton = styled.button`
 `;
 
 export const ElSidebarDivider = styled.div`
-  height: 1px;
+  min-height: 1px;
   background-color: var(--components-sidebar-divider-color);
   margin: 8px 0;
-`;
-
-export const ElSidebarItemText = styled.span`
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  opacity: 0;
-  transition: opacity var(--components-sidebar-transition-duration)
-    var(--components-sidebar-transition-timing);
-
-  [data-expanded='true'] & {
-    opacity: 1;
-  }
 `;
 
 export const ElSidebarSection = styled.div`

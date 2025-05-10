@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './text-input-container';
 export * from './text-input-field';
 export * from './text-input-helper-text';

@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './modal-container';
 export * from './modal-header';
 export * from './modal-body';

@@ -1,4 +1,3 @@
-/* eslint-disable import/max-dependencies */
 export * from './menu-item-container';
 export * from './menu-item-label';
 export * from './menu-item-lead-element';
