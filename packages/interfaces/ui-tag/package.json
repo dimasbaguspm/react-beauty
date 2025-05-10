@@ -2,8 +2,7 @@
   "name": "@react-beauty/ui-tag",
   "description": "ui-tag",
   "license": "MIT",
-  "version": "1.0.0",
-  "stableVersion": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "react",
     "@react-beauty",
