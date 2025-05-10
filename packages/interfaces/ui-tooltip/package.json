@@ -2,8 +2,7 @@
   "name": "@react-beauty/ui-tooltip",
   "description": "ui-tooltip",
   "license": "MIT",
-  "version": "0.0.1",
-  "stableVersion": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "react",
     "@react-beauty",
