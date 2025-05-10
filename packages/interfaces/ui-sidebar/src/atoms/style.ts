@@ -41,6 +41,8 @@ export const ElSidebarBody = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--components-sidebar-body-gap);
+  overflow-y: auto;
+  overflow-x: hidden;
 `;
 
 export const ElSidebarFooter = styled.div`
