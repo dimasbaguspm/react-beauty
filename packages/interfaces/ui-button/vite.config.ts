@@ -1,5 +1,5 @@
-import { defineConfig, viteConfig } from "@react-beauty/vite/package";
+import { defineConfig, viteConfig } from '@react-beauty/vite/package';
 
-import packageManifest from "./package.json";
+import packageManifest from './package.json';
 
 export default defineConfig(viteConfig(packageManifest));

@@ -10,6 +10,28 @@ export const globals = css`
 
     @import './dark/index.css';
     @import './light/index.css';
+    @import '../../ui-accordion/dist/index.css';
+    @import '../../ui-alert/dist/index.css';
+    @import '../../ui-avatar/dist/index.css';
+    @import '../../ui-bottom-sheet/dist/index.css';
+    @import '../../ui-breadcrumb/dist/index.css';
+    @import '../../ui-button/dist/index.css';
+    @import '../../ui-checkbox/dist/index.css';
+    @import '../../ui-drawer/dist/index.css';
+    @import '../../ui-empty-state/dist/index.css';
+    @import '../../ui-icon/dist/index.css';
+    @import '../../ui-loader/dist/index.css';
+    @import '../../ui-menu-item/dist/index.css';
+    @import '../../ui-modal/dist/index.css';
+    @import '../../ui-pagination/dist/index.css';
+    @import '../../ui-radio/dist/index.css';
+    @import '../../ui-select/dist/index.css';
+    @import '../../ui-sidebar/dist/index.css';
+    @import '../../ui-switch/dist/index.css';
+    @import '../../ui-tag/dist/index.css';
+    @import '../../ui-text-area/dist/index.css';
+    @import '../../ui-text-input/dist/index.css';
+    @import '../../ui-tooltip/dist/index.css';
 
     :root {
       box-sizing: border-box;
@@ -35,7 +57,7 @@ export interface ReactBeautyUIProviderProps {
 }
 
 export const ReactBeautyUIProvider: FC<ReactBeautyUIProviderProps> = ({
-  defaultTheme,
+  defaultTheme = 'light',
   children,
 }) => {
   useSetupThemeEffect(defaultTheme);

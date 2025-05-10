@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useCallback, useLayoutEffect } from 'react';
 
 import { ReactBeautyUITheme } from './types';
 
@@ -14,9 +14,9 @@ export const useSetupThemeEffect = (defaultTheme?: ReactBeautyUITheme) => {
     };
   }, [defaultTheme]);
 
-  const handleChangeTheme = (theme: ReactBeautyUITheme) => {
+  const handleChangeTheme = useCallback((theme: ReactBeautyUITheme) => {
     parent.setAttribute('data-theme', theme);
-  };
+  }, []);
 
   return { changeTheme: handleChangeTheme };
 };
