@@ -25,7 +25,14 @@
       ".": {
         "import": "./dist/index.js",
         "types": "./dist/index.d.ts"
-      }
+      },
+      "./style.css": "./dist/style.css"
+    },
+    "dependencies": {
+      "@react-beauty/ui-core": "latest",
+      "@react-beauty/ui-icon": "latest",
+      "@react-beauty/ui-menu-item": "latest",
+      "@react-beauty/ui-tooltip": "latest"
     }
   },
   "scripts": {

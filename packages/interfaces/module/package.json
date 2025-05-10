@@ -25,6 +25,31 @@
         "import": "./dist/index.js",
         "types": "./dist/index.d.ts"
       }
+    },
+    "dependencies": {
+      "@react-beauty/ui-accordion": "latest",
+      "@react-beauty/ui-alert": "latest",
+      "@react-beauty/ui-avatar": "latest",
+      "@react-beauty/ui-bottom-sheet": "latest",
+      "@react-beauty/ui-breadcrumb": "latest",
+      "@react-beauty/ui-button": "latest",
+      "@react-beauty/ui-checkbox": "latest",
+      "@react-beauty/ui-core": "latest",
+      "@react-beauty/ui-drawer": "latest",
+      "@react-beauty/ui-empty-state": "latest",
+      "@react-beauty/ui-icon": "latest",
+      "@react-beauty/ui-loader": "latest",
+      "@react-beauty/ui-menu-item": "latest",
+      "@react-beauty/ui-modal": "latest",
+      "@react-beauty/ui-pagination": "latest",
+      "@react-beauty/ui-radio": "latest",
+      "@react-beauty/ui-select": "latest",
+      "@react-beauty/ui-sidebar": "latest",
+      "@react-beauty/ui-switch": "latest",
+      "@react-beauty/ui-tag": "latest",
+      "@react-beauty/ui-text-area": "latest",
+      "@react-beauty/ui-text-input": "latest",
+      "@react-beauty/ui-tooltip": "latest"
     }
   },
   "scripts": {

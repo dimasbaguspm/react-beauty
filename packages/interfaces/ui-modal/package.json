@@ -25,7 +25,12 @@
       ".": {
         "import": "./dist/index.js",
         "types": "./dist/index.d.ts"
-      }
+      },
+      "./style.css": "./dist/style.css"
+    },
+    "dependencies": {
+      "@react-beauty/ui-core": "latest",
+      "@react-beauty/ui-icon": "latest"
     }
   },
   "scripts": {
