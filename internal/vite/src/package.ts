@@ -1,5 +1,8 @@
+/* eslint-disable import/max-dependencies */
 import react from '@vitejs/plugin-react';
 import wyw from '@wyw-in-js/vite';
+// @ts-expect-error -- there's no types for this package
+import dashify from 'dashify';
 import dts from 'vite-plugin-dts';
 import svgr from 'vite-plugin-svgr';
 
@@ -12,6 +15,8 @@ export const viteConfig = (
   plugins: [
     wyw({
       include: ['**/*.{ts,tsx}'],
+      evaluate: true,
+      classNameSlug: (_hash, title) => 'react-beauty-' + dashify(title),
       babelOptions: {
         presets: ['@babel/preset-typescript', '@babel/preset-react'],
       },
