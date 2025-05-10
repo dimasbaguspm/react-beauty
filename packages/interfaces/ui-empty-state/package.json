@@ -2,8 +2,7 @@
   "name": "@react-beauty/ui-empty-state",
   "description": "ui-empty-state",
   "license": "MIT",
-  "version": "1.0.0",
-  "stableVersion": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "react",
     "@react-beauty",
