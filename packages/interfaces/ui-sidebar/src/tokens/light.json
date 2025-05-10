@@ -51,10 +51,10 @@
           "value": "transparent"
         },
         "background-hover": {
-          "value": "{colors.supportive.krilin}"
+          "value": "{colors.supportive.whis-10}"
         },
         "background-active": {
-          "value": "{colors.supportive.krilin}"
+          "value": "{colors.supportive.whis-10}"
         },
         "color": {
           "value": "{colors.main.bulma}"
