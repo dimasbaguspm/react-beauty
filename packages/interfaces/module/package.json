@@ -2,8 +2,7 @@
   "name": "@react-beauty/interfaces",
   "description": "@react-beauty user interface collection",
   "license": "MIT",
-  "version": "1.0.1-0",
-  "stableVersion": "1.0.0",
+  "version": "1.0.2",
   "keywords": [
     "react",
     "@react-beauty"
