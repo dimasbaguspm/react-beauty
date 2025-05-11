@@ -12,7 +12,9 @@ describe('Sidebar', () => {
           <Sidebar.ToggleButton />
         </Sidebar.Header>
         <Sidebar.Body>
-          <Sidebar.Item icon="homeHouse">Dashboard</Sidebar.Item>
+          <Sidebar.Item href="" icon="homeHouse">
+            Dashboard
+          </Sidebar.Item>
         </Sidebar.Body>
         <Sidebar.Footer>Footer Content</Sidebar.Footer>
       </Sidebar>,
@@ -71,7 +73,7 @@ describe('Sidebar', () => {
     render(
       <Sidebar isExpanded={true}>
         <Sidebar.Body>
-          <Sidebar.Item icon="homeHouse" active onClick={() => {}}>
+          <Sidebar.Item icon="homeHouse" active onClick={vi.fn()}>
             Dashboard
           </Sidebar.Item>
         </Sidebar.Body>
@@ -156,7 +158,7 @@ describe('Sidebar', () => {
           <Sidebar.Item
             data-testid="sidebar-item"
             className="custom-item"
-            onClick={() => {}}
+            onClick={vi.fn()}
           >
             Item
           </Sidebar.Item>
