@@ -1,10 +1,15 @@
-import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { AppRouter } from './core';
+const bootstrap = async () => {
+  const root = document.getElementById('root');
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <AppRouter />
-  </StrictMode>,
-);
+  if (!root) throw new Error('Root element not found');
+
+  const { Shell } = await import('./core/shell');
+
+  createRoot(root).render(<Shell />);
+};
+
+bootstrap().catch((error) => {
+  console.error('Error during bootstrap:', error);
+});

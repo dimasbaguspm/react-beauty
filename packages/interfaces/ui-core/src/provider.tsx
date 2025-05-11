@@ -5,13 +5,10 @@ import { ThemeContext } from './context';
 import { ReactBeautyUITheme } from './types';
 import { useSetupThemeEffect } from './use-setup-theme-effect';
 
-export const globals = css`
-  :global() {
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish&display=swap');
+console.log(process.env.NODE_ENV);
 
-    @import './dark/index.css';
-    @import './light/index.css';
-    @import '../../ui-accordion/dist/index.css';
+const prodScripts = `
+  @import '../../ui-accordion/dist/index.css';
     @import '../../ui-alert/dist/index.css';
     @import '../../ui-avatar/dist/index.css';
     @import '../../ui-bottom-sheet/dist/index.css';
@@ -33,12 +30,21 @@ export const globals = css`
     @import '../../ui-text-area/dist/index.css';
     @import '../../ui-text-input/dist/index.css';
     @import '../../ui-tooltip/dist/index.css';
+  `;
+
+export const globals = css`
+  :global() {
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish&display=swap');
+
+    @import './dark/index.css';
+    @import './light/index.css';
+    ${process.env.NODE_ENV === 'production' ? prodScripts : ''}
 
     :root {
       box-sizing: border-box;
       font-family: var(--font-primary);
       color: var(--colors-main-bulma);
-      background-color: var(--colors-main-goku);
+      background-color: var(--colors-main-gohan);
     }
 
     *,

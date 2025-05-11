@@ -13,11 +13,15 @@
     "@react-beauty/hooks": "workspace:*",
     "@react-beauty/interfaces": "workspace:*",
     "@react-beauty/react-18": "workspace:*",
-    "wouter": "3.7.0"
+    "@react-beauty/ui-core": "workspace:*",
+    "lodash": "4.17.21",
+    "react-markdown": "10.1.0",
+    "react-router": "7.6.0"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
     "@react-beauty/tsc": "workspace:*",
-    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vite": "workspace:*",
+    "@types/lodash": "^4"
   }
 }
