@@ -12,7 +12,6 @@ const base = `
   justify-content: start;
   width: 100%;
 
-  background-color: var(--components-menu-item-colors-default-bg);
   padding-left: var(--components-menu-item-padding-l);
   padding-right: var(--components-menu-item-padding-r);
   padding-top: var(--components-menu-item-padding-t);
@@ -23,11 +22,7 @@ const base = `
 
   &:hover {
     cursor: pointer;
-    background-color: color-mix(
-      in srgb,
-      var(--components-menu-item-colors-default-bg),
-      var(--components-menu-item-colors-default-color) 10%
-    );
+    background-color: var(--colors-main-hales);
   }
 
   &:focus-visible {
@@ -92,7 +87,6 @@ export const ElMenuLabelContainer = styled.div`
   flex-direction: column;
   width: 100%;
 
-  // make sure the label and description are 100% width
   > a {
     ${base}
   }
