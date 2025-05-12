@@ -1393,6 +1393,7 @@ __metadata:
     "@react-beauty/ui-select": "workspace:*"
     "@react-beauty/ui-sidebar": "workspace:*"
     "@react-beauty/ui-switch": "workspace:*"
+    "@react-beauty/ui-tab": "workspace:*"
     "@react-beauty/ui-tag": "workspace:*"
     "@react-beauty/ui-text": "workspace:*"
     "@react-beauty/ui-text-area": "workspace:*"
@@ -1742,6 +1743,22 @@ __metadata:
 "@react-beauty/ui-switch@workspace:*, @react-beauty/ui-switch@workspace:packages/interfaces/ui-switch":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-switch@workspace:packages/interfaces/ui-switch"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-core": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-tab@workspace:*, @react-beauty/ui-tab@workspace:packages/interfaces/ui-tab":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-tab@workspace:packages/interfaces/ui-tab"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/storybook": "workspace:*"

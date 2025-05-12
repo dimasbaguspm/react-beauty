@@ -1,28 +1,28 @@
-import { ReactBeautyUIProvider } from "@react-beauty/ui-core";
-import { withThemeByDataAttribute } from "@storybook/addon-themes";
+import { ReactBeautyUIProvider } from '@react-beauty/ui-core';
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
 
-import type { Preview } from "@storybook/react";
+import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
   parameters: {
     backgrounds: {
-      default: "light",
+      default: 'light',
       values: [
         {
-          name: "light",
-          value: "var(--colors-main-gohan)",
+          name: 'light',
+          value: 'var(--colors-main-gohan)',
         },
       ],
     },
   },
   decorators: [
     withThemeByDataAttribute({
-      attributeName: "data-theme",
-      defaultTheme: "light",
-      parentSelector: "html",
+      attributeName: 'data-theme',
+      defaultTheme: 'light',
+      parentSelector: 'html',
       themes: {
-        light: "light",
-        dark: "dark",
+        light: 'light',
+        dark: 'dark',
       },
     }),
     (Story) => (

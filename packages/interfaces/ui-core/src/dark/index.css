@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Mon, 12 May 2025 07:16:51 GMT
+ * Generated on Mon, 12 May 2025 13:24:12 GMT
  */
 
 :root[data-theme='dark'] {
@@ -180,6 +180,17 @@
   --components-switch-thumb-margin: 3px;
   --components-switch-transition-duration: 0.2s;
   --components-switch-transition-timing: ease-in-out;
+  --components-tab-background: transparent;
+  --components-tab-height-default: 32px;
+  --components-tab-underline-color: #E5E5E5;
+  --components-tab-underline-active-color: #6B4EFF;
+  --components-tab-underline-height: 2px;
+  --components-tab-ghost-background-active: transparent;
+  --components-tab-transition-duration: 0.2s;
+  --components-tab-transition-timing: ease-in-out;
+  --components-tab-hover-opacity: 0.8;
+  --components-tab-active-opacity: 1;
+  --components-tab-disabled-opacity: 0.5;
   --components-text-input-border-width: 1px;
   --components-text-margin-h1: 0 0 16px 0;
   --components-text-margin-h2: 0 0 16px 0;
@@ -509,6 +520,16 @@
   --components-switch-colors-focus-ring: var(--colors-supportive-whis-60);
   --components-switch-colors-helper-text-normal: var(--colors-main-trunks);
   --components-switch-colors-helper-text-error: var(--colors-supportive-chichi);
+  --components-tab-border-radius: var(--border-radius-sm);
+  --components-tab-color: var(--colors-main-bulma);
+  --components-tab-font-size: var(--font-size-sm);
+  --components-tab-padding-x: var(--space-2);
+  --components-tab-padding-y: var(--space-1);
+  --components-tab-gap: var(--space-2);
+  --components-tab-pill-background-active: var(--colors-main-goku);
+  --components-tab-pill-text-active: var(--colors-main-bulma);
+  --components-tab-ghost-text-active: var(--colors-main-picollo);
+  --components-tab-ghost-text-border: var(--colors-main-picollo);
   --components-tag-border-radius: var(--border-radius-xs);
   --components-tag-gap: var(--space-1);
   --components-tag-padding-sm-y: var(--space-none);
