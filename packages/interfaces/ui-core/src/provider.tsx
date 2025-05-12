@@ -30,6 +30,7 @@ export const globals = css`
     @import '../../ui-sidebar/dist/index.css';
     @import '../../ui-switch/dist/index.css';
     @import '../../ui-tag/dist/index.css';
+    @import '../../ui-text/dist/index.css';
     @import '../../ui-text-area/dist/index.css';
     @import '../../ui-text-input/dist/index.css';
     @import '../../ui-tooltip/dist/index.css';
