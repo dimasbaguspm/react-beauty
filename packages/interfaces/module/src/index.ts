@@ -22,3 +22,4 @@ export * from '@react-beauty/ui-modal';
 export * from '@react-beauty/ui-bottom-sheet';
 export * from '@react-beauty/ui-loader';
 export * from '@react-beauty/ui-sidebar';
+export * from '@react-beauty/ui-text';

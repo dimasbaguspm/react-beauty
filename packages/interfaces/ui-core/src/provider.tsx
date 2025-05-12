@@ -1,3 +1,6 @@
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+
 import { css } from '@linaria/core';
 import { FC, ReactNode } from 'react';
 
@@ -5,32 +8,39 @@ import { ThemeContext } from './context';
 import { ReactBeautyUITheme } from './types';
 import { useSetupThemeEffect } from './use-setup-theme-effect';
 
-console.log(process.env.NODE_ENV);
+/**
+ * Checks if a CSS file exists at the specified package path using Node.js fs module
+ * and returns the path for import if it exists, or an empty string if not.
+ * This function is meant to be used during build time, not in the browser.
+ */
+const dynamicImport = (packagePath: string): string => {
+  try {
+    // Create resolved path relative to the current file
+    const resolvedPath = `../../${packagePath}/dist/index.css`;
+    // Get the absolute path
+    const absolutePath = path.resolve(__dirname, resolvedPath);
 
-const prodScripts = `
-  @import '../../ui-accordion/dist/index.css';
-    @import '../../ui-alert/dist/index.css';
-    @import '../../ui-avatar/dist/index.css';
-    @import '../../ui-bottom-sheet/dist/index.css';
-    @import '../../ui-breadcrumb/dist/index.css';
-    @import '../../ui-button/dist/index.css';
-    @import '../../ui-checkbox/dist/index.css';
-    @import '../../ui-drawer/dist/index.css';
-    @import '../../ui-empty-state/dist/index.css';
-    @import '../../ui-icon/dist/index.css';
-    @import '../../ui-loader/dist/index.css';
-    @import '../../ui-menu-item/dist/index.css';
-    @import '../../ui-modal/dist/index.css';
-    @import '../../ui-pagination/dist/index.css';
-    @import '../../ui-radio/dist/index.css';
-    @import '../../ui-select/dist/index.css';
-    @import '../../ui-sidebar/dist/index.css';
-    @import '../../ui-switch/dist/index.css';
-    @import '../../ui-tag/dist/index.css';
-    @import '../../ui-text-area/dist/index.css';
-    @import '../../ui-text-input/dist/index.css';
-    @import '../../ui-tooltip/dist/index.css';
-  `;
+    // Use fs.existsSync to check if the file exists
+    if (fs.existsSync(absolutePath)) {
+      return resolvedPath;
+    } else {
+      console.warn(`CSS file does not exist: ${absolutePath}`);
+      return '';
+    }
+  } catch (error) {
+    // If there's any error, return empty string
+    console.warn(`Failed to check CSS file existence: ${packagePath}`, error);
+    return '';
+  }
+};
+
+/**
+ * Helper function to create CSS import statements if the file exists
+ */
+const getImportStatement = (packagePath: string): string => {
+  const cssPath = dynamicImport(packagePath);
+  return cssPath ? `@import '${cssPath}';` : '';
+};
 
 export const globals = css`
   :global() {
@@ -38,7 +48,30 @@ export const globals = css`
 
     @import './dark/index.css';
     @import './light/index.css';
-    ${process.env.NODE_ENV === 'production' ? prodScripts : ''}
+
+    ${getImportStatement('ui-accordion')}
+    ${getImportStatement('ui-alert')}
+    ${getImportStatement('ui-avatar')}
+    ${getImportStatement('ui-bottom-sheet')}
+    ${getImportStatement('ui-breadcrumb')}
+    ${getImportStatement('ui-button')}
+    ${getImportStatement('ui-checkbox')}
+    ${getImportStatement('ui-drawer')}
+    ${getImportStatement('ui-empty-state')}
+    ${getImportStatement('ui-icon')}
+    ${getImportStatement('ui-loader')}
+    ${getImportStatement('ui-menu-item')}
+    ${getImportStatement('ui-modal')}
+    ${getImportStatement('ui-pagination')}
+    ${getImportStatement('ui-radio')}
+    ${getImportStatement('ui-select')}
+    ${getImportStatement('ui-sidebar')}
+    ${getImportStatement('ui-switch')}
+    ${getImportStatement('ui-tag')}
+    ${getImportStatement('ui-text')}
+    ${getImportStatement('ui-text-area')}
+    ${getImportStatement('ui-text-input')}
+    ${getImportStatement('ui-tooltip')}
 
     :root {
       box-sizing: border-box;
