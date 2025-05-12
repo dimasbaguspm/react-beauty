@@ -1,0 +1,131 @@
+{
+  "components": {
+    "text": {
+      "color": {
+        "value": "{colors.main.bulma}"
+      },
+      "font-family": {
+        "value": "{font-primary}"
+      },
+      "font-weight": {
+        "h1": {
+          "value": "{font-weight.bold}"
+        },
+        "h2": {
+          "value": "{font-weight.bold}"
+        },
+        "h3": {
+          "value": "{font-weight.bold}"
+        },
+        "h4": {
+          "value": "{font-weight.medium}"
+        },
+        "h5": {
+          "value": "{font-weight.medium}"
+        },
+        "h6": {
+          "value": "{font-weight.medium}"
+        },
+        "p": {
+          "value": "{font-weight.regular}"
+        },
+        "span": {
+          "value": "{font-weight.regular}"
+        },
+        "label": {
+          "value": "{font-weight.medium}"
+        },
+        "small": {
+          "value": "{font-weight.regular}"
+        }
+      },
+      "font-size": {
+        "h1": {
+          "value": "{font-size.4xl}"
+        },
+        "h2": {
+          "value": "{font-size.3xl}"
+        },
+        "h3": {
+          "value": "{font-size.2xl}"
+        },
+        "h4": {
+          "value": "{font-size.xl}"
+        },
+        "h5": {
+          "value": "{font-size.lg}"
+        },
+        "h6": {
+          "value": "{font-size.md}"
+        },
+        "p": {
+          "value": "{font-size.md}"
+        },
+        "span": {
+          "value": "{font-size.md}"
+        },
+        "label": {
+          "value": "{font-size.sm}"
+        },
+        "small": {
+          "value": "{font-size.xs}"
+        }
+      },
+      "line-height": {
+        "h1": {
+          "value": "{font-line-height.4xl}"
+        },
+        "h2": {
+          "value": "{font-line-height.3xl}"
+        },
+        "h3": {
+          "value": "{font-line-height.2xl}"
+        },
+        "h4": {
+          "value": "{font-line-height.xl}"
+        },
+        "h5": {
+          "value": "{font-line-height.lg}"
+        },
+        "h6": {
+          "value": "{font-line-height.md}"
+        },
+        "p": {
+          "value": "{font-line-height.md}"
+        },
+        "span": {
+          "value": "{font-line-height.md}"
+        },
+        "label": {
+          "value": "{font-line-height.sm}"
+        },
+        "small": {
+          "value": "{font-line-height.xs}"
+        }
+      },
+      "margin": {
+        "h1": {
+          "value": "0 0 16px 0"
+        },
+        "h2": {
+          "value": "0 0 16px 0"
+        },
+        "h3": {
+          "value": "0 0 16px 0"
+        },
+        "h4": {
+          "value": "0 0 12px 0"
+        },
+        "h5": {
+          "value": "0 0 12px 0"
+        },
+        "h6": {
+          "value": "0 0 8px 0"
+        },
+        "p": {
+          "value": "0 0 16px 0"
+        }
+      }
+    }
+  }
+}
