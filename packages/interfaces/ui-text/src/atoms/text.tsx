@@ -30,5 +30,3 @@ export const Text = forwardRef<HTMLDivElement, TextProps>(
 );
 
 Text.displayName = 'Text';
-
-Text.displayName = 'Text';
