@@ -15,7 +15,7 @@
     "check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@babel/preset-react": "7.26.3",
+    "@babel/preset-react": "7.27.1",
     "@babel/preset-typescript": "7.27.1",
     "@linaria/core": "6.3.0",
     "@linaria/react": "6.3.0",
