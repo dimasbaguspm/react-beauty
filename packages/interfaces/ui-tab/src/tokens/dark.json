@@ -1,0 +1,96 @@
+{
+    "components": {
+      "tab": {
+        "border-radius": {
+          "value": "{border-radius.sm}"
+        },
+        "color": {
+          "value": "{colors.main.bulma}"
+        },
+        "background": {
+          "value": "transparent"
+        },
+        "font-size": {
+          "value": "{font-size.sm}"
+        },
+        "height": {
+          "default": {
+            "value": "32px"
+          }
+        },
+        "padding": {
+          "x": {
+            "value": "{space.2}"
+          },
+          "y": {
+            "value": "{space.1}"
+          }
+        },
+        "gap": {
+          "value": "{space.2}"
+        },
+        "underline": {
+          "color": {
+            "value": "#E5E5E5"
+          },
+          "active-color": {
+            "value": "#6B4EFF"
+          },
+          "height": {
+            "value": "2px"
+          }
+        },
+        "pill": {
+          "background": {
+            "active": {
+              "value": "{colors.main.goku}"
+            }
+          },
+          "text": {
+            "active": {
+              "value": "{colors.main.bulma}"
+            }
+          }
+        },
+        "ghost": {
+          "background": {
+            "active": {
+              "value": "transparent"
+            }
+          },
+          "text": {
+            "active": {
+              "value": "{colors.main.picollo}"
+            },
+            "border": {
+              "value": "{colors.main.picollo}"
+            }
+          }
+        },
+        "transition": {
+          "duration": {
+            "value": "0.2s"
+          },
+          "timing": {
+            "value": "ease-in-out"
+          }
+        },
+        "hover": {
+          "opacity": {
+            "value": "0.8"
+          }
+        },
+        "active": {
+          "opacity": {
+            "value": "1"
+          }
+        },
+        "disabled": {
+          "opacity": {
+            "value": "0.5"
+          }
+        }
+      }
+    }
+  }
+  
