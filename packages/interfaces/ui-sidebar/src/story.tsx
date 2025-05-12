@@ -77,13 +77,20 @@ export const Basic: Story = {
                 <Sidebar.Item
                   icon={<Icon size="md" name="genericHome" />}
                   active
+                  onClick={() => {}}
                 >
                   Dashboard
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericUser" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericUser" />}
+                  onClick={() => {}}
+                >
                   Profile
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericSettings" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericSettings" />}
+                  onClick={() => {}}
+                >
                   Settings
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -94,10 +101,16 @@ export const Basic: Story = {
             <Sidebar.Section>
               <Sidebar.SectionTitle>Tools</Sidebar.SectionTitle>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="chartLine" />}>
+                <Sidebar.Item
+                  icon={<Icon name="chartLine" />}
+                  onClick={() => {}}
+                >
                   Analytics
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="devicesMac" />}>
+                <Sidebar.Item
+                  icon={<Icon name="devicesMac" />}
+                  onClick={() => {}}
+                >
                   Devices
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -106,7 +119,10 @@ export const Basic: Story = {
           <Sidebar.Footer>
             <Sidebar.Section>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="genericLogOut" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericLogOut" />}
+                  onClick={() => {}}
+                >
                   Logout
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -169,13 +185,23 @@ export const WithSections: Story = {
             <Sidebar.Section>
               <Sidebar.SectionTitle>Main</Sidebar.SectionTitle>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="genericHome" />} active>
+                <Sidebar.Item
+                  icon={<Icon name="genericHome" />}
+                  active
+                  onClick={() => {}}
+                >
                   Dashboard
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericUser" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericUser" />}
+                  onClick={() => {}}
+                >
                   Profile
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericSettings" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericSettings" />}
+                  onClick={() => {}}
+                >
                   Settings
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -186,13 +212,22 @@ export const WithSections: Story = {
             <Sidebar.Section>
               <Sidebar.SectionTitle>Reports</Sidebar.SectionTitle>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="chartLine" />}>
+                <Sidebar.Item
+                  icon={<Icon name="chartLine" />}
+                  onClick={() => {}}
+                >
                   Analytics
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="devicesMac" />}>
+                <Sidebar.Item
+                  icon={<Icon name="devicesMac" />}
+                  onClick={() => {}}
+                >
                   Devices
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="chartDashboard" />}>
+                <Sidebar.Item
+                  icon={<Icon name="chartDashboard" />}
+                  onClick={() => {}}
+                >
                   Statistics
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -203,13 +238,22 @@ export const WithSections: Story = {
             <Sidebar.Section>
               <Sidebar.SectionTitle>Account</Sidebar.SectionTitle>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="genericUser" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericUser" />}
+                  onClick={() => {}}
+                >
                   My Account
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="securityShield" />}>
+                <Sidebar.Item
+                  icon={<Icon name="securityShield" />}
+                  onClick={() => {}}
+                >
                   Security
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="notificationsBellAlarm" />}>
+                <Sidebar.Item
+                  icon={<Icon name="notificationsBellAlarm" />}
+                  onClick={() => {}}
+                >
                   Notifications
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -220,7 +264,10 @@ export const WithSections: Story = {
           <Sidebar.Footer>
             <Sidebar.Section>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="genericLogOut" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericLogOut" />}
+                  onClick={() => {}}
+                >
                   Logout
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -281,13 +328,23 @@ export const WithCustomToggle: Story = {
           <Sidebar.Body>
             <Sidebar.Section>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="genericHome" />} active>
+                <Sidebar.Item
+                  icon={<Icon name="genericHome" />}
+                  active
+                  onClick={() => {}}
+                >
                   Dashboard
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericUser" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericUser" />}
+                  onClick={() => {}}
+                >
                   Profile
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericSettings" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericSettings" />}
+                  onClick={() => {}}
+                >
                   Settings
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -297,10 +354,16 @@ export const WithCustomToggle: Story = {
 
             <Sidebar.Section>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="chartLine" />}>
+                <Sidebar.Item
+                  icon={<Icon name="chartLine" />}
+                  onClick={() => {}}
+                >
                   Analytics
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="devicesMac" />}>
+                <Sidebar.Item
+                  icon={<Icon name="devicesMac" />}
+                  onClick={() => {}}
+                >
                   Devices
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -384,10 +447,16 @@ export const InitiallyCollapsed: Story = {
                 >
                   Dashboard
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericUser" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericUser" />}
+                  onClick={() => {}}
+                >
                   Profile
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="genericSettings" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericSettings" />}
+                  onClick={() => {}}
+                >
                   Settings
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -397,10 +466,16 @@ export const InitiallyCollapsed: Story = {
 
             <Sidebar.Section>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="chartLine" />}>
+                <Sidebar.Item
+                  icon={<Icon name="chartLine" />}
+                  onClick={() => {}}
+                >
                   Analytics
                 </Sidebar.Item>
-                <Sidebar.Item icon={<Icon name="devicesMac" />}>
+                <Sidebar.Item
+                  icon={<Icon name="devicesMac" />}
+                  onClick={() => {}}
+                >
                   Devices
                 </Sidebar.Item>
               </Sidebar.ItemList>
@@ -409,7 +484,10 @@ export const InitiallyCollapsed: Story = {
           <Sidebar.Footer>
             <Sidebar.Section>
               <Sidebar.ItemList>
-                <Sidebar.Item icon={<Icon name="genericLogOut" />}>
+                <Sidebar.Item
+                  icon={<Icon name="genericLogOut" />}
+                  onClick={() => {}}
+                >
                   Logout
                 </Sidebar.Item>
               </Sidebar.ItemList>

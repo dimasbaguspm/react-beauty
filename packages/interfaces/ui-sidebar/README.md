@@ -20,39 +20,86 @@ npm install @react-beauty/ui-sidebar
 
 ```jsx
 import { Sidebar } from '@react-beauty/ui-sidebar';
+import { Icon } from '@react-beauty/ui-icon';
 import { useState } from 'react';
 
 function App() {
   const [isExpanded, setIsExpanded] = useState(true);
   
   return (
-    <div style={{ height: '100vh', position: 'relative' }}>
+    <div style={{ 
+      display: 'flex',
+      overflow: 'hidden',
+      position: 'relative' 
+    }}>
       <Sidebar 
         isExpanded={isExpanded} 
         onExpandedChange={setIsExpanded}
       >
         <Sidebar.Header>
-          <div>Logo</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ 
+              width: '32px',
+              height: '32px',
+              backgroundColor: 'var(--colors-main-picollo)',
+              borderRadius: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold'
+            }}>
+              RB
+            </span>
+            {isExpanded && (
+              <span style={{ fontWeight: 'bold' }}>React Beauty</span>
+            )}
+          </div>
           <Sidebar.ToggleButton />
         </Sidebar.Header>
         
         <Sidebar.Body>
           <Sidebar.Section>
-            <Sidebar.SectionTitle>Navigation</Sidebar.SectionTitle>
+            <Sidebar.SectionTitle>Main</Sidebar.SectionTitle>
             <Sidebar.ItemList>
-              <Sidebar.Item icon="homeHouse" active>Dashboard</Sidebar.Item>
-              <Sidebar.Item icon="userPerson">Profile</Sidebar.Item>
-              <Sidebar.Item icon="settingsControls">Settings</Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="genericHome" />} 
+                active
+                onClick={() => {}}
+              >
+                Dashboard
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="genericUser" />}
+                onClick={() => {}}
+              >
+                Profile
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="genericSettings" />}
+                onClick={() => {}}
+              >
+                Settings
+              </Sidebar.Item>
             </Sidebar.ItemList>
           </Sidebar.Section>
           
           <Sidebar.Divider />
           
           <Sidebar.Section>
-            <Sidebar.SectionTitle>Reports</Sidebar.SectionTitle>
+            <Sidebar.SectionTitle>Tools</Sidebar.SectionTitle>
             <Sidebar.ItemList>
-              <Sidebar.Item icon="businessAnalytics">Analytics</Sidebar.Item>
-              <Sidebar.Item icon="devicesComputer">Devices</Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="chartLine" />}
+                onClick={() => {}}
+              >
+                Analytics
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="devicesMac" />}
+                onClick={() => {}}
+              >
+                Devices
+              </Sidebar.Item>
             </Sidebar.ItemList>
           </Sidebar.Section>
         </Sidebar.Body>
@@ -60,18 +107,24 @@ function App() {
         <Sidebar.Footer>
           <Sidebar.Section>
             <Sidebar.ItemList>
-              <Sidebar.Item icon="logoutExit">Logout</Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="genericLogOut" />}
+                onClick={() => {}}
+              >
+                Logout
+              </Sidebar.Item>
             </Sidebar.ItemList>
           </Sidebar.Section>
         </Sidebar.Footer>
       </Sidebar>
       
       <div style={{ 
-        marginLeft: isExpanded ? '240px' : '64px',
-        padding: '24px',
-        transition: 'margin-left 300ms ease-in-out'
+        padding: '24px'
       }}>
-        {/* Main content */}
+        <h1>Main Content Area</h1>
+        <p>
+          This is the main content that adjusts based on the sidebar width.
+        </p>
       </div>
     </div>
   );
@@ -81,38 +134,145 @@ function App() {
 ## With Sections
 
 ```jsx
-<Sidebar isExpanded={isExpanded} onExpandedChange={setIsExpanded}>
-  <Sidebar.Header>
-    {/* Header content */}
-  </Sidebar.Header>
+import { Sidebar } from '@react-beauty/ui-sidebar';
+import { Icon } from '@react-beauty/ui-icon';
+import { useState } from 'react';
+
+function App() {
+  const [isExpanded, setIsExpanded] = useState(true);
   
-  <Sidebar.Body>
-    <Sidebar.Section>
-      <Sidebar.SectionTitle>Main</Sidebar.SectionTitle>
-      <Sidebar.ItemList>
-        <Sidebar.Item icon="homeHouse" active>Dashboard</Sidebar.Item>
-        <Sidebar.Item icon="userPerson">Profile</Sidebar.Item>
-      </Sidebar.ItemList>
-    </Sidebar.Section>
-    
-    <Sidebar.Section>
-      <Sidebar.SectionTitle>Reports</Sidebar.SectionTitle>
-      <Sidebar.ItemList>
-        <Sidebar.Item icon="businessAnalytics">Analytics</Sidebar.Item>
-        <Sidebar.Item icon="businessChartBar">Statistics</Sidebar.Item>
-      </Sidebar.ItemList>
-    </Sidebar.Section>
-  </Sidebar.Body>
-  
-  <Sidebar.Footer>
-    <Sidebar.Section>
-      <Sidebar.ItemList>
-        <Sidebar.Item icon="logoutExit">Logout</Sidebar.Item>
-      </Sidebar.ItemList>
-    </Sidebar.Section>
-  </Sidebar.Footer>
-</Sidebar>
-```
+  return (
+    <div style={{ 
+      display: 'flex',
+      overflow: 'hidden',
+      position: 'relative' 
+    }}>
+      <Sidebar isExpanded={isExpanded} onExpandedChange={setIsExpanded}>
+        <Sidebar.Header>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ 
+              width: '32px',
+              height: '32px',
+              backgroundColor: 'var(--colors-main-picollo)',
+              borderRadius: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold'
+            }}>
+              RB
+            </span>
+            {isExpanded && (
+              <span style={{ fontWeight: 'bold' }}>React Beauty</span>
+            )}
+          </div>
+          <Sidebar.ToggleButton />
+        </Sidebar.Header>
+        
+        <Sidebar.Body>
+          <Sidebar.Section>
+            <Sidebar.SectionTitle>Main</Sidebar.SectionTitle>
+            <Sidebar.ItemList>
+              <Sidebar.Item 
+                icon={<Icon name="genericHome" />} 
+                active
+                onClick={() => {}}
+              >
+                Dashboard
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="genericUser" />}
+                onClick={() => {}}
+              >
+                Profile
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="genericSettings" />}
+                onClick={() => {}}
+              >
+                Settings
+              </Sidebar.Item>
+            </Sidebar.ItemList>
+          </Sidebar.Section>
+          
+          <Sidebar.Divider />
+          
+          <Sidebar.Section>
+            <Sidebar.SectionTitle>Reports</Sidebar.SectionTitle>
+            <Sidebar.ItemList>
+              <Sidebar.Item 
+                icon={<Icon name="chartLine" />}
+                onClick={() => {}}
+              >
+                Analytics
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="devicesMac" />}
+                onClick={() => {}}
+              >
+                Devices
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="chartDashboard" />}
+                onClick={() => {}}
+              >
+                Statistics
+              </Sidebar.Item>
+            </Sidebar.ItemList>
+          </Sidebar.Section>
+          
+          <Sidebar.Divider />
+          
+          <Sidebar.Section>
+            <Sidebar.SectionTitle>Account</Sidebar.SectionTitle>
+            <Sidebar.ItemList>
+              <Sidebar.Item 
+                icon={<Icon name="genericUser" />}
+                onClick={() => {}}
+              >
+                My Account
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="securityShield" />}
+                onClick={() => {}}
+              >
+                Security
+              </Sidebar.Item>
+              <Sidebar.Item 
+                icon={<Icon name="notificationsBellAlarm" />}
+                onClick={() => {}}
+              >
+                Notifications
+              </Sidebar.Item>
+            </Sidebar.ItemList>
+          </Sidebar.Section>
+        </Sidebar.Body>
+        
+        <Sidebar.Footer>
+          <Sidebar.Section>
+            <Sidebar.ItemList>
+              <Sidebar.Item 
+                icon={<Icon name="genericLogOut" />}
+                onClick={() => {}}
+              >
+                Logout
+              </Sidebar.Item>
+            </Sidebar.ItemList>
+          </Sidebar.Section>
+        </Sidebar.Footer>
+      </Sidebar>
+      
+      <div style={{ 
+        padding: '24px'
+      }}>
+        <h1>Main Content Area</h1>
+        <p>
+          This is the main content that adjusts based on the sidebar width.
+        </p>
+      </div>
+    </div>
+  );
+}
 
 ## API
 
@@ -128,7 +288,7 @@ function App() {
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `icon` | string | - | Icon name from @react-beauty/ui-icon |
+| `icon` | ReactNode | - | Icon element from @react-beauty/ui-icon or any React node |
 | `active` | boolean | `false` | Whether the item is in active state |
 | `children` | ReactNode | - | Label content |
 | `onClick` | (event: MouseEvent) => void | - | Click handler |
@@ -137,8 +297,8 @@ function App() {
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `iconExpanded` | string | 'arrowChevronLeft' | Icon to show when sidebar is expanded |
-| `iconCollapsed` | string | 'arrowChevronRight' | Icon to show when sidebar is collapsed |
+| `iconExpanded` | ReactNode | `<Icon name="arrowChevronLeft" />` | Icon to show when sidebar is expanded |
+| `iconCollapsed` | ReactNode | `<Icon name="arrowChevronRight" />` | Icon to show when sidebar is collapsed |
 
 ### Other Components
 
@@ -158,3 +318,140 @@ function App() {
 - Focus management for keyboard navigation
 - Section titles are properly separated from navigation items
 - ARIA roles enhance screen reader announcements
+
+## Custom Toggle Example
+
+You can replace the default toggle button with a custom component:
+
+```jsx
+import { Sidebar } from '@react-beauty/ui-sidebar';
+import { Icon } from '@react-beauty/ui-icon';
+import { Button } from '@react-beauty/ui-button';
+import { useState } from 'react';
+
+function App() {
+  const [isExpanded, setIsExpanded] = useState(true);
+  
+  return (
+    <div style={{ 
+      display: 'flex',
+      overflow: 'hidden',
+      position: 'relative' 
+    }}>
+      <Sidebar isExpanded={isExpanded} onExpandedChange={setIsExpanded}>
+        <Sidebar.Header>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ 
+              width: '32px',
+              height: '32px',
+              backgroundColor: 'var(--colors-main-picollo)',
+              borderRadius: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold'
+            }}>
+              RB
+            </span>
+            {isExpanded && (
+              <span style={{ fontWeight: 'bold' }}>React Beauty</span>
+            )}
+          </div>
+        </Sidebar.Header>
+        
+        <Sidebar.Body>
+          {/* Sidebar content */}
+        </Sidebar.Body>
+        
+        <Sidebar.Footer>
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            {isExpanded ? 'Collapse' : 'Expand'}
+          </Button>
+        </Sidebar.Footer>
+      </Sidebar>
+      
+      <div style={{ 
+        padding: '24px'
+      }}>
+        {/* Main content */}
+      </div>
+    </div>
+  );
+}
+```
+
+## Initially Collapsed Sidebar
+
+You can initialize the sidebar in a collapsed state:
+
+```jsx
+import { Sidebar } from '@react-beauty/ui-sidebar';
+import { Icon } from '@react-beauty/ui-icon';
+import { useState } from 'react';
+
+function App() {
+  // Initialize with collapsed state
+  const [isExpanded, setIsExpanded] = useState(false);
+  
+  return (
+    <div style={{ 
+      display: 'flex',
+      overflow: 'hidden',
+      position: 'relative' 
+    }}>
+      <Sidebar isExpanded={isExpanded} onExpandedChange={setIsExpanded}>
+        <Sidebar.Header>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ 
+              width: '32px',
+              height: '32px',
+              backgroundColor: 'var(--colors-main-picollo)',
+              borderRadius: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold'
+            }}>
+              RB
+            </span>
+            {isExpanded && (
+              <span style={{ fontWeight: 'bold' }}>React Beauty</span>
+            )}
+          </div>
+          <Sidebar.ToggleButton />
+        </Sidebar.Header>
+        
+        <Sidebar.Body>
+          {/* Sidebar content */}
+        </Sidebar.Body>
+        
+        <Sidebar.Footer>
+          <Sidebar.Section>
+            <Sidebar.ItemList>
+              <Sidebar.Item 
+                icon={<Icon name="genericLogOut" />}
+                onClick={() => {}}
+              >
+                Logout
+              </Sidebar.Item>
+            </Sidebar.ItemList>
+          </Sidebar.Section>
+        </Sidebar.Footer>
+      </Sidebar>
+      
+      <div style={{ 
+        padding: '24px'
+      }}>
+        <h1>Main Content Area</h1>
+        <p>
+          This is the main content that adjusts based on the sidebar width.
+        </p>
+        <p>The sidebar starts collapsed in this example.</p>
+      </div>
+    </div>
+  );
+}
