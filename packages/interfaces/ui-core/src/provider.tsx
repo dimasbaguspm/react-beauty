@@ -77,7 +77,7 @@ export const globals = css`
       box-sizing: border-box;
       font-family: var(--font-primary);
       color: var(--colors-main-bulma);
-      background-color: var(--colors-main-goku);
+      background-color: var(--colors-main-gohan);
     }
 
     *,

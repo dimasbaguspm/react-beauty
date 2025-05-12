@@ -11,10 +11,10 @@ export const ElSidebarContainer = styled.div`
   border-right: 1px solid var(--components-sidebar-border-color);
   box-shadow: var(--components-sidebar-shadow);
   transition: width var(--components-sidebar-transition-duration) 10ms;
-  width: var(--components-sidebar-width-collapsed);
+  min-width: var(--components-sidebar-width-collapsed);
 
   &[data-expanded='true'] {
-    width: var(--components-sidebar-width-expanded);
+    min-width: var(--components-sidebar-width-expanded);
   }
 `;
 

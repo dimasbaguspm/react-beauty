@@ -23,6 +23,7 @@ export const viteConfig = (
     }),
     svgr(),
   ],
+  assetsInclude: ['**/*.md'],
   build: {
     outDir: 'dist',
     ...buildOptions,
