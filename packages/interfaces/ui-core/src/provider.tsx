@@ -72,6 +72,8 @@ export const globals = css`
     ${getImportStatement('ui-text-area')}
     ${getImportStatement('ui-text-input')}
     ${getImportStatement('ui-tooltip')}
+    ${getImportStatement('ui-tab')}
+    ${getImportStatement('ui-segment')}
 
     :root {
       box-sizing: border-box;

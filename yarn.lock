@@ -1390,6 +1390,7 @@ __metadata:
     "@react-beauty/ui-modal": "workspace:*"
     "@react-beauty/ui-pagination": "workspace:*"
     "@react-beauty/ui-radio": "workspace:*"
+    "@react-beauty/ui-segment": "workspace:*"
     "@react-beauty/ui-select": "workspace:*"
     "@react-beauty/ui-sidebar": "workspace:*"
     "@react-beauty/ui-switch": "workspace:*"
@@ -1692,6 +1693,22 @@ __metadata:
 "@react-beauty/ui-radio@workspace:*, @react-beauty/ui-radio@workspace:packages/interfaces/ui-radio":
   version: 0.0.0-use.local
   resolution: "@react-beauty/ui-radio@workspace:packages/interfaces/ui-radio"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/storybook": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/ui-core": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    "@react-beauty/vitest": "workspace:*"
+  peerDependencies:
+    "@types/react": ^18.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@react-beauty/ui-segment@workspace:*, @react-beauty/ui-segment@workspace:packages/interfaces/ui-segment":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui-segment@workspace:packages/interfaces/ui-segment"
   dependencies:
     "@react-beauty/eslint": "workspace:*"
     "@react-beauty/storybook": "workspace:*"

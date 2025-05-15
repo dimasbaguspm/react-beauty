@@ -24,3 +24,4 @@ export * from '@react-beauty/ui-loader';
 export * from '@react-beauty/ui-sidebar';
 export * from '@react-beauty/ui-text';
 export * from '@react-beauty/ui-tab';
+export * from '@react-beauty/ui-segment';

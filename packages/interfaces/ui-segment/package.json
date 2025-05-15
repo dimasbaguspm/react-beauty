@@ -1,0 +1,52 @@
+{
+  "name": "@react-beauty/ui-segment",
+  "description": "ui-segment",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "@react-beauty",
+    "ui-segment"
+  ],
+  "author": "Dimas Bagus P <dimas.bagus.pm1@gmail.com>",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./style.css": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "check": "tsc --noEmit",
+    "build": "vite build --configLoader runner",
+    "test": "vitest run --configLoader runner"
+  },
+  "dependencies": {
+    "@react-beauty/ui-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.0",
+    "react": "^18.0"
+  },
+  "devDependencies": {
+    "@react-beauty/eslint": "workspace:*",
+    "@react-beauty/storybook": "workspace:*",
+    "@react-beauty/tsc": "workspace:*",
+    "@react-beauty/vite": "workspace:*",
+    "@react-beauty/vitest": "workspace:*"
+  }
+}
