@@ -1,0 +1,55 @@
+{
+  "components": {
+    "segment": {
+      "z-index": {
+        "value": "10"
+      },
+      "background": {
+        "value": "{colors.main.goku}"
+      },
+      "background-active": {
+        "value": "{colors.main.gohan}"
+      },
+      "border-color": {
+        "value": "{colors.main.beerus}"
+      },
+      "border-radius": {
+        "value": "{border-radius.sm}"
+      },
+      "shadow": {
+        "value": "0 2px 4px rgba(0, 0, 0, 0.1)"
+      },
+      "padding": {
+        "value": "{space.1}"
+      },
+      "transition": {
+        "duration": {
+          "value": "200ms"
+        },
+        "timing": {
+          "value": "ease-in-out"
+        }
+      },
+      "gap": {
+        "value": "{space.2}"
+      },
+      "focus-ring": {
+        "value": "{colors.supportive.whis-60}"
+      },
+      "text": {
+        "color": {
+          "value": "{colors.main.bulma}"
+        },
+        "font-size": {
+          "value": "{font-size.sm}"
+        },
+        "line-height": {
+          "value": "{font-line-height.sm}"
+        },
+        "font-weight": {
+          "value": "{font-weight.bold}"
+        }
+      }
+    }
+  }
+}

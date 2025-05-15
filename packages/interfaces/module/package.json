@@ -49,6 +49,7 @@
     "@react-beauty/ui-modal": "workspace:*",
     "@react-beauty/ui-pagination": "workspace:*",
     "@react-beauty/ui-radio": "workspace:*",
+    "@react-beauty/ui-segment": "workspace:*",
     "@react-beauty/ui-select": "workspace:*",
     "@react-beauty/ui-sidebar": "workspace:*",
     "@react-beauty/ui-switch": "workspace:*",

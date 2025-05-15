@@ -1,6 +1,6 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Mon, 12 May 2025 13:24:12 GMT
+ * Generated on Thu, 15 May 2025 14:52:37 GMT
  */
 
 :root[data-theme='light'] {
@@ -166,6 +166,10 @@
   --components-radio-size: 20px;
   --components-radio-transition-duration: 0.2s;
   --components-radio-transition-timing: ease-in-out;
+  --components-segment-z-index: 10;
+  --components-segment-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --components-segment-transition-duration: 200ms;
+  --components-segment-transition-timing: ease-in-out;
   --components-select-border-width: 1px;
   --components-sidebar-z-index: 1000;
   --components-sidebar-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -443,6 +447,17 @@
   --components-radio-colors-focus-ring: var(--colors-supportive-whis-60);
   --components-radio-colors-helper-text-normal: var(--colors-main-trunks);
   --components-radio-colors-helper-text-error: var(--colors-supportive-chichi);
+  --components-segment-background: var(--colors-main-goku);
+  --components-segment-background-active: var(--colors-main-gohan);
+  --components-segment-border-color: var(--colors-main-beerus);
+  --components-segment-border-radius: var(--border-radius-sm);
+  --components-segment-padding: var(--space-1);
+  --components-segment-gap: var(--space-2);
+  --components-segment-focus-ring: var(--colors-supportive-whis-60);
+  --components-segment-text-color: var(--colors-main-bulma);
+  --components-segment-text-font-size: var(--font-size-sm);
+  --components-segment-text-line-height: var(--font-line-height-sm);
+  --components-segment-text-font-weight: var(--font-weight-bold);
   --components-select-border-radius: var(--border-radius-xs);
   --components-select-font-size-label: var(--font-size-sm);
   --components-select-font-size-input: var(--font-size-xs);
