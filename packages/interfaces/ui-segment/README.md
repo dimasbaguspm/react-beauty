@@ -12,19 +12,20 @@ npm install @react-beauty/ui-segment
 
 The Segment component follows a compound component pattern, which means you can use `Segment` as the parent component and `Segment.Item` as children.
 
-### Basic Usage with Text Labels
+### Basic Usage
 
 ```tsx
 import { Segment } from '@react-beauty/ui-segment';
+import { useState } from 'react';
 
 const Example = () => {
   const [value, setValue] = useState('segment1');
 
   return (
     <Segment value={value} onValueChange={setValue}>
-      <Segment.Item value="segment1" label="Daily">Daily</Segment.Item>
-      <Segment.Item value="segment2" label="Weekly">Weekly</Segment.Item>
-      <Segment.Item value="segment3" label="Monthly">Monthly</Segment.Item>
+      <Segment.Item value="segment1">Daily</Segment.Item>
+      <Segment.Item value="segment2">Weekly</Segment.Item>
+      <Segment.Item value="segment3">Monthly</Segment.Item>
     </Segment>
   );
 };
@@ -35,99 +36,70 @@ const Example = () => {
 ```tsx
 import { Segment } from '@react-beauty/ui-segment';
 import { Icon } from '@react-beauty/ui-icon';
+import { useState } from 'react';
 
 const Example = () => {
   const [value, setValue] = useState('segment1');
 
   return (
     <Segment value={value} onValueChange={setValue}>
-      <Segment.Item 
-        value="segment1" 
-        label="List" 
-        icon={<Icon name="textListView" size="xs" />}
-      >
-        List
-      </Segment.Item>
-      <Segment.Item 
-        value="segment2" 
-        label="Download" 
-        icon={<Icon name="genericDownload" size="xs" />}
-      >
-        Download
-      </Segment.Item>
-      <Segment.Item 
-        value="segment3" 
-        label="Bookmark" 
-        icon={<Icon name="genericBookmark" size="xs" />}
-      >
+      <Segment.Item value="segment1">
+        <Icon name="genericBookmark" size="md" />
         Bookmark
+      </Segment.Item>
+      <Segment.Item value="segment2">
+        <Icon name="genericStar" size="md" />
+        Star
+      </Segment.Item>
+      <Segment.Item value="segment3">
+        <Icon name="genericInfo" size="md" />
+        Info
       </Segment.Item>
     </Segment>
   );
 };
 ```
 
-### Icon-Only Segments (with Accessibility)
+### Icon-Only Segments
 
 ```tsx
 import { Segment } from '@react-beauty/ui-segment';
 import { Icon } from '@react-beauty/ui-icon';
+import { useState } from 'react';
 
 const Example = () => {
   const [value, setValue] = useState('segment1');
 
   return (
     <Segment value={value} onValueChange={setValue}>
-      <Segment.Item 
-        value="segment1" 
-        aria-label="List view" 
-        icon={<Icon name="textListView" size="xs" />}
-      >
-        <span className="sr-only">List view</span>
+      <Segment.Item value="segment1">
+        <Icon name="genericBookmark" size="md" />
       </Segment.Item>
-      <Segment.Item 
-        value="segment2" 
-        aria-label="Bookmark" 
-        icon={<Icon name="genericBookmark" size="xs" />}
-      >
-        <span className="sr-only">Bookmark</span>
+      <Segment.Item value="segment2">
+        <Icon name="genericStar" size="md" />
       </Segment.Item>
-      <Segment.Item 
-        value="segment3" 
-        aria-label="Download" 
-        icon={<Icon name="genericDownload" size="xs" />}
-      >
-        <span className="sr-only">Download</span>
+      <Segment.Item value="segment3">
+        <Icon name="genericInfo" size="md" />
       </Segment.Item>
     </Segment>
   );
 };
 ```
 
-## API
+## Props
 
 ### Segment
 
-| Prop | Type | Description |
-|------|------|-------------|
-| `value` | `string` | The currently selected value |
-| `onValueChange` | `(value: string) => void` | Callback when the selected value changes |
-| `children` | `ReactNode` | Segment.Item components |
+| Prop | Type | Required | Description |
+|------|------|----------|-------------|
+| value | string | Yes | The currently selected segment value |
+| onValueChange | (value: string) => void | Yes | Callback fired when a segment is selected |
+| children | ReactNode | Yes | Segment.Item components |
 
 ### Segment.Item
 
-| Prop | Type | Description |
-|------|------|-------------|
-| `value` | `string` | The value of this segment item |
-| `label` | `string` | Optional text label to display |
-| `icon` | `ReactNode` | Optional icon to display before the label |
-| `children` | `ReactNode` | Required content, can be used as fallback |
-| `aria-label` | `string` | Accessible label for screen readers (especially important for icon-only items) |
-
-## Accessibility
-
-The Segment component uses the appropriate ARIA roles and attributes to ensure accessibility:
-
-- The entire segment control has a `role="tablist"` attribute
-- Selected segments are properly indicated with the `aria-selected` attribute
-- Icon-only segments should include an `aria-label` for screen readers
+| Prop | Type | Required | Description |
+|------|------|----------|-------------|
+| value | string | Yes | The value of this segment item |
+| disabled | boolean | No | Whether the segment item is disabled |
+| children | ReactNode | Yes | Content to display in the segment item |
