@@ -1,6 +1,8 @@
-import { forwardRef, HTMLAttributes, ReactNode } from 'react';
+import { createElement, forwardRef, HTMLAttributes, ReactNode } from 'react';
 
-import { ElText } from './style';
+import { elText } from './style';
+
+import type { LinariaClassName } from '@linaria/core';
 
 export type TextElement =
   | 'h1'
@@ -14,17 +16,24 @@ export type TextElement =
   | 'label'
   | 'small';
 
-export type TextProps = HTMLAttributes<HTMLDivElement> & {
+export type TextProps = HTMLAttributes<HTMLElement> & {
   as?: TextElement;
   children: ReactNode;
 };
 
-export const Text = forwardRef<HTMLDivElement, TextProps>(
+export const Text = forwardRef<HTMLElement, TextProps>(
   ({ as = 'p', children, ...props }, ref) => {
-    return (
-      <ElText ref={ref} data-element={as} {...props}>
-        {children}
-      </ElText>
+    // Directly use the specified HTML element instead of relying on the 'as' prop
+    return createElement(
+      as,
+      {
+        ...props,
+        ref,
+        className: [elText]
+          .concat((props?.className || []) as LinariaClassName)
+          .join(' '),
+      },
+      children,
     );
   },
 );
