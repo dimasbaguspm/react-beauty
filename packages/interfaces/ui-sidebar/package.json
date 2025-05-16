@@ -27,12 +27,6 @@
         "types": "./dist/index.d.ts"
       },
       "./style.css": "./dist/style.css"
-    },
-    "dependencies": {
-      "@react-beauty/ui-core": "latest",
-      "@react-beauty/ui-icon": "latest",
-      "@react-beauty/ui-menu-item": "latest",
-      "@react-beauty/ui-tooltip": "latest"
     }
   },
   "scripts": {
@@ -48,6 +42,8 @@
     "@react-beauty/ui-tooltip": "workspace:*"
   },
   "peerDependencies": {
+    "@linaria/core": "^6.0",
+    "@linaria/react": "6.0",
     "@types/react": "^18.0",
     "react": "^18.0"
   },

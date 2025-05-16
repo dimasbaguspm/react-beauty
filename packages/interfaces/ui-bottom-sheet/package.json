@@ -27,10 +27,6 @@
         "types": "./dist/index.d.ts"
       },
       "./style.css": "./dist/style.css"
-    },
-    "dependencies": {
-      "@react-beauty/ui-core": "latest",
-      "@react-beauty/ui-icon": "latest"
     }
   },
   "scripts": {
@@ -44,7 +40,9 @@
     "@react-beauty/ui-icon": "workspace:*"
   },
   "peerDependencies": {
-    "@types/react": "^18.0",
+    "@linaria/core": "^6.0",
+    "@linaria/react": "6.0",
+    "@types/react": "*",
     "react": "^18.0"
   },
   "devDependencies": {

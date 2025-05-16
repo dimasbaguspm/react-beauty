@@ -61,8 +61,10 @@
     "@react-beauty/ui-tooltip": "workspace:*"
   },
   "peerDependencies": {
-    "@types/react": "*",
-    "react": "^16.8 || ^17.0 || ^18.0"
+    "@linaria/core": "^6.0",
+    "@linaria/react": "6.0",
+    "@types/react": "^18.0",
+    "react": "^18.0"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",

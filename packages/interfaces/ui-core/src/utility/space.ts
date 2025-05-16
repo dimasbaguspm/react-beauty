@@ -1,5 +1,9 @@
 import { css } from '@linaria/core';
 
+export const elWFull = css`
+  width: 100%;
+`;
+
 // Padding utilities - all sides
 export const elP0 = css`
   padding: var(--space-none);
