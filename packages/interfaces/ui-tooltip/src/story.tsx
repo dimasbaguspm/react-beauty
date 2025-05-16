@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Tooltip } from '.';
 
-import type { TooltipPlacement } from '.';
-import type { TooltipTriggerType } from './atoms/tooltip-context';
+import type {
+  TooltipPlacement,
+  TooltipTriggerType,
+} from './atoms/tooltip-context';
 import type { Meta, StoryObj } from '@react-beauty/storybook';
 
 const meta: Meta<typeof Tooltip> = {
@@ -11,6 +13,15 @@ const meta: Meta<typeof Tooltip> = {
   component: Tooltip,
   parameters: {
     layout: 'centered',
+    backgrounds: {
+      default: 'light',
+      values: [
+        {
+          name: 'light',
+          value: 'var(--colors-main-goku)',
+        },
+      ],
+    },
   },
   argTypes: {
     defaultVisible: {
@@ -31,11 +42,11 @@ type Story = StoryObj<typeof Tooltip>;
 // Basic example with default configuration
 export const Basic: Story = {
   render: () => (
-    <Tooltip>
+    <Tooltip placement="top-center">
       <Tooltip.Trigger>
         <button>Hover me</button>
       </Tooltip.Trigger>
-      <Tooltip.Content placement="top">This is a tooltip</Tooltip.Content>
+      <Tooltip.Content>This is a tooltip</Tooltip.Content>
     </Tooltip>
   ),
 };
@@ -47,27 +58,32 @@ export const Placements: Story = {
       style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '1rem',
+        gap: '10rem',
       }}
     >
       {[
-        { name: 'Top', placement: 'top' as TooltipPlacement },
-        { name: 'Right', placement: 'right' as TooltipPlacement },
-        { name: 'Bottom', placement: 'bottom' as TooltipPlacement },
-        { name: 'Left', placement: 'left' as TooltipPlacement },
-        { name: 'Center Top', placement: 'center-top' as TooltipPlacement },
-        {
-          name: 'Center Bottom',
-          placement: 'center-bottom' as TooltipPlacement,
-        },
+        { name: 'Top Left', placement: 'top-left' },
+        { name: 'Top Center', placement: 'top-center' },
+        { name: 'Top Right', placement: 'top-right' },
+        { name: 'Bottom Left', placement: 'bottom-left' },
+        { name: 'Bottom Center', placement: 'bottom-center' },
+        { name: 'Bottom Right', placement: 'bottom-right' },
+        { name: 'Right Top', placement: 'right-top' },
+        { name: 'Right Center', placement: 'right-center' },
+        { name: 'Right Bottom', placement: 'right-bottom' },
+        { name: 'Left Top', placement: 'left-top' },
+        { name: 'Left Center', placement: 'left-center' },
+        { name: 'Left Bottom', placement: 'left-bottom' },
       ].map(({ name, placement }) => (
-        <Tooltip key={placement}>
+        <Tooltip
+          key={placement}
+          trigger="hover"
+          placement={placement as TooltipPlacement}
+        >
           <Tooltip.Trigger>
-            <button>{name}</button>
+            <button style={{ width: '100%' }}>{name}</button>
           </Tooltip.Trigger>
-          <Tooltip.Content placement={placement}>
-            {name} tooltip
-          </Tooltip.Content>
+          <Tooltip.Content>{name} tooltip</Tooltip.Content>
         </Tooltip>
       ))}
     </div>
@@ -96,11 +112,16 @@ export const Triggers: Story = {
           defaultVisible: true,
         },
       ].map(({ type, label, description, defaultVisible = false }) => (
-        <Tooltip key={type} trigger={type} defaultVisible={defaultVisible}>
+        <Tooltip
+          key={type}
+          trigger={type}
+          defaultVisible={defaultVisible}
+          placement="top-center"
+        >
           <Tooltip.Trigger>
             <button>{label}</button>
           </Tooltip.Trigger>
-          <Tooltip.Content placement="top">{description}</Tooltip.Content>
+          <Tooltip.Content>{description}</Tooltip.Content>
         </Tooltip>
       ))}
     </div>
@@ -110,41 +131,40 @@ export const Triggers: Story = {
 // Showcase visual options
 export const Styling: Story = {
   render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-      <Tooltip defaultVisible>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+      <Tooltip defaultVisible placement="top-center">
         <Tooltip.Trigger>
           <button>Default Tooltip</button>
         </Tooltip.Trigger>
-        <Tooltip.Content placement="top">
+        <Tooltip.Content>
           Default tooltip with pointer and shadow
         </Tooltip.Content>
       </Tooltip>
 
-      <Tooltip defaultVisible>
+      <Tooltip defaultVisible placement="top-center" pointer={false}>
         <Tooltip.Trigger>
           <button>No Pointer</button>
         </Tooltip.Trigger>
-        <Tooltip.Content placement="top" pointer={false}>
-          Tooltip without pointer
-        </Tooltip.Content>
+        <Tooltip.Content>Tooltip without pointer</Tooltip.Content>
       </Tooltip>
 
-      <Tooltip defaultVisible>
+      <Tooltip defaultVisible placement="top-center" shadow={false}>
         <Tooltip.Trigger>
           <button>No Shadow</button>
         </Tooltip.Trigger>
-        <Tooltip.Content placement="top" shadow={false}>
-          Tooltip without shadow
-        </Tooltip.Content>
+        <Tooltip.Content>Tooltip without shadow</Tooltip.Content>
       </Tooltip>
 
-      <Tooltip defaultVisible>
+      <Tooltip
+        defaultVisible
+        placement="top-center"
+        pointer={false}
+        shadow={false}
+      >
         <Tooltip.Trigger>
           <button>No Pointer or Shadow</button>
         </Tooltip.Trigger>
-        <Tooltip.Content placement="top" pointer={false} shadow={false}>
-          Tooltip without pointer or shadow
-        </Tooltip.Content>
+        <Tooltip.Content>Tooltip without pointer or shadow</Tooltip.Content>
       </Tooltip>
     </div>
   ),

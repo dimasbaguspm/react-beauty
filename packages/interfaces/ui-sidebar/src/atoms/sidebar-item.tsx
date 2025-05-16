@@ -58,14 +58,14 @@ export const SidebarItem = forwardRef<HTMLLIElement, SidebarItemProps>(
     if (!isExpanded) {
       return (
         <ElSidebarItemContainer {...menuItemProps}>
-          <Tooltip trigger="hover">
+          <Tooltip trigger="hover" placement="right-center">
             <Tooltip.Trigger>
               {icon && <MenuItem.LeadElement>{icon}</MenuItem.LeadElement>}
             </Tooltip.Trigger>
             <MenuItem.Label data-visible={isExpanded}>
               {children}
             </MenuItem.Label>
-            <Tooltip.Content placement="right">{children}</Tooltip.Content>
+            <Tooltip.Content>{children}</Tooltip.Content>
           </Tooltip>
         </ElSidebarItemContainer>
       );
