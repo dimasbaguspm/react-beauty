@@ -1403,7 +1403,7 @@ __metadata:
     "@react-beauty/vite": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1459,7 +1459,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1478,7 +1478,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1496,7 +1496,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1515,8 +1515,8 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
-    "@types/react": "*"
+    "@linaria/react": ^6.0
+    "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
   linkType: soft
@@ -1533,7 +1533,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1551,7 +1551,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1569,7 +1569,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1585,7 +1585,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1604,7 +1604,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1623,7 +1623,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1640,7 +1640,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1659,7 +1659,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1678,7 +1678,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1697,7 +1697,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1716,7 +1716,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1734,7 +1734,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1752,7 +1752,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1770,7 +1770,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1791,7 +1791,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1809,7 +1809,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1827,7 +1827,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1846,7 +1846,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1864,7 +1864,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1882,7 +1882,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1900,7 +1900,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown
@@ -1918,7 +1918,7 @@ __metadata:
     "@react-beauty/vitest": "workspace:*"
   peerDependencies:
     "@linaria/core": ^6.0
-    "@linaria/react": 6.0
+    "@linaria/react": ^6.0
     "@types/react": ^18.0
     react: ^18.0
   languageName: unknown

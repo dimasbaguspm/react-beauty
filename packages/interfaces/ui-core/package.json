@@ -37,7 +37,7 @@
   },
   "peerDependencies": {
     "@linaria/core": "^6.0",
-    "@linaria/react": "6.0",
+    "@linaria/react": "^6.0",
     "@types/react": "^18.0",
     "react": "^18.0"
   },
