@@ -10,7 +10,11 @@ export const PageLayout: FC<PageLayoutProps> = ({ children }) => {
     <div style={{ display: 'flex' }}>
       <SideBar />
       <main
-        style={{ padding: '2rem 4rem', maxHeight: '100vh', overflow: 'auto' }}
+        style={{
+          padding: '2rem 4rem',
+          overflow: 'auto',
+          flexGrow: 1,
+        }}
       >
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
       </main>

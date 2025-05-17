@@ -6,6 +6,6 @@ export const Pages = {
   Introduction: lazy(() => import('./introduction')),
   Installation: lazy(() => import('./installation')),
 
-  Interface: lazy(() => import('./interfaces/interface-page')),
-  InterfaceDetail: lazy(() => import('./interfaces/interface-detail-page')),
+  Interface: lazy(() => import('./interface-page')),
+  InterfaceDetail: lazy(() => import('./interface-detail-page')),
 };
