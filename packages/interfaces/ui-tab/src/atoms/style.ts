@@ -2,8 +2,9 @@ import { styled } from '@linaria/react';
 
 export const ElTabsContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+  gap: var(--space-2);
 `;
 
 export const ElTabsList = styled.div`

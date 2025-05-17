@@ -1,9 +1,8 @@
-import { Icon, Sidebar } from '@react-beauty/interfaces';
+import { Icon, Segment, Sidebar } from '@react-beauty/interfaces';
 import { useThemeContext } from '@react-beauty/ui-core';
 import { startCase } from 'lodash';
 import { FC, Fragment } from 'react';
-import { useLocation } from 'react-router';
-import { NavLink } from 'react-router';
+import { useLocation, NavLink } from 'react-router';
 
 import { pageLayoutData } from './helpers';
 
@@ -13,14 +12,6 @@ export const SideBar: FC = () => {
 
   return (
     <Sidebar isExpanded>
-      <Sidebar.Header>
-        @react-beauty
-        {theme === 'dark' ? (
-          <Icon name="otherSun" onClick={() => changeTheme('light')} />
-        ) : (
-          <Icon name="otherMoon" onClick={() => changeTheme('dark')} />
-        )}
-      </Sidebar.Header>
       <Sidebar.Body>
         {pageLayoutData.map(([title, items]) => (
           <Fragment key={title}>
@@ -42,6 +33,21 @@ export const SideBar: FC = () => {
           </Fragment>
         ))}
       </Sidebar.Body>
+      <Sidebar.Footer>
+        <Segment
+          value={theme === 'dark' ? 'dark' : 'light'}
+          onValueChange={(value) => {
+            changeTheme(value as 'dark' | 'light');
+          }}
+        >
+          <Segment.Item value="light">
+            <Icon name="otherSun" size="xs" />
+          </Segment.Item>
+          <Segment.Item value="dark">
+            <Icon name="otherMoon" size="xs" />
+          </Segment.Item>
+        </Segment>
+      </Sidebar.Footer>
     </Sidebar>
   );
 };

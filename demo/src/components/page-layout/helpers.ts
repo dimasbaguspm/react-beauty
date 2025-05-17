@@ -26,12 +26,16 @@ const interfacePage: PageLayoutDataModel[] = [
     title: 'Accordion',
   },
   {
+    pageId: DEEP_LINKING_ROUTES.UI_AVATAR,
+    title: 'Avatar',
+  },
+  {
     pageId: DEEP_LINKING_ROUTES.UI_ALERT,
     title: 'Alert',
   },
   {
-    pageId: DEEP_LINKING_ROUTES.UI_BADGE,
-    title: 'Badge',
+    pageId: DEEP_LINKING_ROUTES.UI_BOTTOM_SHEET,
+    title: 'Bottom Sheet',
   },
   {
     pageId: DEEP_LINKING_ROUTES.UI_BREADCRUMB,

@@ -8,7 +8,8 @@ export const ROUTES = {
 
   UI_ACCORDION: 'accordion',
   UI_ALERT: 'alert',
-  UI_BADGE: 'bottom-sheet',
+  UI_AVATAR: 'avatar',
+  UI_BOTTOM_SHEET: 'bottom-sheet',
   UI_BREADCRUMB: 'breadcrumb',
   UI_BUTTON: 'button',
   UI_CHECKBOX: 'checkbox',
@@ -50,7 +51,8 @@ export const DEEP_LINKING_ROUTES = {
 
   UI_ACCORDION: constructUIRoute(ROUTES.UI_ACCORDION),
   UI_ALERT: constructUIRoute(ROUTES.UI_ALERT),
-  UI_BADGE: constructUIRoute(ROUTES.UI_BADGE),
+  UI_AVATAR: constructUIRoute(ROUTES.UI_AVATAR),
+  UI_BOTTOM_SHEET: constructUIRoute(ROUTES.UI_BOTTOM_SHEET),
   UI_BREADCRUMB: constructUIRoute(ROUTES.UI_BREADCRUMB),
   UI_BUTTON: constructUIRoute(ROUTES.UI_BUTTON),
   UI_CHECKBOX: constructUIRoute(ROUTES.UI_CHECKBOX),

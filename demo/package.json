@@ -16,12 +16,14 @@
     "@react-beauty/ui-core": "workspace:*",
     "lodash": "4.17.21",
     "react-markdown": "10.1.0",
-    "react-router": "7.6.0"
+    "react-router": "7.6.0",
+    "react-syntax-highlighter": "15.6.1"
   },
   "devDependencies": {
     "@react-beauty/eslint": "workspace:*",
     "@react-beauty/tsc": "workspace:*",
     "@react-beauty/vite": "workspace:*",
-    "@types/lodash": "^4"
+    "@types/lodash": "^4",
+    "@types/react-syntax-highlighter": "^15"
   }
 }
