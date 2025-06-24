@@ -1,0 +1,105 @@
+/* React Beauty Design System CSS Variables */
+:root {
+  /* Surface & Primary Colors */
+  --rb-colors-surface-ash-gray: #c3cbb9;
+  --rb-colors-surface-beige: #d6dfcb;
+  --rb-colors-surface-honeydew: #ebf5df;
+  --rb-colors-surface-tea-green: #d3e5c5;
+  --rb-colors-surface-celadon: #bad4aa;
+  --rb-colors-surface-overlay: #272d21;
+  --rb-colors-surface-mid: #768663;
+  --rb-colors-on-surface-ash-gray: #272d21;
+  --rb-colors-on-surface-beige: #2c3521;
+  --rb-colors-primary-vanilla: #d4d4aa;
+  --rb-colors-primary-ecru: #e1c481;
+  --rb-colors-primary-hunyadi: #edb458;
+  --rb-colors-primary-fulvous: #e8871e;
+  --rb-colors-primary-carrot-orange: #ea9232;
+  --rb-colors-on-primary-vanilla: #33331a;
+  --rb-colors-on-primary-fulvous: #2f1b05;
+  --rb-colors-surface-danger: #f3b3b3;
+  --rb-colors-surface-warning: #f7e3b3;
+  --rb-colors-surface-info: #b3d6f7;
+  --rb-colors-surface-success: #bad4aa;
+  --rb-colors-on-surface-danger: #6b3535;
+  --rb-colors-on-surface-warning: #6b5a35;
+  --rb-colors-on-surface-info: #35506b;
+  --rb-colors-on-surface-success: #23331a;
+
+  /* Spacing Scale */
+  --rb-space-0: 0px;
+  --rb-space-1: 4px;
+  --rb-space-2: 8px;
+  --rb-space-3: 12px;
+  --rb-space-4: 16px;
+  --rb-space-5: 20px;
+  --rb-space-6: 32px;
+  --rb-space-7: 40px;
+  
+  /* Font Family */
+  --rb-font-family-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --rb-font-family-mono: 'Fira Mono', 'Menlo', 'Monaco', monospace;
+
+  /* Typography */
+  --rb-font-size-micro: 10px;
+  --rb-font-size-xs: 12px;
+  --rb-font-size-sm: 14px;
+  --rb-font-size-md: 16px;
+  --rb-font-size-lg: 18px;
+  --rb-font-size-xl: 20px;
+  --rb-font-size-2xl: 24px;
+  --rb-font-size-3xl: 32px;
+
+  /* Font Weight (aligned with font-size) */
+  --rb-font-weight-micro: 400;
+  --rb-font-weight-xs: 400;
+  --rb-font-weight-sm: 400;
+  --rb-font-weight-md: 400;
+  --rb-font-weight-lg: 500;
+  --rb-font-weight-xl: 600;
+  --rb-font-weight-2xl: 700;
+  --rb-font-weight-3xl: 700;
+
+  /* Line Height (aligned with font-size) */
+  --rb-line-height-micro: 1.2;
+  --rb-line-height-xs: 1.25;
+  --rb-line-height-sm: 1.4;
+  --rb-line-height-md: 1.5;
+  --rb-line-height-lg: 1.5;
+  --rb-line-height-xl: 1.2;
+  --rb-line-height-2xl: 1.1;
+  --rb-line-height-3xl: 1.1;
+
+  /* Letter Spacing (aligned with typography scale) */
+  --rb-letter-spacing-micro: 0.02em;
+  --rb-letter-spacing-xs: 0.01em;
+  --rb-letter-spacing-sm: 0em;
+  --rb-letter-spacing-md: 0em;
+  --rb-letter-spacing-lg: 0em;
+  --rb-letter-spacing-xl: 0.01em;
+  --rb-letter-spacing-2xl: 0.02em;
+  --rb-letter-spacing-3xl: 0.03em;
+
+  /* Border Radius */
+  --rb-border-radius-0: 0px;
+  --rb-border-radius-2: 2px;
+  --rb-border-radius-xs: 4px;
+  --rb-border-radius-sm: 8px;
+  --rb-border-radius-md: 12px;
+  --rb-border-radius-lg: 16px;
+  --rb-border-radius-xl: 24px;
+  --rb-border-radius-2xl: 32px;
+  --rb-border-radius-rounded: 9999px;
+
+
+  /* Transition (relaxed, harmonious) */
+  --rb-transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+  --rb-transition-medium: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  --rb-transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Disabled State */
+  --rb-colors-disabled-border: #bfc3b6;
+  --rb-colors-disabled-fg: #8a8e87;
+  --rb-colors-disabled-bg: #bfc3b6;
+}
+

@@ -91,9 +91,9 @@
 | Radius 2            | --rb-border-radius-2         | 2px          |
 | Radius XS           | --rb-border-radius-xs        | 4px          |
 | Radius SM           | --rb-border-radius-sm        | 8px          |
-| Radius MD           | --rb-border-radius-md        | 12px         |
-| Radius LG           | --rb-border-radius-lg        | 16px         |
-| Radius XL           | --rb-border-radius-xl        | 24px         |
+| Radius MD           | --rb-border-radius-md        | 12px          |
+| Radius LG           | --rb-border-radius-lg        | 16px          |
+| Radius XL           | --rb-border-radius-xl        | 24px          |
 | Radius 2XL          | --rb-border-radius-2xl       | 32px         |
 | Fully Rounded       | --rb-border-radius-rounded   | 9999px       |
 
@@ -106,6 +106,59 @@
 - Use `--rb-border-radius-rounded` for fully circular elements, such as avatars or pill-shaped buttons.
 - Maintain consistency in radius usage for similar components throughout the UI.
 - If a new radius is needed, request its addition to the `css-token` package.
+
+
+### Standard "Primary" Color Combination
+
+- The standard "primary" intent in React Beauty uses a specific combination of orange palette tokens for all components:
+  - **Default State:**
+    - Background: `--rb-colors-primary-fulvous` (#e8871e)
+    - Text/Icon: `--rb-colors-on-primary-fulvous` (#2f1b05)
+  - **Hover/Focus State:**
+    - Background: `--rb-colors-primary-carrot-orange` (#ea9232)
+    - Text/Icon: `--rb-colors-on-primary-fulvous`
+  - **Active State:**
+    - Background: `--rb-colors-primary-hunyadi` (#edb458)
+    - Text/Icon: `--rb-colors-on-primary-fulvous`
+  - **Border:**
+    - Use `--rb-colors-primary-fulvous` by default, with hover/active using carrot orange and hunyadi as above.
+- This combination must be used for all `primary` intent backgrounds, borders, and text/icons in every component (e.g., buttons, tabs, toggles, highlights, etc.) for consistency and accessibility.
+- Always pair background tokens with their corresponding `on` tokens for text/icons.
+
+### Standard "Surface" Color Combination
+
+- The standard "surface" intent in React Beauty uses a specific combination of neutral palette tokens for all components:
+  - **Default State:**
+    - Background: `--rb-colors-surface-ash-gray` (#c3cbb9)
+    - Text/Icon: `--rb-colors-on-surface-ash-gray` (#272d21)
+  - **Alt/Secondary State:**
+    - Background: `--rb-colors-surface-beige` (#d6dfcb)
+    - Text/Icon: `--rb-colors-on-surface-beige` (#2c3521)
+  - **Subtle/Accent/Muted States:**
+    - Background: `--rb-colors-surface-honeydew` (#ebf5df), `--rb-colors-surface-tea-green` (#d3e5c5), `--rb-colors-surface-celadon` (#bad4aa)
+    - Use corresponding "on" tokens for text/icons.
+  - **Overlay/Elevated State:**
+    - Background: `--rb-colors-surface-overlay` (#272d21)
+    - Text/Icon: `--rb-colors-on-surface-ash-gray` (#272d21) or as appropriate for contrast
+  - **Mid-tone State:**
+    - Background: `--rb-colors-surface-mid` (#768663)
+    - Use with appropriate "on" token for text/icons.
+  - **Border:**
+    - Use a surface or neutral border token as defined in the design system (e.g., `--rb-colors-border-subtle`).
+- Always pair surface background tokens with their corresponding "on" tokens for text/icons to ensure contrast and accessibility.
+- This combination must be used for all `surface` intent backgrounds, borders, and text/icons in every component (e.g., cards, sheets, modals, containers, etc.) for consistency and accessibility.
+
+
+#### Disabled State Color Tokens
+
+- If you need to define or extend disabled state tokens for color harmony, use the following as a starting point:
+  | Token Name (CSS Variable)         | Example Color Name   | Example Value   | Usage Description                  |
+  |-----------------------------------|----------------------|-----------------|------------------------------------|
+  | --rb-colors-disabled-bg           | Disabled Gray        | #bfc3b6         | Disabled backgrounds (optional)    |
+  | --rb-colors-disabled-fg           | Disabled Text        | #8a8e87         | Disabled text/icons (optional)     |
+  | --rb-colors-disabled-border       | Disabled Border      | #bfc3b6         | Disabled borders (optional)        |
+- These tokens must be used for all disabled backgrounds, borders, and text/icons in every component (e.g., buttons, inputs, toggles, etc.) for consistency and accessibility.
+- Always ensure sufficient contrast for disabled states, and do not use opacity alone to indicate disabled.
 
 ## General Guidelines
 

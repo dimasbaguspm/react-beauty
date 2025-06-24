@@ -1933,6 +1933,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-beauty/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@react-beauty/ui@workspace:packages/ui"
+  dependencies:
+    "@react-beauty/eslint": "workspace:*"
+    "@react-beauty/tsc": "workspace:*"
+    "@react-beauty/vite": "workspace:*"
+    lucide-react: "npm:0.523.0"
+  peerDependencies:
+    "@linaria/core": ^6.0
+    "@linaria/react": ^6.0
+    "@types/react": ^18.0
+    lucide-react: ^0.523.0
+    react: ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@react-beauty/use-clipboard@workspace:*, @react-beauty/use-clipboard@workspace:packages/hooks/use-clipboard":
   version: 0.0.0-use.local
   resolution: "@react-beauty/use-clipboard@workspace:packages/hooks/use-clipboard"
@@ -6834,6 +6851,15 @@ __metadata:
   dependencies:
     yallist: "npm:^4.0.0"
   checksum: 10c0/cb53e582785c48187d7a188d3379c181b5ca2a9c78d2bce3e7dee36f32761d1c42983da3fe12b55cb74e1779fa94cdc2e5367c028a9b35317184ede0c07a30a9
+  languageName: node
+  linkType: hard
+
+"lucide-react@npm:0.523.0":
+  version: 0.523.0
+  resolution: "lucide-react@npm:0.523.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c0/dafd180d05326edc81d928f37d6574930f0592da08b91c536ae5675d0b764295368e8daf9bcc81a5283c18e2f19412060d1da475b4f26112168245e708bd562f
   languageName: node
   linkType: hard
 

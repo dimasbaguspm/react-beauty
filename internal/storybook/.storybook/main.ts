@@ -8,39 +8,8 @@ function getAbsolutePath(value: string): string {
   return dirname(require.resolve(join(value, 'package.json')));
 }
 
-function getStoriesPath(path: string): string {
-  const packagePath = resolve(join('../../packages', path, 'src'));
-  return packagePath + '/**/{stories,story}.{tsx,mdx}';
-}
-
 const config: StorybookConfig = {
-  stories: [
-    getStoriesPath('interfaces/ui-icon'),
-    getStoriesPath('interfaces/ui-avatar'),
-    getStoriesPath('interfaces/ui-alert'),
-    getStoriesPath('interfaces/ui-button'),
-    getStoriesPath('interfaces/ui-tag'),
-    getStoriesPath('interfaces/ui-empty-state'),
-    getStoriesPath('interfaces/ui-menu-item'),
-    getStoriesPath('interfaces/ui-pagination'),
-    getStoriesPath('interfaces/ui-accordion'),
-    getStoriesPath('interfaces/ui-tooltip'),
-    getStoriesPath('interfaces/ui-text-input'),
-    getStoriesPath('interfaces/ui-text-area'),
-    getStoriesPath('interfaces/ui-breadcrumb'),
-    getStoriesPath('interfaces/ui-switch'),
-    getStoriesPath('interfaces/ui-radio'),
-    getStoriesPath('interfaces/ui-checkbox'),
-    getStoriesPath('interfaces/ui-select'),
-    getStoriesPath('interfaces/ui-drawer'),
-    getStoriesPath('interfaces/ui-modal'),
-    getStoriesPath('interfaces/ui-bottom-sheet'),
-    getStoriesPath('interfaces/ui-sidebar'),
-    getStoriesPath('interfaces/ui-loader'),
-    getStoriesPath('interfaces/ui-text'),
-    getStoriesPath('interfaces/ui-tab'),
-    getStoriesPath('interfaces/ui-segment'),
-  ],
+  stories: [resolve(join('../../packages/ui/src/**/*.stories.tsx'))],
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-onboarding'),

@@ -20,8 +20,7 @@
     "storybook": "8.6.12"
   },
   "scripts": {
-    "build:dev:token": "yarn workspace @react-beauty/css-token build",
-    "start": "yarn build:dev:token && storybook dev -p 6006",
-    "build": "yarn build:dev:token && storybook build -o dist"
+    "start": "storybook dev -p 6006",
+    "build": "storybook build -o dist"
   }
 }
