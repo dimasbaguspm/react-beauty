@@ -73,15 +73,53 @@
 | Font 2XL             | --rb-font-size-2xl       | 24px         |
 | Font 3XL             | --rb-font-size-3xl       | 32px         |
 
-## Typography Guidelines
+| Font Family Token    | CSS Variable               | Example Value                                                                 |
+|---------------------|----------------------------|-------------------------------------------------------------------------------|
+| Font Family Base    | --rb-font-family-base      | 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif |
+| Font Family Mono    | --rb-font-family-mono      | 'Fira Mono', 'Menlo', 'Monaco', monospace                                    |
 
-- Always use the provided font size tokens for all text elements; never hardcode pixel values.
-- Choose the smallest appropriate size for supporting text (e.g., captions, hints) and larger sizes for headings and display text.
-- Use `--rb-font-size-micro` and `--rb-font-size-xs` for microcopy, legal, or UI hints.
-- Use `--rb-font-size-sm` and `--rb-font-size-md` for body text and standard UI labels.
-- Use `--rb-font-size-lg` and above for headings, section titles, and display text.
-- Maintain a clear visual hierarchy by using consistent font sizes for similar roles across the UI.
-- If a new size is needed, request its addition to the `css-token` package.
+| Font Weight Token    | CSS Variable               | Example Value | Usage Example                |
+|---------------------|----------------------------|--------------|------------------------------|
+| Weight Micro        | --rb-font-weight-micro     | 400          | Micro text, overline         |
+| Weight XS           | --rb-font-weight-xs        | 400          | Caption, small text          |
+| Weight SM           | --rb-font-weight-sm        | 400          | Body, label                  |
+| Weight MD           | --rb-font-weight-md        | 400          | Default, body                |
+| Weight LG           | --rb-font-weight-lg        | 500          | Emphasis, subheading         |
+| Weight XL           | --rb-font-weight-xl        | 600          | Heading, strong subheading   |
+| Weight 2XL          | --rb-font-weight-2xl       | 700          | Main heading, bold           |
+| Weight 3XL          | --rb-font-weight-3xl       | 700          | Display, extra bold          |
+
+| Line Height Token   | CSS Variable               | Example Value |
+|---------------------|----------------------------|--------------|
+| Line Height Micro   | --rb-line-height-micro     | 1.2          |
+| Line Height XS      | --rb-line-height-xs        | 1.25         |
+| Line Height SM      | --rb-line-height-sm        | 1.4          |
+| Line Height MD      | --rb-line-height-md        | 1.5          |
+| Line Height LG      | --rb-line-height-lg        | 1.5          |
+| Line Height XL      | --rb-line-height-xl        | 1.2          |
+| Line Height 2XL     | --rb-line-height-2xl       | 1.1          |
+| Line Height 3XL     | --rb-line-height-3xl       | 1.1          |
+
+| Letter Spacing Token| CSS Variable               | Example Value |
+|---------------------|----------------------------|--------------|
+| Letter Spacing Micro| --rb-letter-spacing-micro  | 0.02em       |
+| Letter Spacing XS   | --rb-letter-spacing-xs     | 0.01em       |
+| Letter Spacing SM   | --rb-letter-spacing-sm     | 0em          |
+| Letter Spacing MD   | --rb-letter-spacing-md     | 0em          |
+| Letter Spacing LG   | --rb-letter-spacing-lg     | 0em          |
+| Letter Spacing XL   | --rb-letter-spacing-xl     | 0.01em       |
+| Letter Spacing 2XL  | --rb-letter-spacing-2xl    | 0.02em       |
+| Letter Spacing 3XL  | --rb-letter-spacing-3xl    | 0.03em       |
+
+### Typography Guidelines
+
+- Always use the provided font size, font weight, line height, letter spacing, and font family tokens for all text elements; never hardcode pixel values, numeric values, or font family names.
+- Use `--rb-font-family-base` for all standard text and UI elements, and `--rb-font-family-mono` for code or monospaced text.
+- Use `--rb-font-size-micro` and `--rb-font-size-xs` for microcopy, legal, or UI hints, paired with their respective font weight, line height, and letter spacing tokens.
+- Use `--rb-font-size-sm` and `--rb-font-size-md` for body text and standard UI labels, with matching font weight, line height, and letter spacing tokens.
+- Use `--rb-font-size-lg` and above for headings, section titles, and display text, with their corresponding font weight, line height, and letter spacing tokens.
+- Maintain a clear visual hierarchy by using consistent font sizes, weights, line heights, and letter spacing for similar roles across the UI.
+- If a new size, weight, line height, or letter spacing is needed, request its addition to the `css-token` package.
 
 ## Border Radius
 
